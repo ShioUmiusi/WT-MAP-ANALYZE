@@ -1,0 +1,17 @@
+# generated working data, never committed
+out/
+scratch/
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.log
+
+# local references and the Oodle kernel (not redistributed)
+dae/
+src/
+vendor/
+
+# editor / OS noise
+.DS_Store
+Thumbs.db
