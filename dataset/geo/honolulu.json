@@ -1,0 +1,237 @@
+{
+ "map": "honolulu",
+ "crs": "WGS84",
+ "bounds": null,
+ "corners": null,
+ "method": "ocr+gazetteer+dem-match",
+ "residualKm": 3.13,
+ "anchorResidualKm": 3.13,
+ "bboxUncertaintyKm": 1.5,
+ "anchors": [
+  {
+   "text": "Waimea Bay",
+   "lat": 21.62944,
+   "lon": -158.00999,
+   "px": 783.5,
+   "py": 738.5,
+   "score": 100.0,
+   "gazetteer": "waimea",
+   "offsetKm": 5.72
+  },
+  {
+   "text": "Kaena",
+   "lat": 21.58139,
+   "lon": -158.24333,
+   "px": 512.5,
+   "py": 801.5,
+   "score": 100.0,
+   "gazetteer": "kaena",
+   "offsetKm": 4.0
+  },
+  {
+   "text": "Waialua Bay",
+   "lat": 21.59531,
+   "lon": -158.10953,
+   "px": 698.5,
+   "py": 799.5,
+   "score": 100.0,
+   "gazetteer": "waialuabay",
+   "offsetKm": 0.0
+  },
+  {
+   "text": "Kahana Bay",
+   "lat": 21.56291,
+   "lon": -157.86972,
+   "px": 1219.0,
+   "py": 839.0,
+   "score": 100.0,
+   "gazetteer": "kahanabay",
+   "offsetKm": 3.52
+  },
+  {
+   "text": "Kualoa Point",
+   "lat": 21.50976,
+   "lon": -157.83578,
+   "px": 1289.5,
+   "py": 920.0,
+   "score": 100.0,
+   "gazetteer": "kualoapoint",
+   "offsetKm": 3.85
+  },
+  {
+   "text": "Kapapa island",
+   "lat": 21.47694,
+   "lon": -157.79861,
+   "px": 1302.5,
+   "py": 988.5,
+   "score": 100.0,
+   "gazetteer": "kapapaisland",
+   "offsetKm": 0.71
+  },
+  {
+   "text": "Moku Man",
+   "lat": 21.46964,
+   "lon": -157.72025,
+   "px": 1417.5,
+   "py": 997.0,
+   "score": 93.3,
+   "gazetteer": "mokumanu",
+   "offsetKm": 1.28
+  },
+  {
+   "text": "Kaneohe",
+   "lat": 21.39611,
+   "lon": -157.79556,
+   "px": 1294.5,
+   "py": 1031.0,
+   "score": 100.0,
+   "gazetteer": "kaneohe",
+   "offsetKm": 5.53
+  },
+  {
+   "text": "Pokai Bay",
+   "lat": 21.44481,
+   "lon": -158.19302,
+   "px": 594.5,
+   "py": 1070.0,
+   "score": 100.0,
+   "gazetteer": "pokaibay",
+   "offsetKm": 3.99
+  },
+  {
+   "text": "Kailua Bay",
+   "lat": 21.41114,
+   "lon": -157.73515,
+   "px": 1471.0,
+   "py": 1088.5,
+   "score": 100.0,
+   "gazetteer": "kailuabay",
+   "offsetKm": 3.2
+  },
+  {
+   "text": "Mokuua",
+   "lat": 21.38334,
+   "lon": -157.71225,
+   "px": 1456.0,
+   "py": 1128.5,
+   "score": 92.3,
+   "gazetteer": "mokulua",
+   "offsetKm": 0.0
+  },
+  {
+   "text": "Waimanalo Bay",
+   "lat": 21.34614,
+   "lon": -157.7238,
+   "px": 1509.5,
+   "py": 1188.5,
+   "score": 100.0,
+   "gazetteer": "waimanalo",
+   "offsetKm": 4.11
+  },
+  {
+   "text": "Ahua Point",
+   "lat": 21.31417,
+   "lon": -157.92526,
+   "px": 1086.5,
+   "py": 1267.0,
+   "score": 100.0,
+   "gazetteer": "ahuapoint",
+   "offsetKm": 2.98
+  },
+  {
+   "text": "EwaBeach",
+   "lat": 21.31556,
+   "lon": -158.00722,
+   "px": 926.0,
+   "py": 1277.0,
+   "score": 100.0,
+   "gazetteer": "ewabeach",
+   "offsetKm": 3.55
+  },
+  {
+   "text": "Mamala Bay",
+   "lat": 21.29157,
+   "lon": -157.95486,
+   "px": 1004.5,
+   "py": 1337.5,
+   "score": 100.0,
+   "gazetteer": "mamalabay",
+   "offsetKm": 4.78
+  },
+  {
+   "text": "Maunalua Bay",
+   "lat": 21.2723,
+   "lon": -157.729,
+   "px": 1359.0,
+   "py": 1344.5,
+   "score": 100.0,
+   "gazetteer": "maunaluabay",
+   "offsetKm": 4.71
+  },
+  {
+   "text": "Koko Head",
+   "lat": 21.26015,
+   "lon": -157.69994,
+   "px": 1493.0,
+   "py": 1359.5,
+   "score": 100.0,
+   "gazetteer": "kokohead",
+   "offsetKm": 2.93
+  }
+ ],
+ "crosscheck": {
+  "nccPeak": 0.6097,
+  "coarseNcc": 0.6003,
+  "worldUnitM": 1.0696,
+  "worldSquareKm": [
+   70.1,
+   70.1
+  ],
+  "labelResidKm": [
+   0.0,
+   0.0,
+   0.7,
+   1.3,
+   2.9,
+   3.0,
+   3.2,
+   3.5,
+   3.6,
+   3.9,
+   4.0,
+   4.0,
+   4.1,
+   4.7,
+   4.8,
+   5.5,
+   5.7
+  ],
+  "anchorsUsed": 17,
+  "textureExtentKm": [
+   111.2,
+   130.4
+  ],
+  "textureVsWorldScale": 1.859,
+  "textureCenterOffsetKm": 10233.04,
+  "bboxUncertaintyKm": 1.5,
+  "sizeErrPct": 6.96,
+  "squareErrPct": 0.0,
+  "sizeCheckOk": true,
+  "landFracMap": 0.3286,
+  "landFracDem": 0.0754,
+  "landFracRatio": 4.356,
+  "textureSeaFrac": 0.902,
+  "textureWaterIou": 0.888,
+  "solvedBeforeVeto": true,
+  "confidenceBeforeVeto": "low"
+ },
+ "confidence": "unresolved",
+ "note": "label hypothesis label:point; fitted world unit = 1.070 real m; 34/34 labels resolved REJECTED: land/sea mismatch (map 0.33 vs dem 0.08, ratio 4.4x)",
+ "textureBounds": {
+  "minLon": -158.484801,
+  "maxLon": -157.411274,
+  "minLat": 20.863323,
+  "maxLat": 22.042917
+ },
+ "rejected": "land/sea mismatch (map 0.33 vs dem 0.08, ratio 4.4x)"
+}

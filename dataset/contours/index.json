@@ -1,0 +1,4576 @@
+{
+ "schema": 1,
+ "crs": "replay-world-meters",
+ "note": "War Thunder level terrain extracted from levels/<map>.bin. source=hm2 means decoded from the HM2 heightmap block; source=landmesh means rebuilt from the lmap LandMesh triangle mesh (validated against HM2: median error 0.14 m over 90 cross-checked levels). x = world X (east), y = world north/Z; bounds in meters.",
+ "count": 163,
+ "bySource": {
+  "hm2": 90,
+  "landmesh": 73
+ },
+ "maps": [
+  {
+   "map": "air_afghan",
+   "source": "hm2",
+   "px": [
+    4096,
+    4096
+   ],
+   "cellM": 32.0,
+   "spanM": [
+    131072.0,
+    131072.0
+   ],
+   "bounds": {
+    "minX": -65536.0,
+    "maxX": 65536.0,
+    "minY": -65536.0,
+    "maxY": 65536.0
+   },
+   "heightM": [
+    1378.19,
+    5364.0
+   ],
+   "intervalM": 200.0,
+   "levels": 19,
+   "points": 130478,
+   "water": false,
+   "file": "air_afghan_contours.json"
+  },
+  {
+   "map": "air_africa_desert",
+   "source": "hm2",
+   "px": [
+    2048,
+    2048
+   ],
+   "cellM": 32.0,
+   "spanM": [
+    65536.0,
+    65536.0
+   ],
+   "bounds": {
+    "minX": -32768.0,
+    "maxX": 32768.0,
+    "minY": -32768.0,
+    "maxY": 32768.0
+   },
+   "heightM": [
+    -1.69,
+    349.0
+   ],
+   "intervalM": 20.0,
+   "levels": 17,
+   "points": 76749,
+   "water": true,
+   "file": "air_africa_desert_contours.json"
+  },
+  {
+   "map": "air_archipelago",
+   "source": "hm2",
+   "px": [
+    4096,
+    4096
+   ],
+   "cellM": 64.0,
+   "spanM": [
+    262144.0,
+    262144.0
+   ],
+   "bounds": {
+    "minX": -131072.0,
+    "maxX": 131072.0,
+    "minY": -131072.0,
+    "maxY": 131072.0
+   },
+   "heightM": [
+    -30.01,
+    4969.98
+   ],
+   "intervalM": 200.0,
+   "levels": 24,
+   "points": 82497,
+   "water": true,
+   "file": "air_archipelago_contours.json"
+  },
+  {
+   "map": "air_denmark",
+   "source": "landmesh",
+   "px": [
+    1024,
+    1024
+   ],
+   "cellM": 128.09384068759306,
+   "spanM": [
+    131168.1,
+    131168.1
+   ],
+   "bounds": {
+    "minX": -65536.0,
+    "maxX": 65632.09,
+    "minY": -65536.0,
+    "maxY": 65632.09
+   },
+   "heightM": [
+    -50.0,
+    144.86
+   ],
+   "intervalM": 10.0,
+   "levels": 14,
+   "points": 97092,
+   "water": true,
+   "file": "air_denmark_contours.json"
+  },
+  {
+   "map": "air_equatorial_island",
+   "source": "landmesh",
+   "px": [
+    1024,
+    1024
+   ],
+   "cellM": 128.09384068759306,
+   "spanM": [
+    131168.1,
+    131168.1
+   ],
+   "bounds": {
+    "minX": -65536.0,
+    "maxX": 65632.09,
+    "minY": -65536.0,
+    "maxY": 65632.09
+   },
+   "heightM": [
+    -155.0,
+    2897.79
+   ],
+   "intervalM": 100.0,
+   "levels": 28,
+   "points": 9279,
+   "water": true,
+   "file": "air_equatorial_island_contours.json"
+  },
+  {
+   "map": "air_falklands",
+   "source": "hm2",
+   "px": [
+    4096,
+    4096
+   ],
+   "cellM": 32.0,
+   "spanM": [
+    131072.0,
+    131072.0
+   ],
+   "bounds": {
+    "minX": -65536.0,
+    "maxX": 65536.0,
+    "minY": -65536.0,
+    "maxY": 65536.0
+   },
+   "heightM": [
+    -100.01,
+    592.14
+   ],
+   "intervalM": 25.0,
+   "levels": 23,
+   "points": 93154,
+   "water": true,
+   "file": "air_falklands_contours.json"
+  },
+  {
+   "map": "air_grand_canyon",
+   "source": "hm2",
+   "px": [
+    4096,
+    4096
+   ],
+   "cellM": 32.0,
+   "spanM": [
+    131072.0,
+    131072.0
+   ],
+   "bounds": {
+    "minX": -65536.0,
+    "maxX": 65536.0,
+    "minY": -65536.0,
+    "maxY": 65536.0
+   },
+   "heightM": [
+    -101.5,
+    4499.96
+   ],
+   "intervalM": 200.0,
+   "levels": 22,
+   "points": 38105,
+   "water": true,
+   "file": "air_grand_canyon_contours.json"
+  },
+  {
+   "map": "air_israel",
+   "source": "landmesh",
+   "px": [
+    1024,
+    1024
+   ],
+   "cellM": 128.09384068759306,
+   "spanM": [
+    131168.1,
+    131168.1
+   ],
+   "bounds": {
+    "minX": -65536.0,
+    "maxX": 65632.09,
+    "minY": -65536.0,
+    "maxY": 65632.09
+   },
+   "heightM": [
+    -377.87,
+    2814.9
+   ],
+   "intervalM": 100.0,
+   "levels": 28,
+   "points": 36621,
+   "water": true,
+   "file": "air_israel_contours.json"
+  },
+  {
+   "map": "air_kamchatka",
+   "source": "landmesh",
+   "px": [
+    1024,
+    1024
+   ],
+   "cellM": 128.09384068759306,
+   "spanM": [
+    131168.1,
+    131168.1
+   ],
+   "bounds": {
+    "minX": -65536.0,
+    "maxX": 65632.09,
+    "minY": -65536.0,
+    "maxY": 65632.09
+   },
+   "heightM": [
+    -69.77,
+    4246.67
+   ],
+   "intervalM": 200.0,
+   "levels": 21,
+   "points": 42768,
+   "water": true,
+   "file": "air_kamchatka_contours.json"
+  },
+  {
+   "map": "air_ladoga",
+   "source": "landmesh",
+   "px": [
+    1024,
+    1024
+   ],
+   "cellM": 64.0312795927739,
+   "spanM": [
+    65568.0,
+    65568.0
+   ],
+   "bounds": {
+    "minX": -32768.0,
+    "maxX": 32800.03,
+    "minY": -32768.0,
+    "maxY": 32800.03
+   },
+   "heightM": [
+    1.3,
+    76.94
+   ],
+   "intervalM": 2.0,
+   "levels": 38,
+   "points": 146597,
+   "water": false,
+   "file": "air_ladoga_contours.json"
+  },
+  {
+   "map": "air_mysterious_valley",
+   "source": "landmesh",
+   "px": [
+    1024,
+    1024
+   ],
+   "cellM": 128.09384068759306,
+   "spanM": [
+    131168.1,
+    131168.1
+   ],
+   "bounds": {
+    "minX": -65536.0,
+    "maxX": 65632.09,
+    "minY": -65536.0,
+    "maxY": 65632.09
+   },
+   "heightM": [
+    68.86,
+    3096.0
+   ],
+   "intervalM": 100.0,
+   "levels": 30,
+   "points": 147829,
+   "water": false,
+   "file": "air_mysterious_valley_contours.json"
+  },
+  {
+   "map": "air_normandy",
+   "source": "landmesh",
+   "px": [
+    1024,
+    1024
+   ],
+   "cellM": 64.0312795927739,
+   "spanM": [
+    65568.0,
+    65568.0
+   ],
+   "bounds": {
+    "minX": -32768.0,
+    "maxX": 32800.03,
+    "minY": -32768.0,
+    "maxY": 32800.03
+   },
+   "heightM": [
+    -20.0,
+    316.11
+   ],
+   "intervalM": 10.0,
+   "levels": 31,
+   "points": 72301,
+   "water": true,
+   "file": "air_normandy_contours.json"
+  },
+  {
+   "map": "air_pyrenees",
+   "source": "hm2",
+   "px": [
+    4096,
+    4096
+   ],
+   "cellM": 32.0,
+   "spanM": [
+    131072.0,
+    131072.0
+   ],
+   "bounds": {
+    "minX": -65536.0,
+    "maxX": 65536.0,
+    "minY": -65536.0,
+    "maxY": 65536.0
+   },
+   "heightM": [
+    159.94,
+    4191.81
+   ],
+   "intervalM": 200.0,
+   "levels": 20,
+   "points": 136026,
+   "water": false,
+   "file": "air_pyrenees_contours.json"
+  },
+  {
+   "map": "air_race_phiphi_islands",
+   "source": "landmesh",
+   "px": [
+    1023,
+    1023
+   ],
+   "cellM": 8.01174156352834,
+   "spanM": [
+    8196.0,
+    8196.0
+   ],
+   "bounds": {
+    "minX": -4096.0,
+    "maxX": 4100.01,
+    "minY": -4096.0,
+    "maxY": 4100.01
+   },
+   "heightM": [
+    -92.08,
+    323.06
+   ],
+   "intervalM": 20.0,
+   "levels": 16,
+   "points": 44001,
+   "water": true,
+   "file": "air_race_phiphi_islands_contours.json"
+  },
+  {
+   "map": "air_skyscraper_city",
+   "source": "landmesh",
+   "px": [
+    1024,
+    1024
+   ],
+   "cellM": 64.0312795927739,
+   "spanM": [
+    65568.0,
+    65568.0
+   ],
+   "bounds": {
+    "minX": -32768.0,
+    "maxX": 32800.03,
+    "minY": -32768.0,
+    "maxY": 32800.03
+   },
+   "heightM": [
+    -59.82,
+    5145.25
+   ],
+   "intervalM": 200.0,
+   "levels": 25,
+   "points": 30138,
+   "water": true,
+   "file": "air_skyscraper_city_contours.json"
+  },
+  {
+   "map": "air_smolensk",
+   "source": "landmesh",
+   "px": [
+    1024,
+    1024
+   ],
+   "cellM": 128.09384068759306,
+   "spanM": [
+    131168.1,
+    131168.1
+   ],
+   "bounds": {
+    "minX": -65536.0,
+    "maxX": 65632.09,
+    "minY": -65536.0,
+    "maxY": 65632.09
+   },
+   "heightM": [
+    -12.0,
+    276.98
+   ],
+   "intervalM": 10.0,
+   "levels": 27,
+   "points": 331555,
+   "water": true,
+   "file": "air_smolensk_contours.json"
+  },
+  {
+   "map": "air_south_eastern_city",
+   "source": "hm2",
+   "px": [
+    4096,
+    4096
+   ],
+   "cellM": 32.0,
+   "spanM": [
+    131072.0,
+    131072.0
+   ],
+   "bounds": {
+    "minX": -65536.0,
+    "maxX": 65536.0,
+    "minY": -65536.0,
+    "maxY": 65536.0
+   },
+   "heightM": [
+    -50.02,
+    1232.31
+   ],
+   "intervalM": 50.0,
+   "levels": 24,
+   "points": 67621,
+   "water": true,
+   "file": "air_south_eastern_city_contours.json"
+  },
+  {
+   "map": "air_southeastern_cliffs",
+   "source": "landmesh",
+   "px": [
+    1024,
+    1024
+   ],
+   "cellM": 128.09384068759306,
+   "spanM": [
+    131168.1,
+    131168.1
+   ],
+   "bounds": {
+    "minX": -65536.0,
+    "maxX": 65632.09,
+    "minY": -65536.0,
+    "maxY": 65632.09
+   },
+   "heightM": [
+    -240.02,
+    7517.72
+   ],
+   "intervalM": 250.0,
+   "levels": 30,
+   "points": 44061,
+   "water": true,
+   "file": "air_southeastern_cliffs_contours.json"
+  },
+  {
+   "map": "air_vietnam",
+   "source": "landmesh",
+   "px": [
+    1024,
+    1024
+   ],
+   "cellM": 128.09384068759306,
+   "spanM": [
+    131168.1,
+    131168.1
+   ],
+   "bounds": {
+    "minX": -65536.0,
+    "maxX": 65632.09,
+    "minY": -65536.0,
+    "maxY": 65632.09
+   },
+   "heightM": [
+    -44.07,
+    1482.6
+   ],
+   "intervalM": 50.0,
+   "levels": 29,
+   "points": 334315,
+   "water": true,
+   "file": "air_vietnam_contours.json"
+  },
+  {
+   "map": "arcade_africa_canyon",
+   "source": "landmesh",
+   "px": [
+    1024,
+    1024
+   ],
+   "cellM": 32.01563979638695,
+   "spanM": [
+    32784.0,
+    32784.0
+   ],
+   "bounds": {
+    "minX": -16384.0,
+    "maxX": 16400.02,
+    "minY": -16384.0,
+    "maxY": 16400.02
+   },
+   "heightM": [
+    -566.84,
+    2261.22
+   ],
+   "intervalM": 100.0,
+   "levels": 22,
+   "points": 61872,
+   "water": true,
+   "file": "arcade_africa_canyon_contours.json"
+  },
+  {
+   "map": "arcade_africa_seashore",
+   "source": "landmesh",
+   "px": [
+    1024,
+    1024
+   ],
+   "cellM": 16.007819898193475,
+   "spanM": [
+    16392.0,
+    16392.0
+   ],
+   "bounds": {
+    "minX": -8192.0,
+    "maxX": 8200.01,
+    "minY": -8192.0,
+    "maxY": 8200.01
+   },
+   "heightM": [
+    -625.07,
+    1267.83
+   ],
+   "intervalM": 100.0,
+   "levels": 12,
+   "points": 24191,
+   "water": true,
+   "file": "arcade_africa_seashore_contours.json"
+  },
+  {
+   "map": "arcade_alps",
+   "source": "landmesh",
+   "px": [
+    1024,
+    1024
+   ],
+   "cellM": 32.01563979638695,
+   "spanM": [
+    32784.0,
+    32784.0
+   ],
+   "bounds": {
+    "minX": -16384.0,
+    "maxX": 16400.02,
+    "minY": -16384.0,
+    "maxY": 16400.02
+   },
+   "heightM": [
+    -454.42,
+    5596.04
+   ],
+   "intervalM": 250.0,
+   "levels": 22,
+   "points": 22183,
+   "water": true,
+   "file": "arcade_alps_contours.json"
+  },
+  {
+   "map": "arcade_asia_4roads",
+   "source": "landmesh",
+   "px": [
+    1024,
+    1024
+   ],
+   "cellM": 32.01563979638695,
+   "spanM": [
+    32784.0,
+    32784.0
+   ],
+   "bounds": {
+    "minX": -16384.0,
+    "maxX": 16400.02,
+    "minY": -16384.0,
+    "maxY": 16400.02
+   },
+   "heightM": [
+    -37.84,
+    6361.66
+   ],
+   "intervalM": 250.0,
+   "levels": 25,
+   "points": 49202,
+   "water": true,
+   "file": "arcade_asia_4roads_contours.json"
+  },
+  {
+   "map": "arcade_canyon_snow",
+   "source": "landmesh",
+   "px": [
+    1024,
+    1024
+   ],
+   "cellM": 32.01563979638695,
+   "spanM": [
+    32784.0,
+    32784.0
+   ],
+   "bounds": {
+    "minX": -16384.0,
+    "maxX": 16400.02,
+    "minY": -16384.0,
+    "maxY": 16400.02
+   },
+   "heightM": [
+    -250.74,
+    2940.49
+   ],
+   "intervalM": 100.0,
+   "levels": 29,
+   "points": 50249,
+   "water": true,
+   "file": "arcade_canyon_snow_contours.json"
+  },
+  {
+   "map": "arcade_ireland",
+   "source": "landmesh",
+   "px": [
+    1024,
+    1024
+   ],
+   "cellM": 32.01563979638695,
+   "spanM": [
+    32784.0,
+    32784.0
+   ],
+   "bounds": {
+    "minX": -16384.0,
+    "maxX": 16400.02,
+    "minY": -16384.0,
+    "maxY": 16400.02
+   },
+   "heightM": [
+    -269.98,
+    2928.71
+   ],
+   "intervalM": 100.0,
+   "levels": 29,
+   "points": 36614,
+   "water": true,
+   "file": "arcade_ireland_contours.json"
+  },
+  {
+   "map": "arcade_mediterranean",
+   "source": "landmesh",
+   "px": [
+    1024,
+    1024
+   ],
+   "cellM": 32.01563979638695,
+   "spanM": [
+    32784.0,
+    32784.0
+   ],
+   "bounds": {
+    "minX": -16384.0,
+    "maxX": 16400.02,
+    "minY": -16384.0,
+    "maxY": 16400.02
+   },
+   "heightM": [
+    -219.3,
+    2590.87
+   ],
+   "intervalM": 100.0,
+   "levels": 25,
+   "points": 39343,
+   "water": true,
+   "file": "arcade_mediterranean_contours.json"
+  },
+  {
+   "map": "arcade_norway_fjords",
+   "source": "landmesh",
+   "px": [
+    1024,
+    1024
+   ],
+   "cellM": 32.01563979638695,
+   "spanM": [
+    32784.0,
+    32784.0
+   ],
+   "bounds": {
+    "minX": -16384.0,
+    "maxX": 16400.02,
+    "minY": -16384.0,
+    "maxY": 16400.02
+   },
+   "heightM": [
+    -240.41,
+    2789.41
+   ],
+   "intervalM": 100.0,
+   "levels": 27,
+   "points": 49355,
+   "water": true,
+   "file": "arcade_norway_fjords_contours.json"
+  },
+  {
+   "map": "arcade_norway_green",
+   "source": "landmesh",
+   "px": [
+    1024,
+    1024
+   ],
+   "cellM": 32.01563979638695,
+   "spanM": [
+    32784.0,
+    32784.0
+   ],
+   "bounds": {
+    "minX": -16384.0,
+    "maxX": 16400.02,
+    "minY": -16384.0,
+    "maxY": 16400.02
+   },
+   "heightM": [
+    -533.42,
+    4010.1
+   ],
+   "intervalM": 200.0,
+   "levels": 20,
+   "points": 21874,
+   "water": true,
+   "file": "arcade_norway_green_contours.json"
+  },
+  {
+   "map": "arcade_norway_plain",
+   "source": "landmesh",
+   "px": [
+    1024,
+    1024
+   ],
+   "cellM": 32.01563979638695,
+   "spanM": [
+    32784.0,
+    32784.0
+   ],
+   "bounds": {
+    "minX": -16384.0,
+    "maxX": 16400.02,
+    "minY": -16384.0,
+    "maxY": 16400.02
+   },
+   "heightM": [
+    -592.42,
+    4041.16
+   ],
+   "intervalM": 200.0,
+   "levels": 20,
+   "points": 19355,
+   "water": true,
+   "file": "arcade_norway_plain_contours.json"
+  },
+  {
+   "map": "arcade_phiphi_crater",
+   "source": "landmesh",
+   "px": [
+    1024,
+    1024
+   ],
+   "cellM": 32.01563979638695,
+   "spanM": [
+    32784.0,
+    32784.0
+   ],
+   "bounds": {
+    "minX": -16384.0,
+    "maxX": 16400.02,
+    "minY": -16384.0,
+    "maxY": 16400.02
+   },
+   "heightM": [
+    -253.34,
+    2223.45
+   ],
+   "intervalM": 100.0,
+   "levels": 22,
+   "points": 22783,
+   "water": true,
+   "file": "arcade_phiphi_crater_contours.json"
+  },
+  {
+   "map": "arcade_phiphi_crater_rocks",
+   "source": "landmesh",
+   "px": [
+    1024,
+    1024
+   ],
+   "cellM": 32.01563979638695,
+   "spanM": [
+    32784.0,
+    32784.0
+   ],
+   "bounds": {
+    "minX": -16384.0,
+    "maxX": 16400.02,
+    "minY": -16384.0,
+    "maxY": 16400.02
+   },
+   "heightM": [
+    -502.47,
+    4554.23
+   ],
+   "intervalM": 200.0,
+   "levels": 22,
+   "points": 15406,
+   "water": true,
+   "file": "arcade_phiphi_crater_rocks_contours.json"
+  },
+  {
+   "map": "arcade_rice_terraces",
+   "source": "landmesh",
+   "px": [
+    1024,
+    1024
+   ],
+   "cellM": 32.01563979638695,
+   "spanM": [
+    32784.0,
+    32784.0
+   ],
+   "bounds": {
+    "minX": -16384.0,
+    "maxX": 16400.02,
+    "minY": -16384.0,
+    "maxY": 16400.02
+   },
+   "heightM": [
+    -375.59,
+    2998.39
+   ],
+   "intervalM": 100.0,
+   "levels": 29,
+   "points": 41114,
+   "water": true,
+   "file": "arcade_rice_terraces_contours.json"
+  },
+  {
+   "map": "arcade_snow_rocks",
+   "source": "landmesh",
+   "px": [
+    1024,
+    1024
+   ],
+   "cellM": 32.01563979638695,
+   "spanM": [
+    32784.0,
+    32784.0
+   ],
+   "bounds": {
+    "minX": -16384.0,
+    "maxX": 16400.02,
+    "minY": -16384.0,
+    "maxY": 16400.02
+   },
+   "heightM": [
+    -89.37,
+    2708.54
+   ],
+   "intervalM": 100.0,
+   "levels": 27,
+   "points": 38116,
+   "water": true,
+   "file": "arcade_snow_rocks_contours.json"
+  },
+  {
+   "map": "arcade_tabletop_mountain",
+   "source": "landmesh",
+   "px": [
+    1024,
+    1024
+   ],
+   "cellM": 64.0312795927739,
+   "spanM": [
+    65568.0,
+    65568.0
+   ],
+   "bounds": {
+    "minX": -32768.0,
+    "maxX": 32800.03,
+    "minY": -32768.0,
+    "maxY": 32800.03
+   },
+   "heightM": [
+    -2361.38,
+    3043.91
+   ],
+   "intervalM": 250.0,
+   "levels": 12,
+   "points": 13222,
+   "water": true,
+   "file": "arcade_tabletop_mountain_contours.json"
+  },
+  {
+   "map": "arcade_zhang_park",
+   "source": "landmesh",
+   "px": [
+    1024,
+    1024
+   ],
+   "cellM": 32.01563979638695,
+   "spanM": [
+    32784.0,
+    32784.0
+   ],
+   "bounds": {
+    "minX": -16384.0,
+    "maxX": 16400.02,
+    "minY": -16384.0,
+    "maxY": 16400.02
+   },
+   "heightM": [
+    -388.58,
+    2501.28
+   ],
+   "intervalM": 100.0,
+   "levels": 25,
+   "points": 51373,
+   "water": true,
+   "file": "arcade_zhang_park_contours.json"
+  },
+  {
+   "map": "avg_abandoned_factory",
+   "source": "hm2",
+   "px": [
+    2048,
+    2048
+   ],
+   "cellM": 2.0,
+   "spanM": [
+    4096.0,
+    4096.0
+   ],
+   "bounds": {
+    "minX": 0.0,
+    "maxX": 4096.0,
+    "minY": 0.0,
+    "maxY": 4096.0
+   },
+   "heightM": [
+    -12.3,
+    38.74
+   ],
+   "intervalM": 2.0,
+   "levels": 19,
+   "points": 6494,
+   "water": true,
+   "file": "avg_abandoned_factory_contours.json"
+  },
+  {
+   "map": "avg_abandoned_town",
+   "source": "hm2",
+   "px": [
+    2048,
+    2048
+   ],
+   "cellM": 2.0,
+   "spanM": [
+    4096.0,
+    4096.0
+   ],
+   "bounds": {
+    "minX": -2048.0,
+    "maxX": 2048.0,
+    "minY": -2048.0,
+    "maxY": 2048.0
+   },
+   "heightM": [
+    109.04,
+    389.41
+   ],
+   "intervalM": 10.0,
+   "levels": 28,
+   "points": 26323,
+   "water": false,
+   "file": "avg_abandoned_town_contours.json"
+  },
+  {
+   "map": "avg_africa_desert",
+   "source": "hm2",
+   "px": [
+    2048,
+    2048
+   ],
+   "cellM": 2.0,
+   "spanM": [
+    4096.0,
+    4096.0
+   ],
+   "bounds": {
+    "minX": 0.0,
+    "maxX": 4096.0,
+    "minY": 0.0,
+    "maxY": 4096.0
+   },
+   "heightM": [
+    -1.2,
+    137.15
+   ],
+   "intervalM": 5.0,
+   "levels": 27,
+   "points": 31487,
+   "water": true,
+   "file": "avg_africa_desert_contours.json"
+  },
+  {
+   "map": "avg_alaska_town",
+   "source": "hm2",
+   "px": [
+    2048,
+    2048
+   ],
+   "cellM": 2.0,
+   "spanM": [
+    4096.0,
+    4096.0
+   ],
+   "bounds": {
+    "minX": 0.0,
+    "maxX": 4096.0,
+    "minY": 0.0,
+    "maxY": 4096.0
+   },
+   "heightM": [
+    -28.94,
+    81.47
+   ],
+   "intervalM": 5.0,
+   "levels": 16,
+   "points": 7427,
+   "water": true,
+   "file": "avg_alaska_town_contours.json"
+  },
+  {
+   "map": "avg_american_valley",
+   "source": "hm2",
+   "px": [
+    2048,
+    2048
+   ],
+   "cellM": 2.0,
+   "spanM": [
+    4096.0,
+    4096.0
+   ],
+   "bounds": {
+    "minX": 0.0,
+    "maxX": 4096.0,
+    "minY": 0.0,
+    "maxY": 4096.0
+   },
+   "heightM": [
+    -2.8,
+    90.9
+   ],
+   "intervalM": 5.0,
+   "levels": 18,
+   "points": 20406,
+   "water": true,
+   "file": "avg_american_valley_contours.json"
+  },
+  {
+   "map": "avg_aral_sea",
+   "source": "hm2",
+   "px": [
+    2048,
+    2048
+   ],
+   "cellM": 2.0,
+   "spanM": [
+    4096.0,
+    4096.0
+   ],
+   "bounds": {
+    "minX": 0.0,
+    "maxX": 4096.0,
+    "minY": 0.0,
+    "maxY": 4096.0
+   },
+   "heightM": [
+    -0.27,
+    80.12
+   ],
+   "intervalM": 5.0,
+   "levels": 16,
+   "points": 6511,
+   "water": true,
+   "file": "avg_aral_sea_contours.json"
+  },
+  {
+   "map": "avg_arctic",
+   "source": "hm2",
+   "px": [
+    4096,
+    4096
+   ],
+   "cellM": 1.0,
+   "spanM": [
+    4096.0,
+    4096.0
+   ],
+   "bounds": {
+    "minX": 0.0,
+    "maxX": 4096.0,
+    "minY": 0.0,
+    "maxY": 4096.0
+   },
+   "heightM": [
+    -21.85,
+    98.4
+   ],
+   "intervalM": 5.0,
+   "levels": 19,
+   "points": 16048,
+   "water": true,
+   "file": "avg_arctic_contours.json"
+  },
+  {
+   "map": "avg_ardennes",
+   "source": "hm2",
+   "px": [
+    2048,
+    2048
+   ],
+   "cellM": 2.0,
+   "spanM": [
+    4096.0,
+    4096.0
+   ],
+   "bounds": {
+    "minX": 0.0,
+    "maxX": 4096.0,
+    "minY": 0.0,
+    "maxY": 4096.0
+   },
+   "heightM": [
+    217.84,
+    320.12
+   ],
+   "intervalM": 5.0,
+   "levels": 21,
+   "points": 7082,
+   "water": false,
+   "file": "avg_ardennes_contours.json"
+  },
+  {
+   "map": "avg_ardennes_snow",
+   "source": "hm2",
+   "px": [
+    2048,
+    2048
+   ],
+   "cellM": 2.0,
+   "spanM": [
+    4096.0,
+    4096.0
+   ],
+   "bounds": {
+    "minX": 0.0,
+    "maxX": 4096.0,
+    "minY": 0.0,
+    "maxY": 4096.0
+   },
+   "heightM": [
+    217.84,
+    320.12
+   ],
+   "intervalM": 5.0,
+   "levels": 21,
+   "points": 7083,
+   "water": false,
+   "file": "avg_ardennes_snow_contours.json"
+  },
+  {
+   "map": "avg_berlin",
+   "source": "hm2",
+   "px": [
+    2048,
+    2048
+   ],
+   "cellM": 2.0,
+   "spanM": [
+    4096.0,
+    4096.0
+   ],
+   "bounds": {
+    "minX": 0.0,
+    "maxX": 4096.0,
+    "minY": 0.0,
+    "maxY": 4096.0
+   },
+   "heightM": [
+    15.0,
+    75.03
+   ],
+   "intervalM": 2.0,
+   "levels": 30,
+   "points": 15654,
+   "water": false,
+   "file": "avg_berlin_contours.json"
+  },
+  {
+   "map": "avg_breslau",
+   "source": "hm2",
+   "px": [
+    2048,
+    2048
+   ],
+   "cellM": 2.0,
+   "spanM": [
+    4096.0,
+    4096.0
+   ],
+   "bounds": {
+    "minX": -2048.0,
+    "maxX": 2048.0,
+    "minY": -2048.0,
+    "maxY": 2048.0
+   },
+   "heightM": [
+    -9.34,
+    15.91
+   ],
+   "intervalM": 1.0,
+   "levels": 15,
+   "points": 6750,
+   "water": true,
+   "file": "avg_breslau_contours.json"
+  },
+  {
+   "map": "avg_container_port",
+   "source": "hm2",
+   "px": [
+    2048,
+    2048
+   ],
+   "cellM": 2.0,
+   "spanM": [
+    4096.0,
+    4096.0
+   ],
+   "bounds": {
+    "minX": -2048.0,
+    "maxX": 2048.0,
+    "minY": -2048.0,
+    "maxY": 2048.0
+   },
+   "heightM": [
+    -17.51,
+    13.3
+   ],
+   "intervalM": 1.0,
+   "levels": 13,
+   "points": 1233,
+   "water": true,
+   "file": "avg_container_port_contours.json"
+  },
+  {
+   "map": "avg_eastern_europe",
+   "source": "hm2",
+   "px": [
+    2048,
+    2048
+   ],
+   "cellM": 2.0,
+   "spanM": [
+    4096.0,
+    4096.0
+   ],
+   "bounds": {
+    "minX": 0.0,
+    "maxX": 4096.0,
+    "minY": 0.0,
+    "maxY": 4096.0
+   },
+   "heightM": [
+    -7.3,
+    53.47
+   ],
+   "intervalM": 2.0,
+   "levels": 26,
+   "points": 21519,
+   "water": true,
+   "file": "avg_eastern_europe_contours.json"
+  },
+  {
+   "map": "avg_egypt_sinai",
+   "source": "hm2",
+   "px": [
+    2048,
+    2048
+   ],
+   "cellM": 2.0,
+   "spanM": [
+    4096.0,
+    4096.0
+   ],
+   "bounds": {
+    "minX": 0.0,
+    "maxX": 4096.0,
+    "minY": 0.0,
+    "maxY": 4096.0
+   },
+   "heightM": [
+    618.03,
+    919.77
+   ],
+   "intervalM": 10.0,
+   "levels": 30,
+   "points": 7894,
+   "water": false,
+   "file": "avg_egypt_sinai_contours.json"
+  },
+  {
+   "map": "avg_european_fortress",
+   "source": "hm2",
+   "px": [
+    2048,
+    2048
+   ],
+   "cellM": 2.0,
+   "spanM": [
+    4096.0,
+    4096.0
+   ],
+   "bounds": {
+    "minX": -2048.0,
+    "maxX": 2048.0,
+    "minY": -4096.0,
+    "maxY": 0.0
+   },
+   "heightM": [
+    -11.9,
+    58.2
+   ],
+   "intervalM": 2.0,
+   "levels": 29,
+   "points": 30176,
+   "water": true,
+   "file": "avg_european_fortress_contours.json"
+  },
+  {
+   "map": "avg_falklands",
+   "source": "hm2",
+   "px": [
+    2048,
+    2048
+   ],
+   "cellM": 2.0,
+   "spanM": [
+    4096.0,
+    4096.0
+   ],
+   "bounds": {
+    "minX": 0.0,
+    "maxX": 4096.0,
+    "minY": 0.0,
+    "maxY": 4096.0
+   },
+   "heightM": [
+    -75.66,
+    86.4
+   ],
+   "intervalM": 5.0,
+   "levels": 17,
+   "points": 6089,
+   "water": true,
+   "file": "avg_falklands_contours.json"
+  },
+  {
+   "map": "avg_finland",
+   "source": "hm2",
+   "px": [
+    2048,
+    2048
+   ],
+   "cellM": 1.0,
+   "spanM": [
+    2048.0,
+    2048.0
+   ],
+   "bounds": {
+    "minX": 0.0,
+    "maxX": 2048.0,
+    "minY": 0.0,
+    "maxY": 2048.0
+   },
+   "heightM": [
+    -9.45,
+    109.94
+   ],
+   "intervalM": 5.0,
+   "levels": 21,
+   "points": 6733,
+   "water": true,
+   "file": "avg_finland_contours.json"
+  },
+  {
+   "map": "avg_football_field",
+   "source": "hm2",
+   "px": [
+    2048,
+    2048
+   ],
+   "cellM": 1.0,
+   "spanM": [
+    2048.0,
+    2048.0
+   ],
+   "bounds": {
+    "minX": -1024.0,
+    "maxX": 1024.0,
+    "minY": -1024.0,
+    "maxY": 1024.0
+   },
+   "heightM": [
+    7.16,
+    32.36
+   ],
+   "intervalM": 1.0,
+   "levels": 15,
+   "points": 1863,
+   "water": false,
+   "file": "avg_football_field_contours.json"
+  },
+  {
+   "map": "avg_fulda",
+   "source": "hm2",
+   "px": [
+    2048,
+    2048
+   ],
+   "cellM": 2.0,
+   "spanM": [
+    4096.0,
+    4096.0
+   ],
+   "bounds": {
+    "minX": 0.0,
+    "maxX": 4096.0,
+    "minY": 0.0,
+    "maxY": 4096.0
+   },
+   "heightM": [
+    96.51,
+    239.45
+   ],
+   "intervalM": 5.0,
+   "levels": 28,
+   "points": 12313,
+   "water": false,
+   "file": "avg_fulda_contours.json"
+  },
+  {
+   "map": "avg_greece",
+   "source": "hm2",
+   "px": [
+    2048,
+    2048
+   ],
+   "cellM": 2.0,
+   "spanM": [
+    4096.0,
+    4096.0
+   ],
+   "bounds": {
+    "minX": -2048.0,
+    "maxX": 2048.0,
+    "minY": -2048.0,
+    "maxY": 2048.0
+   },
+   "heightM": [
+    -40.39,
+    203.88
+   ],
+   "intervalM": 10.0,
+   "levels": 20,
+   "points": 12852,
+   "water": true,
+   "file": "avg_greece_contours.json"
+  },
+  {
+   "map": "avg_guadalcanal",
+   "source": "hm2",
+   "px": [
+    4096,
+    4096
+   ],
+   "cellM": 1.0,
+   "spanM": [
+    4096.0,
+    4096.0
+   ],
+   "bounds": {
+    "minX": 0.0,
+    "maxX": 4096.0,
+    "minY": 0.0,
+    "maxY": 4096.0
+   },
+   "heightM": [
+    -443.65,
+    220.17
+   ],
+   "intervalM": 25.0,
+   "levels": 8,
+   "points": 1746,
+   "water": true,
+   "file": "avg_guadalcanal_contours.json"
+  },
+  {
+   "map": "avg_hurtgen",
+   "source": "hm2",
+   "px": [
+    2048,
+    2048
+   ],
+   "cellM": 2.0,
+   "spanM": [
+    4096.0,
+    4096.0
+   ],
+   "bounds": {
+    "minX": 0.0,
+    "maxX": 4096.0,
+    "minY": 0.0,
+    "maxY": 4096.0
+   },
+   "heightM": [
+    -17.93,
+    66.21
+   ],
+   "intervalM": 5.0,
+   "levels": 13,
+   "points": 19154,
+   "water": true,
+   "file": "avg_hurtgen_contours.json"
+  },
+  {
+   "map": "avg_iberian_castle",
+   "source": "hm2",
+   "px": [
+    2048,
+    2048
+   ],
+   "cellM": 2.0,
+   "spanM": [
+    4096.0,
+    4096.0
+   ],
+   "bounds": {
+    "minX": 0.0,
+    "maxX": 4096.0,
+    "minY": 0.0,
+    "maxY": 4096.0
+   },
+   "heightM": [
+    0.0,
+    103.53
+   ],
+   "intervalM": 5.0,
+   "levels": 20,
+   "points": 13923,
+   "water": false,
+   "file": "avg_iberian_castle_contours.json"
+  },
+  {
+   "map": "avg_ireland",
+   "source": "hm2",
+   "px": [
+    2048,
+    2048
+   ],
+   "cellM": 1.0,
+   "spanM": [
+    2048.0,
+    2048.0
+   ],
+   "bounds": {
+    "minX": 0.0,
+    "maxX": 2048.0,
+    "minY": 0.0,
+    "maxY": 2048.0
+   },
+   "heightM": [
+    -99.38,
+    662.86
+   ],
+   "intervalM": 25.0,
+   "levels": 26,
+   "points": 4486,
+   "water": true,
+   "file": "avg_ireland_contours.json"
+  },
+  {
+   "map": "avg_israel",
+   "source": "hm2",
+   "px": [
+    2048,
+    2048
+   ],
+   "cellM": 2.0,
+   "spanM": [
+    4096.0,
+    4096.0
+   ],
+   "bounds": {
+    "minX": 0.0,
+    "maxX": 4096.0,
+    "minY": 0.0,
+    "maxY": 4096.0
+   },
+   "heightM": [
+    -41.65,
+    26.31
+   ],
+   "intervalM": 2.0,
+   "levels": 13,
+   "points": 2246,
+   "water": true,
+   "file": "avg_israel_contours.json"
+  },
+  {
+   "map": "avg_japan",
+   "source": "hm2",
+   "px": [
+    2048,
+    2048
+   ],
+   "cellM": 2.0,
+   "spanM": [
+    4096.0,
+    4096.0
+   ],
+   "bounds": {
+    "minX": 0.0,
+    "maxX": 4096.0,
+    "minY": 0.0,
+    "maxY": 4096.0
+   },
+   "heightM": [
+    312.8,
+    679.1
+   ],
+   "intervalM": 20.0,
+   "levels": 18,
+   "points": 5657,
+   "water": false,
+   "file": "avg_japan_contours.json"
+  },
+  {
+   "map": "avg_karantan",
+   "source": "hm2",
+   "px": [
+    2048,
+    2048
+   ],
+   "cellM": 2.0,
+   "spanM": [
+    4096.0,
+    4096.0
+   ],
+   "bounds": {
+    "minX": 0.0,
+    "maxX": 4096.0,
+    "minY": 0.0,
+    "maxY": 4096.0
+   },
+   "heightM": [
+    -0.0,
+    74.93
+   ],
+   "intervalM": 2.0,
+   "levels": 36,
+   "points": 49993,
+   "water": true,
+   "file": "avg_karantan_contours.json"
+  },
+  {
+   "map": "avg_karelia_forest_a",
+   "source": "hm2",
+   "px": [
+    1024,
+    1024
+   ],
+   "cellM": 2.0,
+   "spanM": [
+    2048.0,
+    2048.0
+   ],
+   "bounds": {
+    "minX": 4096.0,
+    "maxX": 6144.0,
+    "minY": -2048.0,
+    "maxY": 0.0
+   },
+   "heightM": [
+    -16.11,
+    336.7
+   ],
+   "intervalM": 20.0,
+   "levels": 16,
+   "points": 10180,
+   "water": true,
+   "file": "avg_karelia_forest_a_contours.json"
+  },
+  {
+   "map": "avg_karpaty_passage",
+   "source": "hm2",
+   "px": [
+    2048,
+    2048
+   ],
+   "cellM": 1.0,
+   "spanM": [
+    2048.0,
+    2048.0
+   ],
+   "bounds": {
+    "minX": 0.0,
+    "maxX": 2048.0,
+    "minY": 0.0,
+    "maxY": 2048.0
+   },
+   "heightM": [
+    252.47,
+    458.38
+   ],
+   "intervalM": 10.0,
+   "levels": 20,
+   "points": 9352,
+   "water": false,
+   "file": "avg_karpaty_passage_contours.json"
+  },
+  {
+   "map": "avg_korea_lake",
+   "source": "hm2",
+   "px": [
+    2048,
+    2048
+   ],
+   "cellM": 1.0,
+   "spanM": [
+    2048.0,
+    2048.0
+   ],
+   "bounds": {
+    "minX": 0.0,
+    "maxX": 2048.0,
+    "minY": 0.0,
+    "maxY": 2048.0
+   },
+   "heightM": [
+    328.19,
+    499.82
+   ],
+   "intervalM": 10.0,
+   "levels": 17,
+   "points": 13405,
+   "water": false,
+   "file": "avg_korea_lake_contours.json"
+  },
+  {
+   "map": "avg_krymsk",
+   "source": "hm2",
+   "px": [
+    2048,
+    2048
+   ],
+   "cellM": 2.0,
+   "spanM": [
+    4096.0,
+    4096.0
+   ],
+   "bounds": {
+    "minX": 0.0,
+    "maxX": 4096.0,
+    "minY": 0.0,
+    "maxY": 4096.0
+   },
+   "heightM": [
+    135.92,
+    408.79
+   ],
+   "intervalM": 10.0,
+   "levels": 27,
+   "points": 13813,
+   "water": false,
+   "file": "avg_krymsk_contours.json"
+  },
+  {
+   "map": "avg_kursk_villages",
+   "source": "hm2",
+   "px": [
+    2048,
+    2048
+   ],
+   "cellM": 2.0,
+   "spanM": [
+    4096.0,
+    4096.0
+   ],
+   "bounds": {
+    "minX": 0.0,
+    "maxX": 4096.0,
+    "minY": 0.0,
+    "maxY": 4096.0
+   },
+   "heightM": [
+    -25.95,
+    81.26
+   ],
+   "intervalM": 5.0,
+   "levels": 16,
+   "points": 6796,
+   "water": true,
+   "file": "avg_kursk_villages_contours.json"
+  },
+  {
+   "map": "avg_lazzaro_italy_new_city",
+   "source": "hm2",
+   "px": [
+    2048,
+    2048
+   ],
+   "cellM": 2.0,
+   "spanM": [
+    4096.0,
+    4096.0
+   ],
+   "bounds": {
+    "minX": -2048.0,
+    "maxX": 2048.0,
+    "minY": -2048.0,
+    "maxY": 2048.0
+   },
+   "heightM": [
+    -70.04,
+    421.23
+   ],
+   "intervalM": 20.0,
+   "levels": 20,
+   "points": 7470,
+   "water": true,
+   "file": "avg_lazzaro_italy_new_city_contours.json"
+  },
+  {
+   "map": "avg_maginot_rework",
+   "source": "hm2",
+   "px": [
+    4096,
+    4096
+   ],
+   "cellM": 0.5,
+   "spanM": [
+    2048.0,
+    2048.0
+   ],
+   "bounds": {
+    "minX": 0.0,
+    "maxX": 2048.0,
+    "minY": 0.0,
+    "maxY": 2048.0
+   },
+   "heightM": [
+    -5.82,
+    42.68
+   ],
+   "intervalM": 2.0,
+   "levels": 21,
+   "points": 17718,
+   "water": true,
+   "file": "avg_maginot_rework_contours.json"
+  },
+  {
+   "map": "avg_mozdok",
+   "source": "hm2",
+   "px": [
+    2048,
+    2048
+   ],
+   "cellM": 2.0,
+   "spanM": [
+    4096.0,
+    4096.0
+   ],
+   "bounds": {
+    "minX": 0.0,
+    "maxX": 4096.0,
+    "minY": 0.0,
+    "maxY": 4096.0
+   },
+   "heightM": [
+    -94.0,
+    97.2
+   ],
+   "intervalM": 10.0,
+   "levels": 9,
+   "points": 6052,
+   "water": true,
+   "file": "avg_mozdok_contours.json"
+  },
+  {
+   "map": "avg_netherlands",
+   "source": "hm2",
+   "px": [
+    2048,
+    2048
+   ],
+   "cellM": 2.0,
+   "spanM": [
+    4096.0,
+    4096.0
+   ],
+   "bounds": {
+    "minX": -2048.0,
+    "maxX": 2048.0,
+    "minY": -2048.0,
+    "maxY": 2048.0
+   },
+   "heightM": [
+    -32.95,
+    34.65
+   ],
+   "intervalM": 2.0,
+   "levels": 17,
+   "points": 12863,
+   "water": true,
+   "file": "avg_netherlands_contours.json"
+  },
+  {
+   "map": "avg_normandy",
+   "source": "hm2",
+   "px": [
+    2048,
+    2048
+   ],
+   "cellM": 2.0,
+   "spanM": [
+    4096.0,
+    4096.0
+   ],
+   "bounds": {
+    "minX": 0.0,
+    "maxX": 4096.0,
+    "minY": 0.0,
+    "maxY": 4096.0
+   },
+   "heightM": [
+    -22.24,
+    124.79
+   ],
+   "intervalM": 5.0,
+   "levels": 24,
+   "points": 7303,
+   "water": true,
+   "file": "avg_normandy_contours.json"
+  },
+  {
+   "map": "avg_northern_india",
+   "source": "hm2",
+   "px": [
+    2048,
+    2048
+   ],
+   "cellM": 2.0,
+   "spanM": [
+    4096.0,
+    4096.0
+   ],
+   "bounds": {
+    "minX": -4096.0,
+    "maxX": 0.0,
+    "minY": -4096.0,
+    "maxY": 0.0
+   },
+   "heightM": [
+    862.72,
+    1504.98
+   ],
+   "intervalM": 25.0,
+   "levels": 26,
+   "points": 14981,
+   "water": false,
+   "file": "avg_northern_india_contours.json"
+  },
+  {
+   "map": "avg_northern_valley",
+   "source": "hm2",
+   "px": [
+    2048,
+    2048
+   ],
+   "cellM": 2.0,
+   "spanM": [
+    4096.0,
+    4096.0
+   ],
+   "bounds": {
+    "minX": -2048.0,
+    "maxX": 2048.0,
+    "minY": -2048.0,
+    "maxY": 2048.0
+   },
+   "heightM": [
+    -8.67,
+    614.34
+   ],
+   "intervalM": 25.0,
+   "levels": 24,
+   "points": 9553,
+   "water": true,
+   "file": "avg_northern_valley_contours.json"
+  },
+  {
+   "map": "avg_nuclear_incident",
+   "source": "hm2",
+   "px": [
+    2048,
+    2048
+   ],
+   "cellM": 2.0,
+   "spanM": [
+    4096.0,
+    4096.0
+   ],
+   "bounds": {
+    "minX": 0.0,
+    "maxX": 4096.0,
+    "minY": 0.0,
+    "maxY": 4096.0
+   },
+   "heightM": [
+    -28.94,
+    81.47
+   ],
+   "intervalM": 5.0,
+   "levels": 16,
+   "points": 7490,
+   "water": true,
+   "file": "avg_nuclear_incident_contours.json"
+  },
+  {
+   "map": "avg_poland",
+   "source": "hm2",
+   "px": [
+    2048,
+    2048
+   ],
+   "cellM": 2.0,
+   "spanM": [
+    4096.0,
+    4096.0
+   ],
+   "bounds": {
+    "minX": 0.0,
+    "maxX": 4096.0,
+    "minY": 0.0,
+    "maxY": 4096.0
+   },
+   "heightM": [
+    -17.6,
+    43.39
+   ],
+   "intervalM": 2.0,
+   "levels": 21,
+   "points": 14027,
+   "water": true,
+   "file": "avg_poland_contours.json"
+  },
+  {
+   "map": "avg_poland_snow",
+   "source": "hm2",
+   "px": [
+    2048,
+    2048
+   ],
+   "cellM": 2.0,
+   "spanM": [
+    4096.0,
+    4096.0
+   ],
+   "bounds": {
+    "minX": 0.0,
+    "maxX": 4096.0,
+    "minY": 0.0,
+    "maxY": 4096.0
+   },
+   "heightM": [
+    -10.28,
+    43.34
+   ],
+   "intervalM": 2.0,
+   "levels": 21,
+   "points": 13901,
+   "water": true,
+   "file": "avg_poland_snow_contours.json"
+  },
+  {
+   "map": "avg_port_novorossiysk",
+   "source": "hm2",
+   "px": [
+    2048,
+    2048
+   ],
+   "cellM": 2.0,
+   "spanM": [
+    4096.0,
+    4096.0
+   ],
+   "bounds": {
+    "minX": 0.0,
+    "maxX": 4096.0,
+    "minY": 0.0,
+    "maxY": 4096.0
+   },
+   "heightM": [
+    -47.47,
+    337.73
+   ],
+   "intervalM": 20.0,
+   "levels": 16,
+   "points": 1435,
+   "water": true,
+   "file": "avg_port_novorossiysk_contours.json"
+  },
+  {
+   "map": "avg_red_desert",
+   "source": "hm2",
+   "px": [
+    2048,
+    2048
+   ],
+   "cellM": 2.0,
+   "spanM": [
+    4096.0,
+    4096.0
+   ],
+   "bounds": {
+    "minX": 0.0,
+    "maxX": 4096.0,
+    "minY": 0.0,
+    "maxY": 4096.0
+   },
+   "heightM": [
+    180.83,
+    283.61
+   ],
+   "intervalM": 5.0,
+   "levels": 20,
+   "points": 23162,
+   "water": false,
+   "file": "avg_red_desert_contours.json"
+  },
+  {
+   "map": "avg_rheinland",
+   "source": "hm2",
+   "px": [
+    2048,
+    2048
+   ],
+   "cellM": 2.0,
+   "spanM": [
+    4096.0,
+    4096.0
+   ],
+   "bounds": {
+    "minX": 0.0,
+    "maxX": 4096.0,
+    "minY": 0.0,
+    "maxY": 4096.0
+   },
+   "heightM": [
+    8.57,
+    41.49
+   ],
+   "intervalM": 1.0,
+   "levels": 33,
+   "points": 19446,
+   "water": false,
+   "file": "avg_rheinland_contours.json"
+  },
+  {
+   "map": "avg_sector_montmedy",
+   "source": "hm2",
+   "px": [
+    2048,
+    2048
+   ],
+   "cellM": 2.0,
+   "spanM": [
+    4096.0,
+    4096.0
+   ],
+   "bounds": {
+    "minX": -4096.0,
+    "maxX": 0.0,
+    "minY": 0.0,
+    "maxY": 4096.0
+   },
+   "heightM": [
+    -47.28,
+    90.09
+   ],
+   "intervalM": 5.0,
+   "levels": 18,
+   "points": 10960,
+   "water": true,
+   "file": "avg_sector_montmedy_contours.json"
+  },
+  {
+   "map": "avg_sector_montmedy_snow",
+   "source": "hm2",
+   "px": [
+    2048,
+    2048
+   ],
+   "cellM": 2.0,
+   "spanM": [
+    4096.0,
+    4096.0
+   ],
+   "bounds": {
+    "minX": -4096.0,
+    "maxX": 0.0,
+    "minY": 0.0,
+    "maxY": 4096.0
+   },
+   "heightM": [
+    -47.28,
+    90.09
+   ],
+   "intervalM": 5.0,
+   "levels": 18,
+   "points": 10984,
+   "water": true,
+   "file": "avg_sector_montmedy_snow_contours.json"
+  },
+  {
+   "map": "avg_snow_alps",
+   "source": "hm2",
+   "px": [
+    2048,
+    2048
+   ],
+   "cellM": 1.0,
+   "spanM": [
+    2048.0,
+    2048.0
+   ],
+   "bounds": {
+    "minX": 0.0,
+    "maxX": 2048.0,
+    "minY": 0.0,
+    "maxY": 2048.0
+   },
+   "heightM": [
+    163.91,
+    386.4
+   ],
+   "intervalM": 10.0,
+   "levels": 22,
+   "points": 4745,
+   "water": false,
+   "file": "avg_snow_alps_contours.json"
+  },
+  {
+   "map": "avg_soviet_range",
+   "source": "hm2",
+   "px": [
+    2048,
+    2048
+   ],
+   "cellM": 2.0,
+   "spanM": [
+    4096.0,
+    4096.0
+   ],
+   "bounds": {
+    "minX": 0.0,
+    "maxX": 4096.0,
+    "minY": 0.0,
+    "maxY": 4096.0
+   },
+   "heightM": [
+    -4.07,
+    22.35
+   ],
+   "intervalM": 1.0,
+   "levels": 22,
+   "points": 12136,
+   "water": true,
+   "file": "avg_soviet_range_contours.json"
+  },
+  {
+   "map": "avg_soviet_suburban",
+   "source": "hm2",
+   "px": [
+    2048,
+    2048
+   ],
+   "cellM": 2.0,
+   "spanM": [
+    4096.0,
+    4096.0
+   ],
+   "bounds": {
+    "minX": 0.0,
+    "maxX": 4096.0,
+    "minY": 0.0,
+    "maxY": 4096.0
+   },
+   "heightM": [
+    -15.17,
+    20.81
+   ],
+   "intervalM": 2.0,
+   "levels": 10,
+   "points": 7307,
+   "water": true,
+   "file": "avg_soviet_suburban_contours.json"
+  },
+  {
+   "map": "avg_soviet_suburban_snow",
+   "source": "hm2",
+   "px": [
+    2048,
+    2048
+   ],
+   "cellM": 2.0,
+   "spanM": [
+    4096.0,
+    4096.0
+   ],
+   "bounds": {
+    "minX": 0.0,
+    "maxX": 4096.0,
+    "minY": 0.0,
+    "maxY": 4096.0
+   },
+   "heightM": [
+    -15.17,
+    20.81
+   ],
+   "intervalM": 2.0,
+   "levels": 10,
+   "points": 7452,
+   "water": true,
+   "file": "avg_soviet_suburban_snow_contours.json"
+  },
+  {
+   "map": "avg_stalingrad_factory",
+   "source": "hm2",
+   "px": [
+    2048,
+    2048
+   ],
+   "cellM": 2.0,
+   "spanM": [
+    4096.0,
+    4096.0
+   ],
+   "bounds": {
+    "minX": 0.0,
+    "maxX": 4096.0,
+    "minY": 0.0,
+    "maxY": 4096.0
+   },
+   "heightM": [
+    -11.85,
+    103.98
+   ],
+   "intervalM": 5.0,
+   "levels": 20,
+   "points": 5900,
+   "water": true,
+   "file": "avg_stalingrad_factory_contours.json"
+  },
+  {
+   "map": "avg_sweden",
+   "source": "hm2",
+   "px": [
+    2048,
+    2048
+   ],
+   "cellM": 2.0,
+   "spanM": [
+    4096.0,
+    4096.0
+   ],
+   "bounds": {
+    "minX": -2048.0,
+    "maxX": 2048.0,
+    "minY": -2048.0,
+    "maxY": 2048.0
+   },
+   "heightM": [
+    -173.75,
+    301.5
+   ],
+   "intervalM": 20.0,
+   "levels": 15,
+   "points": 992,
+   "water": true,
+   "file": "avg_sweden_contours.json"
+  },
+  {
+   "map": "avg_syria",
+   "source": "hm2",
+   "px": [
+    2048,
+    2048
+   ],
+   "cellM": 4.0,
+   "spanM": [
+    8192.0,
+    8192.0
+   ],
+   "bounds": {
+    "minX": -4096.0,
+    "maxX": 4096.0,
+    "minY": -4096.0,
+    "maxY": 4096.0
+   },
+   "heightM": [
+    80.85,
+    616.65
+   ],
+   "intervalM": 20.0,
+   "levels": 26,
+   "points": 29130,
+   "water": false,
+   "file": "avg_syria_contours.json"
+  },
+  {
+   "map": "avg_training_ground",
+   "source": "hm2",
+   "px": [
+    2048,
+    2048
+   ],
+   "cellM": 2.0,
+   "spanM": [
+    4096.0,
+    4096.0
+   ],
+   "bounds": {
+    "minX": 0.0,
+    "maxX": 4096.0,
+    "minY": 0.0,
+    "maxY": 4096.0
+   },
+   "heightM": [
+    129.57,
+    416.16
+   ],
+   "intervalM": 10.0,
+   "levels": 28,
+   "points": 12098,
+   "water": false,
+   "file": "avg_training_ground_contours.json"
+  },
+  {
+   "map": "avg_tunisia_desert",
+   "source": "hm2",
+   "px": [
+    2048,
+    2048
+   ],
+   "cellM": 2.0,
+   "spanM": [
+    4096.0,
+    4096.0
+   ],
+   "bounds": {
+    "minX": 0.0,
+    "maxX": 4096.0,
+    "minY": 0.0,
+    "maxY": 4096.0
+   },
+   "heightM": [
+    -386.01,
+    49.83
+   ],
+   "intervalM": 20.0,
+   "levels": 2,
+   "points": 1076,
+   "water": true,
+   "file": "avg_tunisia_desert_contours.json"
+  },
+  {
+   "map": "avg_vietnam_hills",
+   "source": "hm2",
+   "px": [
+    2048,
+    2048
+   ],
+   "cellM": 2.0,
+   "spanM": [
+    4096.0,
+    4096.0
+   ],
+   "bounds": {
+    "minX": -2048.0,
+    "maxX": 2048.0,
+    "minY": -2048.0,
+    "maxY": 2048.0
+   },
+   "heightM": [
+    -375.84,
+    430.8
+   ],
+   "intervalM": 25.0,
+   "levels": 17,
+   "points": 5545,
+   "water": true,
+   "file": "avg_vietnam_hills_contours.json"
+  },
+  {
+   "map": "avg_vlaanderen",
+   "source": "hm2",
+   "px": [
+    4096,
+    4096
+   ],
+   "cellM": 0.5,
+   "spanM": [
+    2048.0,
+    2048.0
+   ],
+   "bounds": {
+    "minX": 0.0,
+    "maxX": 2048.0,
+    "minY": 0.0,
+    "maxY": 2048.0
+   },
+   "heightM": [
+    -5.82,
+    42.68
+   ],
+   "intervalM": 2.0,
+   "levels": 21,
+   "points": 10933,
+   "water": true,
+   "file": "avg_vlaanderen_contours.json"
+  },
+  {
+   "map": "avg_volokolamsk",
+   "source": "hm2",
+   "px": [
+    2048,
+    2048
+   ],
+   "cellM": 2.0,
+   "spanM": [
+    4096.0,
+    4096.0
+   ],
+   "bounds": {
+    "minX": -2048.0,
+    "maxX": 2048.0,
+    "minY": -2048.0,
+    "maxY": 2048.0
+   },
+   "heightM": [
+    46.91,
+    83.18
+   ],
+   "intervalM": 2.0,
+   "levels": 18,
+   "points": 28629,
+   "water": false,
+   "file": "avg_volokolamsk_contours.json"
+  },
+  {
+   "map": "avg_western_europe",
+   "source": "hm2",
+   "px": [
+    2048,
+    2048
+   ],
+   "cellM": 2.0,
+   "spanM": [
+    4096.0,
+    4096.0
+   ],
+   "bounds": {
+    "minX": -2048.0,
+    "maxX": 2048.0,
+    "minY": -2048.0,
+    "maxY": 2048.0
+   },
+   "heightM": [
+    -5.13,
+    30.0
+   ],
+   "intervalM": 2.0,
+   "levels": 14,
+   "points": 17491,
+   "water": true,
+   "file": "avg_western_europe_contours.json"
+  },
+  {
+   "map": "avn_africa_gulf",
+   "source": "landmesh",
+   "px": [
+    1024,
+    1024
+   ],
+   "cellM": 64.0312795927739,
+   "spanM": [
+    65568.0,
+    65568.0
+   ],
+   "bounds": {
+    "minX": -32768.0,
+    "maxX": 32800.03,
+    "minY": -32768.0,
+    "maxY": 32800.03
+   },
+   "heightM": [
+    -299.98,
+    1495.96
+   ],
+   "intervalM": 100.0,
+   "levels": 14,
+   "points": 3096,
+   "water": true,
+   "file": "avn_africa_gulf_contours.json"
+  },
+  {
+   "map": "avn_aleutian_islands",
+   "source": "landmesh",
+   "px": [
+    1024,
+    1024
+   ],
+   "cellM": 64.0312795927739,
+   "spanM": [
+    65568.0,
+    65568.0
+   ],
+   "bounds": {
+    "minX": -32768.0,
+    "maxX": 32800.03,
+    "minY": -32768.0,
+    "maxY": 32800.03
+   },
+   "heightM": [
+    -200.5,
+    1087.11
+   ],
+   "intervalM": 50.0,
+   "levels": 21,
+   "points": 22247,
+   "water": true,
+   "file": "avn_aleutian_islands_contours.json"
+  },
+  {
+   "map": "avn_alps_fjord",
+   "source": "hm2",
+   "px": [
+    2048,
+    2048
+   ],
+   "cellM": 4.0,
+   "spanM": [
+    8192.0,
+    8192.0
+   ],
+   "bounds": {
+    "minX": 0.0,
+    "maxX": 8192.0,
+    "minY": 0.0,
+    "maxY": 8192.0
+   },
+   "heightM": [
+    -200.5,
+    92.57
+   ],
+   "intervalM": 10.0,
+   "levels": 9,
+   "points": 5984,
+   "water": true,
+   "file": "avn_alps_fjord_contours.json"
+  },
+  {
+   "map": "avn_arabian_north_coast",
+   "source": "hm2",
+   "px": [
+    2048,
+    2048
+   ],
+   "cellM": 2.0,
+   "spanM": [
+    4096.0,
+    4096.0
+   ],
+   "bounds": {
+    "minX": 0.0,
+    "maxX": 4096.0,
+    "minY": 0.0,
+    "maxY": 4096.0
+   },
+   "heightM": [
+    -200.5,
+    50.59
+   ],
+   "intervalM": 10.0,
+   "levels": 5,
+   "points": 1701,
+   "water": true,
+   "file": "avn_arabian_north_coast_contours.json"
+  },
+  {
+   "map": "avn_bering_sea",
+   "source": "landmesh",
+   "px": [
+    1024,
+    1024
+   ],
+   "cellM": 64.0312795927739,
+   "spanM": [
+    65568.0,
+    65568.0
+   ],
+   "bounds": {
+    "minX": -32768.0,
+    "maxX": 32800.03,
+    "minY": -32768.0,
+    "maxY": 32800.03
+   },
+   "heightM": [
+    -216.5,
+    1397.91
+   ],
+   "intervalM": 50.0,
+   "levels": 27,
+   "points": 27201,
+   "water": true,
+   "file": "avn_bering_sea_contours.json"
+  },
+  {
+   "map": "avn_blacksea_port",
+   "source": "hm2",
+   "px": [
+    2048,
+    2048
+   ],
+   "cellM": 2.0,
+   "spanM": [
+    4096.0,
+    4096.0
+   ],
+   "bounds": {
+    "minX": 0.0,
+    "maxX": 4096.0,
+    "minY": 0.0,
+    "maxY": 4096.0
+   },
+   "heightM": [
+    -200.51,
+    282.07
+   ],
+   "intervalM": 20.0,
+   "levels": 14,
+   "points": 667,
+   "water": true,
+   "file": "avn_blacksea_port_contours.json"
+  },
+  {
+   "map": "avn_coral_islands",
+   "source": "hm2",
+   "px": [
+    2048,
+    2048
+   ],
+   "cellM": 2.0,
+   "spanM": [
+    4096.0,
+    4096.0
+   ],
+   "bounds": {
+    "minX": -2048.0,
+    "maxX": 2048.0,
+    "minY": -2048.0,
+    "maxY": 2048.0
+   },
+   "heightM": [
+    -200.5,
+    26.65
+   ],
+   "intervalM": 10.0,
+   "levels": 2,
+   "points": 504,
+   "water": true,
+   "file": "avn_coral_islands_contours.json"
+  },
+  {
+   "map": "avn_england_shore",
+   "source": "hm2",
+   "px": [
+    2048,
+    2048
+   ],
+   "cellM": 2.0,
+   "spanM": [
+    4096.0,
+    4096.0
+   ],
+   "bounds": {
+    "minX": 0.0,
+    "maxX": 4096.0,
+    "minY": 0.0,
+    "maxY": 4096.0
+   },
+   "heightM": [
+    -200.51,
+    220.42
+   ],
+   "intervalM": 20.0,
+   "levels": 11,
+   "points": 5034,
+   "water": true,
+   "file": "avn_england_shore_contours.json"
+  },
+  {
+   "map": "avn_fiji",
+   "source": "hm2",
+   "px": [
+    2048,
+    2048
+   ],
+   "cellM": 4.0,
+   "spanM": [
+    8192.0,
+    8192.0
+   ],
+   "bounds": {
+    "minX": -4096.0,
+    "maxX": 4096.0,
+    "minY": -4096.0,
+    "maxY": 4096.0
+   },
+   "heightM": [
+    -200.5,
+    46.24
+   ],
+   "intervalM": 10.0,
+   "levels": 4,
+   "points": 1683,
+   "water": true,
+   "file": "avn_fiji_contours.json"
+  },
+  {
+   "map": "avn_finland_islands",
+   "source": "landmesh",
+   "px": [
+    1024,
+    1024
+   ],
+   "cellM": 64.0312795927739,
+   "spanM": [
+    65568.0,
+    65568.0
+   ],
+   "bounds": {
+    "minX": -32768.0,
+    "maxX": 32800.03,
+    "minY": -32768.0,
+    "maxY": 32800.03
+   },
+   "heightM": [
+    -200.5,
+    775.79
+   ],
+   "intervalM": 50.0,
+   "levels": 15,
+   "points": 22902,
+   "water": true,
+   "file": "avn_finland_islands_contours.json"
+  },
+  {
+   "map": "avn_franz_josef_land",
+   "source": "landmesh",
+   "px": [
+    1024,
+    1024
+   ],
+   "cellM": 64.0312795927739,
+   "spanM": [
+    65568.0,
+    65568.0
+   ],
+   "bounds": {
+    "minX": -32768.0,
+    "maxX": 32800.03,
+    "minY": -32768.0,
+    "maxY": 32800.03
+   },
+   "heightM": [
+    -200.0,
+    1241.1
+   ],
+   "intervalM": 50.0,
+   "levels": 24,
+   "points": 50510,
+   "water": true,
+   "file": "avn_franz_josef_land_contours.json"
+  },
+  {
+   "map": "avn_fuego_islands",
+   "source": "hm2",
+   "px": [
+    2048,
+    2048
+   ],
+   "cellM": 4.0,
+   "spanM": [
+    8192.0,
+    8192.0
+   ],
+   "bounds": {
+    "minX": -4096.0,
+    "maxX": 4096.0,
+    "minY": -4096.0,
+    "maxY": 4096.0
+   },
+   "heightM": [
+    -200.51,
+    436.27
+   ],
+   "intervalM": 25.0,
+   "levels": 17,
+   "points": 6374,
+   "water": true,
+   "file": "avn_fuego_islands_contours.json"
+  },
+  {
+   "map": "avn_ice_port",
+   "source": "hm2",
+   "px": [
+    2048,
+    2048
+   ],
+   "cellM": 4.0,
+   "spanM": [
+    8192.0,
+    8192.0
+   ],
+   "bounds": {
+    "minX": -4096.0,
+    "maxX": 4096.0,
+    "minY": -4096.0,
+    "maxY": 4096.0
+   },
+   "heightM": [
+    -200.5,
+    111.91
+   ],
+   "intervalM": 10.0,
+   "levels": 11,
+   "points": 4848,
+   "water": true,
+   "file": "avn_ice_port_contours.json"
+  },
+  {
+   "map": "avn_ireland_bay",
+   "source": "hm2",
+   "px": [
+    2048,
+    2048
+   ],
+   "cellM": 2.0,
+   "spanM": [
+    4096.0,
+    4096.0
+   ],
+   "bounds": {
+    "minX": 0.0,
+    "maxX": 4096.0,
+    "minY": 0.0,
+    "maxY": 4096.0
+   },
+   "heightM": [
+    -212.48,
+    137.96
+   ],
+   "intervalM": 20.0,
+   "levels": 6,
+   "points": 4213,
+   "water": true,
+   "file": "avn_ireland_bay_contours.json"
+  },
+  {
+   "map": "avn_japan",
+   "source": "landmesh",
+   "px": [
+    1024,
+    1024
+   ],
+   "cellM": 64.0312795927739,
+   "spanM": [
+    65568.0,
+    65568.0
+   ],
+   "bounds": {
+    "minX": -32768.0,
+    "maxX": 32800.03,
+    "minY": -32768.0,
+    "maxY": 32800.03
+   },
+   "heightM": [
+    -139.99,
+    1271.23
+   ],
+   "intervalM": 50.0,
+   "levels": 25,
+   "points": 35828,
+   "water": true,
+   "file": "avn_japan_contours.json"
+  },
+  {
+   "map": "avn_mediterranean_port",
+   "source": "hm2",
+   "px": [
+    2048,
+    2048
+   ],
+   "cellM": 2.0,
+   "spanM": [
+    4096.0,
+    4096.0
+   ],
+   "bounds": {
+    "minX": -2048.0,
+    "maxX": 2048.0,
+    "minY": -2048.0,
+    "maxY": 2048.0
+   },
+   "heightM": [
+    -200.51,
+    276.52
+   ],
+   "intervalM": 20.0,
+   "levels": 13,
+   "points": 5444,
+   "water": true,
+   "file": "avn_mediterranean_port_contours.json"
+  },
+  {
+   "map": "avn_new_zeland_cape",
+   "source": "landmesh",
+   "px": [
+    1024,
+    1024
+   ],
+   "cellM": 64.0312795927739,
+   "spanM": [
+    65568.0,
+    65568.0
+   ],
+   "bounds": {
+    "minX": -32768.0,
+    "maxX": 32800.03,
+    "minY": -32768.0,
+    "maxY": 32800.03
+   },
+   "heightM": [
+    -150.51,
+    3639.05
+   ],
+   "intervalM": 200.0,
+   "levels": 18,
+   "points": 15112,
+   "water": true,
+   "file": "avn_new_zeland_cape_contours.json"
+  },
+  {
+   "map": "avn_north_sea",
+   "source": "hm2",
+   "px": [
+    2048,
+    2048
+   ],
+   "cellM": 4.0,
+   "spanM": [
+    8192.0,
+    8192.0
+   ],
+   "bounds": {
+    "minX": 0.0,
+    "maxX": 8192.0,
+    "minY": -4096.0,
+    "maxY": 4096.0
+   },
+   "heightM": [
+    -478.51,
+    303.22
+   ],
+   "intervalM": 25.0,
+   "levels": 12,
+   "points": 1675,
+   "water": true,
+   "file": "avn_north_sea_contours.json"
+  },
+  {
+   "map": "avn_northwestern_islands",
+   "source": "hm2",
+   "px": [
+    2048,
+    2048
+   ],
+   "cellM": 2.0,
+   "spanM": [
+    4096.0,
+    4096.0
+   ],
+   "bounds": {
+    "minX": 0.0,
+    "maxX": 4096.0,
+    "minY": 0.0,
+    "maxY": 4096.0
+   },
+   "heightM": [
+    -53.27,
+    57.4
+   ],
+   "intervalM": 5.0,
+   "levels": 11,
+   "points": 5633,
+   "water": true,
+   "file": "avn_northwestern_islands_contours.json"
+  },
+  {
+   "map": "avn_norway_islands",
+   "source": "hm2",
+   "px": [
+    2048,
+    2048
+   ],
+   "cellM": 2.0,
+   "spanM": [
+    4096.0,
+    4096.0
+   ],
+   "bounds": {
+    "minX": 0.0,
+    "maxX": 4096.0,
+    "minY": 0.0,
+    "maxY": 4096.0
+   },
+   "heightM": [
+    -228.61,
+    213.19
+   ],
+   "intervalM": 20.0,
+   "levels": 10,
+   "points": 4146,
+   "water": true,
+   "file": "avn_norway_islands_contours.json"
+  },
+  {
+   "map": "avn_peleliu",
+   "source": "landmesh",
+   "px": [
+    1024,
+    1024
+   ],
+   "cellM": 64.0312795927739,
+   "spanM": [
+    65568.0,
+    65568.0
+   ],
+   "bounds": {
+    "minX": -32768.0,
+    "maxX": 32800.03,
+    "minY": -32768.0,
+    "maxY": 32800.03
+   },
+   "heightM": [
+    -299.7,
+    1200.0
+   ],
+   "intervalM": 50.0,
+   "levels": 23,
+   "points": 12911,
+   "water": true,
+   "file": "avn_peleliu_contours.json"
+  },
+  {
+   "map": "avn_phang_nga_bay_islands",
+   "source": "hm2",
+   "px": [
+    2048,
+    2048
+   ],
+   "cellM": 2.0,
+   "spanM": [
+    4096.0,
+    4096.0
+   ],
+   "bounds": {
+    "minX": 0.0,
+    "maxX": 4096.0,
+    "minY": 0.0,
+    "maxY": 4096.0
+   },
+   "heightM": [
+    -200.51,
+    140.2
+   ],
+   "intervalM": 20.0,
+   "levels": 6,
+   "points": 1102,
+   "water": true,
+   "file": "avn_phang_nga_bay_islands_contours.json"
+  },
+  {
+   "map": "avn_san_francisco",
+   "source": "landmesh",
+   "px": [
+    1024,
+    1024
+   ],
+   "cellM": 64.0312795927739,
+   "spanM": [
+    65568.0,
+    65568.0
+   ],
+   "bounds": {
+    "minX": -32768.0,
+    "maxX": 32800.03,
+    "minY": -32768.0,
+    "maxY": 32800.03
+   },
+   "heightM": [
+    -1538.21,
+    813.61
+   ],
+   "intervalM": 100.0,
+   "levels": 8,
+   "points": 18091,
+   "water": true,
+   "file": "avn_san_francisco_contours.json"
+  },
+  {
+   "map": "avn_south_africa",
+   "source": "landmesh",
+   "px": [
+    1024,
+    1024
+   ],
+   "cellM": 64.0312795927739,
+   "spanM": [
+    65568.0,
+    65568.0
+   ],
+   "bounds": {
+    "minX": -32768.0,
+    "maxX": 32800.03,
+    "minY": -32768.0,
+    "maxY": 32800.03
+   },
+   "heightM": [
+    -150.0,
+    1022.9
+   ],
+   "intervalM": 50.0,
+   "levels": 20,
+   "points": 35506,
+   "water": true,
+   "file": "avn_south_africa_contours.json"
+  },
+  {
+   "map": "avn_sunken_city",
+   "source": "landmesh",
+   "px": [
+    1024,
+    1024
+   ],
+   "cellM": 64.0312795927739,
+   "spanM": [
+    65568.0,
+    65568.0
+   ],
+   "bounds": {
+    "minX": -32768.0,
+    "maxX": 32800.03,
+    "minY": -32768.0,
+    "maxY": 32800.03
+   },
+   "heightM": [
+    -59.96,
+    715.42
+   ],
+   "intervalM": 25.0,
+   "levels": 28,
+   "points": 101031,
+   "water": true,
+   "file": "avn_sunken_city_contours.json"
+  },
+  {
+   "map": "avn_volcanic_island",
+   "source": "landmesh",
+   "px": [
+    1024,
+    1024
+   ],
+   "cellM": 16.007819898193475,
+   "spanM": [
+    16392.0,
+    16392.0
+   ],
+   "bounds": {
+    "minX": -8192.0,
+    "maxX": 8200.01,
+    "minY": -8192.0,
+    "maxY": 8200.01
+   },
+   "heightM": [
+    -41.0,
+    357.87
+   ],
+   "intervalM": 20.0,
+   "levels": 17,
+   "points": 2474,
+   "water": true,
+   "file": "avn_volcanic_island_contours.json"
+  },
+  {
+   "map": "berlin",
+   "source": "landmesh",
+   "px": [
+    1024,
+    1024
+   ],
+   "cellM": 64.0312795927739,
+   "spanM": [
+    65568.0,
+    65568.0
+   ],
+   "bounds": {
+    "minX": -32768.0,
+    "maxX": 32800.03,
+    "minY": -32768.0,
+    "maxY": 32800.03
+   },
+   "heightM": [
+    -9.09,
+    199.88
+   ],
+   "intervalM": 10.0,
+   "levels": 19,
+   "points": 101368,
+   "water": true,
+   "file": "berlin_contours.json"
+  },
+  {
+   "map": "britain",
+   "source": "landmesh",
+   "px": [
+    1024,
+    1024
+   ],
+   "cellM": 64.0312795927739,
+   "spanM": [
+    65568.0,
+    65568.0
+   ],
+   "bounds": {
+    "minX": -32768.0,
+    "maxX": 32800.03,
+    "minY": -32768.0,
+    "maxY": 32800.03
+   },
+   "heightM": [
+    -84.18,
+    271.74
+   ],
+   "intervalM": 20.0,
+   "levels": 13,
+   "points": 46144,
+   "water": true,
+   "file": "britain_contours.json"
+  },
+  {
+   "map": "bulge",
+   "source": "landmesh",
+   "px": [
+    1024,
+    1024
+   ],
+   "cellM": 64.0312795927739,
+   "spanM": [
+    65568.0,
+    65568.0
+   ],
+   "bounds": {
+    "minX": -32768.0,
+    "maxX": 32800.03,
+    "minY": -32768.0,
+    "maxY": 32800.03
+   },
+   "heightM": [
+    -5.4,
+    386.13
+   ],
+   "intervalM": 20.0,
+   "levels": 19,
+   "points": 98193,
+   "water": true,
+   "file": "bulge_contours.json"
+  },
+  {
+   "map": "caribbean_islands",
+   "source": "landmesh",
+   "px": [
+    1024,
+    1024
+   ],
+   "cellM": 64.0312795927739,
+   "spanM": [
+    65568.0,
+    65568.0
+   ],
+   "bounds": {
+    "minX": -32768.0,
+    "maxX": 32800.03,
+    "minY": -32768.0,
+    "maxY": 32800.03
+   },
+   "heightM": [
+    -45.0,
+    417.27
+   ],
+   "intervalM": 20.0,
+   "levels": 20,
+   "points": 8326,
+   "water": true,
+   "file": "caribbean_islands_contours.json"
+  },
+  {
+   "map": "dover_strait",
+   "source": "landmesh",
+   "px": [
+    1024,
+    1024
+   ],
+   "cellM": 128.09384068759306,
+   "spanM": [
+    131168.1,
+    131168.1
+   ],
+   "bounds": {
+    "minX": -65536.0,
+    "maxX": 65632.09,
+    "minY": -65536.0,
+    "maxY": 65632.09
+   },
+   "heightM": [
+    -236.13,
+    271.72
+   ],
+   "intervalM": 20.0,
+   "levels": 13,
+   "points": 44455,
+   "water": true,
+   "file": "dover_strait_contours.json"
+  },
+  {
+   "map": "firing_range",
+   "source": "hm2",
+   "px": [
+    2048,
+    2048
+   ],
+   "cellM": 2.0,
+   "spanM": [
+    4096.0,
+    4096.0
+   ],
+   "bounds": {
+    "minX": 0.0,
+    "maxX": 4096.0,
+    "minY": 0.0,
+    "maxY": 4096.0
+   },
+   "heightM": [
+    133.04,
+    434.27
+   ],
+   "intervalM": 10.0,
+   "levels": 30,
+   "points": 8265,
+   "water": false,
+   "file": "firing_range_contours.json"
+  },
+  {
+   "map": "guadalcanal",
+   "source": "landmesh",
+   "px": [
+    1024,
+    1024
+   ],
+   "cellM": 64.0312795927739,
+   "spanM": [
+    65568.0,
+    65568.0
+   ],
+   "bounds": {
+    "minX": -32768.0,
+    "maxX": 32800.03,
+    "minY": -32768.0,
+    "maxY": 32800.03
+   },
+   "heightM": [
+    -478.5,
+    1975.9
+   ],
+   "intervalM": 100.0,
+   "levels": 19,
+   "points": 28243,
+   "water": true,
+   "file": "guadalcanal_contours.json"
+  },
+  {
+   "map": "guam",
+   "source": "landmesh",
+   "px": [
+    1024,
+    1024
+   ],
+   "cellM": 64.0312795927739,
+   "spanM": [
+    65568.0,
+    65568.0
+   ],
+   "bounds": {
+    "minX": -32768.0,
+    "maxX": 32800.03,
+    "minY": -32768.0,
+    "maxY": 32800.03
+   },
+   "heightM": [
+    -313.0,
+    717.96
+   ],
+   "intervalM": 50.0,
+   "levels": 14,
+   "points": 9869,
+   "water": true,
+   "file": "guam_contours.json"
+  },
+  {
+   "map": "hangar_field",
+   "source": "hm2",
+   "px": [
+    2048,
+    2048
+   ],
+   "cellM": 1.0,
+   "spanM": [
+    2048.0,
+    2048.0
+   ],
+   "bounds": {
+    "minX": -1024.0,
+    "maxX": 1024.0,
+    "minY": -1024.0,
+    "maxY": 1024.0
+   },
+   "heightM": [
+    -10.99,
+    107.74
+   ],
+   "intervalM": 5.0,
+   "levels": 21,
+   "points": 2550,
+   "water": true,
+   "file": "hangar_field_contours.json"
+  },
+  {
+   "map": "hangar_field_halloween",
+   "source": "hm2",
+   "px": [
+    2048,
+    2048
+   ],
+   "cellM": 1.0,
+   "spanM": [
+    2048.0,
+    2048.0
+   ],
+   "bounds": {
+    "minX": -1024.0,
+    "maxX": 1024.0,
+    "minY": -1024.0,
+    "maxY": 1024.0
+   },
+   "heightM": [
+    -18.04,
+    107.74
+   ],
+   "intervalM": 5.0,
+   "levels": 21,
+   "points": 2934,
+   "water": true,
+   "file": "hangar_field_halloween_contours.json"
+  },
+  {
+   "map": "hangar_field_premium",
+   "source": "hm2",
+   "px": [
+    2048,
+    2048
+   ],
+   "cellM": 1.0,
+   "spanM": [
+    2048.0,
+    2048.0
+   ],
+   "bounds": {
+    "minX": -1024.0,
+    "maxX": 1024.0,
+    "minY": -1024.0,
+    "maxY": 1024.0
+   },
+   "heightM": [
+    -18.04,
+    107.74
+   ],
+   "intervalM": 5.0,
+   "levels": 21,
+   "points": 2985,
+   "water": true,
+   "file": "hangar_field_premium_contours.json"
+  },
+  {
+   "map": "hangar_field_winter",
+   "source": "hm2",
+   "px": [
+    2048,
+    2048
+   ],
+   "cellM": 1.0,
+   "spanM": [
+    2048.0,
+    2048.0
+   ],
+   "bounds": {
+    "minX": -1024.0,
+    "maxX": 1024.0,
+    "minY": -1024.0,
+    "maxY": 1024.0
+   },
+   "heightM": [
+    -10.51,
+    107.74
+   ],
+   "intervalM": 5.0,
+   "levels": 21,
+   "points": 2739,
+   "water": true,
+   "file": "hangar_field_winter_contours.json"
+  },
+  {
+   "map": "honolulu",
+   "source": "landmesh",
+   "px": [
+    1024,
+    1024
+   ],
+   "cellM": 64.0312795927739,
+   "spanM": [
+    65568.0,
+    65568.0
+   ],
+   "bounds": {
+    "minX": -32768.0,
+    "maxX": 32800.03,
+    "minY": -32768.0,
+    "maxY": 32800.03
+   },
+   "heightM": [
+    -509.43,
+    1664.02
+   ],
+   "intervalM": 100.0,
+   "levels": 16,
+   "points": 30100,
+   "water": true,
+   "file": "honolulu_contours.json"
+  },
+  {
+   "map": "hurtgen",
+   "source": "landmesh",
+   "px": [
+    1024,
+    1024
+   ],
+   "cellM": 64.0312795927739,
+   "spanM": [
+    65568.0,
+    65568.0
+   ],
+   "bounds": {
+    "minX": -32768.0,
+    "maxX": 32800.03,
+    "minY": -32768.0,
+    "maxY": 32800.03
+   },
+   "heightM": [
+    -81.93,
+    741.47
+   ],
+   "intervalM": 25.0,
+   "levels": 29,
+   "points": 85125,
+   "water": true,
+   "file": "hurtgen_contours.json"
+  },
+  {
+   "map": "hvg_africa_large",
+   "source": "hm2",
+   "px": [
+    4096,
+    4096
+   ],
+   "cellM": 0.5,
+   "spanM": [
+    2048.0,
+    2048.0
+   ],
+   "bounds": {
+    "minX": 0.0,
+    "maxX": 2048.0,
+    "minY": 0.0,
+    "maxY": 2048.0
+   },
+   "heightM": [
+    -48.54,
+    205.87
+   ],
+   "intervalM": 10.0,
+   "levels": 20,
+   "points": 19688,
+   "water": true,
+   "file": "hvg_africa_large_contours.json"
+  },
+  {
+   "map": "hvg_al_massa",
+   "source": "hm2",
+   "px": [
+    4096,
+    4096
+   ],
+   "cellM": 0.5,
+   "spanM": [
+    2048.0,
+    2048.0
+   ],
+   "bounds": {
+    "minX": -1024.0,
+    "maxX": 1024.0,
+    "minY": -1024.0,
+    "maxY": 1024.0
+   },
+   "heightM": [
+    -3.51,
+    47.93
+   ],
+   "intervalM": 2.0,
+   "levels": 23,
+   "points": 10402,
+   "water": true,
+   "file": "hvg_al_massa_contours.json"
+  },
+  {
+   "map": "hvg_granitograd",
+   "source": "hm2",
+   "px": [
+    4096,
+    4096
+   ],
+   "cellM": 0.5,
+   "spanM": [
+    2048.0,
+    2048.0
+   ],
+   "bounds": {
+    "minX": -1024.0,
+    "maxX": 1024.0,
+    "minY": -1024.0,
+    "maxY": 1024.0
+   },
+   "heightM": [
+    -1.0,
+    23.42
+   ],
+   "intervalM": 1.0,
+   "levels": 23,
+   "points": 38611,
+   "water": true,
+   "file": "hvg_granitograd_contours.json"
+  },
+  {
+   "map": "hvg_training_ground",
+   "source": "hm2",
+   "px": [
+    4096,
+    4096
+   ],
+   "cellM": 0.25,
+   "spanM": [
+    1024.0,
+    1024.0
+   ],
+   "bounds": {
+    "minX": -512.0,
+    "maxX": 512.0,
+    "minY": -512.0,
+    "maxY": 512.0
+   },
+   "heightM": [
+    14.44,
+    82.26
+   ],
+   "intervalM": 2.0,
+   "levels": 34,
+   "points": 34965,
+   "water": false,
+   "file": "hvg_training_ground_contours.json"
+  },
+  {
+   "map": "iwo_jima",
+   "source": "landmesh",
+   "px": [
+    1024,
+    1024
+   ],
+   "cellM": 32.01563979638695,
+   "spanM": [
+    32784.0,
+    32784.0
+   ],
+   "bounds": {
+    "minX": -16384.0,
+    "maxX": 16400.02,
+    "minY": -16384.0,
+    "maxY": 16400.02
+   },
+   "heightM": [
+    -313.8,
+    216.18
+   ],
+   "intervalM": 20.0,
+   "levels": 10,
+   "points": 2867,
+   "water": true,
+   "file": "iwo_jima_contours.json"
+  },
+  {
+   "map": "khalkhin_gol",
+   "source": "landmesh",
+   "px": [
+    1024,
+    1024
+   ],
+   "cellM": 64.0312795927739,
+   "spanM": [
+    65568.0,
+    65568.0
+   ],
+   "bounds": {
+    "minX": -32768.0,
+    "maxX": 32800.03,
+    "minY": -32768.0,
+    "maxY": 32800.03
+   },
+   "heightM": [
+    -123.92,
+    1525.39
+   ],
+   "intervalM": 50.0,
+   "levels": 30,
+   "points": 48493,
+   "water": true,
+   "file": "khalkhin_gol_contours.json"
+  },
+  {
+   "map": "korea",
+   "source": "landmesh",
+   "px": [
+    1024,
+    1024
+   ],
+   "cellM": 64.0312795927739,
+   "spanM": [
+    65568.0,
+    65568.0
+   ],
+   "bounds": {
+    "minX": -32768.0,
+    "maxX": 32800.03,
+    "minY": -32768.0,
+    "maxY": 32800.03
+   },
+   "heightM": [
+    -116.52,
+    1693.32
+   ],
+   "intervalM": 100.0,
+   "levels": 16,
+   "points": 86441,
+   "water": true,
+   "file": "korea_contours.json"
+  },
+  {
+   "map": "korsun",
+   "source": "landmesh",
+   "px": [
+    1024,
+    1024
+   ],
+   "cellM": 64.0312795927739,
+   "spanM": [
+    65568.0,
+    65568.0
+   ],
+   "bounds": {
+    "minX": -32768.0,
+    "maxX": 32800.03,
+    "minY": -32768.0,
+    "maxY": 32800.03
+   },
+   "heightM": [
+    -40.66,
+    114.85
+   ],
+   "intervalM": 5.0,
+   "levels": 22,
+   "points": 106059,
+   "water": true,
+   "file": "korsun_contours.json"
+  },
+  {
+   "map": "krymsk",
+   "source": "landmesh",
+   "px": [
+    1024,
+    1024
+   ],
+   "cellM": 64.0312795927739,
+   "spanM": [
+    65568.0,
+    65568.0
+   ],
+   "bounds": {
+    "minX": -32768.0,
+    "maxX": 32800.03,
+    "minY": -32768.0,
+    "maxY": 32800.03
+   },
+   "heightM": [
+    -96.48,
+    1179.58
+   ],
+   "intervalM": 50.0,
+   "levels": 23,
+   "points": 55460,
+   "water": true,
+   "file": "krymsk_contours.json"
+  },
+  {
+   "map": "kursk",
+   "source": "landmesh",
+   "px": [
+    1024,
+    1024
+   ],
+   "cellM": 64.04692034379653,
+   "spanM": [
+    65584.1,
+    65584.1
+   ],
+   "bounds": {
+    "minX": -32768.0,
+    "maxX": 32816.05,
+    "minY": -32768.0,
+    "maxY": 32816.05
+   },
+   "heightM": [
+    -56.64,
+    224.95
+   ],
+   "intervalM": 10.0,
+   "levels": 22,
+   "points": 90549,
+   "water": true,
+   "file": "kursk_contours.json"
+  },
+  {
+   "map": "malta",
+   "source": "landmesh",
+   "px": [
+    1024,
+    1024
+   ],
+   "cellM": 40.01954974548369,
+   "spanM": [
+    40980.0,
+    40980.0
+   ],
+   "bounds": {
+    "minX": -20480.0,
+    "maxX": 20500.02,
+    "minY": -20480.0,
+    "maxY": 20500.02
+   },
+   "heightM": [
+    -243.86,
+    659.83
+   ],
+   "intervalM": 50.0,
+   "levels": 13,
+   "points": 11175,
+   "water": true,
+   "file": "malta_contours.json"
+  },
+  {
+   "map": "midway",
+   "source": "landmesh",
+   "px": [
+    1024,
+    1024
+   ],
+   "cellM": 16.007819898193475,
+   "spanM": [
+    16392.0,
+    16392.0
+   ],
+   "bounds": {
+    "minX": -8192.0,
+    "maxX": 8200.01,
+    "minY": -8192.0,
+    "maxY": 8200.01
+   },
+   "heightM": [
+    -707.58,
+    32.98
+   ],
+   "intervalM": 25.0,
+   "levels": 1,
+   "points": 200,
+   "water": true,
+   "file": "midway_contours.json"
+  },
+  {
+   "map": "moscow",
+   "source": "landmesh",
+   "px": [
+    1024,
+    1024
+   ],
+   "cellM": 128.09384068759306,
+   "spanM": [
+    131168.1,
+    131168.1
+   ],
+   "bounds": {
+    "minX": -65536.0,
+    "maxX": 65632.09,
+    "minY": -65536.0,
+    "maxY": 65632.09
+   },
+   "heightM": [
+    -23.91,
+    364.7
+   ],
+   "intervalM": 20.0,
+   "levels": 18,
+   "points": 103582,
+   "water": true,
+   "file": "moscow_contours.json"
+  },
+  {
+   "map": "mozdok",
+   "source": "landmesh",
+   "px": [
+    1024,
+    1024
+   ],
+   "cellM": 64.0312795927739,
+   "spanM": [
+    65568.0,
+    65568.0
+   ],
+   "bounds": {
+    "minX": -32768.0,
+    "maxX": 32800.03,
+    "minY": -32768.0,
+    "maxY": 32800.03
+   },
+   "heightM": [
+    -338.84,
+    4450.74
+   ],
+   "intervalM": 200.0,
+   "levels": 22,
+   "points": 39249,
+   "water": true,
+   "file": "mozdok_contours.json"
+  },
+  {
+   "map": "mozdok_winter",
+   "source": "landmesh",
+   "px": [
+    1024,
+    1024
+   ],
+   "cellM": 64.0312795927739,
+   "spanM": [
+    65568.0,
+    65568.0
+   ],
+   "bounds": {
+    "minX": -32768.0,
+    "maxX": 32800.03,
+    "minY": -32768.0,
+    "maxY": 32800.03
+   },
+   "heightM": [
+    -338.84,
+    4450.74
+   ],
+   "intervalM": 200.0,
+   "levels": 22,
+   "points": 39629,
+   "water": true,
+   "file": "mozdok_winter_contours.json"
+  },
+  {
+   "map": "norway",
+   "source": "landmesh",
+   "px": [
+    1024,
+    1024
+   ],
+   "cellM": 128.09384068759306,
+   "spanM": [
+    131168.1,
+    131168.1
+   ],
+   "bounds": {
+    "minX": -65536.0,
+    "maxX": 65632.09,
+    "minY": -65536.0,
+    "maxY": 65632.09
+   },
+   "heightM": [
+    -662.88,
+    4834.53
+   ],
+   "intervalM": 250.0,
+   "levels": 19,
+   "points": 55779,
+   "water": true,
+   "file": "norway_contours.json"
+  },
+  {
+   "map": "peleliu",
+   "source": "landmesh",
+   "px": [
+    1024,
+    1024
+   ],
+   "cellM": 64.0312795927739,
+   "spanM": [
+    65568.0,
+    65568.0
+   ],
+   "bounds": {
+    "minX": -32768.0,
+    "maxX": 32800.03,
+    "minY": -32768.0,
+    "maxY": 32800.03
+   },
+   "heightM": [
+    -63.45,
+    174.86
+   ],
+   "intervalM": 10.0,
+   "levels": 17,
+   "points": 11987,
+   "water": true,
+   "file": "peleliu_contours.json"
+  },
+  {
+   "map": "port_moresby",
+   "source": "landmesh",
+   "px": [
+    1024,
+    1024
+   ],
+   "cellM": 64.0312795927739,
+   "spanM": [
+    65568.0,
+    65568.0
+   ],
+   "bounds": {
+    "minX": -32768.0,
+    "maxX": 32800.03,
+    "minY": -32768.0,
+    "maxY": 32800.03
+   },
+   "heightM": [
+    -129.94,
+    1296.44
+   ],
+   "intervalM": 50.0,
+   "levels": 25,
+   "points": 50544,
+   "water": true,
+   "file": "port_moresby_contours.json"
+  },
+  {
+   "map": "ruhr",
+   "source": "landmesh",
+   "px": [
+    1024,
+    1024
+   ],
+   "cellM": 64.0312795927739,
+   "spanM": [
+    65568.0,
+    65568.0
+   ],
+   "bounds": {
+    "minX": -32768.0,
+    "maxX": 32800.03,
+    "minY": -32768.0,
+    "maxY": 32800.03
+   },
+   "heightM": [
+    -43.18,
+    198.75
+   ],
+   "intervalM": 10.0,
+   "levels": 19,
+   "points": 38666,
+   "water": true,
+   "file": "ruhr_contours.json"
+  },
+  {
+   "map": "saipan",
+   "source": "landmesh",
+   "px": [
+    1024,
+    1024
+   ],
+   "cellM": 64.0312795927739,
+   "spanM": [
+    65568.0,
+    65568.0
+   ],
+   "bounds": {
+    "minX": -32768.0,
+    "maxX": 32800.03,
+    "minY": -32768.0,
+    "maxY": 32800.03
+   },
+   "heightM": [
+    -321.9,
+    608.64
+   ],
+   "intervalM": 50.0,
+   "levels": 12,
+   "points": 3652,
+   "water": true,
+   "file": "saipan_contours.json"
+  },
+  {
+   "map": "sector_montmedy",
+   "source": "landmesh",
+   "px": [
+    1024,
+    1024
+   ],
+   "cellM": 64.04692034379653,
+   "spanM": [
+    65584.1,
+    65584.1
+   ],
+   "bounds": {
+    "minX": -32768.0,
+    "maxX": 32816.05,
+    "minY": -32768.0,
+    "maxY": 32816.05
+   },
+   "heightM": [
+    -39.78,
+    301.07
+   ],
+   "intervalM": 20.0,
+   "levels": 15,
+   "points": 93554,
+   "water": true,
+   "file": "sector_montmedy_contours.json"
+  },
+  {
+   "map": "sicily",
+   "source": "landmesh",
+   "px": [
+    1024,
+    1024
+   ],
+   "cellM": 64.0312795927739,
+   "spanM": [
+    65568.0,
+    65568.0
+   ],
+   "bounds": {
+    "minX": -32768.0,
+    "maxX": 32800.03,
+    "minY": -32768.0,
+    "maxY": 32800.03
+   },
+   "heightM": [
+    -218.51,
+    968.97
+   ],
+   "intervalM": 50.0,
+   "levels": 19,
+   "points": 31654,
+   "water": true,
+   "file": "sicily_contours.json"
+  },
+  {
+   "map": "spain",
+   "source": "landmesh",
+   "px": [
+    1024,
+    1024
+   ],
+   "cellM": 128.09384068759306,
+   "spanM": [
+    131168.1,
+    131168.1
+   ],
+   "bounds": {
+    "minX": -65536.0,
+    "maxX": 65632.09,
+    "minY": -65536.0,
+    "maxY": 65632.09
+   },
+   "heightM": [
+    -242.27,
+    1332.96
+   ],
+   "intervalM": 50.0,
+   "levels": 26,
+   "points": 162523,
+   "water": true,
+   "file": "spain_contours.json"
+  },
+  {
+   "map": "stalingrad",
+   "source": "landmesh",
+   "px": [
+    1024,
+    1024
+   ],
+   "cellM": 64.0312795927739,
+   "spanM": [
+    65568.0,
+    65568.0
+   ],
+   "bounds": {
+    "minX": -32768.0,
+    "maxX": 32800.03,
+    "minY": -32768.0,
+    "maxY": 32800.03
+   },
+   "heightM": [
+    -38.29,
+    249.54
+   ],
+   "intervalM": 10.0,
+   "levels": 24,
+   "points": 53075,
+   "water": true,
+   "file": "stalingrad_contours.json"
+  },
+  {
+   "map": "stalingrad_w",
+   "source": "landmesh",
+   "px": [
+    1024,
+    1024
+   ],
+   "cellM": 64.0312795927739,
+   "spanM": [
+    65568.0,
+    65568.0
+   ],
+   "bounds": {
+    "minX": -32768.0,
+    "maxX": 32800.03,
+    "minY": -32768.0,
+    "maxY": 32800.03
+   },
+   "heightM": [
+    -10.42,
+    248.84
+   ],
+   "intervalM": 10.0,
+   "levels": 24,
+   "points": 52418,
+   "water": true,
+   "file": "stalingrad_w_contours.json"
+  },
+  {
+   "map": "tunisia",
+   "source": "landmesh",
+   "px": [
+    1024,
+    1024
+   ],
+   "cellM": 64.0312795927739,
+   "spanM": [
+    65568.0,
+    65568.0
+   ],
+   "bounds": {
+    "minX": -32768.0,
+    "maxX": 32800.03,
+    "minY": -32768.0,
+    "maxY": 32800.03
+   },
+   "heightM": [
+    -41.86,
+    584.53
+   ],
+   "intervalM": 25.0,
+   "levels": 23,
+   "points": 16442,
+   "water": true,
+   "file": "tunisia_contours.json"
+  },
+  {
+   "map": "wake_island",
+   "source": "landmesh",
+   "px": [
+    1023,
+    1023
+   ],
+   "cellM": 8.01174156352834,
+   "spanM": [
+    8196.0,
+    8196.0
+   ],
+   "bounds": {
+    "minX": -4096.0,
+    "maxX": 4100.01,
+    "minY": -4096.0,
+    "maxY": 4100.01
+   },
+   "heightM": [
+    -91.0,
+    39.0
+   ],
+   "intervalM": 5.0,
+   "levels": 7,
+   "points": 3076,
+   "water": true,
+   "file": "wake_island_contours.json"
+  },
+  {
+   "map": "zhengzhou",
+   "source": "landmesh",
+   "px": [
+    1024,
+    1024
+   ],
+   "cellM": 64.0312795927739,
+   "spanM": [
+    65568.0,
+    65568.0
+   ],
+   "bounds": {
+    "minX": -32768.0,
+    "maxX": 32800.03,
+    "minY": -32768.0,
+    "maxY": 32800.03
+   },
+   "heightM": [
+    -143.41,
+    1195.22
+   ],
+   "intervalM": 50.0,
+   "levels": 23,
+   "points": 51918,
+   "water": true,
+   "file": "zhengzhou_contours.json"
+  }
+ ]
+}

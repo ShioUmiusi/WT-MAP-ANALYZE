@@ -1,0 +1,79 @@
+{
+ "map": "avn_finland_islands",
+ "crs": "WGS84",
+ "bounds": null,
+ "corners": null,
+ "method": "dem-coarse-only",
+ "residualKm": null,
+ "anchorResidualKm": null,
+ "bboxUncertaintyKm": 8.0,
+ "anchors": [],
+ "crosscheck": {
+  "demNcc": 0.9042,
+  "bboxUncertaintyKm": 8.0,
+  "heightStdM": 165.2,
+  "prescreenMargin": 0.0002,
+  "refineAttempts": [
+   {
+    "seedNcc": 0.904,
+    "refinedNcc": 0.76,
+    "lon": 62.987,
+    "lat": 32.247,
+    "driftDeg": 0.017
+   },
+   {
+    "seedNcc": 0.904,
+    "refinedNcc": 0.778,
+    "lon": 139.597,
+    "lat": -8.265,
+    "driftDeg": 0.042
+   }
+  ],
+  "refine": "failed (weak correlation)",
+  "prescreenCandidates": [
+   {
+    "ncc": 0.904,
+    "lon": 62.996,
+    "lat": 32.231
+   },
+   {
+    "ncc": 0.904,
+    "lon": 139.57,
+    "lat": -8.233
+   },
+   {
+    "ncc": 0.9,
+    "lon": 107.71,
+    "lat": 41.212
+   },
+   {
+    "ncc": 0.897,
+    "lon": 138.186,
+    "lat": -2.877
+   },
+   {
+    "ncc": 0.896,
+    "lon": 90.154,
+    "lat": 26.726
+   }
+  ],
+  "sizeErrPct": 0.0,
+  "squareErrPct": 0.0,
+  "sizeCheckOk": true,
+  "worldSquareKm": [
+   65.6,
+   65.6
+  ],
+  "landFracMap": 0.3237,
+  "landFracDem": 1.0,
+  "landFracRatio": 3.089,
+  "textureSeaFrac": 0.0,
+  "textureLandIou": null,
+  "solvedBeforeVeto": true,
+  "confidenceBeforeVeto": "low"
+ },
+ "confidence": "unresolved",
+ "note": "coarse-only: z5 global prescreen peak 0.90 at 63.00,32.23; z10 refine failed (weak correlation); position good to ~5-10 km; terrain only, no OCR labels used REJECTED: land/sea mismatch (map 0.32 vs dem 1.00, ratio 3.1x)",
+ "demNcc": 0.9042,
+ "rejected": "land/sea mismatch (map 0.32 vs dem 1.00, ratio 3.1x)"
+}

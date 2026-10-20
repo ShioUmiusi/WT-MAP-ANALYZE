@@ -1,0 +1,149 @@
+{
+ "map": "ruhr",
+ "crs": "WGS84",
+ "bounds": {
+  "minLon": 6.365167,
+  "maxLon": 7.597301,
+  "minLat": 51.057344,
+  "maxLat": 51.830726
+ },
+ "corners": {
+  "nw": [
+   6.365167,
+   51.830726
+  ],
+  "ne": [
+   7.597301,
+   51.830726
+  ],
+  "sw": [
+   6.365167,
+   51.057344
+  ],
+  "se": [
+   7.597301,
+   51.057344
+  ]
+ },
+ "method": "ocr+gazetteer+dem-match",
+ "residualKm": 2.5,
+ "anchorResidualKm": 2.5,
+ "bboxUncertaintyKm": 1.5,
+ "anchors": [
+  {
+   "text": "Dorsten",
+   "lat": 51.66166,
+   "lon": 6.96514,
+   "px": 1065.5,
+   "py": 476.0,
+   "score": 100.0,
+   "gazetteer": "dorsten",
+   "offsetKm": 0.0
+  },
+  {
+   "text": "Gelsenkirchen",
+   "lat": 51.50508,
+   "lon": 7.09654,
+   "px": 1302.5,
+   "py": 832.5,
+   "score": 100.0,
+   "gazetteer": "gelsenkirchen",
+   "offsetKm": 3.49
+  },
+  {
+   "text": "Essen",
+   "lat": 51.45657,
+   "lon": 7.01228,
+   "px": 1131.5,
+   "py": 918.0,
+   "score": 100.0,
+   "gazetteer": "essen",
+   "offsetKm": 3.92
+  },
+  {
+   "text": "Dortmund",
+   "lat": 51.51494,
+   "lon": 7.466,
+   "px": 1774.5,
+   "py": 946.0,
+   "score": 100.0,
+   "gazetteer": "dortmund",
+   "offsetKm": 3.78
+  },
+  {
+   "text": "Bochum",
+   "lat": 51.48165,
+   "lon": 7.21648,
+   "px": 1420.5,
+   "py": 960.0,
+   "score": 100.0,
+   "gazetteer": "bochum",
+   "offsetKm": 0.7
+  },
+  {
+   "text": "Essen-Mujheim",
+   "lat": 51.40325,
+   "lon": 6.94001,
+   "px": 1002.0,
+   "py": 1104.5,
+   "score": 71.0,
+   "gazetteer": "essenmulheimairport",
+   "offsetKm": 2.38
+  },
+  {
+   "text": "Dusseldorf",
+   "lat": 51.22319,
+   "lon": 6.77927,
+   "px": 807.5,
+   "py": 1618.5,
+   "score": 100.0,
+   "gazetteer": "dusseldorf",
+   "offsetKm": 0.0
+  }
+ ],
+ "crosscheck": {
+  "nccPeak": 0.8463,
+  "coarseNcc": 0.7757,
+  "worldUnitM": 1.3038,
+  "worldSquareKm": [
+   85.5,
+   85.5
+  ],
+  "labelResidKm": [
+   0.0,
+   0.0,
+   0.7,
+   2.4,
+   3.5,
+   3.8,
+   3.9
+  ],
+  "anchorsUsed": 7,
+  "textureExtentKm": [
+   99.0,
+   86.3
+  ],
+  "textureVsWorldScale": 1.158,
+  "textureCenterOffsetKm": 3.22,
+  "bboxUncertaintyKm": 1.5,
+  "sizeErrPct": 30.38,
+  "squareErrPct": 0.0,
+  "sizeCheckOk": false,
+  "landFracMap": 0.9681,
+  "landFracDem": 1.0,
+  "landFracRatio": 1.033,
+  "textureSeaFrac": 0.0,
+  "textureLandIou": null,
+  "solvedBeforeVeto": true,
+  "confidenceBeforeVeto": "low"
+ },
+ "confidence": "low",
+ "note": "label hypothesis affine; fitted world unit = 1.304 real m; 17/18 labels resolved [demoted: bbox size error 30.38% vs world square]",
+ "textureBounds": {
+  "minLon": 6.221447,
+  "maxLon": 7.648494,
+  "minLat": 51.056205,
+  "maxLat": 51.83727
+ },
+ "demNcc": 0.8463
+}

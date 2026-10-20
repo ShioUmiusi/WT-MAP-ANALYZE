@@ -1,0 +1,19 @@
+{
+ "map": "avg_eastern_europe",
+ "crs": "WGS84",
+ "bounds": null,
+ "corners": null,
+ "method": null,
+ "residualKm": null,
+ "anchorResidualKm": null,
+ "bboxUncertaintyKm": null,
+ "anchors": [],
+ "crosscheck": {
+  "heightStdM": 9.1,
+  "sizeErrPct": null,
+  "squareErrPct": null,
+  "sizeCheckOk": false
+ },
+ "confidence": "unresolved",
+ "note": "flat terrain: heightmap std only 9.1 m, no DEM signal to match against"
+}

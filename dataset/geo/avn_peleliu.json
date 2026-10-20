@@ -1,0 +1,79 @@
+{
+ "map": "avn_peleliu",
+ "crs": "WGS84",
+ "bounds": null,
+ "corners": null,
+ "method": "dem-coarse-only",
+ "residualKm": null,
+ "anchorResidualKm": null,
+ "bboxUncertaintyKm": 8.0,
+ "anchors": [],
+ "crosscheck": {
+  "demNcc": 0.6647,
+  "bboxUncertaintyKm": 8.0,
+  "heightStdM": 100.1,
+  "prescreenMargin": 0.028,
+  "refineAttempts": [
+   {
+    "seedNcc": 0.665,
+    "refinedNcc": 0.459,
+    "lon": -38.876,
+    "lat": -11.021,
+    "driftDeg": 0.032
+   },
+   {
+    "seedNcc": 0.637,
+    "refinedNcc": 0.425,
+    "lon": 62.913,
+    "lat": 39.27,
+    "driftDeg": 0.054
+   }
+  ],
+  "refine": "failed (weak correlation)",
+  "prescreenCandidates": [
+   {
+    "ncc": 0.665,
+    "lon": -38.848,
+    "lat": -11.006
+   },
+   {
+    "ncc": 0.637,
+    "lon": 62.908,
+    "lat": 39.215
+   },
+   {
+    "ncc": 0.63,
+    "lon": -41.045,
+    "lat": -19.436
+   },
+   {
+    "ncc": 0.596,
+    "lon": 101.36,
+    "lat": 21.963
+   },
+   {
+    "ncc": 0.584,
+    "lon": 130.693,
+    "lat": 31.728
+   }
+  ],
+  "sizeErrPct": 0.0,
+  "squareErrPct": 0.0,
+  "sizeCheckOk": true,
+  "worldSquareKm": [
+   65.6,
+   65.6
+  ],
+  "landFracMap": 0.0718,
+  "landFracDem": 1.0,
+  "landFracRatio": 13.924,
+  "textureSeaFrac": 0.906,
+  "textureLandIou": null,
+  "solvedBeforeVeto": true,
+  "confidenceBeforeVeto": "low"
+ },
+ "confidence": "unresolved",
+ "note": "coarse-only: z5 global prescreen peak 0.66 at -38.85,-11.01; z10 refine failed (weak correlation); position good to ~5-10 km; terrain only, no OCR labels used REJECTED: land/sea mismatch (map 0.07 vs dem 1.00, ratio 13.9x); texture shows water (91%) but the DEM window is dry land",
+ "demNcc": 0.6647,
+ "rejected": "land/sea mismatch (map 0.07 vs dem 1.00, ratio 13.9x); texture shows water (91%) but the DEM window is dry land"
+}

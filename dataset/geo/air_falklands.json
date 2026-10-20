@@ -1,0 +1,117 @@
+{
+ "map": "air_falklands",
+ "crs": "WGS84",
+ "bounds": {
+  "minLon": -61.401868,
+  "maxLon": -57.662795,
+  "minLat": -52.78595,
+  "maxLat": -50.63707
+ },
+ "corners": {
+  "nw": [
+   -61.401868,
+   -50.63707
+  ],
+  "ne": [
+   -57.662795,
+   -50.63707
+  ],
+  "sw": [
+   -61.401868,
+   -52.78595
+  ],
+  "se": [
+   -57.662795,
+   -52.78595
+  ]
+ },
+ "method": "ocr+gazetteer+lsq",
+ "residualKm": 2.4,
+ "anchorResidualKm": null,
+ "bboxUncertaintyKm": null,
+ "anchors": [
+  {
+   "text": "Roy Cove",
+   "lat": -51.55,
+   "lon": -60.38333,
+   "px": 567.5,
+   "py": 878.0,
+   "score": 100.0,
+   "gazetteer": "roycove",
+   "offsetKm": 0.0
+  },
+  {
+   "text": "Chartres",
+   "lat": -51.71108,
+   "lon": -60.07954,
+   "px": 733.0,
+   "py": 1029.0,
+   "score": 100.0,
+   "gazetteer": "chartres",
+   "offsetKm": 0.0
+  },
+  {
+   "text": "Shallow Harbour",
+   "lat": -51.77618,
+   "lon": -60.5036,
+   "px": 488.0,
+   "py": 1069.0,
+   "score": 100.0,
+   "gazetteer": "shallowharbour",
+   "offsetKm": 3.05
+  },
+  {
+   "text": "Mid Rancho",
+   "lat": -51.83333,
+   "lon": -58.6,
+   "px": 1531.0,
+   "py": 1131.5,
+   "score": 100.0,
+   "gazetteer": "midrancho",
+   "offsetKm": 1.75
+  },
+  {
+   "text": "Port Edgar",
+   "lat": -52.01422,
+   "lon": -60.2672,
+   "px": 618.5,
+   "py": 1348.0,
+   "score": 100.0,
+   "gazetteer": "portedgar",
+   "offsetKm": 4.39
+  },
+  {
+   "text": "Port Stephens",
+   "lat": -52.12293,
+   "lon": -60.8091,
+   "px": 317.0,
+   "py": 1392.5,
+   "score": 100.0,
+   "gazetteer": "portstephens",
+   "offsetKm": 3.54
+  }
+ ],
+ "crosscheck": {
+  "worldSquareKm": [
+   257.9,
+   237.5
+  ],
+  "anchorsUsed": 6,
+  "aspectErrPct": 7.9,
+  "bestCoarseNcc": 0.3308,
+  "sizeErrPct": 96.77,
+  "squareErrPct": 7.9,
+  "sizeCheckOk": false,
+  "landFracMap": 0.1921,
+  "landFracDem": 0.2344,
+  "landFracRatio": 1.22,
+  "textureSeaFrac": 0.73,
+  "textureLandIou": 0.899,
+  "textureWaterIou": 0.899,
+  "solvedBeforeVeto": true,
+  "confidenceBeforeVeto": "low"
+ },
+ "confidence": "low",
+ "note": "no DEM refinement; bbox from 6 label anchors, km-scale accuracy [demoted: bbox size error 96.77% vs world square]",
+ "demNcc": null
+}

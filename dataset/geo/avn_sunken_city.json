@@ -1,0 +1,65 @@
+{
+ "map": "avn_sunken_city",
+ "crs": "WGS84",
+ "bounds": null,
+ "corners": null,
+ "method": "dem-only",
+ "residualKm": null,
+ "anchorResidualKm": null,
+ "bboxUncertaintyKm": 2.0,
+ "anchors": [],
+ "crosscheck": {
+  "demNcc": 0.7957,
+  "prescreenTopNcc": 0.9138,
+  "prescreenMargin": 0.0007,
+  "worldUnitM": 1.0073,
+  "heightStdM": 160.4,
+  "bboxUncertaintyKm": 2.0,
+  "demSource": "terrarium z10",
+  "prescreenCandidates": [
+   {
+    "ncc": 0.914,
+    "lon": -61.15,
+    "lat": 4.325
+   },
+   {
+    "ncc": 0.913,
+    "lon": -77.52,
+    "lat": 20.838
+   },
+   {
+    "ncc": 0.912,
+    "lon": 91.978,
+    "lat": 25.245
+   },
+   {
+    "ncc": 0.91,
+    "lon": 117.751,
+    "lat": -9.037
+   },
+   {
+    "ncc": 0.909,
+    "lon": -4.373,
+    "lat": 4.894
+   }
+  ],
+  "sizeErrPct": 0.73,
+  "squareErrPct": 0.0,
+  "sizeCheckOk": true,
+  "worldSquareKm": [
+   66.0,
+   66.0
+  ],
+  "landFracMap": 0.5168,
+  "landFracDem": 1.0,
+  "landFracRatio": 1.935,
+  "textureSeaFrac": 0.403,
+  "textureLandIou": null,
+  "solvedBeforeVeto": true,
+  "confidenceBeforeVeto": "low"
+ },
+ "confidence": "unresolved",
+ "note": "terrain-only match (no OCR labels); z5 prescreen peak 0.91 at -61.15,4.32, z10 refined NCC 0.796, margin 0.001 REJECTED: texture shows water (40%) but the DEM window is dry land",
+ "demNcc": 0.7957,
+ "rejected": "texture shows water (40%) but the DEM window is dry land"
+}

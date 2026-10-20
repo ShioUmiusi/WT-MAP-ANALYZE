@@ -1,0 +1,79 @@
+{
+ "map": "avn_japan",
+ "crs": "WGS84",
+ "bounds": null,
+ "corners": null,
+ "method": "dem-coarse-only",
+ "residualKm": null,
+ "anchorResidualKm": null,
+ "bboxUncertaintyKm": 8.0,
+ "anchors": [],
+ "crosscheck": {
+  "demNcc": 0.8389,
+  "bboxUncertaintyKm": 8.0,
+  "heightStdM": 196.9,
+  "prescreenMargin": 0.0336,
+  "refineAttempts": [
+   {
+    "seedNcc": 0.839,
+    "refinedNcc": 0.413,
+    "lon": -88.68,
+    "lat": 47.96,
+    "driftDeg": 0.086
+   },
+   {
+    "seedNcc": 0.805,
+    "refinedNcc": 0.708,
+    "lon": 131.278,
+    "lat": -11.712,
+    "driftDeg": 0.022
+   }
+  ],
+  "refine": "failed (weak correlation)",
+  "prescreenCandidates": [
+   {
+    "ncc": 0.839,
+    "lon": -88.748,
+    "lat": 47.887
+   },
+   {
+    "ncc": 0.805,
+    "lon": 131.265,
+    "lat": -11.695
+   },
+   {
+    "ncc": 0.801,
+    "lon": 105.381,
+    "lat": 14.307
+   },
+   {
+    "ncc": 0.799,
+    "lon": 109.578,
+    "lat": 52.282
+   },
+   {
+    "ncc": 0.785,
+    "lon": 108.083,
+    "lat": 29.554
+   }
+  ],
+  "sizeErrPct": 0.0,
+  "squareErrPct": 0.0,
+  "sizeCheckOk": true,
+  "worldSquareKm": [
+   65.6,
+   65.6
+  ],
+  "landFracMap": 0.2675,
+  "landFracDem": 1.0,
+  "landFracRatio": 3.738,
+  "textureSeaFrac": 0.0,
+  "textureLandIou": null,
+  "solvedBeforeVeto": true,
+  "confidenceBeforeVeto": "low"
+ },
+ "confidence": "unresolved",
+ "note": "coarse-only: z5 global prescreen peak 0.84 at -88.75,47.89; z10 refine failed (weak correlation); position good to ~5-10 km; terrain only, no OCR labels used REJECTED: land/sea mismatch (map 0.27 vs dem 1.00, ratio 3.7x)",
+ "demNcc": 0.8389,
+ "rejected": "land/sea mismatch (map 0.27 vs dem 1.00, ratio 3.7x)"
+}

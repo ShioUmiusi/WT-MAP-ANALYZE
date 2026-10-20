@@ -1,0 +1,16 @@
+{
+ "map": "water",
+ "crs": "WGS84",
+ "bounds": null,
+ "corners": null,
+ "method": null,
+ "residualKm": null,
+ "anchors": [],
+ "crosscheck": {
+  "sizeErrPct": null,
+  "squareErrPct": null,
+  "sizeCheckOk": false
+ },
+ "confidence": "unresolved",
+ "note": "map texture carries no readable place-name labels"
+}

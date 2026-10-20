@@ -1,0 +1,248 @@
+{
+ "map": "stalingrad_w",
+ "crs": "WGS84",
+ "bounds": {
+  "minLon": 44.150244,
+  "maxLon": 44.96182,
+  "minLat": 48.479034,
+  "maxLat": 49.017936
+ },
+ "corners": {
+  "nw": [
+   44.150244,
+   49.017936
+  ],
+  "ne": [
+   44.96182,
+   49.017936
+  ],
+  "sw": [
+   44.150244,
+   48.479034
+  ],
+  "se": [
+   44.96182,
+   48.479034
+  ]
+ },
+ "method": "ocr+gazetteer+dem-match",
+ "residualKm": 1.63,
+ "anchorResidualKm": 1.63,
+ "bboxUncertaintyKm": 1.5,
+ "anchors": [
+  {
+   "text": "Verkhnepogromnoye",
+   "lat": 48.9488,
+   "lon": 44.84805,
+   "px": 1723.0,
+   "py": 276.0,
+   "score": 100.0,
+   "gazetteer": "verkhnepogromnoye",
+   "offsetKm": 3.32
+  },
+  {
+   "text": "Samofalovka",
+   "lat": 48.94784,
+   "lon": 44.21413,
+   "px": 216.5,
+   "py": 290.5,
+   "score": 100.0,
+   "gazetteer": "samofalovka",
+   "offsetKm": 3.55
+  },
+  {
+   "text": "Nizhnepogromnoye",
+   "lat": 48.87333,
+   "lon": 44.75861,
+   "px": 1485.0,
+   "py": 568.5,
+   "score": 100.0,
+   "gazetteer": "nizhnepogromnoye",
+   "offsetKm": 3.02
+  },
+  {
+   "text": "Rynok",
+   "lat": 48.81667,
+   "lon": 44.65,
+   "px": 1259.0,
+   "py": 702.0,
+   "score": 100.0,
+   "gazetteer": "rynok",
+   "offsetKm": 2.49
+  },
+  {
+   "text": "Gumrak",
+   "lat": 48.78255,
+   "lon": 44.3824,
+   "px": 589.5,
+   "py": 929.5,
+   "score": 100.0,
+   "gazetteer": "gumrak",
+   "offsetKm": 1.16
+  },
+  {
+   "text": "Staren'kiy",
+   "lat": 48.74698,
+   "lon": 44.65749,
+   "px": 1318.0,
+   "py": 1046.5,
+   "score": 100.0,
+   "gazetteer": "starenkiy",
+   "offsetKm": 0.0
+  },
+  {
+   "text": "Burkovsky",
+   "lat": 48.7046,
+   "lon": 44.66076,
+   "px": 1333.5,
+   "py": 1216.5,
+   "score": 94.7,
+   "gazetteer": "burkovskiy",
+   "offsetKm": 0.29
+  },
+  {
+   "text": "Yelshankao",
+   "lat": 48.67506,
+   "lon": 44.45818,
+   "px": 684.5,
+   "py": 1339.5,
+   "score": 94.7,
+   "gazetteer": "yelshanka",
+   "offsetKm": 2.11
+  },
+  {
+   "text": "Kashirin",
+   "lat": 48.66239,
+   "lon": 44.83615,
+   "px": 1672.5,
+   "py": 1355.5,
+   "score": 100.0,
+   "gazetteer": "kashirin",
+   "offsetKm": 3.81
+  },
+  {
+   "text": "Kuporosnoyeo",
+   "lat": 48.6571,
+   "lon": 44.43592,
+   "px": 700.0,
+   "py": 1389.5,
+   "score": 81.8,
+   "gazetteer": "kuporosnyy",
+   "offsetKm": 0.0
+  },
+  {
+   "text": "Bobyli,",
+   "lat": 48.63425,
+   "lon": 44.48475,
+   "px": 863.0,
+   "py": 1494.0,
+   "score": 100.0,
+   "gazetteer": "bobyli",
+   "offsetKm": 0.87
+  },
+  {
+   "text": "Tumak",
+   "lat": 48.62563,
+   "lon": 44.62153,
+   "px": 1247.0,
+   "py": 1489.5,
+   "score": 100.0,
+   "gazetteer": "tumak",
+   "offsetKm": 0.97
+  },
+  {
+   "text": "Volgostroy",
+   "lat": 48.61754,
+   "lon": 44.52169,
+   "px": 1037.5,
+   "py": 1575.5,
+   "score": 100.0,
+   "gazetteer": "volgostroy",
+   "offsetKm": 2.78
+  },
+  {
+   "text": "Kletsky",
+   "lat": 48.60023,
+   "lon": 44.6922,
+   "px": 1425.5,
+   "py": 1626.5,
+   "score": 93.3,
+   "gazetteer": "kletskiy",
+   "offsetKm": 0.64
+  },
+  {
+   "text": "Beketovka",
+   "lat": 48.59261,
+   "lon": 44.42427,
+   "px": 672.5,
+   "py": 1644.0,
+   "score": 100.0,
+   "gazetteer": "beketovka",
+   "offsetKm": 0.28
+  },
+  {
+   "text": "Shchutchiy",
+   "lat": 48.57614,
+   "lon": 44.68891,
+   "px": 1374.5,
+   "py": 1661.5,
+   "score": 94.7,
+   "gazetteer": "shchuchiy",
+   "offsetKm": 1.35
+  }
+ ],
+ "crosscheck": {
+  "nccPeak": 0.8637,
+  "coarseNcc": 0.7972,
+  "worldUnitM": 0.9085,
+  "worldSquareKm": [
+   59.6,
+   59.6
+  ],
+  "labelResidKm": [
+   0.0,
+   0.0,
+   0.3,
+   0.3,
+   0.6,
+   0.9,
+   1.0,
+   1.2,
+   1.4,
+   2.1,
+   2.5,
+   2.8,
+   3.0,
+   3.3,
+   3.6,
+   3.8
+  ],
+  "anchorsUsed": 16,
+  "textureExtentKm": [
+   60.3,
+   58.8
+  ],
+  "textureVsWorldScale": 1.012,
+  "textureCenterOffsetKm": 0.49,
+  "bboxUncertaintyKm": 1.5,
+  "sizeErrPct": 9.15,
+  "squareErrPct": 0.0,
+  "sizeCheckOk": true,
+  "landFracMap": 0.779,
+  "landFracDem": 0.7283,
+  "landFracRatio": 1.07,
+  "textureSeaFrac": 0.0,
+  "textureLandIou": null,
+  "solvedBeforeVeto": true,
+  "confidenceBeforeVeto": "medium"
+ },
+ "confidence": "medium",
+ "note": "label hypothesis affine; fitted world unit = 0.909 real m; 38/38 labels resolved",
+ "textureBounds": {
+  "minLon": 44.142399,
+  "maxLon": 44.963467,
+  "minLat": 48.486457,
+  "maxLat": 49.018362
+ },
+ "demNcc": 0.8637
+}

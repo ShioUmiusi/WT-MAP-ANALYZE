@@ -1,0 +1,19 @@
+{
+ "map": "hangar_field_halloween",
+ "crs": "WGS84",
+ "bounds": null,
+ "corners": null,
+ "method": null,
+ "residualKm": null,
+ "anchorResidualKm": null,
+ "bboxUncertaintyKm": null,
+ "anchors": [],
+ "crosscheck": {
+  "heightStdM": 15.3,
+  "sizeErrPct": null,
+  "squareErrPct": null,
+  "sizeCheckOk": false
+ },
+ "confidence": "unresolved",
+ "note": "flat terrain: heightmap std only 15.3 m, no DEM signal to match against"
+}

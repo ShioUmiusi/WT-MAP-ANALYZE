@@ -1,0 +1,40 @@
+{
+ "map": "saipan",
+ "crs": "WGS84",
+ "bounds": null,
+ "corners": null,
+ "method": "ocr+gazetteer+dem-match",
+ "residualKm": 0.0,
+ "anchorResidualKm": 0.0,
+ "bboxUncertaintyKm": 1.5,
+ "anchors": [],
+ "crosscheck": {
+  "nccPeak": 0.4735,
+  "coarseNcc": 0.4718,
+  "worldUnitM": 1.0284,
+  "worldSquareKm": [
+   67.4,
+   67.4
+  ],
+  "labelResidKm": [],
+  "anchorsUsed": 0,
+  "textureExtentKm": [
+   265.0,
+   326.6
+  ],
+  "textureVsWorldScale": 4.843,
+  "textureCenterOffsetKm": 4159.25,
+  "bboxUncertaintyKm": 1.5,
+  "sizeErrPct": null,
+  "squareErrPct": null,
+  "sizeCheckOk": false
+ },
+ "confidence": "unresolved",
+ "note": "DEM correlation too weak (NCC 0.47) label hypothesis label:makuna; fitted world unit = 1.028 real m; 50/55 labels resolved",
+ "textureBounds": {
+  "minLon": -10.60197,
+  "maxLon": -8.204952,
+  "minLat": 5.292549,
+  "maxLat": 8.246739
+ }
+}

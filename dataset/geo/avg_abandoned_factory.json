@@ -1,0 +1,19 @@
+{
+ "map": "avg_abandoned_factory",
+ "crs": "WGS84",
+ "bounds": null,
+ "corners": null,
+ "method": null,
+ "residualKm": null,
+ "anchorResidualKm": null,
+ "bboxUncertaintyKm": null,
+ "anchors": [],
+ "crosscheck": {
+  "heightStdM": 12.9,
+  "sizeErrPct": null,
+  "squareErrPct": null,
+  "sizeCheckOk": false
+ },
+ "confidence": "unresolved",
+ "note": "flat terrain: heightmap std only 12.9 m, no DEM signal to match against"
+}

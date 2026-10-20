@@ -1,0 +1,105 @@
+{
+ "map": "avg_port_novorossiysk",
+ "crs": "WGS84",
+ "bounds": {
+  "minLon": 37.67118,
+  "maxLon": 37.712213,
+  "minLat": 44.7399,
+  "maxLat": 44.769244
+ },
+ "corners": {
+  "nw": [
+   37.67118,
+   44.769244
+  ],
+  "ne": [
+   37.712213,
+   44.769244
+  ],
+  "sw": [
+   37.67118,
+   44.7399
+  ],
+  "se": [
+   37.712213,
+   44.7399
+  ]
+ },
+ "method": "ocr+gazetteer+dem-match",
+ "residualKm": 2.21,
+ "anchorResidualKm": 2.21,
+ "bboxUncertaintyKm": 2.0,
+ "anchors": [
+  {
+   "text": "Novorossiysk",
+   "lat": 44.73188,
+   "lon": 37.76176,
+   "px": 1147.5,
+   "py": 1036.5,
+   "score": 100.0,
+   "gazetteer": "novorossiysk",
+   "offsetKm": 0.0
+  },
+  {
+   "text": "Gelendzhik",
+   "lat": 44.58014,
+   "lon": 38.06646,
+   "px": 1804.5,
+   "py": 1660.0,
+   "score": 100.0,
+   "gazetteer": "gelendzhik",
+   "offsetKm": 4.98
+  },
+  {
+   "text": "Gelendzhik",
+   "lat": 44.58014,
+   "lon": 38.06646,
+   "px": 1966.5,
+   "py": 1716.5,
+   "score": 100.0,
+   "gazetteer": "gelendzhik",
+   "offsetKm": 0.0
+  }
+ ],
+ "crosscheck": {
+  "nccPeak": 0.9662,
+  "coarseNcc": 0.9374,
+  "worldUnitM": 0.7919,
+  "worldSquareKm": [
+   3.2,
+   3.2
+  ],
+  "labelResidKm": [
+   0.0,
+   0.0,
+   5.0
+  ],
+  "anchorsUsed": 3,
+  "textureExtentKm": [
+   64.5,
+   52.4
+  ],
+  "textureVsWorldScale": 19.895,
+  "textureCenterOffsetKm": 3.15,
+  "bboxUncertaintyKm": 2.0,
+  "sizeErrPct": 20.81,
+  "squareErrPct": 0.0,
+  "sizeCheckOk": false,
+  "landFracMap": 0.6665,
+  "landFracDem": 1.0,
+  "landFracRatio": 1.5,
+  "textureSeaFrac": 0.0,
+  "textureLandIou": null,
+  "solvedBeforeVeto": true,
+  "confidenceBeforeVeto": "low"
+ },
+ "confidence": "low",
+ "note": "label hypothesis affine; fitted world unit = 0.792 real m; 9/9 labels resolved [demoted: bbox size error 20.81% vs world square]",
+ "textureBounds": {
+  "minLon": 37.3116,
+  "maxLon": 38.127669,
+  "minLat": 44.497135,
+  "maxLat": 44.97128
+ },
+ "demNcc": 0.9662
+}

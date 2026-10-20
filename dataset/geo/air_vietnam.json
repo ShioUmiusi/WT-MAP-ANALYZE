@@ -1,0 +1,102 @@
+{
+ "map": "air_vietnam",
+ "crs": "WGS84",
+ "bounds": {
+  "minLon": 9.889951,
+  "maxLon": 11.071963,
+  "minLat": 3.950264,
+  "maxLat": 5.136876
+ },
+ "corners": {
+  "nw": [
+   9.889951,
+   5.136876
+  ],
+  "ne": [
+   11.071963,
+   5.136876
+  ],
+  "sw": [
+   9.889951,
+   3.950264
+  ],
+  "se": [
+   11.071963,
+   3.950264
+  ]
+ },
+ "method": "dem-coarse-only",
+ "residualKm": null,
+ "anchorResidualKm": null,
+ "bboxUncertaintyKm": 8.0,
+ "anchors": [],
+ "crosscheck": {
+  "demNcc": 0.5204,
+  "bboxUncertaintyKm": 8.0,
+  "heightStdM": 175.7,
+  "prescreenMargin": 0.0123,
+  "refineAttempts": [
+   {
+    "seedNcc": 0.52,
+    "refinedNcc": 0.351,
+    "lon": 10.484,
+    "lat": 4.56,
+    "driftDeg": 0.017
+   },
+   {
+    "seedNcc": 0.508,
+    "refinedNcc": 0.326,
+    "lon": 23.555,
+    "lat": 5.537,
+    "driftDeg": 0.038
+   }
+  ],
+  "refine": "failed (weak correlation)",
+  "prescreenCandidates": [
+   {
+    "ncc": 0.52,
+    "lon": 10.481,
+    "lat": 4.544
+   },
+   {
+    "ncc": 0.508,
+    "lon": 23.577,
+    "lat": 5.507
+   },
+   {
+    "ncc": 0.489,
+    "lon": 22.126,
+    "lat": 7.428
+   },
+   {
+    "ncc": 0.488,
+    "lon": -56.667,
+    "lat": -14.669
+   },
+   {
+    "ncc": 0.485,
+    "lon": -8.855,
+    "lat": 6.861
+   }
+  ],
+  "bestCoarseNcc": 0.251,
+  "sizeErrPct": 0.0,
+  "squareErrPct": 0.0,
+  "sizeCheckOk": true,
+  "worldSquareKm": [
+   131.2,
+   131.2
+  ],
+  "nccPeak": 0.5204,
+  "landFracMap": 0.9814,
+  "landFracDem": 1.0,
+  "landFracRatio": 1.019,
+  "textureSeaFrac": 0.0,
+  "textureLandIou": null,
+  "solvedBeforeVeto": true,
+  "confidenceBeforeVeto": "low"
+ },
+ "confidence": "low",
+ "note": "labels could not be aligned; too few consistent label anchors for an affine fit; coarse-only: z5 global prescreen peak 0.52 at 10.48,4.54; z10 refine failed (weak correlation); position good to ~5-10 km; terrain only, no OCR labels used",
+ "demNcc": 0.5204
+}

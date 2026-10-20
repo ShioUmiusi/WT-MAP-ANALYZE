@@ -1,0 +1,160 @@
+{
+ "map": "spain",
+ "crs": "WGS84",
+ "bounds": {
+  "minLon": -0.283831,
+  "maxLon": 1.39359,
+  "minLat": 40.470124,
+  "maxLat": 41.742959
+ },
+ "corners": {
+  "nw": [
+   -0.283831,
+   41.742959
+  ],
+  "ne": [
+   1.39359,
+   41.742959
+  ],
+  "sw": [
+   -0.283831,
+   40.470124
+  ],
+  "se": [
+   1.39359,
+   40.470124
+  ]
+ },
+ "method": "ocr+gazetteer+dem-match",
+ "residualKm": 2.37,
+ "anchorResidualKm": 2.37,
+ "bboxUncertaintyKm": 1.5,
+ "anchors": [
+  {
+   "text": "Lleida",
+   "lat": 41.61674,
+   "lon": 0.62218,
+   "px": 1164.0,
+   "py": 155.0,
+   "score": 100.0,
+   "gazetteer": "lleida",
+   "offsetKm": 3.01
+  },
+  {
+   "text": "Reus",
+   "lat": 41.15612,
+   "lon": 1.10687,
+   "px": 1663.5,
+   "py": 953.0,
+   "score": 92.0,
+   "gazetteer": "reus",
+   "offsetKm": 2.89
+  },
+  {
+   "text": "Tarragona",
+   "lat": 41.11905,
+   "lon": 1.24544,
+   "px": 1870.5,
+   "py": 1006.0,
+   "score": 100.0,
+   "gazetteer": "tarragona",
+   "offsetKm": 0.0
+  },
+  {
+   "text": "Gandesa",
+   "lat": 41.05375,
+   "lon": 0.4385,
+   "px": 900.5,
+   "py": 1116.5,
+   "score": 100.0,
+   "gazetteer": "gandesa",
+   "offsetKm": 0.0
+  },
+  {
+   "text": "Cambrils",
+   "lat": 41.06997,
+   "lon": 1.05949,
+   "px": 1636.0,
+   "py": 1132.0,
+   "score": 100.0,
+   "gazetteer": "cambrils",
+   "offsetKm": 2.91
+  },
+  {
+   "text": "Salou",
+   "lat": 41.07663,
+   "lon": 1.14163,
+   "px": 1733.5,
+   "py": 1131.5,
+   "score": 100.0,
+   "gazetteer": "salou",
+   "offsetKm": 3.61
+  },
+  {
+   "text": "Xertao",
+   "lat": 40.90944,
+   "lon": 0.49167,
+   "px": 931.5,
+   "py": 1349.0,
+   "score": 90.9,
+   "gazetteer": "xerta",
+   "offsetKm": 2.43
+  },
+  {
+   "text": "Tortosa",
+   "lat": 40.83485,
+   "lon": 0.47756,
+   "px": 908.0,
+   "py": 1472.5,
+   "score": 100.0,
+   "gazetteer": "tortosa",
+   "offsetKm": 2.92
+  }
+ ],
+ "crosscheck": {
+  "nccPeak": 0.882,
+  "coarseNcc": 0.8567,
+  "worldUnitM": 1.0727,
+  "worldSquareKm": [
+   140.7,
+   140.7
+  ],
+  "labelResidKm": [
+   0.0,
+   0.0,
+   2.4,
+   2.9,
+   2.9,
+   2.9,
+   3.0,
+   3.6
+  ],
+  "anchorsUsed": 8,
+  "textureExtentKm": [
+   142.6,
+   133.1
+  ],
+  "textureVsWorldScale": 1.013,
+  "textureCenterOffsetKm": 0.83,
+  "bboxUncertaintyKm": 1.5,
+  "sizeErrPct": 7.27,
+  "squareErrPct": 0.0,
+  "sizeCheckOk": true,
+  "landFracMap": 0.8037,
+  "landFracDem": 0.8047,
+  "landFracRatio": 1.001,
+  "textureSeaFrac": 0.004,
+  "textureLandIou": null,
+  "solvedBeforeVeto": true,
+  "confidenceBeforeVeto": "medium"
+ },
+ "confidence": "medium",
+ "note": "label hypothesis affine; fitted world unit = 1.073 real m; 18/20 labels resolved",
+ "textureBounds": {
+  "minLon": -0.298256,
+  "maxLon": 1.401425,
+  "minLat": 40.511821,
+  "maxLat": 41.715462
+ },
+ "demNcc": 0.882
+}

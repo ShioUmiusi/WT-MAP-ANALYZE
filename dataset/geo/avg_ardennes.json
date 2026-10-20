@@ -1,0 +1,19 @@
+{
+ "map": "avg_ardennes",
+ "crs": "WGS84",
+ "bounds": null,
+ "corners": null,
+ "method": null,
+ "residualKm": null,
+ "anchorResidualKm": null,
+ "bboxUncertaintyKm": null,
+ "anchors": [],
+ "crosscheck": {
+  "heightStdM": 14.5,
+  "sizeErrPct": null,
+  "squareErrPct": null,
+  "sizeCheckOk": false
+ },
+ "confidence": "unresolved",
+ "note": "flat terrain: heightmap std only 14.5 m, no DEM signal to match against"
+}

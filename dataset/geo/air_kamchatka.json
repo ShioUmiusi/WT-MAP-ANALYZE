@@ -1,0 +1,102 @@
+{
+ "map": "air_kamchatka",
+ "crs": "WGS84",
+ "bounds": {
+  "minLon": 159.108174,
+  "maxLon": 161.209209,
+  "minLat": 55.294329,
+  "maxLat": 56.480941
+ },
+ "corners": {
+  "nw": [
+   159.108174,
+   56.480941
+  ],
+  "ne": [
+   161.209209,
+   56.480941
+  ],
+  "sw": [
+   159.108174,
+   55.294329
+  ],
+  "se": [
+   161.209209,
+   55.294329
+  ]
+ },
+ "method": "dem-coarse-only",
+ "residualKm": null,
+ "anchorResidualKm": null,
+ "bboxUncertaintyKm": 8.0,
+ "anchors": [],
+ "crosscheck": {
+  "demNcc": 0.6999,
+  "bboxUncertaintyKm": 8.0,
+  "heightStdM": 506.9,
+  "prescreenMargin": 0.1486,
+  "refineAttempts": [
+   {
+    "seedNcc": 0.7,
+    "refinedNcc": 0.722,
+    "lon": 160.131,
+    "lat": 55.901,
+    "driftDeg": 0.02
+   },
+   {
+    "seedNcc": 0.551,
+    "refinedNcc": 0.524,
+    "lon": -68.186,
+    "lat": -31.407,
+    "driftDeg": 0.005
+   }
+  ],
+  "refine": "failed (weak correlation)",
+  "prescreenCandidates": [
+   {
+    "ncc": 0.7,
+    "lon": 160.159,
+    "lat": 55.888
+   },
+   {
+    "ncc": 0.551,
+    "lon": -68.181,
+    "lat": -31.41
+   },
+   {
+    "ncc": 0.528,
+    "lon": 36.211,
+    "lat": 21.698
+   },
+   {
+    "ncc": 0.521,
+    "lon": 105.952,
+    "lat": 35.568
+   },
+   {
+    "ncc": 0.518,
+    "lon": 4.636,
+    "lat": 28.053
+   }
+  ],
+  "bestCoarseNcc": 0.1126,
+  "sizeErrPct": 0.0,
+  "squareErrPct": 0.0,
+  "sizeCheckOk": true,
+  "worldSquareKm": [
+   131.2,
+   131.2
+  ],
+  "nccPeak": 0.6999,
+  "landFracMap": 0.9879,
+  "landFracDem": 1.0,
+  "landFracRatio": 1.012,
+  "textureSeaFrac": 0.0,
+  "textureLandIou": null,
+  "solvedBeforeVeto": true,
+  "confidenceBeforeVeto": "low"
+ },
+ "confidence": "low",
+ "note": "labels could not be aligned; too few consistent label anchors for an affine fit; coarse-only: z5 global prescreen peak 0.70 at 160.16,55.89; z10 refine failed (weak correlation); position good to ~5-10 km; terrain only, no OCR labels used",
+ "demNcc": 0.6999
+}

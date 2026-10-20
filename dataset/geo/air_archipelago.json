@@ -1,0 +1,61 @@
+{
+ "map": "air_archipelago",
+ "crs": "WGS84",
+ "bounds": null,
+ "corners": null,
+ "method": "dem-only",
+ "residualKm": null,
+ "anchorResidualKm": null,
+ "bboxUncertaintyKm": 1.5,
+ "anchors": [],
+ "crosscheck": {
+  "demNcc": 0.8957,
+  "prescreenTopNcc": 0.9119,
+  "prescreenMargin": 0.0125,
+  "worldUnitM": 0.9299,
+  "heightStdM": 1425.4,
+  "bboxUncertaintyKm": 1.5,
+  "demSource": "terrarium z10",
+  "prescreenCandidates": [
+   {
+    "ncc": 0.912,
+    "lon": 39.485,
+    "lat": -17.414
+   },
+   {
+    "ncc": 0.899,
+    "lon": -25.84,
+    "lat": 68.8
+   },
+   {
+    "ncc": 0.898,
+    "lon": -98.767,
+    "lat": 29.401
+   },
+   {
+    "ncc": 0.893,
+    "lon": 55.173,
+    "lat": 16.784
+   }
+  ],
+  "bestCoarseNcc": 0.1355,
+  "sizeErrPct": 7.01,
+  "squareErrPct": 0.0,
+  "sizeCheckOk": true,
+  "worldSquareKm": [
+   243.8,
+   243.8
+  ],
+  "landFracMap": 0.7552,
+  "landFracDem": 0.1709,
+  "landFracRatio": 4.419,
+  "textureSeaFrac": 0.0,
+  "textureLandIou": null,
+  "solvedBeforeVeto": true,
+  "confidenceBeforeVeto": "low"
+ },
+ "confidence": "unresolved",
+ "note": "labels could not be aligned; too few consistent label anchors for an affine fit; terrain-only match (no OCR labels); z5 prescreen peak 0.91 at 39.48,-17.41, z10 refined NCC 0.896, margin 0.013 REJECTED: land/sea mismatch (map 0.76 vs dem 0.17, ratio 4.4x)",
+ "demNcc": 0.8957,
+ "rejected": "land/sea mismatch (map 0.76 vs dem 0.17, ratio 4.4x)"
+}

@@ -1,0 +1,79 @@
+{
+ "map": "arcade_phiphi_crater",
+ "crs": "WGS84",
+ "bounds": null,
+ "corners": null,
+ "method": "dem-coarse-only",
+ "residualKm": null,
+ "anchorResidualKm": null,
+ "bboxUncertaintyKm": 8.0,
+ "anchors": [],
+ "crosscheck": {
+  "demNcc": 0.7226,
+  "bboxUncertaintyKm": 8.0,
+  "heightStdM": 239.5,
+  "prescreenMargin": 0.0823,
+  "refineAttempts": [
+   {
+    "seedNcc": 0.723,
+    "refinedNcc": 0.486,
+    "lon": -117.144,
+    "lat": 40.605,
+    "driftDeg": 0.01
+   },
+   {
+    "seedNcc": 0.64,
+    "refinedNcc": 0.505,
+    "lon": -158.482,
+    "lat": 61.746,
+    "driftDeg": 0.005
+   }
+  ],
+  "refine": "failed (weak correlation)",
+  "prescreenCandidates": [
+   {
+    "ncc": 0.723,
+    "lon": -117.136,
+    "lat": 40.597
+   },
+   {
+    "ncc": 0.64,
+    "lon": -158.489,
+    "lat": 61.742
+   },
+   {
+    "ncc": 0.634,
+    "lon": -104.216,
+    "lat": 62.421
+   },
+   {
+    "ncc": 0.611,
+    "lon": -119.575,
+    "lat": 59.423
+   },
+   {
+    "ncc": 0.603,
+    "lon": -154.995,
+    "lat": 63.47
+   }
+  ],
+  "sizeErrPct": 0.0,
+  "squareErrPct": 0.0,
+  "sizeCheckOk": true,
+  "worldSquareKm": [
+   32.8,
+   32.8
+  ],
+  "landFracMap": 0.2389,
+  "landFracDem": 1.0,
+  "landFracRatio": 4.187,
+  "textureSeaFrac": 0.0,
+  "textureLandIou": null,
+  "solvedBeforeVeto": true,
+  "confidenceBeforeVeto": "low"
+ },
+ "confidence": "unresolved",
+ "note": "coarse-only: z5 global prescreen peak 0.72 at -117.14,40.60; z10 refine failed (weak correlation); position good to ~5-10 km; terrain only, no OCR labels used REJECTED: land/sea mismatch (map 0.24 vs dem 1.00, ratio 4.2x)",
+ "demNcc": 0.7226,
+ "rejected": "land/sea mismatch (map 0.24 vs dem 1.00, ratio 4.2x)"
+}

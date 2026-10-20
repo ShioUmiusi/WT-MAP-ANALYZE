@@ -1,0 +1,36 @@
+{
+ "map": "avn_phang_nga_bay_islands",
+ "crs": "WGS84",
+ "bounds": null,
+ "corners": null,
+ "method": "ocr+gazetteer+dem-match",
+ "residualKm": null,
+ "anchorResidualKm": null,
+ "bboxUncertaintyKm": 2.0,
+ "anchors": [],
+ "crosscheck": {
+  "nccPeak": 0.6073,
+  "coarseNcc": 0.6192,
+  "worldUnitM": 0.9915,
+  "worldSquareKm": [
+   4.1,
+   4.1
+  ],
+  "labelResidKm": [],
+  "anchorsUsed": 0,
+  "bboxUncertaintyKm": 2.0,
+  "sizeErrPct": 0.85,
+  "squareErrPct": 0.0,
+  "sizeCheckOk": true,
+  "landFracMap": 0.2131,
+  "landFracDem": 1.0,
+  "landFracRatio": 4.692,
+  "textureSeaFrac": 0.005,
+  "textureLandIou": null,
+  "solvedBeforeVeto": true,
+  "confidenceBeforeVeto": "low"
+ },
+ "confidence": "unresolved",
+ "note": "label hypothesis label:tong; fitted world unit = 0.991 real m; 9/17 labels resolved REJECTED: land/sea mismatch (map 0.21 vs dem 1.00, ratio 4.7x)",
+ "rejected": "land/sea mismatch (map 0.21 vs dem 1.00, ratio 4.7x)"
+}

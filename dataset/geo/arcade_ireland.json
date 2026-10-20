@@ -1,0 +1,87 @@
+{
+ "map": "arcade_ireland",
+ "crs": "WGS84",
+ "bounds": {
+  "minLon": 5.255723,
+  "maxLon": 5.602485,
+  "minLat": 34.485993,
+  "maxLat": 34.773337
+ },
+ "corners": {
+  "nw": [
+   5.255723,
+   34.773337
+  ],
+  "ne": [
+   5.602485,
+   34.773337
+  ],
+  "sw": [
+   5.255723,
+   34.485993
+  ],
+  "se": [
+   5.602485,
+   34.485993
+  ]
+ },
+ "method": "dem-only",
+ "residualKm": null,
+ "anchorResidualKm": null,
+ "bboxUncertaintyKm": 2.0,
+ "anchors": [],
+ "crosscheck": {
+  "demNcc": 0.8135,
+  "prescreenTopNcc": 0.9089,
+  "prescreenMargin": 0.0075,
+  "worldUnitM": 0.9689,
+  "heightStdM": 499.9,
+  "bboxUncertaintyKm": 2.0,
+  "demSource": "terrarium z10",
+  "prescreenCandidates": [
+   {
+    "ncc": 0.909,
+    "lon": 5.449,
+    "lat": 34.633
+   },
+   {
+    "ncc": 0.901,
+    "lon": -3.252,
+    "lat": 31.952
+   },
+   {
+    "ncc": 0.899,
+    "lon": 13.403,
+    "lat": 26.313
+   },
+   {
+    "ncc": 0.898,
+    "lon": -66.797,
+    "lat": -39.368
+   },
+   {
+    "ncc": 0.896,
+    "lon": -101.558,
+    "lat": 37.649
+   }
+  ],
+  "sizeErrPct": 3.11,
+  "squareErrPct": 0.0,
+  "sizeCheckOk": true,
+  "worldSquareKm": [
+   31.8,
+   31.8
+  ],
+  "nccPeak": 0.8135,
+  "landFracMap": 0.7656,
+  "landFracDem": 1.0,
+  "landFracRatio": 1.306,
+  "textureSeaFrac": 0.0,
+  "textureLandIou": null,
+  "solvedBeforeVeto": true,
+  "confidenceBeforeVeto": "low"
+ },
+ "confidence": "low",
+ "note": "terrain-only match (no OCR labels); z5 prescreen peak 0.91 at 5.45,34.63, z10 refined NCC 0.814, margin 0.007",
+ "demNcc": 0.8135
+}

@@ -1,0 +1,754 @@
+{
+ "map": "moscow",
+ "crs": "WGS84",
+ "bounds": {
+  "minLon": 35.766969,
+  "maxLon": 38.191924,
+  "minLat": 54.71694,
+  "maxLat": 56.103297
+ },
+ "corners": {
+  "nw": [
+   35.766969,
+   56.103297
+  ],
+  "ne": [
+   38.191924,
+   56.103297
+  ],
+  "sw": [
+   35.766969,
+   54.71694
+  ],
+  "se": [
+   38.191924,
+   54.71694
+  ]
+ },
+ "method": "ocr+gazetteer+dem-match",
+ "residualKm": 1.99,
+ "anchorResidualKm": 1.99,
+ "bboxUncertaintyKm": 1.0,
+ "anchors": [
+  {
+   "text": "Maydarovo",
+   "lat": 56.08333,
+   "lon": 37.15,
+   "px": 1172.0,
+   "py": 15.5,
+   "score": 100.0,
+   "gazetteer": "maydarovo",
+   "offsetKm": 1.37
+  },
+  {
+   "text": "Pravdinskiy",
+   "lat": 56.06034,
+   "lon": 37.86266,
+   "px": 1757.0,
+   "py": 52.5,
+   "score": 100.0,
+   "gazetteer": "pravdinskiy",
+   "offsetKm": 1.31
+  },
+  {
+   "text": "Volokolamsk",
+   "lat": 56.03361,
+   "lon": 35.96944,
+   "px": 191.0,
+   "py": 110.0,
+   "score": 100.0,
+   "gazetteer": "volokolamsk",
+   "offsetKm": 2.79
+  },
+  {
+   "text": "Lobnya",
+   "lat": 56.02714,
+   "lon": 37.46793,
+   "px": 1469.0,
+   "py": 109.5,
+   "score": 100.0,
+   "gazetteer": "lobnya",
+   "offsetKm": 3.63
+  },
+  {
+   "text": "Alabushevo",
+   "lat": 56.01667,
+   "lon": 37.15,
+   "px": 1144.5,
+   "py": 132.0,
+   "score": 100.0,
+   "gazetteer": "alabushevo",
+   "offsetKm": 2.64
+  },
+  {
+   "text": "Privokzal'nyy",
+   "lat": 56.00011,
+   "lon": 35.92156,
+   "px": 133.0,
+   "py": 146.0,
+   "score": 100.0,
+   "gazetteer": "privokzalnyy",
+   "offsetKm": 1.53
+  },
+  {
+   "text": "Klyaz'ma",
+   "lat": 55.97583,
+   "lon": 37.84611,
+   "px": 1742.5,
+   "py": 162.0,
+   "score": 100.0,
+   "gazetteer": "klyazma",
+   "offsetKm": 0.0
+  },
+  {
+   "text": "Ivanteyevka",
+   "lat": 55.97111,
+   "lon": 37.92083,
+   "px": 1804.0,
+   "py": 180.0,
+   "score": 100.0,
+   "gazetteer": "ivanteyevka",
+   "offsetKm": 0.8
+  },
+  {
+   "text": "Fryazino",
+   "lat": 55.96131,
+   "lon": 38.04643,
+   "px": 1932.0,
+   "py": 212.5,
+   "score": 100.0,
+   "gazetteer": "fryazino",
+   "offsetKm": 2.68
+  },
+  {
+   "text": "Korolyov",
+   "lat": 55.91732,
+   "lon": 37.81786,
+   "px": 1720.5,
+   "py": 264.5,
+   "score": 100.0,
+   "gazetteer": "korolyov",
+   "offsetKm": 1.06
+  },
+  {
+   "text": "Luchinskdye",
+   "lat": 55.90508,
+   "lon": 36.81347,
+   "px": 888.0,
+   "py": 297.0,
+   "score": 90.9,
+   "gazetteer": "luchinskoye",
+   "offsetKm": 2.15
+  },
+  {
+   "text": "SNEGIR!",
+   "lat": 55.88867,
+   "lon": 37.02421,
+   "px": 1055.0,
+   "py": 310.0,
+   "score": 92.3,
+   "gazetteer": "snegiri",
+   "offsetKm": 1.23
+  },
+  {
+   "text": "Sverdlovskiy",
+   "lat": 55.90968,
+   "lon": 38.14978,
+   "px": 2000.5,
+   "py": 307.5,
+   "score": 100.0,
+   "gazetteer": "sverdlovskiy",
+   "offsetKm": 3.38
+  },
+  {
+   "text": "Dedovsk",
+   "lat": 55.86861,
+   "lon": 37.12222,
+   "px": 1148.5,
+   "py": 339.0,
+   "score": 100.0,
+   "gazetteer": "dedovsk",
+   "offsetKm": 1.36
+  },
+  {
+   "text": "Matveytsevo",
+   "lat": 55.84778,
+   "lon": 36.2025,
+   "px": 383.5,
+   "py": 379.0,
+   "score": 100.0,
+   "gazetteer": "matveytsevo",
+   "offsetKm": 2.0
+  },
+  {
+   "text": "Krasnogorsk",
+   "lat": 55.81904,
+   "lon": 37.32984,
+   "px": 1234.0,
+   "py": 405.5,
+   "score": 100.0,
+   "gazetteer": "krasnogorsk",
+   "offsetKm": 5.85
+  },
+  {
+   "text": "Kocherino",
+   "lat": 55.81556,
+   "lon": 36.01056,
+   "px": 232.5,
+   "py": 448.5,
+   "score": 100.0,
+   "gazetteer": "kocherino",
+   "offsetKm": 3.68
+  },
+  {
+   "text": "Kupavna",
+   "lat": 55.74576,
+   "lon": 38.13136,
+   "px": 2017.0,
+   "py": 444.0,
+   "score": 100.0,
+   "gazetteer": "kupavna",
+   "offsetKm": 5.47
+  },
+  {
+   "text": "Saltykovka",
+   "lat": 55.76679,
+   "lon": 37.93533,
+   "px": 1811.5,
+   "py": 530.0,
+   "score": 100.0,
+   "gazetteer": "saltykovka",
+   "offsetKm": 3.92
+  },
+  {
+   "text": "Tabolovo",
+   "lat": 55.73739,
+   "lon": 36.22163,
+   "px": 384.5,
+   "py": 545.0,
+   "score": 100.0,
+   "gazetteer": "tabolovo",
+   "offsetKm": 1.76
+  },
+  {
+   "text": "Ruza",
+   "lat": 55.70172,
+   "lon": 36.19321,
+   "px": 399.0,
+   "py": 588.5,
+   "score": 92.0,
+   "gazetteer": "ruza",
+   "offsetKm": 2.86
+  },
+  {
+   "text": "Vlasikha",
+   "lat": 55.68423,
+   "lon": 37.19661,
+   "px": 1201.0,
+   "py": 623.5,
+   "score": 100.0,
+   "gazetteer": "vlasikha",
+   "offsetKm": 1.63
+  },
+  {
+   "text": "Odintsovo",
+   "lat": 55.66977,
+   "lon": 37.27716,
+   "px": 1326.0,
+   "py": 660.5,
+   "score": 100.0,
+   "gazetteer": "odintsovo",
+   "offsetKm": 5.17
+  },
+  {
+   "text": "Malakhovka",
+   "lat": 55.64776,
+   "lon": 38.02486,
+   "px": 1936.5,
+   "py": 652.0,
+   "score": 100.0,
+   "gazetteer": "malakhovka",
+   "offsetKm": 3.39
+  },
+  {
+   "text": "Zhavoronki",
+   "lat": 55.64943,
+   "lon": 37.10101,
+   "px": 1124.5,
+   "py": 660.5,
+   "score": 100.0,
+   "gazetteer": "zhavoronki",
+   "offsetKm": 0.57
+  },
+  {
+   "text": "Tomilino",
+   "lat": 55.65619,
+   "lon": 37.94713,
+   "px": 1808.0,
+   "py": 663.5,
+   "score": 100.0,
+   "gazetteer": "tomilino",
+   "offsetKm": 2.04
+  },
+  {
+   "text": "Solntsevo",
+   "lat": 55.63711,
+   "lon": 37.38115,
+   "px": 1376.5,
+   "py": 683.5,
+   "score": 100.0,
+   "gazetteer": "solntsevo",
+   "offsetKm": 1.85
+  },
+  {
+   "text": "Chapasovo",
+   "lat": 55.63289,
+   "lon": 36.20016,
+   "px": 370.5,
+   "py": 696.0,
+   "score": 100.0,
+   "gazetteer": "chapasovo",
+   "offsetKm": 1.28
+  },
+  {
+   "text": "Udel'naya",
+   "lat": 55.636,
+   "lon": 38.045,
+   "px": 1918.0,
+   "py": 690.5,
+   "score": 100.0,
+   "gazetteer": "udelnaya",
+   "offsetKm": 1.41
+  },
+  {
+   "text": "Tuchkovo",
+   "lat": 55.60111,
+   "lon": 36.46806,
+   "px": 596.5,
+   "py": 740.5,
+   "score": 100.0,
+   "gazetteer": "tuchkovo",
+   "offsetKm": 1.07
+  },
+  {
+   "text": "Zhukovsky Krato",
+   "lat": 55.59528,
+   "lon": 38.12028,
+   "px": 1987.5,
+   "py": 737.0,
+   "score": 100.0,
+   "gazetteer": "zhukovsky",
+   "offsetKm": 1.23
+  },
+  {
+   "text": "Lytkarino",
+   "lat": 55.57653,
+   "lon": 37.91245,
+   "px": 1811.0,
+   "py": 766.0,
+   "score": 100.0,
+   "gazetteer": "lytkarino",
+   "offsetKm": 1.01
+  },
+  {
+   "text": "Prudnya",
+   "lat": 55.58595,
+   "lon": 35.95576,
+   "px": 182.0,
+   "py": 784.5,
+   "score": 100.0,
+   "gazetteer": "prudnya",
+   "offsetKm": 2.88
+  },
+  {
+   "text": "Kubinka",
+   "lat": 55.57957,
+   "lon": 36.70392,
+   "px": 777.0,
+   "py": 790.0,
+   "score": 100.0,
+   "gazetteer": "kubinka",
+   "offsetKm": 2.47
+  },
+  {
+   "text": "Zachat'ye",
+   "lat": 55.54583,
+   "lon": 36.10361,
+   "px": 300.0,
+   "py": 817.0,
+   "score": 100.0,
+   "gazetteer": "zachatye",
+   "offsetKm": 1.02
+  },
+  {
+   "text": "Vidnoye",
+   "lat": 55.5523,
+   "lon": 37.70885,
+   "px": 1636.0,
+   "py": 809.5,
+   "score": 100.0,
+   "gazetteer": "vidnoye",
+   "offsetKm": 0.92
+  },
+  {
+   "text": "Mozhaisk",
+   "lat": 55.50194,
+   "lon": 36.02722,
+   "px": 228.5,
+   "py": 887.0,
+   "score": 87.5,
+   "gazetteer": "mozhaysk",
+   "offsetKm": 0.86
+  },
+  {
+   "text": "Shcherbinka",
+   "lat": 55.498,
+   "lon": 37.5579,
+   "px": 1515.0,
+   "py": 903.0,
+   "score": 100.0,
+   "gazetteer": "shcherbinka",
+   "offsetKm": 1.84
+  },
+  {
+   "text": "Podolsk",
+   "lat": 55.42419,
+   "lon": 37.55472,
+   "px": 1503.0,
+   "py": 989.5,
+   "score": 100.0,
+   "gazetteer": "podolsk",
+   "offsetKm": 0.38
+  },
+  {
+   "text": "Domodedovo",
+   "lat": 55.44223,
+   "lon": 37.75372,
+   "px": 1727.0,
+   "py": 1008.0,
+   "score": 100.0,
+   "gazetteer": "domodedovo",
+   "offsetKm": 5.6
+  },
+  {
+   "text": "Naro-Fominsk",
+   "lat": 55.38752,
+   "lon": 36.73307,
+   "px": 851.5,
+   "py": 1060.0,
+   "score": 100.0,
+   "gazetteer": "narofominsk",
+   "offsetKm": 2.99
+  },
+  {
+   "text": "Klimovsk",
+   "lat": 55.36352,
+   "lon": 37.52984,
+   "px": 1490.0,
+   "py": 1059.0,
+   "score": 100.0,
+   "gazetteer": "klimovsk",
+   "offsetKm": 2.05
+  },
+  {
+   "text": "Vostryakovo",
+   "lat": 55.39934,
+   "lon": 37.80829,
+   "px": 1721.0,
+   "py": 1051.0,
+   "score": 100.0,
+   "gazetteer": "vostryakovo",
+   "offsetKm": 1.69
+  },
+  {
+   "text": "Sudakovo",
+   "lat": 55.37049,
+   "lon": 35.9899,
+   "px": 188.5,
+   "py": 1089.0,
+   "score": 100.0,
+   "gazetteer": "sudakovo",
+   "offsetKm": 1.18
+  },
+  {
+   "text": "Vereya",
+   "lat": 55.34472,
+   "lon": 36.17194,
+   "px": 358.5,
+   "py": 1124.0,
+   "score": 100.0,
+   "gazetteer": "vereya",
+   "offsetKm": 1.29
+  },
+  {
+   "text": "L'vovskiy",
+   "lat": 55.31872,
+   "lon": 37.52337,
+   "px": 1482.0,
+   "py": 1158.0,
+   "score": 100.0,
+   "gazetteer": "lvovskiy",
+   "offsetKm": 0.81
+  },
+  {
+   "text": "Barybino",
+   "lat": 55.26768,
+   "lon": 37.89333,
+   "px": 1793.0,
+   "py": 1237.5,
+   "score": 100.0,
+   "gazetteer": "barybino",
+   "offsetKm": 1.06
+  },
+  {
+   "text": "Stolbovaya Lyubuchany",
+   "lat": 55.25021,
+   "lon": 37.49249,
+   "px": 1464.5,
+   "py": 1262.0,
+   "score": 100.0,
+   "gazetteer": "stolbovaya",
+   "offsetKm": 1.39
+  },
+  {
+   "text": "Semichevo",
+   "lat": 55.20778,
+   "lon": 36.07556,
+   "px": 273.5,
+   "py": 1335.5,
+   "score": 100.0,
+   "gazetteer": "semichevo",
+   "offsetKm": 1.37
+  },
+  {
+   "text": "Balabanovo",
+   "lat": 55.18161,
+   "lon": 36.6606,
+   "px": 758.5,
+   "py": 1377.5,
+   "score": 100.0,
+   "gazetteer": "balabanovo",
+   "offsetKm": 1.46
+  },
+  {
+   "text": "Fedorino",
+   "lat": 55.14139,
+   "lon": 36.09278,
+   "px": 279.5,
+   "py": 1419.0,
+   "score": 100.0,
+   "gazetteer": "fedorino",
+   "offsetKm": 0.0
+  },
+  {
+   "text": "Obninsk",
+   "lat": 55.10993,
+   "lon": 36.61238,
+   "px": 742.0,
+   "py": 1447.5,
+   "score": 100.0,
+   "gazetteer": "obninsk",
+   "offsetKm": 2.61
+  },
+  {
+   "text": "Mikhnevo",
+   "lat": 55.12747,
+   "lon": 37.95451,
+   "px": 1801.5,
+   "py": 1442.0,
+   "score": 100.0,
+   "gazetteer": "mikhnevo",
+   "offsetKm": 2.4
+  },
+  {
+   "text": "Maloyaroslavets",
+   "lat": 55.01457,
+   "lon": 36.47185,
+   "px": 587.5,
+   "py": 1612.0,
+   "score": 100.0,
+   "gazetteer": "maloyaroslavets",
+   "offsetKm": 0.65
+  },
+  {
+   "text": "Medyn",
+   "lat": 54.96917,
+   "lon": 35.85861,
+   "px": 123.0,
+   "py": 1645.0,
+   "score": 100.0,
+   "gazetteer": "medyn",
+   "offsetKm": 3.86
+  },
+  {
+   "text": "Serpuhov",
+   "lat": 54.9198,
+   "lon": 37.41618,
+   "px": 1383.0,
+   "py": 1742.5,
+   "score": 94.1,
+   "gazetteer": "serpukhov",
+   "offsetKm": 0.76
+  },
+  {
+   "text": "Prioksko-Terrasniy",
+   "lat": 54.88455,
+   "lon": 37.59347,
+   "px": 1552.0,
+   "py": 1778.0,
+   "score": 78.0,
+   "gazetteer": "priokskoterrasnyygosudar",
+   "offsetKm": 2.57
+  },
+  {
+   "text": "Protvino",
+   "lat": 54.86821,
+   "lon": 37.21583,
+   "px": 1214.5,
+   "py": 1811.0,
+   "score": 100.0,
+   "gazetteer": "protvino",
+   "offsetKm": 1.44
+  },
+  {
+   "text": "Pushchino",
+   "lat": 54.83373,
+   "lon": 37.61138,
+   "px": 1556.5,
+   "py": 1874.5,
+   "score": 100.0,
+   "gazetteer": "pushchino",
+   "offsetKm": 0.96
+  },
+  {
+   "text": "Detchino",
+   "lat": 54.80923,
+   "lon": 36.3075,
+   "px": 453.0,
+   "py": 1896.5,
+   "score": 100.0,
+   "gazetteer": "detchino",
+   "offsetKm": 1.73
+  },
+  {
+   "text": "Kondrovo",
+   "lat": 54.8059,
+   "lon": 35.93067,
+   "px": 162.5,
+   "py": 1922.0,
+   "score": 100.0,
+   "gazetteer": "kondrovo",
+   "offsetKm": 1.42
+  },
+  {
+   "text": "Zaokskiy",
+   "lat": 54.73028,
+   "lon": 37.39729,
+   "px": 1378.5,
+   "py": 2016.5,
+   "score": 100.0,
+   "gazetteer": "zaokskiy",
+   "offsetKm": 1.79
+  }
+ ],
+ "crosscheck": {
+  "nccPeak": 0.8753,
+  "coarseNcc": 0.4645,
+  "worldUnitM": 1.1683,
+  "worldSquareKm": [
+   153.2,
+   153.2
+  ],
+  "labelResidKm": [
+   0.0,
+   0.0,
+   0.4,
+   0.6,
+   0.7,
+   0.8,
+   0.8,
+   0.8,
+   0.9,
+   0.9,
+   1.0,
+   1.0,
+   1.0,
+   1.1,
+   1.1,
+   1.1,
+   1.2,
+   1.2,
+   1.2,
+   1.3,
+   1.3,
+   1.3,
+   1.4,
+   1.4,
+   1.4,
+   1.4,
+   1.4,
+   1.4,
+   1.4,
+   1.5,
+   1.5,
+   1.6,
+   1.7,
+   1.7,
+   1.8,
+   1.8,
+   1.8,
+   1.8,
+   2.0,
+   2.0,
+   2.1,
+   2.2,
+   2.4,
+   2.5,
+   2.6,
+   2.6,
+   2.6,
+   2.7,
+   2.8,
+   2.9,
+   2.9,
+   3.0,
+   3.4,
+   3.4,
+   3.6,
+   3.7,
+   3.9,
+   3.9,
+   5.2,
+   5.5,
+   5.6,
+   5.8
+  ],
+  "anchorsUsed": 62,
+  "textureExtentKm": [
+   155.0,
+   153.4
+  ],
+  "textureVsWorldScale": 1.011,
+  "textureCenterOffsetKm": 0.4,
+  "bboxUncertaintyKm": 1.0,
+  "sizeErrPct": 16.83,
+  "squareErrPct": 0.0,
+  "sizeCheckOk": false,
+  "landFracMap": 0.9862,
+  "landFracDem": 1.0,
+  "landFracRatio": 1.014,
+  "textureSeaFrac": 0.01,
+  "textureLandIou": null,
+  "solvedBeforeVeto": true,
+  "confidenceBeforeVeto": "low"
+ },
+ "confidence": "low",
+ "note": "label hypothesis affine; fitted world unit = 1.168 real m; 113/115 labels resolved [demoted: bbox size error 16.83% vs world square]",
+ "textureBounds": {
+  "minLon": 35.748193,
+  "maxLon": 38.200174,
+  "minLat": 54.714472,
+  "maxLat": 56.101759
+ },
+ "demNcc": 0.8753
+}

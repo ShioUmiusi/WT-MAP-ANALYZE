@@ -1,0 +1,79 @@
+{
+ "map": "avn_africa_gulf",
+ "crs": "WGS84",
+ "bounds": null,
+ "corners": null,
+ "method": "dem-coarse-only",
+ "residualKm": null,
+ "anchorResidualKm": null,
+ "bboxUncertaintyKm": 8.0,
+ "anchors": [],
+ "crosscheck": {
+  "demNcc": 0.7913,
+  "bboxUncertaintyKm": 8.0,
+  "heightStdM": 86.5,
+  "prescreenMargin": 0.0841,
+  "refineAttempts": [
+   {
+    "seedNcc": 0.791,
+    "refinedNcc": 0.115,
+    "lon": 103.19,
+    "lat": 0.812,
+    "driftDeg": 0.22
+   },
+   {
+    "seedNcc": 0.707,
+    "refinedNcc": 0.728,
+    "lon": -164.385,
+    "lat": 61.909,
+    "driftDeg": 0.023
+   }
+  ],
+  "refine": "failed (weak correlation)",
+  "prescreenCandidates": [
+   {
+    "ncc": 0.791,
+    "lon": 103.162,
+    "lat": 0.593
+   },
+   {
+    "ncc": 0.707,
+    "lon": -164.377,
+    "lat": 61.887
+   },
+   {
+    "ncc": 0.672,
+    "lon": 160.862,
+    "lat": 70.751
+   },
+   {
+    "ncc": 0.671,
+    "lon": 132.385,
+    "lat": 47.115
+   },
+   {
+    "ncc": 0.669,
+    "lon": 32.673,
+    "lat": -1.516
+   }
+  ],
+  "sizeErrPct": 0.0,
+  "squareErrPct": 0.0,
+  "sizeCheckOk": true,
+  "worldSquareKm": [
+   65.6,
+   65.6
+  ],
+  "landFracMap": 0.0313,
+  "landFracDem": 0.7068,
+  "landFracRatio": 22.603,
+  "textureSeaFrac": 0.949,
+  "textureWaterIou": 0.284,
+  "solvedBeforeVeto": true,
+  "confidenceBeforeVeto": "low"
+ },
+ "confidence": "unresolved",
+ "note": "coarse-only: z5 global prescreen peak 0.79 at 103.16,0.59; z10 refine failed (weak correlation); position good to ~5-10 km; terrain only, no OCR labels used REJECTED: land/sea mismatch (map 0.03 vs dem 0.71, ratio 22.6x); land/water swapped (map 0.03 vs dem 0.71); texture water mask IoU 0.28 < 0.35",
+ "demNcc": 0.7913,
+ "rejected": "land/sea mismatch (map 0.03 vs dem 0.71, ratio 22.6x); land/water swapped (map 0.03 vs dem 0.71); texture water mask IoU 0.28 < 0.35"
+}

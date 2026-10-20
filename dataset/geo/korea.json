@@ -1,0 +1,215 @@
+{
+ "map": "korea",
+ "crs": "WGS84",
+ "bounds": {
+  "minLon": 127.274958,
+  "maxLon": 127.978507,
+  "minLat": 37.704245,
+  "maxLat": 38.262687
+ },
+ "corners": {
+  "nw": [
+   127.274958,
+   38.262687
+  ],
+  "ne": [
+   127.978507,
+   38.262687
+  ],
+  "sw": [
+   127.274958,
+   37.704245
+  ],
+  "se": [
+   127.978507,
+   37.704245
+  ]
+ },
+ "method": "ocr+gazetteer+dem-match",
+ "residualKm": 2.77,
+ "anchorResidualKm": 2.77,
+ "bboxUncertaintyKm": 2.0,
+ "anchors": [
+  {
+   "text": "Songjeong-gol",
+   "lat": 38.21639,
+   "lon": 127.88472,
+   "px": 1737.0,
+   "py": 230.5,
+   "score": 100.0,
+   "gazetteer": "songjeonggol",
+   "offsetKm": 0.0
+  },
+  {
+   "text": "Deokgeo-r",
+   "lat": 38.16417,
+   "lon": 127.97556,
+   "px": 1804.5,
+   "py": 402.5,
+   "score": 94.1,
+   "gazetteer": "deokgeori",
+   "offsetKm": 5.84
+  },
+  {
+   "text": "Naetook-dong",
+   "lat": 38.19071,
+   "lon": 127.68751,
+   "px": 1207.0,
+   "py": 450.0,
+   "score": 100.0,
+   "gazetteer": "naetookdong",
+   "offsetKm": 4.43
+  },
+  {
+   "text": "Kongsu-ri",
+   "lat": 38.13389,
+   "lon": 127.94639,
+   "px": 1945.0,
+   "py": 485.0,
+   "score": 100.0,
+   "gazetteer": "kongsuri",
+   "offsetKm": 1.34
+  },
+  {
+   "text": "Hwacheon",
+   "lat": 38.10705,
+   "lon": 127.70632,
+   "px": 1236.0,
+   "py": 605.5,
+   "score": 100.0,
+   "gazetteer": "hwacheon",
+   "offsetKm": 0.26
+  },
+  {
+   "text": "Araenmunjeong",
+   "lat": 37.9328,
+   "lon": 127.7565,
+   "px": 1358.5,
+   "py": 1147.5,
+   "score": 100.0,
+   "gazetteer": "araenmunjeong",
+   "offsetKm": 1.34
+  },
+  {
+   "text": "Ududong",
+   "lat": 37.9096,
+   "lon": 127.7425,
+   "px": 1339.5,
+   "py": 1261.5,
+   "score": 100.0,
+   "gazetteer": "ududong",
+   "offsetKm": 0.0
+  },
+  {
+   "text": "Chuncheon",
+   "lat": 37.87472,
+   "lon": 127.73417,
+   "px": 1364.5,
+   "py": 1346.5,
+   "score": 100.0,
+   "gazetteer": "chuncheon",
+   "offsetKm": 1.85
+  },
+  {
+   "text": "Ch'unch'on",
+   "lat": 37.87472,
+   "lon": 127.73417,
+   "px": 1266.0,
+   "py": 1423.5,
+   "score": 94.1,
+   "gazetteer": "chuncheon",
+   "offsetKm": 2.16
+  },
+  {
+   "text": "Gapyeong",
+   "lat": 37.83101,
+   "lon": 127.51059,
+   "px": 634.0,
+   "py": 1516.5,
+   "score": 100.0,
+   "gazetteer": "gapyeong",
+   "offsetKm": 1.83
+  },
+  {
+   "text": "Toegyedong",
+   "lat": 37.85109,
+   "lon": 127.73051,
+   "px": 1272.0,
+   "py": 1543.5,
+   "score": 100.0,
+   "gazetteer": "toegyedong",
+   "offsetKm": 3.0
+  },
+  {
+   "text": "Beonmal",
+   "lat": 37.75173,
+   "lon": 127.6534,
+   "px": 1050.0,
+   "py": 1631.5,
+   "score": 100.0,
+   "gazetteer": "beonmal",
+   "offsetKm": 5.43
+  },
+  {
+   "text": "Homyeong",
+   "lat": 37.7488,
+   "lon": 127.4754,
+   "px": 649.5,
+   "py": 1784.0,
+   "score": 88.9,
+   "gazetteer": "homyeongho",
+   "offsetKm": 1.88
+  }
+ ],
+ "crosscheck": {
+  "nccPeak": 0.6623,
+  "coarseNcc": 0.6358,
+  "worldUnitM": 0.9415,
+  "worldSquareKm": [
+   61.7,
+   61.7
+  ],
+  "labelResidKm": [
+   0.0,
+   0.0,
+   0.3,
+   1.3,
+   1.3,
+   1.8,
+   1.9,
+   1.9,
+   2.2,
+   3.0,
+   4.4,
+   5.4,
+   5.8
+  ],
+  "anchorsUsed": 13,
+  "textureExtentKm": [
+   66.3,
+   69.9
+  ],
+  "textureVsWorldScale": 1.132,
+  "textureCenterOffsetKm": 0.63,
+  "bboxUncertaintyKm": 2.0,
+  "sizeErrPct": 5.85,
+  "squareErrPct": 0.0,
+  "sizeCheckOk": true,
+  "landFracMap": 0.9771,
+  "landFracDem": 1.0,
+  "landFracRatio": 1.023,
+  "textureSeaFrac": 0.0,
+  "textureLandIou": null,
+  "solvedBeforeVeto": true,
+  "confidenceBeforeVeto": "low"
+ },
+ "confidence": "low",
+ "note": "label hypothesis affine; fitted world unit = 0.941 real m; 45/52 labels resolved",
+ "textureBounds": {
+  "minLon": 127.254871,
+  "maxLon": 128.010799,
+  "minLat": 37.664448,
+  "maxLat": 38.296462
+ },
+ "demNcc": 0.6623
+}

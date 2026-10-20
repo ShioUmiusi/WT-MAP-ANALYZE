@@ -1,0 +1,88 @@
+{
+ "map": "air_mysterious_valley",
+ "crs": "WGS84",
+ "bounds": {
+  "minLon": 109.279812,
+  "maxLon": 110.765154,
+  "minLat": 30.312061,
+  "maxLat": 31.594857
+ },
+ "corners": {
+  "nw": [
+   109.279812,
+   31.594857
+  ],
+  "ne": [
+   110.765154,
+   31.594857
+  ],
+  "sw": [
+   109.279812,
+   30.312061
+  ],
+  "se": [
+   110.765154,
+   30.312061
+  ]
+ },
+ "method": "dem-only",
+ "residualKm": null,
+ "anchorResidualKm": null,
+ "bboxUncertaintyKm": 1.0,
+ "anchors": [],
+ "crosscheck": {
+  "demNcc": 0.8669,
+  "prescreenTopNcc": 0.802,
+  "prescreenMargin": 0.1889,
+  "worldUnitM": 1.0811,
+  "heightStdM": 543.2,
+  "bboxUncertaintyKm": 1.0,
+  "demSource": "terrarium z10",
+  "prescreenCandidates": [
+   {
+    "ncc": 0.802,
+    "lon": 110.039,
+    "lat": 30.94
+   },
+   {
+    "ncc": 0.613,
+    "lon": 49.878,
+    "lat": 10.272
+   },
+   {
+    "ncc": 0.611,
+    "lon": 17.249,
+    "lat": 26.215
+   },
+   {
+    "ncc": 0.609,
+    "lon": 104.612,
+    "lat": 39.385
+   },
+   {
+    "ncc": 0.599,
+    "lon": -71.433,
+    "lat": 60.01
+   }
+  ],
+  "bestCoarseNcc": 0.2102,
+  "sizeErrPct": 8.11,
+  "squareErrPct": 0.0,
+  "sizeCheckOk": true,
+  "worldSquareKm": [
+   141.8,
+   141.8
+  ],
+  "nccPeak": 0.8669,
+  "landFracMap": 1.0,
+  "landFracDem": 1.0,
+  "landFracRatio": 1.0,
+  "textureSeaFrac": 0.0,
+  "textureLandIou": null,
+  "solvedBeforeVeto": true,
+  "confidenceBeforeVeto": "low"
+ },
+ "confidence": "low",
+ "note": "labels could not be aligned; too few consistent label anchors for an affine fit; terrain-only match (no OCR labels); z5 prescreen peak 0.80 at 110.04,30.94, z10 refined NCC 0.867, margin 0.189",
+ "demNcc": 0.8669
+}

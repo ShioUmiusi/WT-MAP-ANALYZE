@@ -1,0 +1,87 @@
+{
+ "map": "arcade_asia_4roads",
+ "crs": "WGS84",
+ "bounds": {
+  "minLon": 73.547955,
+  "maxLon": 74.076085,
+  "minLat": 53.256421,
+  "maxLat": 53.573416
+ },
+ "corners": {
+  "nw": [
+   73.547955,
+   53.573416
+  ],
+  "ne": [
+   74.076085,
+   53.573416
+  ],
+  "sw": [
+   73.547955,
+   53.256421
+  ],
+  "se": [
+   74.076085,
+   53.256421
+  ]
+ },
+ "method": "dem-only",
+ "residualKm": null,
+ "anchorResidualKm": null,
+ "bboxUncertaintyKm": 2.0,
+ "anchors": [],
+ "crosscheck": {
+  "demNcc": 0.8296,
+  "prescreenTopNcc": 0.8918,
+  "prescreenMargin": 0.0077,
+  "worldUnitM": 1.0688,
+  "heightStdM": 1416.1,
+  "bboxUncertaintyKm": 2.0,
+  "demSource": "terrarium z10",
+  "prescreenCandidates": [
+   {
+    "ncc": 0.892,
+    "lon": 73.784,
+    "lat": 53.41
+   },
+   {
+    "ncc": 0.884,
+    "lon": 71.301,
+    "lat": 54.021
+   },
+   {
+    "ncc": 0.872,
+    "lon": 101.777,
+    "lat": -70.671
+   },
+   {
+    "ncc": 0.86,
+    "lon": 102.458,
+    "lat": -67.917
+   },
+   {
+    "ncc": 0.856,
+    "lon": 52.141,
+    "lat": 59.723
+   }
+  ],
+  "sizeErrPct": 6.88,
+  "squareErrPct": 0.0,
+  "sizeCheckOk": true,
+  "worldSquareKm": [
+   35.0,
+   35.0
+  ],
+  "nccPeak": 0.8296,
+  "landFracMap": 0.9899,
+  "landFracDem": 1.0,
+  "landFracRatio": 1.01,
+  "textureSeaFrac": 0.0,
+  "textureLandIou": null,
+  "solvedBeforeVeto": true,
+  "confidenceBeforeVeto": "low"
+ },
+ "confidence": "low",
+ "note": "terrain-only match (no OCR labels); z5 prescreen peak 0.89 at 73.78,53.41, z10 refined NCC 0.830, margin 0.008",
+ "demNcc": 0.8296
+}

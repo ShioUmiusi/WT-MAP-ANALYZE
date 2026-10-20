@@ -1,0 +1,79 @@
+{
+ "map": "arcade_africa_seashore",
+ "crs": "WGS84",
+ "bounds": null,
+ "corners": null,
+ "method": "dem-coarse-only",
+ "residualKm": null,
+ "anchorResidualKm": null,
+ "bboxUncertaintyKm": 8.0,
+ "anchors": [],
+ "crosscheck": {
+  "demNcc": 0.7767,
+  "bboxUncertaintyKm": 8.0,
+  "heightStdM": 188.8,
+  "prescreenMargin": 0.0007,
+  "refineAttempts": [
+   {
+    "seedNcc": 0.777,
+    "refinedNcc": 0.546,
+    "lon": 112.824,
+    "lat": 65.312,
+    "driftDeg": 0.007
+   },
+   {
+    "seedNcc": 0.776,
+    "refinedNcc": 0.578,
+    "lon": -41.434,
+    "lat": 64.543,
+    "driftDeg": 0.021
+   }
+  ],
+  "refine": "failed (weak correlation)",
+  "prescreenCandidates": [
+   {
+    "ncc": 0.777,
+    "lon": 112.808,
+    "lat": 65.312
+   },
+   {
+    "ncc": 0.776,
+    "lon": -41.396,
+    "lat": 64.53
+   },
+   {
+    "ncc": 0.768,
+    "lon": 88.857,
+    "lat": 61.918
+   },
+   {
+    "ncc": 0.765,
+    "lon": 94.834,
+    "lat": 64.905
+   },
+   {
+    "ncc": 0.763,
+    "lon": -31.223,
+    "lat": 70.118
+   }
+  ],
+  "sizeErrPct": 0.0,
+  "squareErrPct": 0.0,
+  "sizeCheckOk": true,
+  "worldSquareKm": [
+   16.4,
+   16.4
+  ],
+  "landFracMap": 0.6606,
+  "landFracDem": 1.0,
+  "landFracRatio": 1.514,
+  "textureSeaFrac": 0.436,
+  "textureLandIou": null,
+  "solvedBeforeVeto": true,
+  "confidenceBeforeVeto": "low"
+ },
+ "confidence": "unresolved",
+ "note": "coarse-only: z5 global prescreen peak 0.78 at 112.81,65.31; z10 refine failed (weak correlation); position good to ~5-10 km; terrain only, no OCR labels used REJECTED: texture shows water (44%) but the DEM window is dry land",
+ "demNcc": 0.7767,
+ "rejected": "texture shows water (44%) but the DEM window is dry land"
+}

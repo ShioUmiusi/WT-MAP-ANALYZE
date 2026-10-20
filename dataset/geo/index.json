@@ -1,0 +1,7250 @@
+{
+ "generated": "2026-10-20T10:44:27",
+ "beforeVeto": {
+  "solved": 87,
+  "byConfidence": {
+   "high": 6,
+   "low": 61,
+   "medium": 20
+  },
+  "note": "results as produced by the matcher, before the independent land/sea + texture-water veto"
+ },
+ "crs": "WGS84",
+ "levels": 164,
+ "solved": 59,
+ "unresolved": 105,
+ "byConfidence": {
+  "high": 6,
+  "unresolved": 105,
+  "low": 39,
+  "medium": 14
+ },
+ "byMethod": {
+  "ocr+gazetteer+dem-match": 42,
+  "dem-only": 19,
+  "ocr+gazetteer+lsq": 4,
+  "dem-coarse-only": 23,
+  "none": 76
+ },
+ "byReliefBucket": {
+  "std>200": {
+   "levels": 41,
+   "solved": 31,
+   "rate": 75.6
+  },
+  "std 50-200": {
+   "levels": 58,
+   "solved": 20,
+   "rate": 34.5
+  },
+  "std 20-50": {
+   "levels": 29,
+   "solved": 8,
+   "rate": 27.6
+  },
+  "std<20": {
+   "levels": 36,
+   "solved": 0,
+   "rate": 0.0
+  }
+ },
+ "anchorResidualKm": {
+  "median": 1.98,
+  "p90": 3.35
+ },
+ "bboxUncertaintyKm": {
+  "median": 2.0,
+  "p90": 8.0,
+  "max": 8.0
+ },
+ "demNccMedian": 0.827,
+ "unresolvedReasons": {
+  "world square too small for the ~5 km global DEM": [
+   "air_race_phiphi_islands",
+   "avg_abandoned_town",
+   "avg_africa_desert",
+   "avg_american_valley",
+   "avg_greece",
+   "avg_guadalcanal",
+   "avg_iberian_castle",
+   "avg_ireland",
+   "avg_israel",
+   "avg_japan",
+   "avg_karpaty_passage",
+   "avg_korea_lake",
+   "avg_krymsk",
+   "avg_kursk_villages",
+   "avg_lazzaro_italy_new_city",
+   "avg_mozdok",
+   "avg_northern_india",
+   "avg_northern_valley",
+   "avg_red_desert",
+   "avg_snow_alps",
+   "avg_stalingrad_factory",
+   "avg_sweden",
+   "avg_syria",
+   "avg_training_ground",
+   "avg_vietnam_hills",
+   "avn_alps_fjord",
+   "avn_arabian_north_coast",
+   "avn_blacksea_port",
+   "avn_coral_islands",
+   "avn_england_shore",
+   "avn_fiji",
+   "avn_fuego_islands",
+   "avn_ice_port",
+   "avn_ireland_bay",
+   "avn_mediterranean_port",
+   "avn_north_sea",
+   "avn_northwestern_islands",
+   "avn_norway_islands",
+   "firing_range",
+   "hvg_africa_large"
+  ],
+  "flat terrain (heightmap std < 20 m, no DEM signal)": [
+   "air_ladoga",
+   "avg_abandoned_factory",
+   "avg_alaska_town",
+   "avg_aral_sea",
+   "avg_arctic",
+   "avg_ardennes",
+   "avg_ardennes_snow",
+   "avg_berlin",
+   "avg_breslau",
+   "avg_container_port",
+   "avg_eastern_europe",
+   "avg_european_fortress",
+   "avg_football_field",
+   "avg_hurtgen",
+   "avg_karantan",
+   "avg_maginot_rework",
+   "avg_netherlands",
+   "avg_nuclear_incident",
+   "avg_poland",
+   "avg_poland_snow",
+   "avg_rheinland",
+   "avg_soviet_range",
+   "avg_soviet_suburban",
+   "avg_soviet_suburban_snow",
+   "avg_tunisia_desert",
+   "avg_vlaanderen",
+   "avg_volokolamsk",
+   "avg_western_europe",
+   "hangar_field",
+   "hangar_field_halloween",
+   "hangar_field_premium",
+   "hangar_field_winter",
+   "hvg_al_massa",
+   "hvg_granitograd",
+   "hvg_training_ground"
+  ],
+  "rejected by an independent land/sea or texture check": [
+   "air_archipelago",
+   "air_equatorial_island",
+   "air_normandy",
+   "air_skyscraper_city",
+   "arcade_africa_seashore",
+   "arcade_norway_fjords",
+   "arcade_phiphi_crater",
+   "arcade_tabletop_mountain",
+   "arcade_zhang_park",
+   "avg_egypt_sinai",
+   "avg_falklands",
+   "avg_finland",
+   "avg_karelia_forest_a",
+   "avn_africa_gulf",
+   "avn_aleutian_islands",
+   "avn_finland_islands",
+   "avn_japan",
+   "avn_peleliu",
+   "avn_phang_nga_bay_islands",
+   "avn_sunken_city",
+   "avn_volcanic_island",
+   "caribbean_islands",
+   "guadalcanal",
+   "honolulu",
+   "iwo_jima",
+   "malta",
+   "port_moresby",
+   "wake_island"
+  ],
+  "other: DEM correlation too weak (NCC 0.47) label hypothesis label:m": [
+   "saipan"
+  ],
+  "texture has no labels": [
+   "water"
+  ]
+ },
+ "rejected": {
+  "air_archipelago": {
+   "reason": "land/sea mismatch (map 0.76 vs dem 0.17, ratio 4.4x)",
+   "landFracMap": 0.7552,
+   "landFracDem": 0.1709,
+   "textureWaterIou": null,
+   "demNcc": 0.8957
+  },
+  "air_equatorial_island": {
+   "reason": "texture water mask IoU 0.25 < 0.35",
+   "landFracMap": 0.0742,
+   "landFracDem": 0.1189,
+   "textureWaterIou": 0.253,
+   "demNcc": 0.7856
+  },
+  "air_normandy": {
+   "reason": "land/water swapped (map 0.57 vs dem 0.00)",
+   "landFracMap": 0.5651,
+   "landFracDem": 0.0,
+   "textureWaterIou": null,
+   "demNcc": 0.8784
+  },
+  "air_skyscraper_city": {
+   "reason": "texture shows water (22%) but the DEM window is dry land",
+   "landFracMap": 0.7737,
+   "landFracDem": 1.0,
+   "textureWaterIou": null,
+   "demNcc": 0.8167
+  },
+  "arcade_africa_seashore": {
+   "reason": "texture shows water (44%) but the DEM window is dry land",
+   "landFracMap": 0.6606,
+   "landFracDem": 1.0,
+   "textureWaterIou": null,
+   "demNcc": 0.7767
+  },
+  "arcade_norway_fjords": {
+   "reason": "texture shows water (30%) but the DEM window is dry land",
+   "landFracMap": 0.6066,
+   "landFracDem": 1.0,
+   "textureWaterIou": null,
+   "demNcc": 0.8498
+  },
+  "arcade_phiphi_crater": {
+   "reason": "land/sea mismatch (map 0.24 vs dem 1.00, ratio 4.2x)",
+   "landFracMap": 0.2389,
+   "landFracDem": 1.0,
+   "textureWaterIou": null,
+   "demNcc": 0.7226
+  },
+  "arcade_tabletop_mountain": {
+   "reason": "land/sea mismatch (map 0.08 vs dem 1.00, ratio 12.7x)",
+   "landFracMap": 0.0787,
+   "landFracDem": 1.0,
+   "textureWaterIou": null,
+   "demNcc": 0.7888
+  },
+  "arcade_zhang_park": {
+   "reason": "land/water swapped (map 0.99 vs dem 0.00)",
+   "landFracMap": 0.9908,
+   "landFracDem": 0.0,
+   "textureWaterIou": null,
+   "demNcc": 0.659
+  },
+  "avg_egypt_sinai": {
+   "reason": "land/water swapped (map 1.00 vs dem 0.00)",
+   "landFracMap": 1.0,
+   "landFracDem": 0.0,
+   "textureWaterIou": null,
+   "demNcc": 0.861
+  },
+  "avg_falklands": {
+   "reason": "land/water swapped (map 0.52 vs dem 0.00)",
+   "landFracMap": 0.5158,
+   "landFracDem": 0.0,
+   "textureWaterIou": 0.631,
+   "demNcc": null
+  },
+  "avg_finland": {
+   "reason": "land/water swapped (map 0.75 vs dem 0.00)",
+   "landFracMap": 0.7496,
+   "landFracDem": 0.0,
+   "textureWaterIou": null,
+   "demNcc": null
+  },
+  "avg_karelia_forest_a": {
+   "reason": "texture shows water (30%) but the DEM window is dry land",
+   "landFracMap": 0.9914,
+   "landFracDem": 1.0,
+   "textureWaterIou": null,
+   "demNcc": null
+  },
+  "avn_africa_gulf": {
+   "reason": "land/sea mismatch (map 0.03 vs dem 0.71, ratio 22.6x); land/water swapped (map 0.03 vs dem 0.71); texture water mask IoU 0.28 < 0.35",
+   "landFracMap": 0.0313,
+   "landFracDem": 0.7068,
+   "textureWaterIou": 0.284,
+   "demNcc": 0.7913
+  },
+  "avn_aleutian_islands": {
+   "reason": "land/sea mismatch (map 0.16 vs dem 1.00, ratio 6.2x)",
+   "landFracMap": 0.1624,
+   "landFracDem": 1.0,
+   "textureWaterIou": null,
+   "demNcc": 0.7983
+  },
+  "avn_finland_islands": {
+   "reason": "land/sea mismatch (map 0.32 vs dem 1.00, ratio 3.1x)",
+   "landFracMap": 0.3237,
+   "landFracDem": 1.0,
+   "textureWaterIou": null,
+   "demNcc": 0.9042
+  },
+  "avn_japan": {
+   "reason": "land/sea mismatch (map 0.27 vs dem 1.00, ratio 3.7x)",
+   "landFracMap": 0.2675,
+   "landFracDem": 1.0,
+   "textureWaterIou": null,
+   "demNcc": 0.8389
+  },
+  "avn_peleliu": {
+   "reason": "land/sea mismatch (map 0.07 vs dem 1.00, ratio 13.9x); texture shows water (91%) but the DEM window is dry land",
+   "landFracMap": 0.0718,
+   "landFracDem": 1.0,
+   "textureWaterIou": null,
+   "demNcc": 0.6647
+  },
+  "avn_phang_nga_bay_islands": {
+   "reason": "land/sea mismatch (map 0.21 vs dem 1.00, ratio 4.7x)",
+   "landFracMap": 0.2131,
+   "landFracDem": 1.0,
+   "textureWaterIou": null,
+   "demNcc": null
+  },
+  "avn_sunken_city": {
+   "reason": "texture shows water (40%) but the DEM window is dry land",
+   "landFracMap": 0.5168,
+   "landFracDem": 1.0,
+   "textureWaterIou": null,
+   "demNcc": 0.7957
+  },
+  "avn_volcanic_island": {
+   "reason": "land/sea mismatch (map 0.11 vs dem 1.00, ratio 9.0x)",
+   "landFracMap": 0.1116,
+   "landFracDem": 1.0,
+   "textureWaterIou": null,
+   "demNcc": 0.7622
+  },
+  "caribbean_islands": {
+   "reason": "land/sea mismatch (map 0.01 vs dem 0.05, ratio 4.6x)",
+   "landFracMap": 0.012,
+   "landFracDem": 0.0547,
+   "textureWaterIou": 0.948,
+   "demNcc": 0.7295
+  },
+  "guadalcanal": {
+   "reason": "texture shows water (56%) but the DEM window is dry land",
+   "landFracMap": 0.3828,
+   "landFracDem": 1.0,
+   "textureWaterIou": null,
+   "demNcc": null
+  },
+  "honolulu": {
+   "reason": "land/sea mismatch (map 0.33 vs dem 0.08, ratio 4.4x)",
+   "landFracMap": 0.3286,
+   "landFracDem": 0.0754,
+   "textureWaterIou": 0.888,
+   "demNcc": null
+  },
+  "iwo_jima": {
+   "reason": "land/sea mismatch (map 0.10 vs dem 0.32, ratio 3.2x)",
+   "landFracMap": 0.1015,
+   "landFracDem": 0.3223,
+   "textureWaterIou": 0.683,
+   "demNcc": null
+  },
+  "malta": {
+   "reason": "land/sea mismatch (map 0.19 vs dem 1.00, ratio 5.3x); texture shows water (91%) but the DEM window is dry land",
+   "landFracMap": 0.1897,
+   "landFracDem": 1.0,
+   "textureWaterIou": null,
+   "demNcc": null
+  },
+  "port_moresby": {
+   "reason": "texture shows water (30%) but the DEM window is dry land",
+   "landFracMap": 0.674,
+   "landFracDem": 1.0,
+   "textureWaterIou": null,
+   "demNcc": null
+  },
+  "wake_island": {
+   "reason": "land/sea mismatch (map 0.11 vs dem 1.00, ratio 8.8x); texture shows water (99%) but the DEM window is dry land",
+   "landFracMap": 0.114,
+   "landFracDem": 1.0,
+   "textureWaterIou": null,
+   "demNcc": null
+  }
+ },
+ "maps": {
+  "air_afghan": {
+   "confidence": "high",
+   "bounds": {
+    "minLon": 68.545161,
+    "maxLon": 70.088667,
+    "minLat": 34.208128,
+    "maxLat": 35.483808
+   },
+   "method": "ocr+gazetteer+dem-match",
+   "demNcc": 0.9642,
+   "anchorResidualKm": 2.51,
+   "bboxUncertaintyKm": 1.0,
+   "heightStdM": 886.0,
+   "crosscheck": {
+    "nccPeak": 0.9642,
+    "coarseNcc": 0.8682,
+    "worldUnitM": 1.0758,
+    "worldSquareKm": [
+     141.0,
+     141.0
+    ],
+    "labelResidKm": [
+     0.0,
+     0.0,
+     1.7,
+     2.6,
+     3.2,
+     5.6
+    ],
+    "anchorsUsed": 6,
+    "textureExtentKm": [
+     129.3,
+     138.4
+    ],
+    "textureVsWorldScale": 0.982,
+    "textureCenterOffsetKm": 2.35,
+    "bboxUncertaintyKm": 1.0,
+    "sizeErrPct": 7.58,
+    "squareErrPct": 0.0,
+    "sizeCheckOk": true,
+    "landFracMap": 1.0,
+    "landFracDem": 1.0,
+    "landFracRatio": 1.0,
+    "textureSeaFrac": 0.0,
+    "textureLandIou": null,
+    "solvedBeforeVeto": true,
+    "confidenceBeforeVeto": "high"
+   }
+  },
+  "air_africa_desert": {
+   "confidence": "high",
+   "bounds": {
+    "minLon": 28.129811,
+    "maxLon": 28.816773,
+    "minLat": 30.090599,
+    "maxLat": 30.687361
+   },
+   "method": "dem-only",
+   "demNcc": 0.951,
+   "anchorResidualKm": null,
+   "bboxUncertaintyKm": 2.0,
+   "heightStdM": 94.59,
+   "crosscheck": {
+    "demNcc": 0.951,
+    "prescreenTopNcc": 0.9552,
+    "prescreenMargin": 0.0438,
+    "worldUnitM": 1.0066,
+    "heightStdM": 94.6,
+    "bboxUncertaintyKm": 2.0,
+    "demSource": "terrarium z10",
+    "prescreenCandidates": [
+     {
+      "ncc": 0.955,
+      "lon": 28.433,
+      "lat": 30.373
+     },
+     {
+      "ncc": 0.911,
+      "lon": 62.82,
+      "lat": 26.096
+     },
+     {
+      "ncc": 0.893,
+      "lon": -68.84,
+      "lat": -6.424
+     },
+     {
+      "ncc": 0.892,
+      "lon": -63.369,
+      "lat": -41.179
+     },
+     {
+      "ncc": 0.886,
+      "lon": -119.729,
+      "lat": 61.929
+     }
+    ],
+    "sizeErrPct": 0.66,
+    "squareErrPct": 0.0,
+    "sizeCheckOk": true,
+    "worldSquareKm": [
+     66.0,
+     66.0
+    ],
+    "nccPeak": 0.951,
+    "landFracMap": 1.0,
+    "landFracDem": 0.6873,
+    "landFracRatio": 1.455,
+    "textureSeaFrac": 0.0,
+    "textureLandIou": null,
+    "solvedBeforeVeto": true,
+    "confidenceBeforeVeto": "high"
+   }
+  },
+  "air_archipelago": {
+   "confidence": "unresolved",
+   "bounds": null,
+   "method": "dem-only",
+   "demNcc": 0.8957,
+   "anchorResidualKm": null,
+   "bboxUncertaintyKm": 1.5,
+   "heightStdM": 1425.35,
+   "crosscheck": {
+    "demNcc": 0.8957,
+    "prescreenTopNcc": 0.9119,
+    "prescreenMargin": 0.0125,
+    "worldUnitM": 0.9299,
+    "heightStdM": 1425.4,
+    "bboxUncertaintyKm": 1.5,
+    "demSource": "terrarium z10",
+    "prescreenCandidates": [
+     {
+      "ncc": 0.912,
+      "lon": 39.485,
+      "lat": -17.414
+     },
+     {
+      "ncc": 0.899,
+      "lon": -25.84,
+      "lat": 68.8
+     },
+     {
+      "ncc": 0.898,
+      "lon": -98.767,
+      "lat": 29.401
+     },
+     {
+      "ncc": 0.893,
+      "lon": 55.173,
+      "lat": 16.784
+     }
+    ],
+    "bestCoarseNcc": 0.1355,
+    "sizeErrPct": 7.01,
+    "squareErrPct": 0.0,
+    "sizeCheckOk": true,
+    "worldSquareKm": [
+     243.8,
+     243.8
+    ],
+    "landFracMap": 0.7552,
+    "landFracDem": 0.1709,
+    "landFracRatio": 4.419,
+    "textureSeaFrac": 0.0,
+    "textureLandIou": null,
+    "solvedBeforeVeto": true,
+    "confidenceBeforeVeto": "low"
+   }
+  },
+  "air_denmark": {
+   "confidence": "high",
+   "bounds": {
+    "minLon": 10.022551,
+    "maxLon": 12.125734,
+    "minLat": 55.166732,
+    "maxLat": 56.358383
+   },
+   "method": "ocr+gazetteer+dem-match",
+   "demNcc": 0.9108,
+   "anchorResidualKm": 0.8,
+   "bboxUncertaintyKm": 1.0,
+   "heightStdM": 55.67,
+   "crosscheck": {
+    "nccPeak": 0.9108,
+    "coarseNcc": 0.9098,
+    "worldUnitM": 1.0042,
+    "worldSquareKm": [
+     131.7,
+     131.7
+    ],
+    "labelResidKm": [
+     0.0,
+     0.0,
+     2.2
+    ],
+    "anchorsUsed": 3,
+    "textureExtentKm": [
+     145.2,
+     133.1
+    ],
+    "textureVsWorldScale": 1.102,
+    "textureCenterOffsetKm": 1.93,
+    "bboxUncertaintyKm": 1.0,
+    "sizeErrPct": 0.42,
+    "squareErrPct": 0.0,
+    "sizeCheckOk": true,
+    "landFracMap": 0.4519,
+    "landFracDem": 0.4814,
+    "landFracRatio": 1.065,
+    "textureSeaFrac": 0.0,
+    "textureLandIou": null,
+    "solvedBeforeVeto": true,
+    "confidenceBeforeVeto": "high"
+   }
+  },
+  "air_equatorial_island": {
+   "confidence": "unresolved",
+   "bounds": null,
+   "method": "dem-only",
+   "demNcc": 0.7856,
+   "anchorResidualKm": null,
+   "bboxUncertaintyKm": 2.0,
+   "heightStdM": 265.66,
+   "crosscheck": {
+    "demNcc": 0.7856,
+    "prescreenTopNcc": 0.8366,
+    "prescreenMargin": 0.0766,
+    "worldUnitM": 0.9555,
+    "heightStdM": 265.7,
+    "bboxUncertaintyKm": 2.0,
+    "demSource": "terrarium z10",
+    "prescreenCandidates": [
+     {
+      "ncc": 0.837,
+      "lon": 126.541,
+      "lat": 33.376
+     },
+     {
+      "ncc": 0.76,
+      "lon": 54.558,
+      "lat": 39.656
+     },
+     {
+      "ncc": 0.758,
+      "lon": -164.817,
+      "lat": 60.684
+     },
+     {
+      "ncc": 0.736,
+      "lon": -170.442,
+      "lat": 63.578
+     },
+     {
+      "ncc": 0.722,
+      "lon": -120.806,
+      "lat": 65.422
+     }
+    ],
+    "sizeErrPct": 4.45,
+    "squareErrPct": 0.0,
+    "sizeCheckOk": true,
+    "worldSquareKm": [
+     125.3,
+     125.3
+    ],
+    "landFracMap": 0.0742,
+    "landFracDem": 0.1189,
+    "landFracRatio": 1.602,
+    "textureSeaFrac": 0.275,
+    "textureWaterIou": 0.253,
+    "solvedBeforeVeto": true,
+    "confidenceBeforeVeto": "low"
+   }
+  },
+  "air_falklands": {
+   "confidence": "low",
+   "bounds": {
+    "minLon": -61.401868,
+    "maxLon": -57.662795,
+    "minLat": -52.78595,
+    "maxLat": -50.63707
+   },
+   "method": "ocr+gazetteer+lsq",
+   "demNcc": null,
+   "anchorResidualKm": null,
+   "bboxUncertaintyKm": null,
+   "heightStdM": 121.49,
+   "crosscheck": {
+    "worldSquareKm": [
+     257.9,
+     237.5
+    ],
+    "anchorsUsed": 6,
+    "aspectErrPct": 7.9,
+    "bestCoarseNcc": 0.3308,
+    "sizeErrPct": 96.77,
+    "squareErrPct": 7.9,
+    "sizeCheckOk": false,
+    "landFracMap": 0.1921,
+    "landFracDem": 0.2344,
+    "landFracRatio": 1.22,
+    "textureSeaFrac": 0.73,
+    "textureLandIou": 0.899,
+    "textureWaterIou": 0.899,
+    "solvedBeforeVeto": true,
+    "confidenceBeforeVeto": "low"
+   }
+  },
+  "air_grand_canyon": {
+   "confidence": "low",
+   "bounds": {
+    "minLon": -41.807757,
+    "maxLon": -38.744001,
+    "minLat": 66.806173,
+    "maxLat": 67.991916
+   },
+   "method": "dem-coarse-only",
+   "demNcc": 0.692,
+   "anchorResidualKm": null,
+   "bboxUncertaintyKm": 8.0,
+   "heightStdM": 983.16,
+   "crosscheck": {
+    "demNcc": 0.692,
+    "bboxUncertaintyKm": 8.0,
+    "heightStdM": 983.2,
+    "prescreenMargin": 0.0226,
+    "refineAttempts": [
+     {
+      "seedNcc": 0.692,
+      "refinedNcc": 0.689,
+      "lon": -40.279,
+      "lat": 67.408,
+      "driftDeg": 0.009
+     },
+     {
+      "seedNcc": 0.669,
+      "refinedNcc": 0.672,
+      "lon": -107.658,
+      "lat": 44.632,
+      "driftDeg": 0.042
+     }
+    ],
+    "refine": "failed (weak correlation)",
+    "prescreenCandidates": [
+     {
+      "ncc": 0.692,
+      "lon": -40.276,
+      "lat": 67.399
+     },
+     {
+      "ncc": 0.669,
+      "lon": -107.666,
+      "lat": 44.59
+     },
+     {
+      "ncc": 0.666,
+      "lon": 56.536,
+      "lat": 23.544
+     },
+     {
+      "ncc": 0.664,
+      "lon": 95.867,
+      "lat": 46.483
+     },
+     {
+      "ncc": 0.654,
+      "lon": 103.777,
+      "lat": 22.086
+     }
+    ],
+    "sizeErrPct": 0.0,
+    "squareErrPct": 0.0,
+    "sizeCheckOk": true,
+    "worldSquareKm": [
+     131.1,
+     131.1
+    ],
+    "nccPeak": 0.692,
+    "landFracMap": 0.998,
+    "landFracDem": 0.99,
+    "landFracRatio": 1.008,
+    "textureSeaFrac": 0.0,
+    "textureLandIou": null,
+    "solvedBeforeVeto": true,
+    "confidenceBeforeVeto": "low"
+   }
+  },
+  "air_israel": {
+   "confidence": "medium",
+   "bounds": {
+    "minLon": -9.318192,
+    "maxLon": -7.70816,
+    "minLat": 40.407861,
+    "maxLat": 41.631179
+   },
+   "method": "ocr+gazetteer+dem-match",
+   "demNcc": 0.7831,
+   "anchorResidualKm": 1.59,
+   "bboxUncertaintyKm": 2.0,
+   "heightStdM": 555.82,
+   "crosscheck": {
+    "nccPeak": 0.7831,
+    "coarseNcc": 0.7801,
+    "worldUnitM": 1.0309,
+    "worldSquareKm": [
+     135.2,
+     135.2
+    ],
+    "labelResidKm": [
+     0.0,
+     0.2,
+     0.3,
+     0.4,
+     0.4,
+     0.6,
+     0.7,
+     0.7,
+     0.7,
+     0.9,
+     1.0,
+     1.1,
+     1.3,
+     1.3,
+     1.4,
+     1.4,
+     1.4,
+     1.6,
+     1.8,
+     2.0,
+     2.5,
+     2.7,
+     5.6
+    ],
+    "anchorsUsed": 23,
+    "textureExtentKm": [
+     118.1,
+     116.1
+    ],
+    "textureVsWorldScale": 0.873,
+    "textureCenterOffsetKm": 3784.51,
+    "bboxUncertaintyKm": 2.0,
+    "sizeErrPct": 3.09,
+    "squareErrPct": 0.0,
+    "sizeCheckOk": true,
+    "landFracMap": 0.6149,
+    "landFracDem": 0.6348,
+    "landFracRatio": 1.032,
+    "textureSeaFrac": 0.388,
+    "textureLandIou": 0.744,
+    "textureWaterIou": 0.744,
+    "solvedBeforeVeto": true,
+    "confidenceBeforeVeto": "medium"
+   }
+  },
+  "air_kamchatka": {
+   "confidence": "low",
+   "bounds": {
+    "minLon": 159.108174,
+    "maxLon": 161.209209,
+    "minLat": 55.294329,
+    "maxLat": 56.480941
+   },
+   "method": "dem-coarse-only",
+   "demNcc": 0.6999,
+   "anchorResidualKm": null,
+   "bboxUncertaintyKm": 8.0,
+   "heightStdM": 506.86,
+   "crosscheck": {
+    "demNcc": 0.6999,
+    "bboxUncertaintyKm": 8.0,
+    "heightStdM": 506.9,
+    "prescreenMargin": 0.1486,
+    "refineAttempts": [
+     {
+      "seedNcc": 0.7,
+      "refinedNcc": 0.722,
+      "lon": 160.131,
+      "lat": 55.901,
+      "driftDeg": 0.02
+     },
+     {
+      "seedNcc": 0.551,
+      "refinedNcc": 0.524,
+      "lon": -68.186,
+      "lat": -31.407,
+      "driftDeg": 0.005
+     }
+    ],
+    "refine": "failed (weak correlation)",
+    "prescreenCandidates": [
+     {
+      "ncc": 0.7,
+      "lon": 160.159,
+      "lat": 55.888
+     },
+     {
+      "ncc": 0.551,
+      "lon": -68.181,
+      "lat": -31.41
+     },
+     {
+      "ncc": 0.528,
+      "lon": 36.211,
+      "lat": 21.698
+     },
+     {
+      "ncc": 0.521,
+      "lon": 105.952,
+      "lat": 35.568
+     },
+     {
+      "ncc": 0.518,
+      "lon": 4.636,
+      "lat": 28.053
+     }
+    ],
+    "bestCoarseNcc": 0.1126,
+    "sizeErrPct": 0.0,
+    "squareErrPct": 0.0,
+    "sizeCheckOk": true,
+    "worldSquareKm": [
+     131.2,
+     131.2
+    ],
+    "nccPeak": 0.6999,
+    "landFracMap": 0.9879,
+    "landFracDem": 1.0,
+    "landFracRatio": 1.012,
+    "textureSeaFrac": 0.0,
+    "textureLandIou": null,
+    "solvedBeforeVeto": true,
+    "confidenceBeforeVeto": "low"
+   }
+  },
+  "air_ladoga": {
+   "confidence": "unresolved",
+   "bounds": null,
+   "method": null,
+   "demNcc": null,
+   "anchorResidualKm": null,
+   "bboxUncertaintyKm": null,
+   "heightStdM": 16.79,
+   "crosscheck": {
+    "heightStdM": 16.8,
+    "sizeErrPct": null,
+    "squareErrPct": null,
+    "sizeCheckOk": false
+   }
+  },
+  "air_mysterious_valley": {
+   "confidence": "low",
+   "bounds": {
+    "minLon": 109.279812,
+    "maxLon": 110.765154,
+    "minLat": 30.312061,
+    "maxLat": 31.594857
+   },
+   "method": "dem-only",
+   "demNcc": 0.8669,
+   "anchorResidualKm": null,
+   "bboxUncertaintyKm": 1.0,
+   "heightStdM": 543.17,
+   "crosscheck": {
+    "demNcc": 0.8669,
+    "prescreenTopNcc": 0.802,
+    "prescreenMargin": 0.1889,
+    "worldUnitM": 1.0811,
+    "heightStdM": 543.2,
+    "bboxUncertaintyKm": 1.0,
+    "demSource": "terrarium z10",
+    "prescreenCandidates": [
+     {
+      "ncc": 0.802,
+      "lon": 110.039,
+      "lat": 30.94
+     },
+     {
+      "ncc": 0.613,
+      "lon": 49.878,
+      "lat": 10.272
+     },
+     {
+      "ncc": 0.611,
+      "lon": 17.249,
+      "lat": 26.215
+     },
+     {
+      "ncc": 0.609,
+      "lon": 104.612,
+      "lat": 39.385
+     },
+     {
+      "ncc": 0.599,
+      "lon": -71.433,
+      "lat": 60.01
+     }
+    ],
+    "bestCoarseNcc": 0.2102,
+    "sizeErrPct": 8.11,
+    "squareErrPct": 0.0,
+    "sizeCheckOk": true,
+    "worldSquareKm": [
+     141.8,
+     141.8
+    ],
+    "nccPeak": 0.8669,
+    "landFracMap": 1.0,
+    "landFracDem": 1.0,
+    "landFracRatio": 1.0,
+    "textureSeaFrac": 0.0,
+    "textureLandIou": null,
+    "solvedBeforeVeto": true,
+    "confidenceBeforeVeto": "low"
+   }
+  },
+  "air_normandy": {
+   "confidence": "unresolved",
+   "bounds": null,
+   "method": "ocr+gazetteer+dem-match",
+   "demNcc": 0.8784,
+   "anchorResidualKm": 3.29,
+   "bboxUncertaintyKm": 1.5,
+   "heightStdM": 86.58,
+   "crosscheck": {
+    "nccPeak": 0.8784,
+    "coarseNcc": 0.8776,
+    "worldUnitM": 0.9968,
+    "worldSquareKm": [
+     65.4,
+     65.4
+    ],
+    "labelResidKm": [
+     0.0,
+     0.0,
+     2.3,
+     3.8,
+     4.3,
+     5.5
+    ],
+    "anchorsUsed": 6,
+    "textureExtentKm": [
+     79.0,
+     34.5
+    ],
+    "textureVsWorldScale": 1.209,
+    "textureCenterOffsetKm": 67.27,
+    "bboxUncertaintyKm": 1.5,
+    "sizeErrPct": 0.32,
+    "squareErrPct": 0.0,
+    "sizeCheckOk": true,
+    "landFracMap": 0.5651,
+    "landFracDem": 0.0,
+    "textureSeaFrac": 0.0,
+    "textureLandIou": null,
+    "solvedBeforeVeto": true,
+    "confidenceBeforeVeto": "medium"
+   }
+  },
+  "air_pyrenees": {
+   "confidence": "high",
+   "bounds": {
+    "minLon": 0.795437,
+    "maxLon": 2.330458,
+    "minLat": 41.943979,
+    "maxLat": 43.083451
+   },
+   "method": "dem-only",
+   "demNcc": 0.955,
+   "anchorResidualKm": null,
+   "bboxUncertaintyKm": 1.0,
+   "heightStdM": 965.29,
+   "crosscheck": {
+    "demNcc": 0.955,
+    "prescreenTopNcc": 0.957,
+    "prescreenMargin": 0.1095,
+    "worldUnitM": 0.961,
+    "heightStdM": 965.3,
+    "bboxUncertaintyKm": 1.0,
+    "demSource": "terrarium z10",
+    "prescreenCandidates": [
+     {
+      "ncc": 0.957,
+      "lon": 1.56,
+      "lat": 42.505
+     },
+     {
+      "ncc": 0.847,
+      "lon": 122.234,
+      "lat": 0.769
+     },
+     {
+      "ncc": 0.838,
+      "lon": 48.054,
+      "lat": 8.037
+     },
+     {
+      "ncc": 0.835,
+      "lon": 120.916,
+      "lat": -8.603
+     },
+     {
+      "ncc": 0.827,
+      "lon": -66.555,
+      "lat": 18.208
+     }
+    ],
+    "sizeErrPct": 3.9,
+    "squareErrPct": 0.0,
+    "sizeCheckOk": true,
+    "worldSquareKm": [
+     126.0,
+     126.0
+    ],
+    "nccPeak": 0.955,
+    "landFracMap": 1.0,
+    "landFracDem": 1.0,
+    "landFracRatio": 1.0,
+    "textureSeaFrac": 0.0,
+    "textureLandIou": null,
+    "solvedBeforeVeto": true,
+    "confidenceBeforeVeto": "high"
+   }
+  },
+  "air_race_phiphi_islands": {
+   "confidence": "unresolved",
+   "bounds": null,
+   "method": null,
+   "demNcc": null,
+   "anchorResidualKm": null,
+   "bboxUncertaintyKm": null,
+   "heightStdM": 101.52,
+   "crosscheck": {
+    "heightStdM": 101.5,
+    "sizeErrPct": null,
+    "squareErrPct": null,
+    "sizeCheckOk": false
+   }
+  },
+  "air_skyscraper_city": {
+   "confidence": "unresolved",
+   "bounds": null,
+   "method": "dem-only",
+   "demNcc": 0.8167,
+   "anchorResidualKm": null,
+   "bboxUncertaintyKm": 2.0,
+   "heightStdM": 901.9,
+   "crosscheck": {
+    "demNcc": 0.8167,
+    "prescreenTopNcc": 0.8756,
+    "prescreenMargin": 0.0002,
+    "worldUnitM": 0.9348,
+    "heightStdM": 901.9,
+    "bboxUncertaintyKm": 2.0,
+    "demSource": "terrarium z10",
+    "prescreenCandidates": [
+     {
+      "ncc": 0.876,
+      "lon": -41.155,
+      "lat": -4.018
+     },
+     {
+      "ncc": 0.875,
+      "lon": -79.014,
+      "lat": 17.099
+     },
+     {
+      "ncc": 0.875,
+      "lon": 32.058,
+      "lat": 27.742
+     },
+     {
+      "ncc": 0.874,
+      "lon": -60.908,
+      "lat": -14.179
+     },
+     {
+      "ncc": 0.873,
+      "lon": -67.896,
+      "lat": -23.161
+     }
+    ],
+    "sizeErrPct": 6.52,
+    "squareErrPct": 0.0,
+    "sizeCheckOk": true,
+    "worldSquareKm": [
+     61.3,
+     61.3
+    ],
+    "landFracMap": 0.7737,
+    "landFracDem": 1.0,
+    "landFracRatio": 1.292,
+    "textureSeaFrac": 0.22,
+    "textureLandIou": null,
+    "solvedBeforeVeto": true,
+    "confidenceBeforeVeto": "low"
+   }
+  },
+  "air_smolensk": {
+   "confidence": "medium",
+   "bounds": {
+    "minLon": 31.031968,
+    "maxLon": 33.108874,
+    "minLat": 54.19257,
+    "maxLat": 55.398349
+   },
+   "method": "ocr+gazetteer+dem-match",
+   "demNcc": 0.8858,
+   "anchorResidualKm": 2.84,
+   "bboxUncertaintyKm": 1.0,
+   "heightStdM": 52.99,
+   "crosscheck": {
+    "nccPeak": 0.8858,
+    "coarseNcc": 0.8482,
+    "worldUnitM": 1.0162,
+    "worldSquareKm": [
+     133.3,
+     133.3
+    ],
+    "labelResidKm": [
+     0.0,
+     0.0,
+     1.6,
+     3.7,
+     4.1,
+     4.6
+    ],
+    "anchorsUsed": 6,
+    "textureExtentKm": [
+     134.0,
+     135.1
+    ],
+    "textureVsWorldScale": 1.014,
+    "textureCenterOffsetKm": 1.36,
+    "bboxUncertaintyKm": 1.0,
+    "sizeErrPct": 1.62,
+    "squareErrPct": 0.0,
+    "sizeCheckOk": true,
+    "landFracMap": 0.9876,
+    "landFracDem": 1.0,
+    "landFracRatio": 1.013,
+    "textureSeaFrac": 0.0,
+    "textureLandIou": null,
+    "solvedBeforeVeto": true,
+    "confidenceBeforeVeto": "medium"
+   }
+  },
+  "air_south_eastern_city": {
+   "confidence": "low",
+   "bounds": {
+    "minLon": 113.522745,
+    "maxLon": 114.850674,
+    "minLat": 21.70277,
+    "maxLat": 22.939863
+   },
+   "method": "dem-only",
+   "demNcc": 0.7994,
+   "anchorResidualKm": null,
+   "bboxUncertaintyKm": 1.5,
+   "heightStdM": 111.52,
+   "crosscheck": {
+    "demNcc": 0.7994,
+    "prescreenTopNcc": 0.8674,
+    "prescreenMargin": 0.1322,
+    "worldUnitM": 1.0433,
+    "heightStdM": 111.5,
+    "bboxUncertaintyKm": 1.5,
+    "demSource": "terrarium z10",
+    "prescreenCandidates": [
+     {
+      "ncc": 0.867,
+      "lon": 114.17,
+      "lat": 22.309
+     },
+     {
+      "ncc": 0.735,
+      "lon": 23.555,
+      "lat": 11.824
+     },
+     {
+      "ncc": 0.733,
+      "lon": 44.077,
+      "lat": 13.026
+     },
+     {
+      "ncc": 0.728,
+      "lon": 6.218,
+      "lat": 5.944
+     },
+     {
+      "ncc": 0.726,
+      "lon": 66.555,
+      "lat": 37.597
+     }
+    ],
+    "sizeErrPct": 4.33,
+    "squareErrPct": 0.0,
+    "sizeCheckOk": true,
+    "worldSquareKm": [
+     136.7,
+     136.7
+    ],
+    "landFracMap": 0.3077,
+    "landFracDem": 0.3694,
+    "landFracRatio": 1.201,
+    "textureSeaFrac": 0.618,
+    "textureWaterIou": 0.567,
+    "solvedBeforeVeto": true,
+    "confidenceBeforeVeto": "low",
+    "nccPeak": 0.7994
+   }
+  },
+  "air_southeastern_cliffs": {
+   "confidence": "low",
+   "bounds": {
+    "minLon": -3.856357,
+    "maxLon": -2.563863,
+    "minLat": 25.85583,
+    "maxLat": 27.021312
+   },
+   "method": "dem-only",
+   "demNcc": 0.815,
+   "anchorResidualKm": null,
+   "bboxUncertaintyKm": 2.0,
+   "heightStdM": 1641.53,
+   "crosscheck": {
+    "demNcc": 0.815,
+    "prescreenTopNcc": 0.8602,
+    "prescreenMargin": 0.0026,
+    "worldUnitM": 0.9822,
+    "heightStdM": 1641.5,
+    "bboxUncertaintyKm": 2.0,
+    "demSource": "terrarium z10",
+    "prescreenCandidates": [
+     {
+      "ncc": 0.86,
+      "lon": -3.186,
+      "lat": 26.412
+     },
+     {
+      "ncc": 0.858,
+      "lon": 45.11,
+      "lat": 7.035
+     },
+     {
+      "ncc": 0.857,
+      "lon": -65.852,
+      "lat": -34.579
+     },
+     {
+      "ncc": 0.854,
+      "lon": -61.589,
+      "lat": -27.742
+     },
+     {
+      "ncc": 0.852,
+      "lon": 44.517,
+      "lat": 21.289
+     }
+    ],
+    "sizeErrPct": 1.78,
+    "squareErrPct": 0.0,
+    "sizeCheckOk": true,
+    "worldSquareKm": [
+     128.8,
+     128.8
+    ],
+    "landFracMap": 0.8341,
+    "landFracDem": 1.0,
+    "landFracRatio": 1.199,
+    "textureSeaFrac": 0.138,
+    "textureLandIou": null,
+    "solvedBeforeVeto": true,
+    "confidenceBeforeVeto": "low",
+    "nccPeak": 0.815
+   }
+  },
+  "air_vietnam": {
+   "confidence": "low",
+   "bounds": {
+    "minLon": 9.889951,
+    "maxLon": 11.071963,
+    "minLat": 3.950264,
+    "maxLat": 5.136876
+   },
+   "method": "dem-coarse-only",
+   "demNcc": 0.5204,
+   "anchorResidualKm": null,
+   "bboxUncertaintyKm": 8.0,
+   "heightStdM": 175.69,
+   "crosscheck": {
+    "demNcc": 0.5204,
+    "bboxUncertaintyKm": 8.0,
+    "heightStdM": 175.7,
+    "prescreenMargin": 0.0123,
+    "refineAttempts": [
+     {
+      "seedNcc": 0.52,
+      "refinedNcc": 0.351,
+      "lon": 10.484,
+      "lat": 4.56,
+      "driftDeg": 0.017
+     },
+     {
+      "seedNcc": 0.508,
+      "refinedNcc": 0.326,
+      "lon": 23.555,
+      "lat": 5.537,
+      "driftDeg": 0.038
+     }
+    ],
+    "refine": "failed (weak correlation)",
+    "prescreenCandidates": [
+     {
+      "ncc": 0.52,
+      "lon": 10.481,
+      "lat": 4.544
+     },
+     {
+      "ncc": 0.508,
+      "lon": 23.577,
+      "lat": 5.507
+     },
+     {
+      "ncc": 0.489,
+      "lon": 22.126,
+      "lat": 7.428
+     },
+     {
+      "ncc": 0.488,
+      "lon": -56.667,
+      "lat": -14.669
+     },
+     {
+      "ncc": 0.485,
+      "lon": -8.855,
+      "lat": 6.861
+     }
+    ],
+    "bestCoarseNcc": 0.251,
+    "sizeErrPct": 0.0,
+    "squareErrPct": 0.0,
+    "sizeCheckOk": true,
+    "worldSquareKm": [
+     131.2,
+     131.2
+    ],
+    "nccPeak": 0.5204,
+    "landFracMap": 0.9814,
+    "landFracDem": 1.0,
+    "landFracRatio": 1.019,
+    "textureSeaFrac": 0.0,
+    "textureLandIou": null,
+    "solvedBeforeVeto": true,
+    "confidenceBeforeVeto": "low"
+   }
+  },
+  "arcade_africa_canyon": {
+   "confidence": "low",
+   "bounds": {
+    "minLon": 47.814169,
+    "maxLon": 48.162393,
+    "minLat": 32.101684,
+    "maxLat": 32.398265
+   },
+   "method": "dem-coarse-only",
+   "demNcc": 0.8792,
+   "anchorResidualKm": null,
+   "bboxUncertaintyKm": 8.0,
+   "heightStdM": 626.63,
+   "crosscheck": {
+    "demNcc": 0.8792,
+    "bboxUncertaintyKm": 8.0,
+    "heightStdM": 626.6,
+    "prescreenMargin": 0.0141,
+    "refineAttempts": [
+     {
+      "seedNcc": 0.879,
+      "refinedNcc": 0.748,
+      "lon": 47.985,
+      "lat": 32.266,
+      "driftDeg": 0.017
+     },
+     {
+      "seedNcc": 0.865,
+      "refinedNcc": 0.687,
+      "lon": 80.704,
+      "lat": 27.784,
+      "driftDeg": 0.028
+     }
+    ],
+    "refine": "failed (weak correlation)",
+    "prescreenCandidates": [
+     {
+      "ncc": 0.879,
+      "lon": 47.988,
+      "lat": 32.25
+     },
+     {
+      "ncc": 0.865,
+      "lon": 80.684,
+      "lat": 27.761
+     },
+     {
+      "ncc": 0.861,
+      "lon": 133.066,
+      "lat": 33.285
+     },
+     {
+      "ncc": 0.858,
+      "lon": 78.091,
+      "lat": 28.459
+     },
+     {
+      "ncc": 0.858,
+      "lon": 15.029,
+      "lat": 36.774
+     }
+    ],
+    "sizeErrPct": 0.0,
+    "squareErrPct": 0.0,
+    "sizeCheckOk": true,
+    "worldSquareKm": [
+     32.8,
+     32.8
+    ],
+    "nccPeak": 0.8792,
+    "landFracMap": 0.8794,
+    "landFracDem": 1.0,
+    "landFracRatio": 1.137,
+    "textureSeaFrac": 0.0,
+    "textureLandIou": null,
+    "solvedBeforeVeto": true,
+    "confidenceBeforeVeto": "low"
+   }
+  },
+  "arcade_africa_seashore": {
+   "confidence": "unresolved",
+   "bounds": null,
+   "method": "dem-coarse-only",
+   "demNcc": 0.7767,
+   "anchorResidualKm": null,
+   "bboxUncertaintyKm": 8.0,
+   "heightStdM": 188.79,
+   "crosscheck": {
+    "demNcc": 0.7767,
+    "bboxUncertaintyKm": 8.0,
+    "heightStdM": 188.8,
+    "prescreenMargin": 0.0007,
+    "refineAttempts": [
+     {
+      "seedNcc": 0.777,
+      "refinedNcc": 0.546,
+      "lon": 112.824,
+      "lat": 65.312,
+      "driftDeg": 0.007
+     },
+     {
+      "seedNcc": 0.776,
+      "refinedNcc": 0.578,
+      "lon": -41.434,
+      "lat": 64.543,
+      "driftDeg": 0.021
+     }
+    ],
+    "refine": "failed (weak correlation)",
+    "prescreenCandidates": [
+     {
+      "ncc": 0.777,
+      "lon": 112.808,
+      "lat": 65.312
+     },
+     {
+      "ncc": 0.776,
+      "lon": -41.396,
+      "lat": 64.53
+     },
+     {
+      "ncc": 0.768,
+      "lon": 88.857,
+      "lat": 61.918
+     },
+     {
+      "ncc": 0.765,
+      "lon": 94.834,
+      "lat": 64.905
+     },
+     {
+      "ncc": 0.763,
+      "lon": -31.223,
+      "lat": 70.118
+     }
+    ],
+    "sizeErrPct": 0.0,
+    "squareErrPct": 0.0,
+    "sizeCheckOk": true,
+    "worldSquareKm": [
+     16.4,
+     16.4
+    ],
+    "landFracMap": 0.6606,
+    "landFracDem": 1.0,
+    "landFracRatio": 1.514,
+    "textureSeaFrac": 0.436,
+    "textureLandIou": null,
+    "solvedBeforeVeto": true,
+    "confidenceBeforeVeto": "low"
+   }
+  },
+  "arcade_alps": {
+   "confidence": "low",
+   "bounds": {
+    "minLon": 11.598874,
+    "maxLon": 12.08765,
+    "minLat": 52.800348,
+    "maxLat": 53.096928
+   },
+   "method": "dem-coarse-only",
+   "demNcc": 0.8297,
+   "anchorResidualKm": null,
+   "bboxUncertaintyKm": 8.0,
+   "heightStdM": 1069.15,
+   "crosscheck": {
+    "demNcc": 0.8297,
+    "bboxUncertaintyKm": 8.0,
+    "heightStdM": 1069.2,
+    "prescreenMargin": 0.0002,
+    "refineAttempts": [
+     {
+      "seedNcc": 0.83,
+      "refinedNcc": 0.705,
+      "lon": 11.829,
+      "lat": 52.963,
+      "driftDeg": 0.017
+     },
+     {
+      "seedNcc": 0.829,
+      "refinedNcc": 0.674,
+      "lon": 60.696,
+      "lat": 28.393,
+      "driftDeg": 0.047
+     }
+    ],
+    "refine": "failed (weak correlation)",
+    "prescreenCandidates": [
+     {
+      "ncc": 0.83,
+      "lon": 11.843,
+      "lat": 52.949
+     },
+     {
+      "ncc": 0.829,
+      "lon": 60.645,
+      "lat": 28.382
+     },
+     {
+      "ncc": 0.824,
+      "lon": 60.029,
+      "lat": 34.705
+     },
+     {
+      "ncc": 0.823,
+      "lon": -98.086,
+      "lat": 28.42
+     },
+     {
+      "ncc": 0.822,
+      "lon": 29.355,
+      "lat": 47.1
+     }
+    ],
+    "sizeErrPct": 0.0,
+    "squareErrPct": 0.0,
+    "sizeCheckOk": true,
+    "worldSquareKm": [
+     32.8,
+     32.8
+    ],
+    "nccPeak": 0.8297,
+    "landFracMap": 0.9679,
+    "landFracDem": 0.9995,
+    "landFracRatio": 1.033,
+    "textureSeaFrac": 0.0,
+    "textureLandIou": null,
+    "solvedBeforeVeto": true,
+    "confidenceBeforeVeto": "low"
+   }
+  },
+  "arcade_asia_4roads": {
+   "confidence": "low",
+   "bounds": {
+    "minLon": 73.547955,
+    "maxLon": 74.076085,
+    "minLat": 53.256421,
+    "maxLat": 53.573416
+   },
+   "method": "dem-only",
+   "demNcc": 0.8296,
+   "anchorResidualKm": null,
+   "bboxUncertaintyKm": 2.0,
+   "heightStdM": 1416.08,
+   "crosscheck": {
+    "demNcc": 0.8296,
+    "prescreenTopNcc": 0.8918,
+    "prescreenMargin": 0.0077,
+    "worldUnitM": 1.0688,
+    "heightStdM": 1416.1,
+    "bboxUncertaintyKm": 2.0,
+    "demSource": "terrarium z10",
+    "prescreenCandidates": [
+     {
+      "ncc": 0.892,
+      "lon": 73.784,
+      "lat": 53.41
+     },
+     {
+      "ncc": 0.884,
+      "lon": 71.301,
+      "lat": 54.021
+     },
+     {
+      "ncc": 0.872,
+      "lon": 101.777,
+      "lat": -70.671
+     },
+     {
+      "ncc": 0.86,
+      "lon": 102.458,
+      "lat": -67.917
+     },
+     {
+      "ncc": 0.856,
+      "lon": 52.141,
+      "lat": 59.723
+     }
+    ],
+    "sizeErrPct": 6.88,
+    "squareErrPct": 0.0,
+    "sizeCheckOk": true,
+    "worldSquareKm": [
+     35.0,
+     35.0
+    ],
+    "nccPeak": 0.8296,
+    "landFracMap": 0.9899,
+    "landFracDem": 1.0,
+    "landFracRatio": 1.01,
+    "textureSeaFrac": 0.0,
+    "textureLandIou": null,
+    "solvedBeforeVeto": true,
+    "confidenceBeforeVeto": "low"
+   }
+  },
+  "arcade_canyon_snow": {
+   "confidence": "low",
+   "bounds": {
+    "minLon": -83.579424,
+    "maxLon": -83.183627,
+    "minLat": 31.983225,
+    "maxLat": 32.320687
+   },
+   "method": "dem-only",
+   "demNcc": 0.7896,
+   "anchorResidualKm": null,
+   "bboxUncertaintyKm": 1.5,
+   "heightStdM": 650.12,
+   "crosscheck": {
+    "demNcc": 0.7896,
+    "prescreenTopNcc": 0.921,
+    "prescreenMargin": 0.0076,
+    "worldUnitM": 1.1378,
+    "heightStdM": 650.1,
+    "bboxUncertaintyKm": 1.5,
+    "demSource": "terrarium z10",
+    "prescreenCandidates": [
+     {
+      "ncc": 0.921,
+      "lon": -83.364,
+      "lat": 32.138
+     },
+     {
+      "ncc": 0.913,
+      "lon": 17.051,
+      "lat": -26.352
+     },
+     {
+      "ncc": 0.91,
+      "lon": -117.817,
+      "lat": 37.23
+     },
+     {
+      "ncc": 0.909,
+      "lon": 61.216,
+      "lat": 29.191
+     },
+     {
+      "ncc": 0.907,
+      "lon": -106.172,
+      "lat": 28.072
+     }
+    ],
+    "sizeErrPct": 13.78,
+    "squareErrPct": 0.0,
+    "sizeCheckOk": false,
+    "worldSquareKm": [
+     37.3,
+     37.3
+    ],
+    "nccPeak": 0.7896,
+    "landFracMap": 0.9859,
+    "landFracDem": 1.0,
+    "landFracRatio": 1.014,
+    "textureSeaFrac": 0.005,
+    "textureLandIou": null,
+    "solvedBeforeVeto": true,
+    "confidenceBeforeVeto": "low"
+   }
+  },
+  "arcade_ireland": {
+   "confidence": "low",
+   "bounds": {
+    "minLon": 5.255723,
+    "maxLon": 5.602485,
+    "minLat": 34.485993,
+    "maxLat": 34.773337
+   },
+   "method": "dem-only",
+   "demNcc": 0.8135,
+   "anchorResidualKm": null,
+   "bboxUncertaintyKm": 2.0,
+   "heightStdM": 499.88,
+   "crosscheck": {
+    "demNcc": 0.8135,
+    "prescreenTopNcc": 0.9089,
+    "prescreenMargin": 0.0075,
+    "worldUnitM": 0.9689,
+    "heightStdM": 499.9,
+    "bboxUncertaintyKm": 2.0,
+    "demSource": "terrarium z10",
+    "prescreenCandidates": [
+     {
+      "ncc": 0.909,
+      "lon": 5.449,
+      "lat": 34.633
+     },
+     {
+      "ncc": 0.901,
+      "lon": -3.252,
+      "lat": 31.952
+     },
+     {
+      "ncc": 0.899,
+      "lon": 13.403,
+      "lat": 26.313
+     },
+     {
+      "ncc": 0.898,
+      "lon": -66.797,
+      "lat": -39.368
+     },
+     {
+      "ncc": 0.896,
+      "lon": -101.558,
+      "lat": 37.649
+     }
+    ],
+    "sizeErrPct": 3.11,
+    "squareErrPct": 0.0,
+    "sizeCheckOk": true,
+    "worldSquareKm": [
+     31.8,
+     31.8
+    ],
+    "nccPeak": 0.8135,
+    "landFracMap": 0.7656,
+    "landFracDem": 1.0,
+    "landFracRatio": 1.306,
+    "textureSeaFrac": 0.0,
+    "textureLandIou": null,
+    "solvedBeforeVeto": true,
+    "confidenceBeforeVeto": "low"
+   }
+  },
+  "arcade_mediterranean": {
+   "confidence": "low",
+   "bounds": {
+    "minLon": 32.084984,
+    "maxLon": 32.426734,
+    "minLat": 30.338261,
+    "maxLat": 30.634841
+   },
+   "method": "dem-coarse-only",
+   "demNcc": 0.75,
+   "anchorResidualKm": null,
+   "bboxUncertaintyKm": 8.0,
+   "heightStdM": 471.99,
+   "crosscheck": {
+    "demNcc": 0.75,
+    "bboxUncertaintyKm": 8.0,
+    "heightStdM": 472.0,
+    "prescreenMargin": 0.0077,
+    "refineAttempts": [
+     {
+      "seedNcc": 0.75,
+      "refinedNcc": 0.614,
+      "lon": 32.265,
+      "lat": 30.508,
+      "driftDeg": 0.023
+     },
+     {
+      "seedNcc": 0.742,
+      "refinedNcc": 0.607,
+      "lon": -55.47,
+      "lat": -32.142,
+      "driftDeg": 0.01
+     }
+    ],
+    "refine": "failed (weak correlation)",
+    "prescreenCandidates": [
+     {
+      "ncc": 0.75,
+      "lon": 32.256,
+      "lat": 30.487
+     },
+     {
+      "ncc": 0.742,
+      "lon": -55.459,
+      "lat": -32.138
+     },
+     {
+      "ncc": 0.739,
+      "lon": -93.076,
+      "lat": 36.598
+     },
+     {
+      "ncc": 0.737,
+      "lon": -95.273,
+      "lat": 35.568
+     },
+     {
+      "ncc": 0.735,
+      "lon": -110.874,
+      "lat": 63.509
+     }
+    ],
+    "sizeErrPct": 0.0,
+    "squareErrPct": 0.0,
+    "sizeCheckOk": true,
+    "worldSquareKm": [
+     32.8,
+     32.8
+    ],
+    "nccPeak": 0.75,
+    "landFracMap": 0.9543,
+    "landFracDem": 0.9331,
+    "landFracRatio": 1.023,
+    "textureSeaFrac": 0.0,
+    "textureLandIou": null,
+    "solvedBeforeVeto": true,
+    "confidenceBeforeVeto": "low"
+   }
+  },
+  "arcade_norway_fjords": {
+   "confidence": "unresolved",
+   "bounds": null,
+   "method": "dem-coarse-only",
+   "demNcc": 0.8498,
+   "anchorResidualKm": null,
+   "bboxUncertaintyKm": 8.0,
+   "heightStdM": 501.63,
+   "crosscheck": {
+    "demNcc": 0.8498,
+    "bboxUncertaintyKm": 8.0,
+    "heightStdM": 501.6,
+    "prescreenMargin": 0.0096,
+    "refineAttempts": [
+     {
+      "seedNcc": 0.85,
+      "refinedNcc": 0.687,
+      "lon": 123.858,
+      "lat": -31.177,
+      "driftDeg": 0.02
+     },
+     {
+      "seedNcc": 0.84,
+      "refinedNcc": 0.677,
+      "lon": 37.344,
+      "lat": 37.702,
+      "driftDeg": 0.045
+     }
+    ],
+    "refine": "failed (weak correlation)",
+    "prescreenCandidates": [
+     {
+      "ncc": 0.85,
+      "lon": 123.838,
+      "lat": -31.166
+     },
+     {
+      "ncc": 0.84,
+      "lon": 37.288,
+      "lat": 37.701
+     },
+     {
+      "ncc": 0.84,
+      "lon": -59.238,
+      "lat": -26.077
+     },
+     {
+      "ncc": 0.836,
+      "lon": 18.501,
+      "lat": -25.364
+     },
+     {
+      "ncc": 0.835,
+      "lon": -97.339,
+      "lat": 28.613
+     }
+    ],
+    "sizeErrPct": 0.0,
+    "squareErrPct": 0.0,
+    "sizeCheckOk": true,
+    "worldSquareKm": [
+     32.8,
+     32.8
+    ],
+    "landFracMap": 0.6066,
+    "landFracDem": 1.0,
+    "landFracRatio": 1.648,
+    "textureSeaFrac": 0.299,
+    "textureLandIou": null,
+    "solvedBeforeVeto": true,
+    "confidenceBeforeVeto": "low"
+   }
+  },
+  "arcade_norway_green": {
+   "confidence": "low",
+   "bounds": {
+    "minLon": 102.580035,
+    "maxLon": 102.908246,
+    "minLat": 26.046586,
+    "maxLat": 26.343167
+   },
+   "method": "dem-coarse-only",
+   "demNcc": 0.8792,
+   "anchorResidualKm": null,
+   "bboxUncertaintyKm": 8.0,
+   "heightStdM": 856.53,
+   "crosscheck": {
+    "demNcc": 0.8792,
+    "bboxUncertaintyKm": 8.0,
+    "heightStdM": 856.5,
+    "prescreenMargin": 0.0004,
+    "refineAttempts": [
+     {
+      "seedNcc": 0.879,
+      "refinedNcc": 0.687,
+      "lon": 102.761,
+      "lat": 26.218,
+      "driftDeg": 0.028
+     },
+     {
+      "seedNcc": 0.879,
+      "refinedNcc": 0.765,
+      "lon": 26.468,
+      "lat": 39.735,
+      "driftDeg": 0.03
+     }
+    ],
+    "refine": "failed (weak correlation)",
+    "prescreenCandidates": [
+     {
+      "ncc": 0.879,
+      "lon": 102.744,
+      "lat": 26.195
+     },
+     {
+      "ncc": 0.879,
+      "lon": 26.455,
+      "lat": 39.707
+     },
+     {
+      "ncc": 0.876,
+      "lon": 2.856,
+      "lat": 46.438
+     },
+     {
+      "ncc": 0.872,
+      "lon": 81.914,
+      "lat": 31.653
+     },
+     {
+      "ncc": 0.868,
+      "lon": -118.74,
+      "lat": 45.583
+     }
+    ],
+    "sizeErrPct": 0.0,
+    "squareErrPct": 0.0,
+    "sizeCheckOk": true,
+    "worldSquareKm": [
+     32.8,
+     32.8
+    ],
+    "nccPeak": 0.8792,
+    "landFracMap": 0.9664,
+    "landFracDem": 1.0,
+    "landFracRatio": 1.035,
+    "textureSeaFrac": 0.001,
+    "textureLandIou": null,
+    "solvedBeforeVeto": true,
+    "confidenceBeforeVeto": "low"
+   }
+  },
+  "arcade_norway_plain": {
+   "confidence": "low",
+   "bounds": {
+    "minLon": 107.261248,
+    "maxLon": 107.676876,
+    "minLat": 46.250523,
+    "maxLat": 46.539198
+   },
+   "method": "dem-only",
+   "demNcc": 0.7927,
+   "anchorResidualKm": null,
+   "bboxUncertaintyKm": 1.5,
+   "heightStdM": 875.46,
+   "crosscheck": {
+    "demNcc": 0.7927,
+    "prescreenTopNcc": 0.8999,
+    "prescreenMargin": 0.0074,
+    "worldUnitM": 0.9733,
+    "heightStdM": 875.5,
+    "bboxUncertaintyKm": 1.5,
+    "demSource": "terrarium z10",
+    "prescreenCandidates": [
+     {
+      "ncc": 0.9,
+      "lon": 107.468,
+      "lat": 46.392
+     },
+     {
+      "ncc": 0.893,
+      "lon": 86.353,
+      "lat": 36.492
+     },
+     {
+      "ncc": 0.888,
+      "lon": -83.298,
+      "lat": 40.897
+     },
+     {
+      "ncc": 0.888,
+      "lon": 70.137,
+      "lat": 37.51
+     },
+     {
+      "ncc": 0.888,
+      "lon": 37.441,
+      "lat": 63.86
+     }
+    ],
+    "sizeErrPct": 2.67,
+    "squareErrPct": 0.0,
+    "sizeCheckOk": true,
+    "worldSquareKm": [
+     31.9,
+     31.9
+    ],
+    "nccPeak": 0.7927,
+    "landFracMap": 0.9597,
+    "landFracDem": 1.0,
+    "landFracRatio": 1.042,
+    "textureSeaFrac": 0.006,
+    "textureLandIou": null,
+    "solvedBeforeVeto": true,
+    "confidenceBeforeVeto": "low"
+   }
+  },
+  "arcade_phiphi_crater": {
+   "confidence": "unresolved",
+   "bounds": null,
+   "method": "dem-coarse-only",
+   "demNcc": 0.7226,
+   "anchorResidualKm": null,
+   "bboxUncertaintyKm": 8.0,
+   "heightStdM": 239.46,
+   "crosscheck": {
+    "demNcc": 0.7226,
+    "bboxUncertaintyKm": 8.0,
+    "heightStdM": 239.5,
+    "prescreenMargin": 0.0823,
+    "refineAttempts": [
+     {
+      "seedNcc": 0.723,
+      "refinedNcc": 0.486,
+      "lon": -117.144,
+      "lat": 40.605,
+      "driftDeg": 0.01
+     },
+     {
+      "seedNcc": 0.64,
+      "refinedNcc": 0.505,
+      "lon": -158.482,
+      "lat": 61.746,
+      "driftDeg": 0.005
+     }
+    ],
+    "refine": "failed (weak correlation)",
+    "prescreenCandidates": [
+     {
+      "ncc": 0.723,
+      "lon": -117.136,
+      "lat": 40.597
+     },
+     {
+      "ncc": 0.64,
+      "lon": -158.489,
+      "lat": 61.742
+     },
+     {
+      "ncc": 0.634,
+      "lon": -104.216,
+      "lat": 62.421
+     },
+     {
+      "ncc": 0.611,
+      "lon": -119.575,
+      "lat": 59.423
+     },
+     {
+      "ncc": 0.603,
+      "lon": -154.995,
+      "lat": 63.47
+     }
+    ],
+    "sizeErrPct": 0.0,
+    "squareErrPct": 0.0,
+    "sizeCheckOk": true,
+    "worldSquareKm": [
+     32.8,
+     32.8
+    ],
+    "landFracMap": 0.2389,
+    "landFracDem": 1.0,
+    "landFracRatio": 4.187,
+    "textureSeaFrac": 0.0,
+    "textureLandIou": null,
+    "solvedBeforeVeto": true,
+    "confidenceBeforeVeto": "low"
+   }
+  },
+  "arcade_phiphi_crater_rocks": {
+   "confidence": "low",
+   "bounds": {
+    "minLon": -160.485609,
+    "maxLon": -159.919665,
+    "minLat": 58.494362,
+    "maxLat": 58.790943
+   },
+   "method": "dem-coarse-only",
+   "demNcc": 0.8446,
+   "anchorResidualKm": null,
+   "bboxUncertaintyKm": 8.0,
+   "heightStdM": 624.61,
+   "crosscheck": {
+    "demNcc": 0.8446,
+    "bboxUncertaintyKm": 8.0,
+    "heightStdM": 624.6,
+    "prescreenMargin": 0.014,
+    "refineAttempts": [
+     {
+      "seedNcc": 0.845,
+      "refinedNcc": 0.456,
+      "lon": -160.196,
+      "lat": 58.637,
+      "driftDeg": 0.006
+     },
+     {
+      "seedNcc": 0.831,
+      "refinedNcc": 0.471,
+      "lon": 31.114,
+      "lat": 61.312,
+      "driftDeg": 0.014
+     }
+    ],
+    "refine": "failed (weak correlation)",
+    "prescreenCandidates": [
+     {
+      "ncc": 0.845,
+      "lon": -160.203,
+      "lat": 58.643
+     },
+     {
+      "ncc": 0.831,
+      "lon": 31.135,
+      "lat": 61.302
+     },
+     {
+      "ncc": 0.829,
+      "lon": -101.25,
+      "lat": 25.086
+     },
+     {
+      "ncc": 0.829,
+      "lon": -47.109,
+      "lat": -24.607
+     },
+     {
+      "ncc": 0.827,
+      "lon": 143.372,
+      "lat": -37.353
+     }
+    ],
+    "sizeErrPct": 0.0,
+    "squareErrPct": 0.0,
+    "sizeCheckOk": true,
+    "worldSquareKm": [
+     32.8,
+     32.8
+    ],
+    "landFracMap": 0.2673,
+    "landFracDem": 0.1147,
+    "landFracRatio": 2.33,
+    "textureSeaFrac": 0.0,
+    "textureLandIou": null,
+    "solvedBeforeVeto": true,
+    "confidenceBeforeVeto": "low",
+    "nccPeak": 0.8446
+   }
+  },
+  "arcade_rice_terraces": {
+   "confidence": "low",
+   "bounds": {
+    "minLon": 67.673298,
+    "maxLon": 68.029827,
+    "minLat": 34.158854,
+    "maxLat": 34.455434
+   },
+   "method": "dem-coarse-only",
+   "demNcc": 0.9014,
+   "anchorResidualKm": null,
+   "bboxUncertaintyKm": 8.0,
+   "heightStdM": 549.4,
+   "crosscheck": {
+    "demNcc": 0.9014,
+    "bboxUncertaintyKm": 8.0,
+    "heightStdM": 549.4,
+    "prescreenMargin": 0.0006,
+    "refineAttempts": [
+     {
+      "seedNcc": 0.901,
+      "refinedNcc": 0.669,
+      "lon": 67.867,
+      "lat": 34.317,
+      "driftDeg": 0.016
+     },
+     {
+      "seedNcc": 0.901,
+      "refinedNcc": 0.768,
+      "lon": 55.26,
+      "lat": 39.483,
+      "driftDeg": 0.021
+     }
+    ],
+    "refine": "failed (weak correlation)",
+    "prescreenCandidates": [
+     {
+      "ncc": 0.901,
+      "lon": 67.852,
+      "lat": 34.307
+     },
+     {
+      "ncc": 0.901,
+      "lon": 55.239,
+      "lat": 39.47
+     },
+     {
+      "ncc": 0.882,
+      "lon": 149.194,
+      "lat": -31.203
+     },
+     {
+      "ncc": 0.882,
+      "lon": -61.04,
+      "lat": -37.614
+     },
+     {
+      "ncc": 0.881,
+      "lon": 81.738,
+      "lat": 35.532
+     }
+    ],
+    "sizeErrPct": 0.0,
+    "squareErrPct": 0.0,
+    "sizeCheckOk": true,
+    "worldSquareKm": [
+     32.8,
+     32.8
+    ],
+    "nccPeak": 0.9014,
+    "landFracMap": 0.8506,
+    "landFracDem": 1.0,
+    "landFracRatio": 1.176,
+    "textureSeaFrac": 0.0,
+    "textureLandIou": null,
+    "solvedBeforeVeto": true,
+    "confidenceBeforeVeto": "low"
+   }
+  },
+  "arcade_snow_rocks": {
+   "confidence": "low",
+   "bounds": {
+    "minLon": 93.308964,
+    "maxLon": 93.722286,
+    "minLat": 44.410873,
+    "maxLat": 44.707454
+   },
+   "method": "dem-coarse-only",
+   "demNcc": 0.8242,
+   "anchorResidualKm": null,
+   "bboxUncertaintyKm": 8.0,
+   "heightStdM": 548.93,
+   "crosscheck": {
+    "demNcc": 0.8242,
+    "bboxUncertaintyKm": 8.0,
+    "heightStdM": 548.9,
+    "prescreenMargin": 0.0038,
+    "refineAttempts": [
+     {
+      "seedNcc": 0.824,
+      "refinedNcc": 0.763,
+      "lon": 93.521,
+      "lat": 44.569,
+      "driftDeg": 0.01
+     },
+     {
+      "seedNcc": 0.82,
+      "refinedNcc": 0.746,
+      "lon": 70.135,
+      "lat": 51.246,
+      "driftDeg": 0.013
+     }
+    ],
+    "refine": "failed (weak correlation)",
+    "prescreenCandidates": [
+     {
+      "ncc": 0.824,
+      "lon": 93.516,
+      "lat": 44.559
+     },
+     {
+      "ncc": 0.82,
+      "lon": 70.115,
+      "lat": 51.248
+     },
+     {
+      "ncc": 0.819,
+      "lon": -51.636,
+      "lat": -29.955
+     },
+     {
+      "ncc": 0.818,
+      "lon": -106.479,
+      "lat": 48.078
+     },
+     {
+      "ncc": 0.818,
+      "lon": 97.361,
+      "lat": 43.564
+     }
+    ],
+    "sizeErrPct": 0.0,
+    "squareErrPct": 0.0,
+    "sizeCheckOk": true,
+    "worldSquareKm": [
+     32.8,
+     32.8
+    ],
+    "nccPeak": 0.8242,
+    "landFracMap": 0.9613,
+    "landFracDem": 1.0,
+    "landFracRatio": 1.04,
+    "textureSeaFrac": 0.004,
+    "textureLandIou": null,
+    "solvedBeforeVeto": true,
+    "confidenceBeforeVeto": "low"
+   }
+  },
+  "arcade_tabletop_mountain": {
+   "confidence": "unresolved",
+   "bounds": null,
+   "method": "dem-only",
+   "demNcc": 0.7888,
+   "anchorResidualKm": null,
+   "bboxUncertaintyKm": 1.5,
+   "heightStdM": 1057.5,
+   "crosscheck": {
+    "demNcc": 0.7888,
+    "prescreenTopNcc": 0.8563,
+    "prescreenMargin": 0.0291,
+    "worldUnitM": 0.8595,
+    "heightStdM": 1057.5,
+    "bboxUncertaintyKm": 1.5,
+    "demSource": "terrarium z10",
+    "prescreenCandidates": [
+     {
+      "ncc": 0.856,
+      "lon": -164.048,
+      "lat": 61.355
+     },
+     {
+      "ncc": 0.827,
+      "lon": -170.442,
+      "lat": 63.539
+     },
+     {
+      "ncc": 0.775,
+      "lon": -122.432,
+      "lat": 64.83
+     },
+     {
+      "ncc": 0.769,
+      "lon": 153.193,
+      "lat": 68.073
+     },
+     {
+      "ncc": 0.769,
+      "lon": 176.814,
+      "lat": 71.601
+     }
+    ],
+    "sizeErrPct": 14.05,
+    "squareErrPct": 0.0,
+    "sizeCheckOk": false,
+    "worldSquareKm": [
+     56.4,
+     56.4
+    ],
+    "landFracMap": 0.0787,
+    "landFracDem": 1.0,
+    "landFracRatio": 12.703,
+    "textureSeaFrac": 0.0,
+    "textureLandIou": null,
+    "solvedBeforeVeto": true,
+    "confidenceBeforeVeto": "low"
+   }
+  },
+  "arcade_zhang_park": {
+   "confidence": "unresolved",
+   "bounds": null,
+   "method": "dem-coarse-only",
+   "demNcc": 0.659,
+   "anchorResidualKm": null,
+   "bboxUncertaintyKm": 8.0,
+   "heightStdM": 456.05,
+   "crosscheck": {
+    "demNcc": 0.659,
+    "bboxUncertaintyKm": 8.0,
+    "heightStdM": 456.0,
+    "prescreenMargin": 0.0051,
+    "refineAttempts": [
+     {
+      "seedNcc": 0.659,
+      "refinedNcc": 0.604,
+      "lon": -2.988,
+      "lat": 45.869,
+      "driftDeg": 0.029
+     },
+     {
+      "seedNcc": 0.654,
+      "refinedNcc": 0.524,
+      "lon": 85.082,
+      "lat": 34.266,
+      "driftDeg": 0.032
+     }
+    ],
+    "refine": "failed (weak correlation)",
+    "prescreenCandidates": [
+     {
+      "ncc": 0.659,
+      "lon": -2.966,
+      "lat": 45.844
+     },
+     {
+      "ncc": 0.654,
+      "lon": 85.078,
+      "lat": 34.235
+     },
+     {
+      "ncc": 0.642,
+      "lon": -62.512,
+      "lat": -43.213
+     },
+     {
+      "ncc": 0.627,
+      "lon": 105.601,
+      "lat": 36.28
+     },
+     {
+      "ncc": 0.627,
+      "lon": 22.72,
+      "lat": -29.917
+     }
+    ],
+    "sizeErrPct": 0.0,
+    "squareErrPct": 0.0,
+    "sizeCheckOk": true,
+    "worldSquareKm": [
+     32.8,
+     32.8
+    ],
+    "nccPeak": 0.659,
+    "landFracMap": 0.9908,
+    "landFracDem": 0.0,
+    "textureSeaFrac": 0.0,
+    "textureLandIou": null,
+    "solvedBeforeVeto": true,
+    "confidenceBeforeVeto": "low"
+   }
+  },
+  "avg_abandoned_factory": {
+   "confidence": "unresolved",
+   "bounds": null,
+   "method": null,
+   "demNcc": null,
+   "anchorResidualKm": null,
+   "bboxUncertaintyKm": null,
+   "heightStdM": 12.91,
+   "crosscheck": {
+    "heightStdM": 12.9,
+    "sizeErrPct": null,
+    "squareErrPct": null,
+    "sizeCheckOk": false
+   }
+  },
+  "avg_abandoned_town": {
+   "confidence": "unresolved",
+   "bounds": null,
+   "method": null,
+   "demNcc": null,
+   "anchorResidualKm": null,
+   "bboxUncertaintyKm": null,
+   "heightStdM": 51.62,
+   "crosscheck": {
+    "heightStdM": 51.6,
+    "sizeErrPct": null,
+    "squareErrPct": null,
+    "sizeCheckOk": false
+   }
+  },
+  "avg_africa_desert": {
+   "confidence": "unresolved",
+   "bounds": null,
+   "method": null,
+   "demNcc": null,
+   "anchorResidualKm": null,
+   "bboxUncertaintyKm": null,
+   "heightStdM": 31.58,
+   "crosscheck": {
+    "heightStdM": 31.6,
+    "sizeErrPct": null,
+    "squareErrPct": null,
+    "sizeCheckOk": false
+   }
+  },
+  "avg_alaska_town": {
+   "confidence": "unresolved",
+   "bounds": null,
+   "method": null,
+   "demNcc": null,
+   "anchorResidualKm": null,
+   "bboxUncertaintyKm": null,
+   "heightStdM": 16.31,
+   "crosscheck": {
+    "heightStdM": 16.3,
+    "sizeErrPct": null,
+    "squareErrPct": null,
+    "sizeCheckOk": false
+   }
+  },
+  "avg_american_valley": {
+   "confidence": "unresolved",
+   "bounds": null,
+   "method": null,
+   "demNcc": null,
+   "anchorResidualKm": null,
+   "bboxUncertaintyKm": null,
+   "heightStdM": 20.68,
+   "crosscheck": {
+    "heightStdM": 20.7,
+    "sizeErrPct": null,
+    "squareErrPct": null,
+    "sizeCheckOk": false
+   }
+  },
+  "avg_aral_sea": {
+   "confidence": "unresolved",
+   "bounds": null,
+   "method": null,
+   "demNcc": null,
+   "anchorResidualKm": null,
+   "bboxUncertaintyKm": null,
+   "heightStdM": 12.73,
+   "crosscheck": {
+    "heightStdM": 12.7,
+    "sizeErrPct": null,
+    "squareErrPct": null,
+    "sizeCheckOk": false
+   }
+  },
+  "avg_arctic": {
+   "confidence": "unresolved",
+   "bounds": null,
+   "method": null,
+   "demNcc": null,
+   "anchorResidualKm": null,
+   "bboxUncertaintyKm": null,
+   "heightStdM": 18.0,
+   "crosscheck": {
+    "heightStdM": 18.0,
+    "sizeErrPct": null,
+    "squareErrPct": null,
+    "sizeCheckOk": false
+   }
+  },
+  "avg_ardennes": {
+   "confidence": "unresolved",
+   "bounds": null,
+   "method": null,
+   "demNcc": null,
+   "anchorResidualKm": null,
+   "bboxUncertaintyKm": null,
+   "heightStdM": 14.51,
+   "crosscheck": {
+    "heightStdM": 14.5,
+    "sizeErrPct": null,
+    "squareErrPct": null,
+    "sizeCheckOk": false
+   }
+  },
+  "avg_ardennes_snow": {
+   "confidence": "unresolved",
+   "bounds": null,
+   "method": null,
+   "demNcc": null,
+   "anchorResidualKm": null,
+   "bboxUncertaintyKm": null,
+   "heightStdM": 14.51,
+   "crosscheck": {
+    "heightStdM": 14.5,
+    "sizeErrPct": null,
+    "squareErrPct": null,
+    "sizeCheckOk": false
+   }
+  },
+  "avg_berlin": {
+   "confidence": "unresolved",
+   "bounds": null,
+   "method": null,
+   "demNcc": null,
+   "anchorResidualKm": null,
+   "bboxUncertaintyKm": null,
+   "heightStdM": 7.29,
+   "crosscheck": {
+    "heightStdM": 7.3,
+    "sizeErrPct": null,
+    "squareErrPct": null,
+    "sizeCheckOk": false
+   }
+  },
+  "avg_breslau": {
+   "confidence": "unresolved",
+   "bounds": null,
+   "method": null,
+   "demNcc": null,
+   "anchorResidualKm": null,
+   "bboxUncertaintyKm": null,
+   "heightStdM": 2.9,
+   "crosscheck": {
+    "heightStdM": 2.9,
+    "sizeErrPct": null,
+    "squareErrPct": null,
+    "sizeCheckOk": false
+   }
+  },
+  "avg_container_port": {
+   "confidence": "unresolved",
+   "bounds": null,
+   "method": null,
+   "demNcc": null,
+   "anchorResidualKm": null,
+   "bboxUncertaintyKm": null,
+   "heightStdM": 7.71,
+   "crosscheck": {
+    "heightStdM": 7.7,
+    "sizeErrPct": null,
+    "squareErrPct": null,
+    "sizeCheckOk": false
+   }
+  },
+  "avg_eastern_europe": {
+   "confidence": "unresolved",
+   "bounds": null,
+   "method": null,
+   "demNcc": null,
+   "anchorResidualKm": null,
+   "bboxUncertaintyKm": null,
+   "heightStdM": 9.1,
+   "crosscheck": {
+    "heightStdM": 9.1,
+    "sizeErrPct": null,
+    "squareErrPct": null,
+    "sizeCheckOk": false
+   }
+  },
+  "avg_egypt_sinai": {
+   "confidence": "unresolved",
+   "bounds": null,
+   "method": "ocr+gazetteer+dem-match",
+   "demNcc": 0.861,
+   "anchorResidualKm": null,
+   "bboxUncertaintyKm": 2.0,
+   "heightStdM": 58.84,
+   "crosscheck": {
+    "nccPeak": 0.861,
+    "coarseNcc": 0.8737,
+    "worldUnitM": 1.0313,
+    "worldSquareKm": [
+     4.2,
+     4.2
+    ],
+    "labelResidKm": [],
+    "anchorsUsed": 0,
+    "bboxUncertaintyKm": 2.0,
+    "sizeErrPct": 3.13,
+    "squareErrPct": 0.0,
+    "sizeCheckOk": true,
+    "landFracMap": 1.0,
+    "landFracDem": 0.0,
+    "textureSeaFrac": 0.0,
+    "textureLandIou": null,
+    "solvedBeforeVeto": true,
+    "confidenceBeforeVeto": "medium"
+   }
+  },
+  "avg_european_fortress": {
+   "confidence": "unresolved",
+   "bounds": null,
+   "method": null,
+   "demNcc": null,
+   "anchorResidualKm": null,
+   "bboxUncertaintyKm": null,
+   "heightStdM": 11.87,
+   "crosscheck": {
+    "heightStdM": 11.9,
+    "sizeErrPct": null,
+    "squareErrPct": null,
+    "sizeCheckOk": false
+   }
+  },
+  "avg_falklands": {
+   "confidence": "unresolved",
+   "bounds": null,
+   "method": "ocr+gazetteer+dem-match",
+   "demNcc": null,
+   "anchorResidualKm": 0.0,
+   "bboxUncertaintyKm": 1.0,
+   "heightStdM": 20.94,
+   "crosscheck": {
+    "nccPeak": 0.6497,
+    "coarseNcc": 0.6572,
+    "worldUnitM": 0.8091,
+    "worldSquareKm": [
+     3.3,
+     3.3
+    ],
+    "labelResidKm": [],
+    "anchorsUsed": 0,
+    "textureExtentKm": [
+     180.6,
+     157.3
+    ],
+    "textureVsWorldScale": 54.485,
+    "textureCenterOffsetKm": 86.2,
+    "bboxUncertaintyKm": 1.0,
+    "sizeErrPct": 19.09,
+    "squareErrPct": 0.0,
+    "sizeCheckOk": false,
+    "landFracMap": 0.5158,
+    "landFracDem": 0.0,
+    "textureSeaFrac": 0.631,
+    "textureWaterIou": 0.631,
+    "solvedBeforeVeto": true,
+    "confidenceBeforeVeto": "low"
+   }
+  },
+  "avg_finland": {
+   "confidence": "unresolved",
+   "bounds": null,
+   "method": "ocr+gazetteer+dem-match",
+   "demNcc": null,
+   "anchorResidualKm": 2.05,
+   "bboxUncertaintyKm": 2.0,
+   "heightStdM": 20.97,
+   "crosscheck": {
+    "nccPeak": 0.8969,
+    "coarseNcc": 0.8429,
+    "worldUnitM": 1.0672,
+    "worldSquareKm": [
+     2.2,
+     2.2
+    ],
+    "labelResidKm": [
+     0.0,
+     0.0,
+     0.4,
+     0.8,
+     0.9,
+     1.0,
+     1.2,
+     3.7,
+     4.8
+    ],
+    "anchorsUsed": 9,
+    "textureExtentKm": [
+     65.5,
+     66.8
+    ],
+    "textureVsWorldScale": 30.553,
+    "textureCenterOffsetKm": 94.25,
+    "bboxUncertaintyKm": 2.0,
+    "sizeErrPct": 6.72,
+    "squareErrPct": 0.0,
+    "sizeCheckOk": true,
+    "landFracMap": 0.7496,
+    "landFracDem": 0.0,
+    "textureSeaFrac": 0.111,
+    "textureLandIou": null,
+    "solvedBeforeVeto": true,
+    "confidenceBeforeVeto": "medium"
+   }
+  },
+  "avg_football_field": {
+   "confidence": "unresolved",
+   "bounds": null,
+   "method": null,
+   "demNcc": null,
+   "anchorResidualKm": null,
+   "bboxUncertaintyKm": null,
+   "heightStdM": 8.15,
+   "crosscheck": {
+    "heightStdM": 8.2,
+    "sizeErrPct": null,
+    "squareErrPct": null,
+    "sizeCheckOk": false
+   }
+  },
+  "avg_fulda": {
+   "confidence": "high",
+   "bounds": {
+    "minLon": 9.870677,
+    "maxLon": 9.92484,
+    "minLat": 50.683584,
+    "maxLat": 50.718131
+   },
+   "method": "ocr+gazetteer+dem-match",
+   "demNcc": 0.9216,
+   "anchorResidualKm": 1.1,
+   "bboxUncertaintyKm": 1.5,
+   "heightStdM": 34.66,
+   "crosscheck": {
+    "nccPeak": 0.9216,
+    "coarseNcc": 0.895,
+    "worldUnitM": 0.9324,
+    "worldSquareKm": [
+     3.8,
+     3.8
+    ],
+    "labelResidKm": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.1,
+     0.1,
+     0.1,
+     0.1,
+     0.1,
+     0.1,
+     0.1,
+     0.1,
+     0.1,
+     0.1,
+     0.1,
+     0.1,
+     0.1,
+     0.1,
+     0.1,
+     0.1,
+     0.1,
+     0.1,
+     0.2,
+     0.2,
+     0.2,
+     0.2,
+     0.2,
+     0.2,
+     0.2,
+     0.2,
+     0.2,
+     0.2,
+     0.2,
+     0.3,
+     0.3,
+     0.3,
+     0.3,
+     0.3,
+     0.3,
+     0.3,
+     0.3,
+     0.4,
+     0.4,
+     0.4,
+     0.4,
+     0.4,
+     0.4,
+     0.5,
+     0.5,
+     0.5,
+     0.5,
+     0.5,
+     0.5,
+     0.5,
+     0.6,
+     0.6,
+     0.6,
+     0.7,
+     0.8,
+     0.8,
+     0.8,
+     0.8,
+     0.9,
+     0.9,
+     0.9,
+     0.9,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.2,
+     1.3,
+     1.3,
+     1.4,
+     1.4,
+     1.5,
+     1.9,
+     2.1,
+     2.3,
+     3.9,
+     4.0,
+     5.8
+    ],
+    "anchorsUsed": 85,
+    "textureExtentKm": [
+     64.1,
+     60.9
+    ],
+    "textureVsWorldScale": 16.795,
+    "textureCenterOffsetKm": 0.21,
+    "bboxUncertaintyKm": 1.5,
+    "sizeErrPct": 6.77,
+    "squareErrPct": 0.0,
+    "sizeCheckOk": true,
+    "landFracMap": 1.0,
+    "landFracDem": 1.0,
+    "landFracRatio": 1.0,
+    "textureSeaFrac": 0.0,
+    "textureLandIou": null,
+    "solvedBeforeVeto": true,
+    "confidenceBeforeVeto": "high"
+   }
+  },
+  "avg_greece": {
+   "confidence": "unresolved",
+   "bounds": null,
+   "method": null,
+   "demNcc": null,
+   "anchorResidualKm": null,
+   "bboxUncertaintyKm": null,
+   "heightStdM": 63.72,
+   "crosscheck": {
+    "heightStdM": 63.7,
+    "sizeErrPct": null,
+    "squareErrPct": null,
+    "sizeCheckOk": false
+   }
+  },
+  "avg_guadalcanal": {
+   "confidence": "unresolved",
+   "bounds": null,
+   "method": null,
+   "demNcc": null,
+   "anchorResidualKm": null,
+   "bboxUncertaintyKm": null,
+   "heightStdM": 131.05,
+   "crosscheck": {
+    "heightStdM": 131.0,
+    "sizeErrPct": null,
+    "squareErrPct": null,
+    "sizeCheckOk": false
+   }
+  },
+  "avg_hurtgen": {
+   "confidence": "unresolved",
+   "bounds": null,
+   "method": null,
+   "demNcc": null,
+   "anchorResidualKm": null,
+   "bboxUncertaintyKm": null,
+   "heightStdM": 11.98,
+   "crosscheck": {
+    "heightStdM": 12.0,
+    "sizeErrPct": null,
+    "squareErrPct": null,
+    "sizeCheckOk": false
+   }
+  },
+  "avg_iberian_castle": {
+   "confidence": "unresolved",
+   "bounds": null,
+   "method": null,
+   "demNcc": null,
+   "anchorResidualKm": null,
+   "bboxUncertaintyKm": null,
+   "heightStdM": 22.11,
+   "crosscheck": {
+    "heightStdM": 22.1,
+    "sizeErrPct": null,
+    "squareErrPct": null,
+    "sizeCheckOk": false
+   }
+  },
+  "avg_ireland": {
+   "confidence": "unresolved",
+   "bounds": null,
+   "method": null,
+   "demNcc": null,
+   "anchorResidualKm": null,
+   "bboxUncertaintyKm": null,
+   "heightStdM": 119.12,
+   "crosscheck": {
+    "heightStdM": 119.1,
+    "sizeErrPct": null,
+    "squareErrPct": null,
+    "sizeCheckOk": false
+   }
+  },
+  "avg_israel": {
+   "confidence": "unresolved",
+   "bounds": null,
+   "method": null,
+   "demNcc": null,
+   "anchorResidualKm": null,
+   "bboxUncertaintyKm": null,
+   "heightStdM": 21.34,
+   "crosscheck": {
+    "heightStdM": 21.3,
+    "sizeErrPct": null,
+    "squareErrPct": null,
+    "sizeCheckOk": false
+   }
+  },
+  "avg_japan": {
+   "confidence": "unresolved",
+   "bounds": null,
+   "method": null,
+   "demNcc": null,
+   "anchorResidualKm": null,
+   "bboxUncertaintyKm": null,
+   "heightStdM": 76.94,
+   "crosscheck": {
+    "heightStdM": 76.9,
+    "sizeErrPct": null,
+    "squareErrPct": null,
+    "sizeCheckOk": false
+   }
+  },
+  "avg_karantan": {
+   "confidence": "unresolved",
+   "bounds": null,
+   "method": null,
+   "demNcc": null,
+   "anchorResidualKm": null,
+   "bboxUncertaintyKm": null,
+   "heightStdM": 16.6,
+   "crosscheck": {
+    "heightStdM": 16.6,
+    "sizeErrPct": null,
+    "squareErrPct": null,
+    "sizeCheckOk": false
+   }
+  },
+  "avg_karelia_forest_a": {
+   "confidence": "unresolved",
+   "bounds": null,
+   "method": "ocr+gazetteer+dem-match",
+   "demNcc": null,
+   "anchorResidualKm": 0.0,
+   "bboxUncertaintyKm": 2.0,
+   "heightStdM": 64.77,
+   "crosscheck": {
+    "nccPeak": 0.8232,
+    "coarseNcc": 0.8382,
+    "worldUnitM": 0.6,
+    "worldSquareKm": [
+     1.2,
+     1.2
+    ],
+    "labelResidKm": [],
+    "anchorsUsed": 0,
+    "textureExtentKm": [
+     43.2,
+     83.8
+    ],
+    "textureVsWorldScale": 68.167,
+    "textureCenterOffsetKm": 76.47,
+    "bboxUncertaintyKm": 2.0,
+    "sizeErrPct": 40.0,
+    "squareErrPct": 0.0,
+    "sizeCheckOk": false,
+    "landFracMap": 0.9914,
+    "landFracDem": 1.0,
+    "landFracRatio": 1.009,
+    "textureSeaFrac": 0.304,
+    "textureLandIou": null,
+    "solvedBeforeVeto": true,
+    "confidenceBeforeVeto": "medium"
+   }
+  },
+  "avg_karpaty_passage": {
+   "confidence": "unresolved",
+   "bounds": null,
+   "method": null,
+   "demNcc": null,
+   "anchorResidualKm": null,
+   "bboxUncertaintyKm": null,
+   "heightStdM": 28.89,
+   "crosscheck": {
+    "heightStdM": 28.9,
+    "sizeErrPct": null,
+    "squareErrPct": null,
+    "sizeCheckOk": false
+   }
+  },
+  "avg_korea_lake": {
+   "confidence": "unresolved",
+   "bounds": null,
+   "method": null,
+   "demNcc": null,
+   "anchorResidualKm": null,
+   "bboxUncertaintyKm": null,
+   "heightStdM": 32.84,
+   "crosscheck": {
+    "heightStdM": 32.8,
+    "sizeErrPct": null,
+    "squareErrPct": null,
+    "sizeCheckOk": false
+   }
+  },
+  "avg_krymsk": {
+   "confidence": "unresolved",
+   "bounds": null,
+   "method": null,
+   "demNcc": null,
+   "anchorResidualKm": null,
+   "bboxUncertaintyKm": null,
+   "heightStdM": 57.57,
+   "crosscheck": {
+    "heightStdM": 57.6,
+    "sizeErrPct": null,
+    "squareErrPct": null,
+    "sizeCheckOk": false
+   }
+  },
+  "avg_kursk_villages": {
+   "confidence": "unresolved",
+   "bounds": null,
+   "method": null,
+   "demNcc": null,
+   "anchorResidualKm": null,
+   "bboxUncertaintyKm": null,
+   "heightStdM": 22.96,
+   "crosscheck": {
+    "heightStdM": 23.0,
+    "sizeErrPct": null,
+    "squareErrPct": null,
+    "sizeCheckOk": false
+   }
+  },
+  "avg_lazzaro_italy_new_city": {
+   "confidence": "unresolved",
+   "bounds": null,
+   "method": null,
+   "demNcc": null,
+   "anchorResidualKm": null,
+   "bboxUncertaintyKm": null,
+   "heightStdM": 99.48,
+   "crosscheck": {
+    "heightStdM": 99.5,
+    "sizeErrPct": null,
+    "squareErrPct": null,
+    "sizeCheckOk": false
+   }
+  },
+  "avg_maginot_rework": {
+   "confidence": "unresolved",
+   "bounds": null,
+   "method": null,
+   "demNcc": null,
+   "anchorResidualKm": null,
+   "bboxUncertaintyKm": null,
+   "heightStdM": 3.88,
+   "crosscheck": {
+    "heightStdM": 3.9,
+    "sizeErrPct": null,
+    "squareErrPct": null,
+    "sizeCheckOk": false
+   }
+  },
+  "avg_mozdok": {
+   "confidence": "unresolved",
+   "bounds": null,
+   "method": null,
+   "demNcc": null,
+   "anchorResidualKm": null,
+   "bboxUncertaintyKm": null,
+   "heightStdM": 24.65,
+   "crosscheck": {
+    "heightStdM": 24.7,
+    "sizeErrPct": null,
+    "squareErrPct": null,
+    "sizeCheckOk": false
+   }
+  },
+  "avg_netherlands": {
+   "confidence": "unresolved",
+   "bounds": null,
+   "method": null,
+   "demNcc": null,
+   "anchorResidualKm": null,
+   "bboxUncertaintyKm": null,
+   "heightStdM": 7.61,
+   "crosscheck": {
+    "heightStdM": 7.6,
+    "sizeErrPct": null,
+    "squareErrPct": null,
+    "sizeCheckOk": false
+   }
+  },
+  "avg_normandy": {
+   "confidence": "low",
+   "bounds": {
+    "minLon": -90.394481,
+    "maxLon": -90.352513,
+    "minLat": 14.814303,
+    "maxLat": 14.855158
+   },
+   "method": "ocr+gazetteer+dem-match",
+   "demNcc": 0.7029,
+   "anchorResidualKm": 3.29,
+   "bboxUncertaintyKm": 2.0,
+   "heightStdM": 28.59,
+   "crosscheck": {
+    "nccPeak": 0.7029,
+    "coarseNcc": 0.7717,
+    "worldUnitM": 1.1026,
+    "worldSquareKm": [
+     4.5,
+     4.5
+    ],
+    "labelResidKm": [
+     0.0,
+     0.0,
+     2.3,
+     3.8,
+     4.3,
+     5.5
+    ],
+    "anchorsUsed": 6,
+    "textureExtentKm": [
+     79.0,
+     34.5
+    ],
+    "textureVsWorldScale": 17.499,
+    "textureCenterOffsetKm": 10354.42,
+    "bboxUncertaintyKm": 2.0,
+    "sizeErrPct": 10.26,
+    "squareErrPct": 0.0,
+    "sizeCheckOk": false,
+    "landFracMap": 0.9374,
+    "landFracDem": 1.0,
+    "landFracRatio": 1.067,
+    "textureSeaFrac": 0.0,
+    "textureLandIou": null,
+    "solvedBeforeVeto": true,
+    "confidenceBeforeVeto": "low"
+   }
+  },
+  "avg_northern_india": {
+   "confidence": "unresolved",
+   "bounds": null,
+   "method": null,
+   "demNcc": null,
+   "anchorResidualKm": null,
+   "bboxUncertaintyKm": null,
+   "heightStdM": 164.25,
+   "crosscheck": {
+    "heightStdM": 164.3,
+    "sizeErrPct": null,
+    "squareErrPct": null,
+    "sizeCheckOk": false
+   }
+  },
+  "avg_northern_valley": {
+   "confidence": "unresolved",
+   "bounds": null,
+   "method": null,
+   "demNcc": null,
+   "anchorResidualKm": null,
+   "bboxUncertaintyKm": null,
+   "heightStdM": 112.1,
+   "crosscheck": {
+    "heightStdM": 112.1,
+    "sizeErrPct": null,
+    "squareErrPct": null,
+    "sizeCheckOk": false
+   }
+  },
+  "avg_nuclear_incident": {
+   "confidence": "unresolved",
+   "bounds": null,
+   "method": null,
+   "demNcc": null,
+   "anchorResidualKm": null,
+   "bboxUncertaintyKm": null,
+   "heightStdM": 16.31,
+   "crosscheck": {
+    "heightStdM": 16.3,
+    "sizeErrPct": null,
+    "squareErrPct": null,
+    "sizeCheckOk": false
+   }
+  },
+  "avg_poland": {
+   "confidence": "unresolved",
+   "bounds": null,
+   "method": null,
+   "demNcc": null,
+   "anchorResidualKm": null,
+   "bboxUncertaintyKm": null,
+   "heightStdM": 9.05,
+   "crosscheck": {
+    "heightStdM": 9.0,
+    "sizeErrPct": null,
+    "squareErrPct": null,
+    "sizeCheckOk": false
+   }
+  },
+  "avg_poland_snow": {
+   "confidence": "unresolved",
+   "bounds": null,
+   "method": null,
+   "demNcc": null,
+   "anchorResidualKm": null,
+   "bboxUncertaintyKm": null,
+   "heightStdM": 9.06,
+   "crosscheck": {
+    "heightStdM": 9.1,
+    "sizeErrPct": null,
+    "squareErrPct": null,
+    "sizeCheckOk": false
+   }
+  },
+  "avg_port_novorossiysk": {
+   "confidence": "low",
+   "bounds": {
+    "minLon": 37.67118,
+    "maxLon": 37.712213,
+    "minLat": 44.7399,
+    "maxLat": 44.769244
+   },
+   "method": "ocr+gazetteer+dem-match",
+   "demNcc": 0.9662,
+   "anchorResidualKm": 2.21,
+   "bboxUncertaintyKm": 2.0,
+   "heightStdM": 73.47,
+   "crosscheck": {
+    "nccPeak": 0.9662,
+    "coarseNcc": 0.9374,
+    "worldUnitM": 0.7919,
+    "worldSquareKm": [
+     3.2,
+     3.2
+    ],
+    "labelResidKm": [
+     0.0,
+     0.0,
+     5.0
+    ],
+    "anchorsUsed": 3,
+    "textureExtentKm": [
+     64.5,
+     52.4
+    ],
+    "textureVsWorldScale": 19.895,
+    "textureCenterOffsetKm": 3.15,
+    "bboxUncertaintyKm": 2.0,
+    "sizeErrPct": 20.81,
+    "squareErrPct": 0.0,
+    "sizeCheckOk": false,
+    "landFracMap": 0.6665,
+    "landFracDem": 1.0,
+    "landFracRatio": 1.5,
+    "textureSeaFrac": 0.0,
+    "textureLandIou": null,
+    "solvedBeforeVeto": true,
+    "confidenceBeforeVeto": "low"
+   }
+  },
+  "avg_red_desert": {
+   "confidence": "unresolved",
+   "bounds": null,
+   "method": null,
+   "demNcc": null,
+   "anchorResidualKm": null,
+   "bboxUncertaintyKm": null,
+   "heightStdM": 24.76,
+   "crosscheck": {
+    "heightStdM": 24.8,
+    "sizeErrPct": null,
+    "squareErrPct": null,
+    "sizeCheckOk": false
+   }
+  },
+  "avg_rheinland": {
+   "confidence": "unresolved",
+   "bounds": null,
+   "method": null,
+   "demNcc": null,
+   "anchorResidualKm": null,
+   "bboxUncertaintyKm": null,
+   "heightStdM": 6.55,
+   "crosscheck": {
+    "heightStdM": 6.6,
+    "sizeErrPct": null,
+    "squareErrPct": null,
+    "sizeCheckOk": false
+   }
+  },
+  "avg_sector_montmedy": {
+   "confidence": "medium",
+   "bounds": {
+    "minLon": 4.968245,
+    "maxLon": 5.024745,
+    "minLat": 49.659223,
+    "maxLat": 49.696041
+   },
+   "method": "ocr+gazetteer+dem-match",
+   "demNcc": 0.8391,
+   "anchorResidualKm": 0.95,
+   "bboxUncertaintyKm": 2.0,
+   "heightStdM": 22.54,
+   "crosscheck": {
+    "nccPeak": 0.8391,
+    "coarseNcc": 0.827,
+    "worldUnitM": 0.9936,
+    "worldSquareKm": [
+     4.1,
+     4.1
+    ],
+    "labelResidKm": [
+     0.0,
+     0.1,
+     0.1,
+     0.1,
+     0.2,
+     0.2,
+     0.2,
+     0.2,
+     0.3,
+     0.3,
+     0.4,
+     0.4,
+     0.4,
+     0.5,
+     0.5,
+     0.5,
+     0.6,
+     0.6,
+     0.6,
+     0.7,
+     0.7,
+     0.7,
+     0.7,
+     0.8,
+     0.8,
+     1.0,
+     1.3,
+     2.6,
+     3.4
+    ],
+    "anchorsUsed": 29,
+    "textureExtentKm": [
+     66.8,
+     66.2
+    ],
+    "textureVsWorldScale": 16.422,
+    "textureCenterOffsetKm": 0.48,
+    "bboxUncertaintyKm": 2.0,
+    "sizeErrPct": 0.64,
+    "squareErrPct": 0.0,
+    "sizeCheckOk": true,
+    "landFracMap": 0.9278,
+    "landFracDem": 1.0,
+    "landFracRatio": 1.078,
+    "textureSeaFrac": 0.0,
+    "textureLandIou": null,
+    "solvedBeforeVeto": true,
+    "confidenceBeforeVeto": "medium"
+   }
+  },
+  "avg_sector_montmedy_snow": {
+   "confidence": "medium",
+   "bounds": {
+    "minLon": 4.968246,
+    "maxLon": 5.024801,
+    "minLat": 49.659384,
+    "maxLat": 49.696239
+   },
+   "method": "ocr+gazetteer+dem-match",
+   "demNcc": 0.8392,
+   "anchorResidualKm": 0.93,
+   "bboxUncertaintyKm": 2.0,
+   "heightStdM": 22.54,
+   "crosscheck": {
+    "nccPeak": 0.8392,
+    "coarseNcc": 0.8189,
+    "worldUnitM": 0.9946,
+    "worldSquareKm": [
+     4.1,
+     4.1
+    ],
+    "labelResidKm": [
+     0.0,
+     0.1,
+     0.1,
+     0.1,
+     0.2,
+     0.2,
+     0.3,
+     0.3,
+     0.3,
+     0.3,
+     0.3,
+     0.3,
+     0.3,
+     0.4,
+     0.4,
+     0.4,
+     0.5,
+     0.5,
+     0.5,
+     0.5,
+     0.5,
+     0.6,
+     0.6,
+     0.6,
+     0.6,
+     0.6,
+     0.6,
+     0.6,
+     0.7,
+     1.0,
+     1.0,
+     1.2,
+     1.2,
+     2.8,
+     3.6
+    ],
+    "anchorsUsed": 35,
+    "textureExtentKm": [
+     66.6,
+     66.2
+    ],
+    "textureVsWorldScale": 16.354,
+    "textureCenterOffsetKm": 0.39,
+    "bboxUncertaintyKm": 2.0,
+    "sizeErrPct": 0.54,
+    "squareErrPct": 0.0,
+    "sizeCheckOk": true,
+    "landFracMap": 0.9278,
+    "landFracDem": 1.0,
+    "landFracRatio": 1.078,
+    "textureSeaFrac": 0.037,
+    "textureLandIou": null,
+    "solvedBeforeVeto": true,
+    "confidenceBeforeVeto": "medium"
+   }
+  },
+  "avg_snow_alps": {
+   "confidence": "unresolved",
+   "bounds": null,
+   "method": null,
+   "demNcc": null,
+   "anchorResidualKm": null,
+   "bboxUncertaintyKm": null,
+   "heightStdM": 45.67,
+   "crosscheck": {
+    "heightStdM": 45.7,
+    "sizeErrPct": null,
+    "squareErrPct": null,
+    "sizeCheckOk": false
+   }
+  },
+  "avg_soviet_range": {
+   "confidence": "unresolved",
+   "bounds": null,
+   "method": null,
+   "demNcc": null,
+   "anchorResidualKm": null,
+   "bboxUncertaintyKm": null,
+   "heightStdM": 1.96,
+   "crosscheck": {
+    "heightStdM": 2.0,
+    "sizeErrPct": null,
+    "squareErrPct": null,
+    "sizeCheckOk": false
+   }
+  },
+  "avg_soviet_suburban": {
+   "confidence": "unresolved",
+   "bounds": null,
+   "method": null,
+   "demNcc": null,
+   "anchorResidualKm": null,
+   "bboxUncertaintyKm": null,
+   "heightStdM": 3.05,
+   "crosscheck": {
+    "heightStdM": 3.0,
+    "sizeErrPct": null,
+    "squareErrPct": null,
+    "sizeCheckOk": false
+   }
+  },
+  "avg_soviet_suburban_snow": {
+   "confidence": "unresolved",
+   "bounds": null,
+   "method": null,
+   "demNcc": null,
+   "anchorResidualKm": null,
+   "bboxUncertaintyKm": null,
+   "heightStdM": 3.03,
+   "crosscheck": {
+    "heightStdM": 3.0,
+    "sizeErrPct": null,
+    "squareErrPct": null,
+    "sizeCheckOk": false
+   }
+  },
+  "avg_stalingrad_factory": {
+   "confidence": "unresolved",
+   "bounds": null,
+   "method": null,
+   "demNcc": null,
+   "anchorResidualKm": null,
+   "bboxUncertaintyKm": null,
+   "heightStdM": 30.8,
+   "crosscheck": {
+    "heightStdM": 30.8,
+    "sizeErrPct": null,
+    "squareErrPct": null,
+    "sizeCheckOk": false
+   }
+  },
+  "avg_sweden": {
+   "confidence": "unresolved",
+   "bounds": null,
+   "method": null,
+   "demNcc": null,
+   "anchorResidualKm": null,
+   "bboxUncertaintyKm": null,
+   "heightStdM": 84.46,
+   "crosscheck": {
+    "heightStdM": 84.5,
+    "sizeErrPct": null,
+    "squareErrPct": null,
+    "sizeCheckOk": false
+   }
+  },
+  "avg_syria": {
+   "confidence": "unresolved",
+   "bounds": null,
+   "method": null,
+   "demNcc": null,
+   "anchorResidualKm": null,
+   "bboxUncertaintyKm": null,
+   "heightStdM": 120.48,
+   "crosscheck": {
+    "heightStdM": 120.5,
+    "sizeErrPct": null,
+    "squareErrPct": null,
+    "sizeCheckOk": false
+   }
+  },
+  "avg_training_ground": {
+   "confidence": "unresolved",
+   "bounds": null,
+   "method": null,
+   "demNcc": null,
+   "anchorResidualKm": null,
+   "bboxUncertaintyKm": null,
+   "heightStdM": 49.0,
+   "crosscheck": {
+    "heightStdM": 49.0,
+    "sizeErrPct": null,
+    "squareErrPct": null,
+    "sizeCheckOk": false
+   }
+  },
+  "avg_tunisia_desert": {
+   "confidence": "unresolved",
+   "bounds": null,
+   "method": null,
+   "demNcc": null,
+   "anchorResidualKm": null,
+   "bboxUncertaintyKm": null,
+   "heightStdM": 14.84,
+   "crosscheck": {
+    "heightStdM": 14.8,
+    "sizeErrPct": null,
+    "squareErrPct": null,
+    "sizeCheckOk": false
+   }
+  },
+  "avg_vietnam_hills": {
+   "confidence": "unresolved",
+   "bounds": null,
+   "method": null,
+   "demNcc": null,
+   "anchorResidualKm": null,
+   "bboxUncertaintyKm": null,
+   "heightStdM": 175.5,
+   "crosscheck": {
+    "heightStdM": 175.5,
+    "sizeErrPct": null,
+    "squareErrPct": null,
+    "sizeCheckOk": false
+   }
+  },
+  "avg_vlaanderen": {
+   "confidence": "unresolved",
+   "bounds": null,
+   "method": null,
+   "demNcc": null,
+   "anchorResidualKm": null,
+   "bboxUncertaintyKm": null,
+   "heightStdM": 3.9,
+   "crosscheck": {
+    "heightStdM": 3.9,
+    "sizeErrPct": null,
+    "squareErrPct": null,
+    "sizeCheckOk": false
+   }
+  },
+  "avg_volokolamsk": {
+   "confidence": "unresolved",
+   "bounds": null,
+   "method": null,
+   "demNcc": null,
+   "anchorResidualKm": null,
+   "bboxUncertaintyKm": null,
+   "heightStdM": 5.55,
+   "crosscheck": {
+    "heightStdM": 5.6,
+    "sizeErrPct": null,
+    "squareErrPct": null,
+    "sizeCheckOk": false
+   }
+  },
+  "avg_western_europe": {
+   "confidence": "unresolved",
+   "bounds": null,
+   "method": null,
+   "demNcc": null,
+   "anchorResidualKm": null,
+   "bboxUncertaintyKm": null,
+   "heightStdM": 2.87,
+   "crosscheck": {
+    "heightStdM": 2.9,
+    "sizeErrPct": null,
+    "squareErrPct": null,
+    "sizeCheckOk": false
+   }
+  },
+  "avn_africa_gulf": {
+   "confidence": "unresolved",
+   "bounds": null,
+   "method": "dem-coarse-only",
+   "demNcc": 0.7913,
+   "anchorResidualKm": null,
+   "bboxUncertaintyKm": 8.0,
+   "heightStdM": 86.48,
+   "crosscheck": {
+    "demNcc": 0.7913,
+    "bboxUncertaintyKm": 8.0,
+    "heightStdM": 86.5,
+    "prescreenMargin": 0.0841,
+    "refineAttempts": [
+     {
+      "seedNcc": 0.791,
+      "refinedNcc": 0.115,
+      "lon": 103.19,
+      "lat": 0.812,
+      "driftDeg": 0.22
+     },
+     {
+      "seedNcc": 0.707,
+      "refinedNcc": 0.728,
+      "lon": -164.385,
+      "lat": 61.909,
+      "driftDeg": 0.023
+     }
+    ],
+    "refine": "failed (weak correlation)",
+    "prescreenCandidates": [
+     {
+      "ncc": 0.791,
+      "lon": 103.162,
+      "lat": 0.593
+     },
+     {
+      "ncc": 0.707,
+      "lon": -164.377,
+      "lat": 61.887
+     },
+     {
+      "ncc": 0.672,
+      "lon": 160.862,
+      "lat": 70.751
+     },
+     {
+      "ncc": 0.671,
+      "lon": 132.385,
+      "lat": 47.115
+     },
+     {
+      "ncc": 0.669,
+      "lon": 32.673,
+      "lat": -1.516
+     }
+    ],
+    "sizeErrPct": 0.0,
+    "squareErrPct": 0.0,
+    "sizeCheckOk": true,
+    "worldSquareKm": [
+     65.6,
+     65.6
+    ],
+    "landFracMap": 0.0313,
+    "landFracDem": 0.7068,
+    "landFracRatio": 22.603,
+    "textureSeaFrac": 0.949,
+    "textureWaterIou": 0.284,
+    "solvedBeforeVeto": true,
+    "confidenceBeforeVeto": "low"
+   }
+  },
+  "avn_aleutian_islands": {
+   "confidence": "unresolved",
+   "bounds": null,
+   "method": "dem-only",
+   "demNcc": 0.7983,
+   "anchorResidualKm": null,
+   "bboxUncertaintyKm": 1.0,
+   "heightStdM": 199.45,
+   "crosscheck": {
+    "demNcc": 0.7983,
+    "prescreenTopNcc": 0.9296,
+    "prescreenMargin": 0.0066,
+    "worldUnitM": 1.0334,
+    "heightStdM": 199.5,
+    "bboxUncertaintyKm": 1.0,
+    "demSource": "terrarium z10",
+    "prescreenCandidates": [
+     {
+      "ncc": 0.93,
+      "lon": 98.372,
+      "lat": 1.867
+     },
+     {
+      "ncc": 0.923,
+      "lon": -95.142,
+      "lat": 18.062
+     },
+     {
+      "ncc": 0.92,
+      "lon": 34.475,
+      "lat": 8.255
+     },
+     {
+      "ncc": 0.92,
+      "lon": 18.237,
+      "lat": 19.56
+     },
+     {
+      "ncc": 0.919,
+      "lon": -91.978,
+      "lat": 14.477
+     }
+    ],
+    "sizeErrPct": 3.34,
+    "squareErrPct": 0.0,
+    "sizeCheckOk": true,
+    "worldSquareKm": [
+     67.8,
+     67.8
+    ],
+    "landFracMap": 0.1624,
+    "landFracDem": 1.0,
+    "landFracRatio": 6.159,
+    "textureSeaFrac": 0.0,
+    "textureLandIou": null,
+    "solvedBeforeVeto": true,
+    "confidenceBeforeVeto": "low"
+   }
+  },
+  "avn_alps_fjord": {
+   "confidence": "unresolved",
+   "bounds": null,
+   "method": null,
+   "demNcc": null,
+   "anchorResidualKm": null,
+   "bboxUncertaintyKm": null,
+   "heightStdM": 83.68,
+   "crosscheck": {
+    "heightStdM": 83.7,
+    "sizeErrPct": null,
+    "squareErrPct": null,
+    "sizeCheckOk": false
+   }
+  },
+  "avn_arabian_north_coast": {
+   "confidence": "unresolved",
+   "bounds": null,
+   "method": null,
+   "demNcc": null,
+   "anchorResidualKm": null,
+   "bboxUncertaintyKm": null,
+   "heightStdM": 87.93,
+   "crosscheck": {
+    "heightStdM": 87.9,
+    "sizeErrPct": null,
+    "squareErrPct": null,
+    "sizeCheckOk": false
+   }
+  },
+  "avn_bering_sea": {
+   "confidence": "low",
+   "bounds": {
+    "minLon": 145.103259,
+    "maxLon": 145.709212,
+    "minLat": -22.483651,
+    "maxLat": -21.918663
+   },
+   "method": "dem-only",
+   "demNcc": 0.8956,
+   "anchorResidualKm": null,
+   "bboxUncertaintyKm": 2.0,
+   "heightStdM": 374.58,
+   "crosscheck": {
+    "demNcc": 0.8956,
+    "prescreenTopNcc": 0.9269,
+    "prescreenMargin": 0.0002,
+    "worldUnitM": 0.9525,
+    "heightStdM": 374.6,
+    "bboxUncertaintyKm": 2.0,
+    "demSource": "terrarium z10",
+    "prescreenCandidates": [
+     {
+      "ncc": 0.927,
+      "lon": 145.415,
+      "lat": -22.187
+     },
+     {
+      "ncc": 0.927,
+      "lon": 33.003,
+      "lat": 23.201
+     },
+     {
+      "ncc": 0.927,
+      "lon": -82.683,
+      "lat": 28.44
+     },
+     {
+      "ncc": 0.924,
+      "lon": 9.822,
+      "lat": 5.55
+     },
+     {
+      "ncc": 0.924,
+      "lon": 34.761,
+      "lat": -12.94
+     }
+    ],
+    "sizeErrPct": 4.75,
+    "squareErrPct": 0.0,
+    "sizeCheckOk": true,
+    "worldSquareKm": [
+     62.5,
+     62.5
+    ],
+    "landFracMap": 0.4578,
+    "landFracDem": 1.0,
+    "landFracRatio": 2.184,
+    "textureSeaFrac": 0.0,
+    "textureLandIou": null,
+    "solvedBeforeVeto": true,
+    "confidenceBeforeVeto": "low",
+    "nccPeak": 0.8956
+   }
+  },
+  "avn_blacksea_port": {
+   "confidence": "unresolved",
+   "bounds": null,
+   "method": null,
+   "demNcc": null,
+   "anchorResidualKm": null,
+   "bboxUncertaintyKm": null,
+   "heightStdM": 72.15,
+   "crosscheck": {
+    "heightStdM": 72.1,
+    "sizeErrPct": null,
+    "squareErrPct": null,
+    "sizeCheckOk": false
+   }
+  },
+  "avn_coral_islands": {
+   "confidence": "unresolved",
+   "bounds": null,
+   "method": null,
+   "demNcc": null,
+   "anchorResidualKm": null,
+   "bboxUncertaintyKm": null,
+   "heightStdM": 82.84,
+   "crosscheck": {
+    "heightStdM": 82.8,
+    "sizeErrPct": null,
+    "squareErrPct": null,
+    "sizeCheckOk": false
+   }
+  },
+  "avn_england_shore": {
+   "confidence": "unresolved",
+   "bounds": null,
+   "method": null,
+   "demNcc": null,
+   "anchorResidualKm": null,
+   "bboxUncertaintyKm": null,
+   "heightStdM": 116.72,
+   "crosscheck": {
+    "heightStdM": 116.7,
+    "sizeErrPct": null,
+    "squareErrPct": null,
+    "sizeCheckOk": false
+   }
+  },
+  "avn_fiji": {
+   "confidence": "unresolved",
+   "bounds": null,
+   "method": null,
+   "demNcc": null,
+   "anchorResidualKm": null,
+   "bboxUncertaintyKm": null,
+   "heightStdM": 79.78,
+   "crosscheck": {
+    "heightStdM": 79.8,
+    "sizeErrPct": null,
+    "squareErrPct": null,
+    "sizeCheckOk": false
+   }
+  },
+  "avn_finland_islands": {
+   "confidence": "unresolved",
+   "bounds": null,
+   "method": "dem-coarse-only",
+   "demNcc": 0.9042,
+   "anchorResidualKm": null,
+   "bboxUncertaintyKm": 8.0,
+   "heightStdM": 165.18,
+   "crosscheck": {
+    "demNcc": 0.9042,
+    "bboxUncertaintyKm": 8.0,
+    "heightStdM": 165.2,
+    "prescreenMargin": 0.0002,
+    "refineAttempts": [
+     {
+      "seedNcc": 0.904,
+      "refinedNcc": 0.76,
+      "lon": 62.987,
+      "lat": 32.247,
+      "driftDeg": 0.017
+     },
+     {
+      "seedNcc": 0.904,
+      "refinedNcc": 0.778,
+      "lon": 139.597,
+      "lat": -8.265,
+      "driftDeg": 0.042
+     }
+    ],
+    "refine": "failed (weak correlation)",
+    "prescreenCandidates": [
+     {
+      "ncc": 0.904,
+      "lon": 62.996,
+      "lat": 32.231
+     },
+     {
+      "ncc": 0.904,
+      "lon": 139.57,
+      "lat": -8.233
+     },
+     {
+      "ncc": 0.9,
+      "lon": 107.71,
+      "lat": 41.212
+     },
+     {
+      "ncc": 0.897,
+      "lon": 138.186,
+      "lat": -2.877
+     },
+     {
+      "ncc": 0.896,
+      "lon": 90.154,
+      "lat": 26.726
+     }
+    ],
+    "sizeErrPct": 0.0,
+    "squareErrPct": 0.0,
+    "sizeCheckOk": true,
+    "worldSquareKm": [
+     65.6,
+     65.6
+    ],
+    "landFracMap": 0.3237,
+    "landFracDem": 1.0,
+    "landFracRatio": 3.089,
+    "textureSeaFrac": 0.0,
+    "textureLandIou": null,
+    "solvedBeforeVeto": true,
+    "confidenceBeforeVeto": "low"
+   }
+  },
+  "avn_franz_josef_land": {
+   "confidence": "low",
+   "bounds": {
+    "minLon": 40.860202,
+    "maxLon": 41.789303,
+    "minLat": 36.698278,
+    "maxLat": 37.444823
+   },
+   "method": "dem-only",
+   "demNcc": 0.8411,
+   "anchorResidualKm": null,
+   "bboxUncertaintyKm": 2.0,
+   "heightStdM": 240.95,
+   "crosscheck": {
+    "demNcc": 0.8411,
+    "prescreenTopNcc": 0.9068,
+    "prescreenMargin": 0.0026,
+    "worldUnitM": 1.2586,
+    "heightStdM": 240.9,
+    "bboxUncertaintyKm": 2.0,
+    "demSource": "terrarium z10",
+    "prescreenCandidates": [
+     {
+      "ncc": 0.907,
+      "lon": 41.331,
+      "lat": 37.073
+     },
+     {
+      "ncc": 0.904,
+      "lon": 142.009,
+      "lat": -9.211
+     },
+     {
+      "ncc": 0.903,
+      "lon": 123.333,
+      "lat": -8.646
+     },
+     {
+      "ncc": 0.897,
+      "lon": -81.87,
+      "lat": 22.715
+     },
+     {
+      "ncc": 0.897,
+      "lon": 118.433,
+      "lat": -8.928
+     }
+    ],
+    "sizeErrPct": 25.86,
+    "squareErrPct": 0.0,
+    "sizeCheckOk": false,
+    "worldSquareKm": [
+     82.5,
+     82.5
+    ],
+    "landFracMap": 0.497,
+    "landFracDem": 1.0,
+    "landFracRatio": 2.012,
+    "textureSeaFrac": 0.0,
+    "textureLandIou": null,
+    "solvedBeforeVeto": true,
+    "confidenceBeforeVeto": "low",
+    "nccPeak": 0.8411
+   }
+  },
+  "avn_fuego_islands": {
+   "confidence": "unresolved",
+   "bounds": null,
+   "method": null,
+   "demNcc": null,
+   "anchorResidualKm": null,
+   "bboxUncertaintyKm": null,
+   "heightStdM": 149.22,
+   "crosscheck": {
+    "heightStdM": 149.2,
+    "sizeErrPct": null,
+    "squareErrPct": null,
+    "sizeCheckOk": false
+   }
+  },
+  "avn_ice_port": {
+   "confidence": "unresolved",
+   "bounds": null,
+   "method": null,
+   "demNcc": null,
+   "anchorResidualKm": null,
+   "bboxUncertaintyKm": null,
+   "heightStdM": 81.55,
+   "crosscheck": {
+    "heightStdM": 81.6,
+    "sizeErrPct": null,
+    "squareErrPct": null,
+    "sizeCheckOk": false
+   }
+  },
+  "avn_ireland_bay": {
+   "confidence": "unresolved",
+   "bounds": null,
+   "method": null,
+   "demNcc": null,
+   "anchorResidualKm": null,
+   "bboxUncertaintyKm": null,
+   "heightStdM": 108.02,
+   "crosscheck": {
+    "heightStdM": 108.0,
+    "sizeErrPct": null,
+    "squareErrPct": null,
+    "sizeCheckOk": false
+   }
+  },
+  "avn_japan": {
+   "confidence": "unresolved",
+   "bounds": null,
+   "method": "dem-coarse-only",
+   "demNcc": 0.8389,
+   "anchorResidualKm": null,
+   "bboxUncertaintyKm": 8.0,
+   "heightStdM": 196.95,
+   "crosscheck": {
+    "demNcc": 0.8389,
+    "bboxUncertaintyKm": 8.0,
+    "heightStdM": 196.9,
+    "prescreenMargin": 0.0336,
+    "refineAttempts": [
+     {
+      "seedNcc": 0.839,
+      "refinedNcc": 0.413,
+      "lon": -88.68,
+      "lat": 47.96,
+      "driftDeg": 0.086
+     },
+     {
+      "seedNcc": 0.805,
+      "refinedNcc": 0.708,
+      "lon": 131.278,
+      "lat": -11.712,
+      "driftDeg": 0.022
+     }
+    ],
+    "refine": "failed (weak correlation)",
+    "prescreenCandidates": [
+     {
+      "ncc": 0.839,
+      "lon": -88.748,
+      "lat": 47.887
+     },
+     {
+      "ncc": 0.805,
+      "lon": 131.265,
+      "lat": -11.695
+     },
+     {
+      "ncc": 0.801,
+      "lon": 105.381,
+      "lat": 14.307
+     },
+     {
+      "ncc": 0.799,
+      "lon": 109.578,
+      "lat": 52.282
+     },
+     {
+      "ncc": 0.785,
+      "lon": 108.083,
+      "lat": 29.554
+     }
+    ],
+    "sizeErrPct": 0.0,
+    "squareErrPct": 0.0,
+    "sizeCheckOk": true,
+    "worldSquareKm": [
+     65.6,
+     65.6
+    ],
+    "landFracMap": 0.2675,
+    "landFracDem": 1.0,
+    "landFracRatio": 3.738,
+    "textureSeaFrac": 0.0,
+    "textureLandIou": null,
+    "solvedBeforeVeto": true,
+    "confidenceBeforeVeto": "low"
+   }
+  },
+  "avn_mediterranean_port": {
+   "confidence": "unresolved",
+   "bounds": null,
+   "method": null,
+   "demNcc": null,
+   "anchorResidualKm": null,
+   "bboxUncertaintyKm": null,
+   "heightStdM": 122.58,
+   "crosscheck": {
+    "heightStdM": 122.6,
+    "sizeErrPct": null,
+    "squareErrPct": null,
+    "sizeCheckOk": false
+   }
+  },
+  "avn_new_zeland_cape": {
+   "confidence": "low",
+   "bounds": {
+    "minLon": 101.575566,
+    "maxLon": 102.160175,
+    "minLat": 13.778761,
+    "maxLat": 14.349847
+   },
+   "method": "dem-only",
+   "demNcc": 0.8379,
+   "anchorResidualKm": null,
+   "bboxUncertaintyKm": 1.5,
+   "heightStdM": 522.14,
+   "crosscheck": {
+    "demNcc": 0.8379,
+    "prescreenTopNcc": 0.9226,
+    "prescreenMargin": 0.0107,
+    "worldUnitM": 0.9628,
+    "heightStdM": 522.1,
+    "bboxUncertaintyKm": 1.5,
+    "demSource": "terrarium z10",
+    "prescreenCandidates": [
+     {
+      "ncc": 0.923,
+      "lon": 101.865,
+      "lat": 14.051
+     },
+     {
+      "ncc": 0.912,
+      "lon": -81.606,
+      "lat": 22.675
+     },
+     {
+      "ncc": 0.908,
+      "lon": -55.481,
+      "lat": -1.955
+     },
+     {
+      "ncc": 0.905,
+      "lon": 137.329,
+      "lat": -18.813
+     },
+     {
+      "ncc": 0.899,
+      "lon": -68.401,
+      "lat": -3.009
+     }
+    ],
+    "sizeErrPct": 3.72,
+    "squareErrPct": 0.0,
+    "sizeCheckOk": true,
+    "worldSquareKm": [
+     63.1,
+     63.1
+    ],
+    "landFracMap": 0.3541,
+    "landFracDem": 1.0,
+    "landFracRatio": 2.824,
+    "solvedBeforeVeto": true,
+    "confidenceBeforeVeto": "low",
+    "nccPeak": 0.8379
+   }
+  },
+  "avn_north_sea": {
+   "confidence": "unresolved",
+   "bounds": null,
+   "method": null,
+   "demNcc": null,
+   "anchorResidualKm": null,
+   "bboxUncertaintyKm": null,
+   "heightStdM": 167.25,
+   "crosscheck": {
+    "heightStdM": 167.3,
+    "sizeErrPct": null,
+    "squareErrPct": null,
+    "sizeCheckOk": false
+   }
+  },
+  "avn_northwestern_islands": {
+   "confidence": "unresolved",
+   "bounds": null,
+   "method": null,
+   "demNcc": null,
+   "anchorResidualKm": null,
+   "bboxUncertaintyKm": null,
+   "heightStdM": 21.17,
+   "crosscheck": {
+    "heightStdM": 21.2,
+    "sizeErrPct": null,
+    "squareErrPct": null,
+    "sizeCheckOk": false
+   }
+  },
+  "avn_norway_islands": {
+   "confidence": "unresolved",
+   "bounds": null,
+   "method": null,
+   "demNcc": null,
+   "anchorResidualKm": null,
+   "bboxUncertaintyKm": null,
+   "heightStdM": 126.36,
+   "crosscheck": {
+    "heightStdM": 126.4,
+    "sizeErrPct": null,
+    "squareErrPct": null,
+    "sizeCheckOk": false
+   }
+  },
+  "avn_peleliu": {
+   "confidence": "unresolved",
+   "bounds": null,
+   "method": "dem-coarse-only",
+   "demNcc": 0.6647,
+   "anchorResidualKm": null,
+   "bboxUncertaintyKm": 8.0,
+   "heightStdM": 100.09,
+   "crosscheck": {
+    "demNcc": 0.6647,
+    "bboxUncertaintyKm": 8.0,
+    "heightStdM": 100.1,
+    "prescreenMargin": 0.028,
+    "refineAttempts": [
+     {
+      "seedNcc": 0.665,
+      "refinedNcc": 0.459,
+      "lon": -38.876,
+      "lat": -11.021,
+      "driftDeg": 0.032
+     },
+     {
+      "seedNcc": 0.637,
+      "refinedNcc": 0.425,
+      "lon": 62.913,
+      "lat": 39.27,
+      "driftDeg": 0.054
+     }
+    ],
+    "refine": "failed (weak correlation)",
+    "prescreenCandidates": [
+     {
+      "ncc": 0.665,
+      "lon": -38.848,
+      "lat": -11.006
+     },
+     {
+      "ncc": 0.637,
+      "lon": 62.908,
+      "lat": 39.215
+     },
+     {
+      "ncc": 0.63,
+      "lon": -41.045,
+      "lat": -19.436
+     },
+     {
+      "ncc": 0.596,
+      "lon": 101.36,
+      "lat": 21.963
+     },
+     {
+      "ncc": 0.584,
+      "lon": 130.693,
+      "lat": 31.728
+     }
+    ],
+    "sizeErrPct": 0.0,
+    "squareErrPct": 0.0,
+    "sizeCheckOk": true,
+    "worldSquareKm": [
+     65.6,
+     65.6
+    ],
+    "landFracMap": 0.0718,
+    "landFracDem": 1.0,
+    "landFracRatio": 13.924,
+    "textureSeaFrac": 0.906,
+    "textureLandIou": null,
+    "solvedBeforeVeto": true,
+    "confidenceBeforeVeto": "low"
+   }
+  },
+  "avn_phang_nga_bay_islands": {
+   "confidence": "unresolved",
+   "bounds": null,
+   "method": "ocr+gazetteer+dem-match",
+   "demNcc": null,
+   "anchorResidualKm": null,
+   "bboxUncertaintyKm": 2.0,
+   "heightStdM": 41.56,
+   "crosscheck": {
+    "nccPeak": 0.6073,
+    "coarseNcc": 0.6192,
+    "worldUnitM": 0.9915,
+    "worldSquareKm": [
+     4.1,
+     4.1
+    ],
+    "labelResidKm": [],
+    "anchorsUsed": 0,
+    "bboxUncertaintyKm": 2.0,
+    "sizeErrPct": 0.85,
+    "squareErrPct": 0.0,
+    "sizeCheckOk": true,
+    "landFracMap": 0.2131,
+    "landFracDem": 1.0,
+    "landFracRatio": 4.692,
+    "textureSeaFrac": 0.005,
+    "textureLandIou": null,
+    "solvedBeforeVeto": true,
+    "confidenceBeforeVeto": "low"
+   }
+  },
+  "avn_san_francisco": {
+   "confidence": "low",
+   "bounds": {
+    "minLon": -122.892361,
+    "maxLon": -122.146701,
+    "minLat": 37.526222,
+    "maxLat": 38.119383
+   },
+   "method": "dem-coarse-only",
+   "demNcc": 0.8763,
+   "anchorResidualKm": null,
+   "bboxUncertaintyKm": 8.0,
+   "heightStdM": 215.42,
+   "crosscheck": {
+    "demNcc": 0.8763,
+    "bboxUncertaintyKm": 8.0,
+    "heightStdM": 215.4,
+    "prescreenMargin": 0.0807,
+    "refineAttempts": [
+     {
+      "seedNcc": 0.876,
+      "refinedNcc": 0.769,
+      "lon": -122.519,
+      "lat": 37.814,
+      "driftDeg": 0.009
+     },
+     {
+      "seedNcc": 0.796,
+      "refinedNcc": 0.725,
+      "lon": 121.697,
+      "lat": -4.038,
+      "driftDeg": 0.04
+     }
+    ],
+    "refine": "failed (weak correlation)",
+    "prescreenCandidates": [
+     {
+      "ncc": 0.876,
+      "lon": -122.52,
+      "lat": 37.823
+     },
+     {
+      "ncc": 0.796,
+      "lon": 121.663,
+      "lat": -4.018
+     },
+     {
+      "ncc": 0.784,
+      "lon": 45.923,
+      "lat": -19.353
+     },
+     {
+      "ncc": 0.769,
+      "lon": 121.179,
+      "lat": -2.482
+     },
+     {
+      "ncc": 0.76,
+      "lon": -52.207,
+      "lat": -17.56
+     }
+    ],
+    "sizeErrPct": 0.0,
+    "squareErrPct": 0.0,
+    "sizeCheckOk": true,
+    "worldSquareKm": [
+     65.6,
+     65.6
+    ],
+    "nccPeak": 0.8763,
+    "landFracMap": 0.4201,
+    "landFracDem": 0.4583,
+    "landFracRatio": 1.091,
+    "textureSeaFrac": 0.543,
+    "textureLandIou": 0.73,
+    "textureWaterIou": 0.73,
+    "solvedBeforeVeto": true,
+    "confidenceBeforeVeto": "low"
+   }
+  },
+  "avn_south_africa": {
+   "confidence": "low",
+   "bounds": {
+    "minLon": -63.658253,
+    "maxLon": -63.131122,
+    "minLat": 1.705299,
+    "maxLat": 2.235836
+   },
+   "method": "dem-only",
+   "demNcc": 0.9072,
+   "anchorResidualKm": null,
+   "bboxUncertaintyKm": 1.5,
+   "heightStdM": 316.02,
+   "crosscheck": {
+    "demNcc": 0.9072,
+    "prescreenTopNcc": 0.9535,
+    "prescreenMargin": 0.0115,
+    "worldUnitM": 0.8944,
+    "heightStdM": 316.0,
+    "bboxUncertaintyKm": 1.5,
+    "demSource": "terrarium z10",
+    "prescreenCandidates": [
+     {
+      "ncc": 0.954,
+      "lon": -63.391,
+      "lat": 1.955
+     },
+     {
+      "ncc": 0.942,
+      "lon": 29.883,
+      "lat": 25.284
+     },
+     {
+      "ncc": 0.942,
+      "lon": 3.779,
+      "lat": 27.722
+     },
+     {
+      "ncc": 0.94,
+      "lon": -71.763,
+      "lat": 11.652
+     },
+     {
+      "ncc": 0.93,
+      "lon": 75.74,
+      "lat": 22.289
+     }
+    ],
+    "sizeErrPct": 10.56,
+    "squareErrPct": 0.0,
+    "sizeCheckOk": false,
+    "worldSquareKm": [
+     58.6,
+     58.6
+    ],
+    "landFracMap": 0.3757,
+    "landFracDem": 1.0,
+    "landFracRatio": 2.662,
+    "textureSeaFrac": 0.0,
+    "textureLandIou": null,
+    "solvedBeforeVeto": true,
+    "confidenceBeforeVeto": "low",
+    "nccPeak": 0.9072
+   }
+  },
+  "avn_sunken_city": {
+   "confidence": "unresolved",
+   "bounds": null,
+   "method": "dem-only",
+   "demNcc": 0.7957,
+   "anchorResidualKm": null,
+   "bboxUncertaintyKm": 2.0,
+   "heightStdM": 160.41,
+   "crosscheck": {
+    "demNcc": 0.7957,
+    "prescreenTopNcc": 0.9138,
+    "prescreenMargin": 0.0007,
+    "worldUnitM": 1.0073,
+    "heightStdM": 160.4,
+    "bboxUncertaintyKm": 2.0,
+    "demSource": "terrarium z10",
+    "prescreenCandidates": [
+     {
+      "ncc": 0.914,
+      "lon": -61.15,
+      "lat": 4.325
+     },
+     {
+      "ncc": 0.913,
+      "lon": -77.52,
+      "lat": 20.838
+     },
+     {
+      "ncc": 0.912,
+      "lon": 91.978,
+      "lat": 25.245
+     },
+     {
+      "ncc": 0.91,
+      "lon": 117.751,
+      "lat": -9.037
+     },
+     {
+      "ncc": 0.909,
+      "lon": -4.373,
+      "lat": 4.894
+     }
+    ],
+    "sizeErrPct": 0.73,
+    "squareErrPct": 0.0,
+    "sizeCheckOk": true,
+    "worldSquareKm": [
+     66.0,
+     66.0
+    ],
+    "landFracMap": 0.5168,
+    "landFracDem": 1.0,
+    "landFracRatio": 1.935,
+    "textureSeaFrac": 0.403,
+    "textureLandIou": null,
+    "solvedBeforeVeto": true,
+    "confidenceBeforeVeto": "low"
+   }
+  },
+  "avn_volcanic_island": {
+   "confidence": "unresolved",
+   "bounds": null,
+   "method": "dem-coarse-only",
+   "demNcc": 0.7622,
+   "anchorResidualKm": null,
+   "bboxUncertaintyKm": 8.0,
+   "heightStdM": 22.23,
+   "crosscheck": {
+    "demNcc": 0.7622,
+    "bboxUncertaintyKm": 8.0,
+    "heightStdM": 22.2,
+    "prescreenMargin": 0.0021,
+    "refineAttempts": [
+     {
+      "seedNcc": 0.762,
+      "refinedNcc": 0.368,
+      "lon": 126.918,
+      "lat": 65.287,
+      "driftDeg": 0.034
+     },
+     {
+      "seedNcc": 0.76,
+      "refinedNcc": 0.388,
+      "lon": 25.456,
+      "lat": 63.452,
+      "driftDeg": 0.006
+     }
+    ],
+    "refine": "failed (weak correlation)",
+    "prescreenCandidates": [
+     {
+      "ncc": 0.762,
+      "lon": 126.958,
+      "lat": 65.257
+     },
+     {
+      "ncc": 0.76,
+      "lon": 25.444,
+      "lat": 63.451
+     },
+     {
+      "ncc": 0.759,
+      "lon": 118.169,
+      "lat": 63.724
+     },
+     {
+      "ncc": 0.742,
+      "lon": 162.532,
+      "lat": 68.31
+     },
+     {
+      "ncc": 0.734,
+      "lon": -155.588,
+      "lat": 66.399
+     }
+    ],
+    "sizeErrPct": 0.0,
+    "squareErrPct": 0.0,
+    "sizeCheckOk": true,
+    "worldSquareKm": [
+     16.4,
+     16.4
+    ],
+    "landFracMap": 0.1116,
+    "landFracDem": 1.0,
+    "landFracRatio": 8.961,
+    "textureSeaFrac": 0.0,
+    "textureLandIou": null,
+    "solvedBeforeVeto": true,
+    "confidenceBeforeVeto": "low"
+   }
+  },
+  "berlin": {
+   "confidence": "medium",
+   "bounds": {
+    "minLon": 12.908273,
+    "maxLon": 13.885278,
+    "minLat": 52.096063,
+    "maxLat": 52.696435
+   },
+   "method": "ocr+gazetteer+dem-match",
+   "demNcc": 0.8816,
+   "anchorResidualKm": 1.55,
+   "bboxUncertaintyKm": 0.5,
+   "heightStdM": 20.78,
+   "crosscheck": {
+    "nccPeak": 0.8816,
+    "coarseNcc": 0.8242,
+    "worldUnitM": 1.0122,
+    "worldSquareKm": [
+     66.4,
+     66.4
+    ],
+    "labelResidKm": [
+     0.3,
+     0.9,
+     1.0,
+     1.1,
+     1.1,
+     1.2,
+     1.2,
+     1.2,
+     1.3,
+     1.3,
+     1.3,
+     1.3,
+     1.4,
+     1.4,
+     1.5,
+     1.6,
+     1.6,
+     1.6,
+     1.6,
+     1.7,
+     1.7,
+     1.7,
+     1.7,
+     1.8,
+     1.8,
+     1.9,
+     1.9,
+     1.9,
+     2.0,
+     2.0,
+     2.0,
+     2.0,
+     2.0,
+     2.0,
+     2.0,
+     2.0,
+     2.1,
+     2.1,
+     2.2,
+     2.2,
+     2.2,
+     2.2,
+     2.2,
+     2.3,
+     2.3,
+     2.3,
+     2.3,
+     2.3,
+     2.4,
+     2.4,
+     2.4,
+     2.4,
+     2.4,
+     2.4,
+     2.4,
+     2.4,
+     2.4,
+     2.5,
+     2.5,
+     2.5,
+     2.6,
+     2.6,
+     2.6,
+     2.6,
+     2.6,
+     2.6,
+     2.6,
+     2.7,
+     2.7,
+     2.7,
+     2.7,
+     2.7,
+     2.8,
+     2.8,
+     2.8,
+     2.8,
+     2.8,
+     2.8,
+     2.8,
+     2.8,
+     2.8,
+     2.8,
+     2.9,
+     2.9,
+     3.0,
+     3.0,
+     3.0,
+     3.1,
+     3.1,
+     3.1,
+     3.1,
+     3.1,
+     3.2,
+     3.2,
+     3.2,
+     3.2,
+     3.2,
+     3.2,
+     3.3,
+     3.3,
+     3.3,
+     3.3,
+     3.3,
+     3.3,
+     3.4,
+     3.4,
+     3.4,
+     3.5,
+     3.5,
+     3.5,
+     3.5,
+     3.6,
+     3.6,
+     3.6,
+     3.6,
+     3.6,
+     3.7,
+     3.7,
+     3.7,
+     3.7,
+     3.7,
+     3.8,
+     3.8,
+     3.8,
+     3.9,
+     3.9,
+     3.9,
+     3.9,
+     3.9,
+     4.2,
+     4.2,
+     4.2,
+     4.3,
+     4.3,
+     4.4,
+     4.4,
+     4.5,
+     4.5,
+     4.5,
+     4.5,
+     4.6,
+     4.6,
+     4.6,
+     4.7,
+     4.7,
+     4.7,
+     4.8,
+     4.8,
+     4.8,
+     4.9,
+     4.9,
+     5.0,
+     5.0,
+     5.0,
+     5.0,
+     5.1,
+     5.2,
+     5.2,
+     5.5,
+     5.5,
+     5.8
+    ],
+    "anchorsUsed": 161,
+    "textureExtentKm": [
+     66.5,
+     65.7
+    ],
+    "textureVsWorldScale": 1.003,
+    "textureCenterOffsetKm": 0.68,
+    "bboxUncertaintyKm": 0.5,
+    "sizeErrPct": 1.22,
+    "squareErrPct": 0.0,
+    "sizeCheckOk": true,
+    "landFracMap": 1.0,
+    "landFracDem": 1.0,
+    "landFracRatio": 1.0,
+    "textureSeaFrac": 0.0,
+    "textureLandIou": null,
+    "solvedBeforeVeto": true,
+    "confidenceBeforeVeto": "medium"
+   }
+  },
+  "britain": {
+   "confidence": "medium",
+   "bounds": {
+    "minLon": 0.52393,
+    "maxLon": 1.458622,
+    "minLat": 50.837894,
+    "maxLat": 51.428563
+   },
+   "method": "ocr+gazetteer+dem-match",
+   "demNcc": 0.9653,
+   "anchorResidualKm": 1.58,
+   "bboxUncertaintyKm": 1.5,
+   "heightStdM": 91.09,
+   "crosscheck": {
+    "nccPeak": 0.9653,
+    "coarseNcc": 0.9641,
+    "worldUnitM": 0.9958,
+    "worldSquareKm": [
+     65.3,
+     65.3
+    ],
+    "labelResidKm": [
+     0.0,
+     0.2,
+     0.4,
+     0.6,
+     0.9,
+     0.9,
+     0.9,
+     0.9,
+     0.9,
+     1.0,
+     1.0,
+     1.1,
+     1.1,
+     1.1,
+     1.2,
+     1.3,
+     1.3,
+     1.3,
+     1.4,
+     1.6,
+     1.6,
+     1.6,
+     1.6,
+     1.7,
+     1.7,
+     1.7,
+     1.7,
+     1.8,
+     1.8,
+     1.8,
+     1.9,
+     1.9,
+     1.9,
+     2.1,
+     2.1,
+     2.3,
+     2.3,
+     2.3,
+     2.4,
+     2.4,
+     2.4,
+     2.5,
+     2.5,
+     2.7,
+     2.8,
+     2.8,
+     2.9,
+     2.9,
+     2.9,
+     2.9,
+     3.1,
+     3.2,
+     3.7,
+     4.1,
+     4.9,
+     5.4
+    ],
+    "anchorsUsed": 56,
+    "textureExtentKm": [
+     66.1,
+     63.8
+    ],
+    "textureVsWorldScale": 1.013,
+    "textureCenterOffsetKm": 13.42,
+    "bboxUncertaintyKm": 1.5,
+    "sizeErrPct": 0.42,
+    "squareErrPct": 0.0,
+    "sizeCheckOk": true,
+    "landFracMap": 0.635,
+    "landFracDem": 0.6558,
+    "landFracRatio": 1.033,
+    "textureSeaFrac": 0.546,
+    "textureWaterIou": 0.556,
+    "solvedBeforeVeto": true,
+    "confidenceBeforeVeto": "medium"
+   }
+  },
+  "bulge": {
+   "confidence": "medium",
+   "bounds": {
+    "minLon": 5.254094,
+    "maxLon": 6.162502,
+    "minLat": 49.612551,
+    "maxLat": 50.20172
+   },
+   "method": "ocr+gazetteer+dem-match",
+   "demNcc": 0.8081,
+   "anchorResidualKm": 1.4,
+   "bboxUncertaintyKm": 0.5,
+   "heightStdM": 92.6,
+   "crosscheck": {
+    "nccPeak": 0.8081,
+    "coarseNcc": 0.8,
+    "worldUnitM": 0.9933,
+    "worldSquareKm": [
+     65.1,
+     65.1
+    ],
+    "labelResidKm": [
+     0.0,
+     0.0,
+     0.1,
+     0.1,
+     0.1,
+     0.1,
+     0.1,
+     0.1,
+     0.1,
+     0.1,
+     0.1,
+     0.1,
+     0.1,
+     0.1,
+     0.1,
+     0.1,
+     0.2,
+     0.2,
+     0.2,
+     0.2,
+     0.2,
+     0.2,
+     0.2,
+     0.2,
+     0.2,
+     0.2,
+     0.2,
+     0.2,
+     0.2,
+     0.2,
+     0.2,
+     0.3,
+     0.3,
+     0.3,
+     0.3,
+     0.3,
+     0.3,
+     0.3,
+     0.3,
+     0.3,
+     0.3,
+     0.3,
+     0.3,
+     0.3,
+     0.3,
+     0.3,
+     0.3,
+     0.4,
+     0.4,
+     0.4,
+     0.4,
+     0.4,
+     0.4,
+     0.5,
+     0.5,
+     0.5,
+     0.5,
+     0.5,
+     0.5,
+     0.5,
+     0.6,
+     0.6,
+     0.6,
+     0.7,
+     0.7,
+     0.7,
+     0.7,
+     0.7,
+     0.7,
+     0.8,
+     0.8,
+     0.8,
+     0.8,
+     0.8,
+     0.8,
+     0.8,
+     0.9,
+     0.9,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.3,
+     1.3,
+     1.5,
+     1.8,
+     1.9,
+     1.9,
+     2.0,
+     2.1,
+     2.2,
+     2.3,
+     2.4,
+     2.4,
+     2.5,
+     2.7,
+     2.7,
+     2.7,
+     2.7,
+     2.8,
+     2.8,
+     3.1,
+     3.4,
+     3.8,
+     4.1,
+     4.8,
+     5.1
+    ],
+    "anchorsUsed": 107,
+    "textureExtentKm": [
+     65.5,
+     65.2
+    ],
+    "textureVsWorldScale": 1.006,
+    "textureCenterOffsetKm": 0.99,
+    "bboxUncertaintyKm": 0.5,
+    "sizeErrPct": 0.67,
+    "squareErrPct": 0.0,
+    "sizeCheckOk": true,
+    "landFracMap": 1.0,
+    "landFracDem": 1.0,
+    "landFracRatio": 1.0,
+    "textureSeaFrac": 0.0,
+    "textureLandIou": null,
+    "solvedBeforeVeto": true,
+    "confidenceBeforeVeto": "medium"
+   }
+  },
+  "caribbean_islands": {
+   "confidence": "unresolved",
+   "bounds": null,
+   "method": "dem-coarse-only",
+   "demNcc": 0.7295,
+   "anchorResidualKm": null,
+   "bboxUncertaintyKm": 8.0,
+   "heightStdM": 20.7,
+   "crosscheck": {
+    "demNcc": 0.7295,
+    "bboxUncertaintyKm": 8.0,
+    "heightStdM": 20.7,
+    "prescreenMargin": 0.028,
+    "refineAttempts": [
+     {
+      "seedNcc": 0.73,
+      "refinedNcc": 0.405,
+      "lon": 112.679,
+      "lat": -5.77,
+      "driftDeg": 0.023
+     },
+     {
+      "seedNcc": 0.701,
+      "refinedNcc": 0.37,
+      "lon": 70.301,
+      "lat": 23.906,
+      "driftDeg": 0.023
+     }
+    ],
+    "refine": "failed (weak correlation)",
+    "prescreenCandidates": [
+     {
+      "ncc": 0.73,
+      "lon": 112.676,
+      "lat": -5.747
+     },
+     {
+      "ncc": 0.701,
+      "lon": 70.312,
+      "lat": 23.886
+     },
+     {
+      "ncc": 0.697,
+      "lon": 59.941,
+      "lat": 45.675
+     },
+     {
+      "ncc": 0.696,
+      "lon": -12.48,
+      "lat": 22.675
+     },
+     {
+      "ncc": 0.687,
+      "lon": 106.04,
+      "lat": -6.228
+     }
+    ],
+    "sizeErrPct": 0.0,
+    "squareErrPct": 0.0,
+    "sizeCheckOk": true,
+    "worldSquareKm": [
+     65.6,
+     65.6
+    ],
+    "landFracMap": 0.012,
+    "landFracDem": 0.0547,
+    "landFracRatio": 4.558,
+    "textureSeaFrac": 0.978,
+    "textureWaterIou": 0.948,
+    "solvedBeforeVeto": true,
+    "confidenceBeforeVeto": "low"
+   }
+  },
+  "dover_strait": {
+   "confidence": "high",
+   "bounds": {
+    "minLon": 0.703367,
+    "maxLon": 2.529079,
+    "minLat": 50.522286,
+    "maxLat": 51.676866
+   },
+   "method": "ocr+gazetteer+dem-match",
+   "demNcc": 0.9608,
+   "anchorResidualKm": 2.61,
+   "bboxUncertaintyKm": 1.0,
+   "heightStdM": 85.44,
+   "crosscheck": {
+    "nccPeak": 0.9608,
+    "coarseNcc": 0.9342,
+    "worldUnitM": 0.973,
+    "worldSquareKm": [
+     127.6,
+     127.6
+    ],
+    "labelResidKm": [
+     0.0,
+     0.5,
+     0.6,
+     0.6,
+     0.7,
+     0.8,
+     1.0,
+     1.1,
+     1.1,
+     1.1,
+     1.3,
+     1.3,
+     1.5,
+     1.5,
+     1.7,
+     1.8,
+     2.0,
+     2.0,
+     2.2,
+     2.4,
+     2.7,
+     2.7,
+     3.3,
+     3.4,
+     3.7,
+     3.8,
+     4.1,
+     4.3,
+     4.3,
+     5.0,
+     5.5
+    ],
+    "anchorsUsed": 31,
+    "textureExtentKm": [
+     130.0,
+     128.2
+    ],
+    "textureVsWorldScale": 1.019,
+    "textureCenterOffsetKm": 1.74,
+    "bboxUncertaintyKm": 1.0,
+    "sizeErrPct": 2.7,
+    "squareErrPct": 0.0,
+    "sizeCheckOk": true,
+    "landFracMap": 0.343,
+    "landFracDem": 0.3496,
+    "landFracRatio": 1.019,
+    "textureSeaFrac": 0.641,
+    "textureLandIou": 0.964,
+    "textureWaterIou": 0.964,
+    "solvedBeforeVeto": true,
+    "confidenceBeforeVeto": "high"
+   }
+  },
+  "firing_range": {
+   "confidence": "unresolved",
+   "bounds": null,
+   "method": null,
+   "demNcc": null,
+   "anchorResidualKm": null,
+   "bboxUncertaintyKm": null,
+   "heightStdM": 49.86,
+   "crosscheck": {
+    "heightStdM": 49.9,
+    "sizeErrPct": null,
+    "squareErrPct": null,
+    "sizeCheckOk": false
+   }
+  },
+  "guadalcanal": {
+   "confidence": "unresolved",
+   "bounds": null,
+   "method": "ocr+gazetteer+dem-match",
+   "demNcc": null,
+   "anchorResidualKm": 2.57,
+   "bboxUncertaintyKm": 1.5,
+   "heightStdM": 416.66,
+   "crosscheck": {
+    "nccPeak": 0.7958,
+    "coarseNcc": 0.7392,
+    "worldUnitM": 0.6181,
+    "worldSquareKm": [
+     40.5,
+     40.5
+    ],
+    "labelResidKm": [
+     0.0,
+     0.0,
+     5.8
+    ],
+    "anchorsUsed": 3,
+    "textureExtentKm": [
+     95.5,
+     93.6
+    ],
+    "textureVsWorldScale": 2.356,
+    "textureCenterOffsetKm": 2091.58,
+    "bboxUncertaintyKm": 1.5,
+    "sizeErrPct": 38.19,
+    "squareErrPct": 0.0,
+    "sizeCheckOk": false,
+    "landFracMap": 0.3828,
+    "landFracDem": 1.0,
+    "landFracRatio": 2.613,
+    "textureSeaFrac": 0.564,
+    "textureLandIou": null,
+    "solvedBeforeVeto": true,
+    "confidenceBeforeVeto": "medium"
+   }
+  },
+  "guam": {
+   "confidence": "medium",
+   "bounds": {
+    "minLon": 144.536987,
+    "maxLon": 145.094582,
+    "minLat": 13.147535,
+    "maxLat": 13.725318
+   },
+   "method": "ocr+gazetteer+lsq",
+   "demNcc": null,
+   "anchorResidualKm": null,
+   "bboxUncertaintyKm": null,
+   "heightStdM": 156.77,
+   "crosscheck": {
+    "worldSquareKm": [
+     60.4,
+     63.9
+    ],
+    "anchorsUsed": 9,
+    "aspectErrPct": 5.47,
+    "bestCoarseNcc": 0.3161,
+    "sizeErrPct": 7.92,
+    "squareErrPct": 5.47,
+    "sizeCheckOk": true,
+    "landFracMap": 0.1387,
+    "landFracDem": 0.1489,
+    "landFracRatio": 1.074,
+    "textureSeaFrac": 0.813,
+    "textureLandIou": 0.943,
+    "textureWaterIou": 0.943,
+    "solvedBeforeVeto": true,
+    "confidenceBeforeVeto": "medium"
+   }
+  },
+  "hangar_field": {
+   "confidence": "unresolved",
+   "bounds": null,
+   "method": null,
+   "demNcc": null,
+   "anchorResidualKm": null,
+   "bboxUncertaintyKm": null,
+   "heightStdM": 14.93,
+   "crosscheck": {
+    "heightStdM": 14.9,
+    "sizeErrPct": null,
+    "squareErrPct": null,
+    "sizeCheckOk": false
+   }
+  },
+  "hangar_field_halloween": {
+   "confidence": "unresolved",
+   "bounds": null,
+   "method": null,
+   "demNcc": null,
+   "anchorResidualKm": null,
+   "bboxUncertaintyKm": null,
+   "heightStdM": 15.26,
+   "crosscheck": {
+    "heightStdM": 15.3,
+    "sizeErrPct": null,
+    "squareErrPct": null,
+    "sizeCheckOk": false
+   }
+  },
+  "hangar_field_premium": {
+   "confidence": "unresolved",
+   "bounds": null,
+   "method": null,
+   "demNcc": null,
+   "anchorResidualKm": null,
+   "bboxUncertaintyKm": null,
+   "heightStdM": 15.36,
+   "crosscheck": {
+    "heightStdM": 15.4,
+    "sizeErrPct": null,
+    "squareErrPct": null,
+    "sizeCheckOk": false
+   }
+  },
+  "hangar_field_winter": {
+   "confidence": "unresolved",
+   "bounds": null,
+   "method": null,
+   "demNcc": null,
+   "anchorResidualKm": null,
+   "bboxUncertaintyKm": null,
+   "heightStdM": 14.86,
+   "crosscheck": {
+    "heightStdM": 14.9,
+    "sizeErrPct": null,
+    "squareErrPct": null,
+    "sizeCheckOk": false
+   }
+  },
+  "honolulu": {
+   "confidence": "unresolved",
+   "bounds": null,
+   "method": "ocr+gazetteer+dem-match",
+   "demNcc": null,
+   "anchorResidualKm": 3.13,
+   "bboxUncertaintyKm": 1.5,
+   "heightStdM": 443.23,
+   "crosscheck": {
+    "nccPeak": 0.6097,
+    "coarseNcc": 0.6003,
+    "worldUnitM": 1.0696,
+    "worldSquareKm": [
+     70.1,
+     70.1
+    ],
+    "labelResidKm": [
+     0.0,
+     0.0,
+     0.7,
+     1.3,
+     2.9,
+     3.0,
+     3.2,
+     3.5,
+     3.6,
+     3.9,
+     4.0,
+     4.0,
+     4.1,
+     4.7,
+     4.8,
+     5.5,
+     5.7
+    ],
+    "anchorsUsed": 17,
+    "textureExtentKm": [
+     111.2,
+     130.4
+    ],
+    "textureVsWorldScale": 1.859,
+    "textureCenterOffsetKm": 10233.04,
+    "bboxUncertaintyKm": 1.5,
+    "sizeErrPct": 6.96,
+    "squareErrPct": 0.0,
+    "sizeCheckOk": true,
+    "landFracMap": 0.3286,
+    "landFracDem": 0.0754,
+    "landFracRatio": 4.356,
+    "textureSeaFrac": 0.902,
+    "textureWaterIou": 0.888,
+    "solvedBeforeVeto": true,
+    "confidenceBeforeVeto": "low"
+   }
+  },
+  "hurtgen": {
+   "confidence": "low",
+   "bounds": {
+    "minLon": 5.870023,
+    "maxLon": 6.807821,
+    "minLat": 50.362283,
+    "maxLat": 50.960947
+   },
+   "method": "ocr+gazetteer+dem-match",
+   "demNcc": 0.5548,
+   "anchorResidualKm": 1.16,
+   "bboxUncertaintyKm": 1.0,
+   "heightStdM": 118.19,
+   "crosscheck": {
+    "nccPeak": 0.5548,
+    "coarseNcc": 0.5541,
+    "worldUnitM": 1.0093,
+    "worldSquareKm": [
+     66.2,
+     66.2
+    ],
+    "labelResidKm": [
+     0.0,
+     0.0,
+     0.1,
+     0.1,
+     0.1,
+     0.1,
+     0.1,
+     0.1,
+     0.1,
+     0.1,
+     0.2,
+     0.2,
+     0.2,
+     0.2,
+     0.2,
+     0.2,
+     0.2,
+     0.2,
+     0.2,
+     0.3,
+     0.3,
+     0.3,
+     0.3,
+     0.3,
+     0.3,
+     0.3,
+     0.3,
+     0.4,
+     0.4,
+     0.4,
+     0.4,
+     0.4,
+     0.4,
+     0.4,
+     0.4,
+     0.4,
+     0.5,
+     0.5,
+     0.5,
+     0.5,
+     0.5,
+     0.5,
+     0.5,
+     0.5,
+     0.6,
+     0.6,
+     0.6,
+     0.6,
+     0.6,
+     0.6,
+     0.6,
+     0.6,
+     0.7,
+     0.7,
+     0.7,
+     0.7,
+     0.7,
+     0.8,
+     0.8,
+     0.8,
+     0.9,
+     0.9,
+     1.0,
+     1.1,
+     1.1,
+     1.1,
+     1.1,
+     1.2,
+     1.9,
+     2.3,
+     2.4,
+     2.8,
+     3.3,
+     5.1,
+     5.3
+    ],
+    "anchorsUsed": 75,
+    "textureExtentKm": [
+     67.3,
+     66.0
+    ],
+    "textureVsWorldScale": 1.017,
+    "textureCenterOffsetKm": 0.04,
+    "bboxUncertaintyKm": 1.0,
+    "sizeErrPct": 0.93,
+    "squareErrPct": 0.0,
+    "sizeCheckOk": true,
+    "landFracMap": 0.9845,
+    "landFracDem": 0.9963,
+    "landFracRatio": 1.012,
+    "textureSeaFrac": 0.0,
+    "textureLandIou": null,
+    "solvedBeforeVeto": true,
+    "confidenceBeforeVeto": "low"
+   }
+  },
+  "hvg_africa_large": {
+   "confidence": "unresolved",
+   "bounds": null,
+   "method": null,
+   "demNcc": null,
+   "anchorResidualKm": null,
+   "bboxUncertaintyKm": null,
+   "heightStdM": 41.15,
+   "crosscheck": {
+    "heightStdM": 41.1,
+    "sizeErrPct": null,
+    "squareErrPct": null,
+    "sizeCheckOk": false
+   }
+  },
+  "hvg_al_massa": {
+   "confidence": "unresolved",
+   "bounds": null,
+   "method": null,
+   "demNcc": null,
+   "anchorResidualKm": null,
+   "bboxUncertaintyKm": null,
+   "heightStdM": 6.51,
+   "crosscheck": {
+    "heightStdM": 6.5,
+    "sizeErrPct": null,
+    "squareErrPct": null,
+    "sizeCheckOk": false
+   }
+  },
+  "hvg_granitograd": {
+   "confidence": "unresolved",
+   "bounds": null,
+   "method": null,
+   "demNcc": null,
+   "anchorResidualKm": null,
+   "bboxUncertaintyKm": null,
+   "heightStdM": 3.62,
+   "crosscheck": {
+    "heightStdM": 3.6,
+    "sizeErrPct": null,
+    "squareErrPct": null,
+    "sizeCheckOk": false
+   }
+  },
+  "hvg_training_ground": {
+   "confidence": "unresolved",
+   "bounds": null,
+   "method": null,
+   "demNcc": null,
+   "anchorResidualKm": null,
+   "bboxUncertaintyKm": null,
+   "heightStdM": 13.54,
+   "crosscheck": {
+    "heightStdM": 13.5,
+    "sizeErrPct": null,
+    "squareErrPct": null,
+    "sizeCheckOk": false
+   }
+  },
+  "iwo_jima": {
+   "confidence": "unresolved",
+   "bounds": null,
+   "method": "ocr+gazetteer+dem-match",
+   "demNcc": null,
+   "anchorResidualKm": 0.76,
+   "bboxUncertaintyKm": 2.0,
+   "heightStdM": 107.71,
+   "crosscheck": {
+    "nccPeak": 0.7052,
+    "coarseNcc": 0.6289,
+    "worldUnitM": 0.6638,
+    "worldSquareKm": [
+     21.8,
+     21.8
+    ],
+    "labelResidKm": [
+     0.0,
+     0.0,
+     0.8,
+     0.9,
+     2.1
+    ],
+    "anchorsUsed": 5,
+    "textureExtentKm": [
+     23.1,
+     23.0
+    ],
+    "textureVsWorldScale": 1.061,
+    "textureCenterOffsetKm": 1464.76,
+    "bboxUncertaintyKm": 2.0,
+    "sizeErrPct": 33.62,
+    "squareErrPct": 0.0,
+    "sizeCheckOk": false,
+    "landFracMap": 0.1015,
+    "landFracDem": 0.3223,
+    "landFracRatio": 3.176,
+    "textureSeaFrac": 0.992,
+    "textureWaterIou": 0.683,
+    "solvedBeforeVeto": true,
+    "confidenceBeforeVeto": "low"
+   }
+  },
+  "khalkhin_gol": {
+   "confidence": "low",
+   "bounds": {
+    "minLon": -77.285636,
+    "maxLon": -76.578881,
+    "minLat": 45.398683,
+    "maxLat": 45.896241
+   },
+   "method": "ocr+gazetteer+dem-match",
+   "demNcc": 0.579,
+   "anchorResidualKm": 0.0,
+   "bboxUncertaintyKm": 2.0,
+   "heightStdM": 112.3,
+   "crosscheck": {
+    "nccPeak": 0.579,
+    "coarseNcc": 0.5039,
+    "worldUnitM": 0.8388,
+    "worldSquareKm": [
+     55.0,
+     55.0
+    ],
+    "labelResidKm": [],
+    "anchorsUsed": 0,
+    "textureExtentKm": [
+     342.0,
+     252.8
+    ],
+    "textureVsWorldScale": 6.217,
+    "textureCenterOffsetKm": 58.86,
+    "bboxUncertaintyKm": 2.0,
+    "sizeErrPct": 16.12,
+    "squareErrPct": 0.0,
+    "sizeCheckOk": false,
+    "landFracMap": 0.9898,
+    "landFracDem": 0.9995,
+    "landFracRatio": 1.01,
+    "textureSeaFrac": 0.0,
+    "textureLandIou": null,
+    "solvedBeforeVeto": true,
+    "confidenceBeforeVeto": "low"
+   }
+  },
+  "korea": {
+   "confidence": "low",
+   "bounds": {
+    "minLon": 127.274958,
+    "maxLon": 127.978507,
+    "minLat": 37.704245,
+    "maxLat": 38.262687
+   },
+   "method": "ocr+gazetteer+dem-match",
+   "demNcc": 0.6623,
+   "anchorResidualKm": 2.77,
+   "bboxUncertaintyKm": 2.0,
+   "heightStdM": 232.17,
+   "crosscheck": {
+    "nccPeak": 0.6623,
+    "coarseNcc": 0.6358,
+    "worldUnitM": 0.9415,
+    "worldSquareKm": [
+     61.7,
+     61.7
+    ],
+    "labelResidKm": [
+     0.0,
+     0.0,
+     0.3,
+     1.3,
+     1.3,
+     1.8,
+     1.9,
+     1.9,
+     2.2,
+     3.0,
+     4.4,
+     5.4,
+     5.8
+    ],
+    "anchorsUsed": 13,
+    "textureExtentKm": [
+     66.3,
+     69.9
+    ],
+    "textureVsWorldScale": 1.132,
+    "textureCenterOffsetKm": 0.63,
+    "bboxUncertaintyKm": 2.0,
+    "sizeErrPct": 5.85,
+    "squareErrPct": 0.0,
+    "sizeCheckOk": true,
+    "landFracMap": 0.9771,
+    "landFracDem": 1.0,
+    "landFracRatio": 1.023,
+    "textureSeaFrac": 0.0,
+    "textureLandIou": null,
+    "solvedBeforeVeto": true,
+    "confidenceBeforeVeto": "low"
+   }
+  },
+  "korsun": {
+   "confidence": "medium",
+   "bounds": {
+    "minLon": 31.107132,
+    "maxLon": 32.015732,
+    "minLat": 49.114316,
+    "maxLat": 49.709636
+   },
+   "method": "ocr+gazetteer+dem-match",
+   "demNcc": 0.8363,
+   "anchorResidualKm": 1.97,
+   "bboxUncertaintyKm": 0.5,
+   "heightStdM": 25.91,
+   "crosscheck": {
+    "nccPeak": 0.8363,
+    "coarseNcc": 0.8019,
+    "worldUnitM": 1.0036,
+    "worldSquareKm": [
+     65.8,
+     65.8
+    ],
+    "labelResidKm": [
+     0.0,
+     0.0,
+     1.0,
+     3.9,
+     4.2
+    ],
+    "anchorsUsed": 5,
+    "textureExtentKm": [
+     72.2,
+     65.0
+    ],
+    "textureVsWorldScale": 1.096,
+    "textureCenterOffsetKm": 1.25,
+    "bboxUncertaintyKm": 0.5,
+    "sizeErrPct": 0.36,
+    "squareErrPct": 0.0,
+    "sizeCheckOk": true,
+    "landFracMap": 0.9465,
+    "landFracDem": 1.0,
+    "landFracRatio": 1.057,
+    "textureSeaFrac": 0.01,
+    "textureLandIou": null,
+    "solvedBeforeVeto": true,
+    "confidenceBeforeVeto": "medium"
+   }
+  },
+  "krymsk": {
+   "confidence": "low",
+   "bounds": {
+    "minLon": 37.190295,
+    "maxLon": 38.355975,
+    "minLat": 44.296747,
+    "maxLat": 45.130958
+   },
+   "method": "ocr+gazetteer+dem-match",
+   "demNcc": 0.6749,
+   "anchorResidualKm": 2.2,
+   "bboxUncertaintyKm": 1.0,
+   "heightStdM": 230.13,
+   "crosscheck": {
+    "nccPeak": 0.6749,
+    "coarseNcc": 0.5785,
+    "worldUnitM": 1.4064,
+    "worldSquareKm": [
+     92.2,
+     92.2
+    ],
+    "labelResidKm": [
+     0.0,
+     0.0,
+     2.0,
+     5.3,
+     5.4
+    ],
+    "anchorsUsed": 5,
+    "textureExtentKm": [
+     98.9,
+     89.3
+    ],
+    "textureVsWorldScale": 1.073,
+    "textureCenterOffsetKm": 1.24,
+    "bboxUncertaintyKm": 1.0,
+    "sizeErrPct": 40.64,
+    "squareErrPct": 0.0,
+    "sizeCheckOk": false,
+    "landFracMap": 0.5643,
+    "landFracDem": 0.5623,
+    "landFracRatio": 1.004,
+    "textureSeaFrac": 0.401,
+    "textureLandIou": 0.913,
+    "textureWaterIou": 0.913,
+    "solvedBeforeVeto": true,
+    "confidenceBeforeVeto": "low"
+   }
+  },
+  "kursk": {
+   "confidence": "medium",
+   "bounds": {
+    "minLon": 35.94354,
+    "maxLon": 36.790426,
+    "minLat": 50.639672,
+    "maxLat": 51.232187
+   },
+   "method": "ocr+gazetteer+lsq",
+   "demNcc": null,
+   "anchorResidualKm": null,
+   "bboxUncertaintyKm": null,
+   "heightStdM": 61.14,
+   "crosscheck": {
+    "worldSquareKm": [
+     59.4,
+     65.5
+    ],
+    "anchorsUsed": 30,
+    "aspectErrPct": 9.29,
+    "sizeErrPct": 9.41,
+    "squareErrPct": 9.29,
+    "sizeCheckOk": true,
+    "landFracMap": 0.9741,
+    "landFracDem": 1.0,
+    "landFracRatio": 1.027,
+    "textureSeaFrac": 0.0,
+    "textureLandIou": null,
+    "solvedBeforeVeto": true,
+    "confidenceBeforeVeto": "medium"
+   }
+  },
+  "malta": {
+   "confidence": "unresolved",
+   "bounds": null,
+   "method": "ocr+gazetteer+dem-match",
+   "demNcc": null,
+   "anchorResidualKm": 1.77,
+   "bboxUncertaintyKm": 1.5,
+   "heightStdM": 153.55,
+   "crosscheck": {
+    "nccPeak": 0.648,
+    "coarseNcc": 0.4829,
+    "worldUnitM": 0.6347,
+    "worldSquareKm": [
+     26.0,
+     26.0
+    ],
+    "labelResidKm": [
+     0.0,
+     0.0,
+     0.2,
+     0.2,
+     0.3,
+     0.4,
+     0.5,
+     0.5,
+     0.6,
+     0.7,
+     0.9,
+     1.1,
+     1.2,
+     1.3,
+     1.5,
+     1.6,
+     1.8,
+     2.1,
+     3.7,
+     6.0
+    ],
+    "anchorsUsed": 20,
+    "textureExtentKm": [
+     68.8,
+     63.8
+    ],
+    "textureVsWorldScale": 2.647,
+    "textureCenterOffsetKm": 3971.96,
+    "bboxUncertaintyKm": 1.5,
+    "sizeErrPct": 36.53,
+    "squareErrPct": 0.0,
+    "sizeCheckOk": false,
+    "landFracMap": 0.1897,
+    "landFracDem": 1.0,
+    "landFracRatio": 5.27,
+    "textureSeaFrac": 0.908,
+    "textureLandIou": null,
+    "solvedBeforeVeto": true,
+    "confidenceBeforeVeto": "low"
+   }
+  },
+  "midway": {
+   "confidence": "low",
+   "bounds": {
+    "minLon": -7.696575,
+    "maxLon": -7.52245,
+    "minLat": 58.233346,
+    "maxLat": 58.325543
+   },
+   "method": "ocr+gazetteer+dem-match",
+   "demNcc": 0.866,
+   "anchorResidualKm": null,
+   "bboxUncertaintyKm": 1.0,
+   "heightStdM": 263.15,
+   "crosscheck": {
+    "nccPeak": 0.866,
+    "coarseNcc": 0.789,
+    "worldUnitM": 0.6217,
+    "worldSquareKm": [
+     10.2,
+     10.2
+    ],
+    "labelResidKm": [],
+    "anchorsUsed": 0,
+    "bboxUncertaintyKm": 1.0,
+    "sizeErrPct": 37.83,
+    "squareErrPct": 0.0,
+    "sizeCheckOk": false,
+    "landFracMap": 0.0243,
+    "landFracDem": 0.0298,
+    "landFracRatio": 1.224,
+    "textureSeaFrac": 0.979,
+    "textureLandIou": 0.955,
+    "textureWaterIou": 0.955,
+    "solvedBeforeVeto": true,
+    "confidenceBeforeVeto": "low"
+   }
+  },
+  "moscow": {
+   "confidence": "low",
+   "bounds": {
+    "minLon": 35.766969,
+    "maxLon": 38.191924,
+    "minLat": 54.71694,
+    "maxLat": 56.103297
+   },
+   "method": "ocr+gazetteer+dem-match",
+   "demNcc": 0.8753,
+   "anchorResidualKm": 1.99,
+   "bboxUncertaintyKm": 1.0,
+   "heightStdM": 56.17,
+   "crosscheck": {
+    "nccPeak": 0.8753,
+    "coarseNcc": 0.4645,
+    "worldUnitM": 1.1683,
+    "worldSquareKm": [
+     153.2,
+     153.2
+    ],
+    "labelResidKm": [
+     0.0,
+     0.0,
+     0.4,
+     0.6,
+     0.7,
+     0.8,
+     0.8,
+     0.8,
+     0.9,
+     0.9,
+     1.0,
+     1.0,
+     1.0,
+     1.1,
+     1.1,
+     1.1,
+     1.2,
+     1.2,
+     1.2,
+     1.3,
+     1.3,
+     1.3,
+     1.4,
+     1.4,
+     1.4,
+     1.4,
+     1.4,
+     1.4,
+     1.4,
+     1.5,
+     1.5,
+     1.6,
+     1.7,
+     1.7,
+     1.8,
+     1.8,
+     1.8,
+     1.8,
+     2.0,
+     2.0,
+     2.1,
+     2.2,
+     2.4,
+     2.5,
+     2.6,
+     2.6,
+     2.6,
+     2.7,
+     2.8,
+     2.9,
+     2.9,
+     3.0,
+     3.4,
+     3.4,
+     3.6,
+     3.7,
+     3.9,
+     3.9,
+     5.2,
+     5.5,
+     5.6,
+     5.8
+    ],
+    "anchorsUsed": 62,
+    "textureExtentKm": [
+     155.0,
+     153.4
+    ],
+    "textureVsWorldScale": 1.011,
+    "textureCenterOffsetKm": 0.4,
+    "bboxUncertaintyKm": 1.0,
+    "sizeErrPct": 16.83,
+    "squareErrPct": 0.0,
+    "sizeCheckOk": false,
+    "landFracMap": 0.9862,
+    "landFracDem": 1.0,
+    "landFracRatio": 1.014,
+    "textureSeaFrac": 0.01,
+    "textureLandIou": null,
+    "solvedBeforeVeto": true,
+    "confidenceBeforeVeto": "low"
+   }
+  },
+  "mozdok": {
+   "confidence": "low",
+   "bounds": {
+    "minLon": 44.661995,
+    "maxLon": 45.688832,
+    "minLat": 42.844106,
+    "maxLat": 43.597662
+   },
+   "method": "ocr+gazetteer+dem-match",
+   "demNcc": 0.8892,
+   "anchorResidualKm": 3.86,
+   "bboxUncertaintyKm": 1.0,
+   "heightStdM": 618.01,
+   "crosscheck": {
+    "nccPeak": 0.8892,
+    "coarseNcc": 0.8674,
+    "worldUnitM": 1.2704,
+    "worldSquareKm": [
+     83.3,
+     83.3
+    ],
+    "labelResidKm": [
+     0.0,
+     0.0,
+     1.4,
+     3.0,
+     3.0,
+     4.0,
+     4.7,
+     4.7,
+     5.0,
+     5.0,
+     5.4,
+     5.5,
+     5.7
+    ],
+    "anchorsUsed": 13,
+    "textureExtentKm": [
+     136.2,
+     148.7
+    ],
+    "textureVsWorldScale": 1.785,
+    "textureCenterOffsetKm": 24.82,
+    "bboxUncertaintyKm": 1.0,
+    "sizeErrPct": 27.04,
+    "squareErrPct": 0.0,
+    "sizeCheckOk": false,
+    "landFracMap": 0.9917,
+    "landFracDem": 1.0,
+    "landFracRatio": 1.008,
+    "textureSeaFrac": 0.0,
+    "textureLandIou": null,
+    "solvedBeforeVeto": true,
+    "confidenceBeforeVeto": "low"
+   }
+  },
+  "mozdok_winter": {
+   "confidence": "low",
+   "bounds": {
+    "minLon": 44.661468,
+    "maxLon": 45.691072,
+    "minLat": 42.843902,
+    "maxLat": 43.599478
+   },
+   "method": "ocr+gazetteer+dem-match",
+   "demNcc": 0.8897,
+   "anchorResidualKm": 3.56,
+   "bboxUncertaintyKm": 1.5,
+   "heightStdM": 618.1,
+   "crosscheck": {
+    "nccPeak": 0.8897,
+    "coarseNcc": 0.8679,
+    "worldUnitM": 1.2738,
+    "worldSquareKm": [
+     83.5,
+     83.5
+    ],
+    "labelResidKm": [
+     0.0,
+     0.0,
+     3.2,
+     3.4,
+     3.6,
+     4.0,
+     4.4,
+     4.6,
+     4.7,
+     5.1,
+     5.2,
+     5.5
+    ],
+    "anchorsUsed": 12,
+    "textureExtentKm": [
+     140.7,
+     143.2
+    ],
+    "textureVsWorldScale": 1.715,
+    "textureCenterOffsetKm": 24.99,
+    "bboxUncertaintyKm": 1.5,
+    "sizeErrPct": 27.38,
+    "squareErrPct": 0.0,
+    "sizeCheckOk": false,
+    "landFracMap": 0.9917,
+    "landFracDem": 1.0,
+    "landFracRatio": 1.008,
+    "textureSeaFrac": 0.0,
+    "textureLandIou": null,
+    "solvedBeforeVeto": true,
+    "confidenceBeforeVeto": "low"
+   }
+  },
+  "norway": {
+   "confidence": "low",
+   "bounds": {
+    "minLon": 4.179576,
+    "maxLon": 6.399819,
+    "minLat": 60.454001,
+    "maxLat": 61.538126
+   },
+   "method": "ocr+gazetteer+dem-match",
+   "demNcc": 0.6556,
+   "anchorResidualKm": 3.5,
+   "bboxUncertaintyKm": 1.5,
+   "heightStdM": 778.53,
+   "crosscheck": {
+    "nccPeak": 0.6556,
+    "coarseNcc": 0.6395,
+    "worldUnitM": 0.9136,
+    "worldSquareKm": [
+     119.8,
+     119.8
+    ],
+    "labelResidKm": [
+     0.0,
+     0.2,
+     0.4,
+     1.2,
+     1.2,
+     1.9,
+     2.1,
+     2.4,
+     2.4,
+     2.5,
+     2.7,
+     2.7,
+     2.8,
+     2.8,
+     3.0,
+     3.0,
+     3.2,
+     3.2,
+     3.2,
+     3.2,
+     3.3,
+     3.3,
+     3.3,
+     3.3,
+     3.4,
+     3.7,
+     3.8,
+     3.9,
+     3.9,
+     4.0,
+     4.0,
+     4.2,
+     4.3,
+     4.3,
+     4.4,
+     4.5,
+     4.6,
+     4.7,
+     4.7,
+     4.8,
+     5.0,
+     5.3,
+     5.3,
+     5.4,
+     5.6,
+     5.7,
+     5.7,
+     5.7,
+     5.7,
+     6.0
+    ],
+    "anchorsUsed": 50,
+    "textureExtentKm": [
+     207.1,
+     157.7
+    ],
+    "textureVsWorldScale": 1.728,
+    "textureCenterOffsetKm": 28.72,
+    "bboxUncertaintyKm": 1.5,
+    "sizeErrPct": 8.64,
+    "squareErrPct": 0.0,
+    "sizeCheckOk": true,
+    "landFracMap": 0.8374,
+    "landFracDem": 0.6736,
+    "landFracRatio": 1.243,
+    "textureSeaFrac": 0.0,
+    "textureLandIou": null,
+    "solvedBeforeVeto": true,
+    "confidenceBeforeVeto": "low"
+   }
+  },
+  "peleliu": {
+   "confidence": "low",
+   "bounds": {
+    "minLon": 133.7158,
+    "maxLon": 134.787633,
+    "minLat": 6.47709,
+    "maxLat": 7.6558
+   },
+   "method": "ocr+gazetteer+lsq",
+   "demNcc": null,
+   "anchorResidualKm": null,
+   "bboxUncertaintyKm": null,
+   "heightStdM": 20.63,
+   "crosscheck": {
+    "worldSquareKm": [
+     118.4,
+     130.3
+    ],
+    "anchorsUsed": 4,
+    "aspectErrPct": 9.12,
+    "bestCoarseNcc": 0.391,
+    "sizeErrPct": 98.72,
+    "squareErrPct": 9.12,
+    "sizeCheckOk": false,
+    "landFracMap": 0.0324,
+    "landFracDem": 0.0513,
+    "landFracRatio": 1.583,
+    "textureSeaFrac": 0.981,
+    "textureLandIou": 0.948,
+    "textureWaterIou": 0.948,
+    "solvedBeforeVeto": true,
+    "confidenceBeforeVeto": "low"
+   }
+  },
+  "port_moresby": {
+   "confidence": "unresolved",
+   "bounds": null,
+   "method": "ocr+gazetteer+dem-match",
+   "demNcc": null,
+   "anchorResidualKm": null,
+   "bboxUncertaintyKm": 1.5,
+   "heightStdM": 280.78,
+   "crosscheck": {
+    "nccPeak": 0.7675,
+    "coarseNcc": 0.76,
+    "worldUnitM": 0.9196,
+    "worldSquareKm": [
+     60.3,
+     60.3
+    ],
+    "labelResidKm": [],
+    "anchorsUsed": 0,
+    "bboxUncertaintyKm": 1.5,
+    "sizeErrPct": 8.04,
+    "squareErrPct": 0.0,
+    "sizeCheckOk": true,
+    "landFracMap": 0.674,
+    "landFracDem": 1.0,
+    "landFracRatio": 1.484,
+    "textureSeaFrac": 0.299,
+    "textureLandIou": null,
+    "solvedBeforeVeto": true,
+    "confidenceBeforeVeto": "medium"
+   }
+  },
+  "ruhr": {
+   "confidence": "low",
+   "bounds": {
+    "minLon": 6.365167,
+    "maxLon": 7.597301,
+    "minLat": 51.057344,
+    "maxLat": 51.830726
+   },
+   "method": "ocr+gazetteer+dem-match",
+   "demNcc": 0.8463,
+   "anchorResidualKm": 2.5,
+   "bboxUncertaintyKm": 1.5,
+   "heightStdM": 35.91,
+   "crosscheck": {
+    "nccPeak": 0.8463,
+    "coarseNcc": 0.7757,
+    "worldUnitM": 1.3038,
+    "worldSquareKm": [
+     85.5,
+     85.5
+    ],
+    "labelResidKm": [
+     0.0,
+     0.0,
+     0.7,
+     2.4,
+     3.5,
+     3.8,
+     3.9
+    ],
+    "anchorsUsed": 7,
+    "textureExtentKm": [
+     99.0,
+     86.3
+    ],
+    "textureVsWorldScale": 1.158,
+    "textureCenterOffsetKm": 3.22,
+    "bboxUncertaintyKm": 1.5,
+    "sizeErrPct": 30.38,
+    "squareErrPct": 0.0,
+    "sizeCheckOk": false,
+    "landFracMap": 0.9681,
+    "landFracDem": 1.0,
+    "landFracRatio": 1.033,
+    "textureSeaFrac": 0.0,
+    "textureLandIou": null,
+    "solvedBeforeVeto": true,
+    "confidenceBeforeVeto": "low"
+   }
+  },
+  "saipan": {
+   "confidence": "unresolved",
+   "bounds": null,
+   "method": "ocr+gazetteer+dem-match",
+   "demNcc": null,
+   "anchorResidualKm": 0.0,
+   "bboxUncertaintyKm": 1.5,
+   "heightStdM": 131.47,
+   "crosscheck": {
+    "nccPeak": 0.4735,
+    "coarseNcc": 0.4718,
+    "worldUnitM": 1.0284,
+    "worldSquareKm": [
+     67.4,
+     67.4
+    ],
+    "labelResidKm": [],
+    "anchorsUsed": 0,
+    "textureExtentKm": [
+     265.0,
+     326.6
+    ],
+    "textureVsWorldScale": 4.843,
+    "textureCenterOffsetKm": 4159.25,
+    "bboxUncertaintyKm": 1.5,
+    "sizeErrPct": null,
+    "squareErrPct": null,
+    "sizeCheckOk": false
+   }
+  },
+  "sector_montmedy": {
+   "confidence": "low",
+   "bounds": {
+    "minLon": 143.426391,
+    "maxLon": 144.019898,
+    "minLat": -7.244892,
+    "maxLat": -6.651586
+   },
+   "method": "dem-coarse-only",
+   "demNcc": 0.7106,
+   "anchorResidualKm": null,
+   "bboxUncertaintyKm": 8.0,
+   "heightStdM": 64.63,
+   "crosscheck": {
+    "demNcc": 0.7106,
+    "bboxUncertaintyKm": 8.0,
+    "heightStdM": 64.6,
+    "prescreenMargin": 0.0182,
+    "refineAttempts": [
+     {
+      "seedNcc": 0.711,
+      "refinedNcc": 0.516,
+      "lon": 143.774,
+      "lat": -7.001,
+      "driftDeg": 0.073
+     },
+     {
+      "seedNcc": 0.692,
+      "refinedNcc": 0.704,
+      "lon": 4.997,
+      "lat": 49.679,
+      "driftDeg": 0.023
+     }
+    ],
+    "refine": "failed (weak correlation)",
+    "prescreenCandidates": [
+     {
+      "ncc": 0.711,
+      "lon": 143.723,
+      "lat": -6.948
+     },
+     {
+      "ncc": 0.692,
+      "lon": 4.966,
+      "lat": 49.668
+     },
+     {
+      "ncc": 0.672,
+      "lon": -82.947,
+      "lat": 8.472
+     },
+     {
+      "ncc": 0.671,
+      "lon": 98.679,
+      "lat": 6.992
+     },
+     {
+      "ncc": 0.669,
+      "lon": 146.953,
+      "lat": -9.059
+     }
+    ],
+    "sizeErrPct": 0.0,
+    "squareErrPct": 0.0,
+    "sizeCheckOk": true,
+    "worldSquareKm": [
+     65.6,
+     65.6
+    ],
+    "nccPeak": 0.7106,
+    "landFracMap": 0.9655,
+    "landFracDem": 1.0,
+    "landFracRatio": 1.036,
+    "solvedBeforeVeto": true,
+    "confidenceBeforeVeto": "low"
+   }
+  },
+  "sicily": {
+   "confidence": "medium",
+   "bounds": {
+    "minLon": 14.583399,
+    "maxLon": 15.299936,
+    "minLat": 37.04862,
+    "maxLat": 37.622358
+   },
+   "method": "ocr+gazetteer+dem-match",
+   "demNcc": 0.8664,
+   "anchorResidualKm": 2.03,
+   "bboxUncertaintyKm": 1.5,
+   "heightStdM": 241.68,
+   "crosscheck": {
+    "nccPeak": 0.8664,
+    "coarseNcc": 0.8548,
+    "worldUnitM": 0.9673,
+    "worldSquareKm": [
+     63.4,
+     63.4
+    ],
+    "labelResidKm": [
+     0.0,
+     0.0,
+     0.2,
+     0.3,
+     0.3,
+     0.5,
+     0.5,
+     0.5,
+     0.5,
+     0.5,
+     0.5,
+     0.6,
+     0.8,
+     0.8,
+     0.8,
+     0.9,
+     0.9,
+     0.9,
+     1.0,
+     1.3,
+     1.3,
+     1.4,
+     1.5,
+     1.5,
+     1.5,
+     1.5,
+     1.6,
+     1.7,
+     1.7,
+     1.8,
+     1.8,
+     1.8,
+     1.8,
+     2.2,
+     2.3,
+     2.6,
+     2.6,
+     3.0,
+     3.0,
+     3.1,
+     3.1,
+     3.5,
+     3.5,
+     3.6,
+     4.0,
+     4.9,
+     5.4
+    ],
+    "anchorsUsed": 47,
+    "textureExtentKm": [
+     63.1,
+     63.8
+    ],
+    "textureVsWorldScale": 1.006,
+    "textureCenterOffsetKm": 0.69,
+    "bboxUncertaintyKm": 1.5,
+    "sizeErrPct": 3.27,
+    "squareErrPct": 0.0,
+    "sizeCheckOk": true,
+    "landFracMap": 0.7997,
+    "landFracDem": 0.8164,
+    "landFracRatio": 1.021,
+    "textureSeaFrac": 0.182,
+    "textureLandIou": 0.959,
+    "textureWaterIou": 0.959,
+    "solvedBeforeVeto": true,
+    "confidenceBeforeVeto": "medium"
+   }
+  },
+  "spain": {
+   "confidence": "medium",
+   "bounds": {
+    "minLon": -0.283831,
+    "maxLon": 1.39359,
+    "minLat": 40.470124,
+    "maxLat": 41.742959
+   },
+   "method": "ocr+gazetteer+dem-match",
+   "demNcc": 0.882,
+   "anchorResidualKm": 2.37,
+   "bboxUncertaintyKm": 1.5,
+   "heightStdM": 395.08,
+   "crosscheck": {
+    "nccPeak": 0.882,
+    "coarseNcc": 0.8567,
+    "worldUnitM": 1.0727,
+    "worldSquareKm": [
+     140.7,
+     140.7
+    ],
+    "labelResidKm": [
+     0.0,
+     0.0,
+     2.4,
+     2.9,
+     2.9,
+     2.9,
+     3.0,
+     3.6
+    ],
+    "anchorsUsed": 8,
+    "textureExtentKm": [
+     142.6,
+     133.1
+    ],
+    "textureVsWorldScale": 1.013,
+    "textureCenterOffsetKm": 0.83,
+    "bboxUncertaintyKm": 1.5,
+    "sizeErrPct": 7.27,
+    "squareErrPct": 0.0,
+    "sizeCheckOk": true,
+    "landFracMap": 0.8037,
+    "landFracDem": 0.8047,
+    "landFracRatio": 1.001,
+    "textureSeaFrac": 0.004,
+    "textureLandIou": null,
+    "solvedBeforeVeto": true,
+    "confidenceBeforeVeto": "medium"
+   }
+  },
+  "stalingrad": {
+   "confidence": "medium",
+   "bounds": {
+    "minLon": 44.150279,
+    "maxLon": 44.961512,
+    "minLat": 48.479305,
+    "maxLat": 49.017977
+   },
+   "method": "ocr+gazetteer+dem-match",
+   "demNcc": 0.8661,
+   "anchorResidualKm": 1.63,
+   "bboxUncertaintyKm": 1.5,
+   "heightStdM": 83.29,
+   "crosscheck": {
+    "nccPeak": 0.8661,
+    "coarseNcc": 0.8016,
+    "worldUnitM": 0.9081,
+    "worldSquareKm": [
+     59.5,
+     59.5
+    ],
+    "labelResidKm": [
+     0.0,
+     0.0,
+     0.2,
+     0.5,
+     0.7,
+     0.8,
+     1.0,
+     1.3,
+     1.9,
+     2.0,
+     2.0,
+     2.1,
+     2.2,
+     2.4,
+     2.6,
+     3.8
+    ],
+    "anchorsUsed": 16,
+    "textureExtentKm": [
+     60.8,
+     59.1
+    ],
+    "textureVsWorldScale": 1.021,
+    "textureCenterOffsetKm": 0.4,
+    "bboxUncertaintyKm": 1.5,
+    "sizeErrPct": 9.19,
+    "squareErrPct": 0.0,
+    "sizeCheckOk": true,
+    "landFracMap": 0.7822,
+    "landFracDem": 0.728,
+    "landFracRatio": 1.074,
+    "textureSeaFrac": 0.0,
+    "textureLandIou": null,
+    "solvedBeforeVeto": true,
+    "confidenceBeforeVeto": "medium"
+   }
+  },
+  "stalingrad_w": {
+   "confidence": "medium",
+   "bounds": {
+    "minLon": 44.150244,
+    "maxLon": 44.96182,
+    "minLat": 48.479034,
+    "maxLat": 49.017936
+   },
+   "method": "ocr+gazetteer+dem-match",
+   "demNcc": 0.8637,
+   "anchorResidualKm": 1.63,
+   "bboxUncertaintyKm": 1.5,
+   "heightStdM": 81.98,
+   "crosscheck": {
+    "nccPeak": 0.8637,
+    "coarseNcc": 0.7972,
+    "worldUnitM": 0.9085,
+    "worldSquareKm": [
+     59.6,
+     59.6
+    ],
+    "labelResidKm": [
+     0.0,
+     0.0,
+     0.3,
+     0.3,
+     0.6,
+     0.9,
+     1.0,
+     1.2,
+     1.4,
+     2.1,
+     2.5,
+     2.8,
+     3.0,
+     3.3,
+     3.6,
+     3.8
+    ],
+    "anchorsUsed": 16,
+    "textureExtentKm": [
+     60.3,
+     58.8
+    ],
+    "textureVsWorldScale": 1.012,
+    "textureCenterOffsetKm": 0.49,
+    "bboxUncertaintyKm": 1.5,
+    "sizeErrPct": 9.15,
+    "squareErrPct": 0.0,
+    "sizeCheckOk": true,
+    "landFracMap": 0.779,
+    "landFracDem": 0.7283,
+    "landFracRatio": 1.07,
+    "textureSeaFrac": 0.0,
+    "textureLandIou": null,
+    "solvedBeforeVeto": true,
+    "confidenceBeforeVeto": "medium"
+   }
+  },
+  "tunisia": {
+   "confidence": "low",
+   "bounds": {
+    "minLon": 31.729169,
+    "maxLon": 32.387042,
+    "minLat": -26.747483,
+    "maxLat": -26.154322
+   },
+   "method": "dem-coarse-only",
+   "demNcc": 0.83,
+   "anchorResidualKm": null,
+   "bboxUncertaintyKm": 8.0,
+   "heightStdM": 92.53,
+   "crosscheck": {
+    "demNcc": 0.83,
+    "bboxUncertaintyKm": 8.0,
+    "heightStdM": 92.5,
+    "prescreenMargin": 0.012,
+    "refineAttempts": [
+     {
+      "seedNcc": 0.83,
+      "refinedNcc": 0.777,
+      "lon": 32.089,
+      "lat": -26.459,
+      "driftDeg": 0.028
+     },
+     {
+      "seedNcc": 0.818,
+      "refinedNcc": 0.747,
+      "lon": 149.387,
+      "lat": -22.338,
+      "driftDeg": 0.02
+     }
+    ],
+    "refine": "failed (weak correlation)",
+    "prescreenCandidates": [
+     {
+      "ncc": 0.83,
+      "lon": 32.058,
+      "lat": -26.451
+     },
+     {
+      "ncc": 0.818,
+      "lon": 149.37,
+      "lat": -22.35
+     },
+     {
+      "ncc": 0.814,
+      "lon": 29.048,
+      "lat": -4.916
+     },
+     {
+      "ncc": 0.804,
+      "lon": 141.702,
+      "lat": -26.883
+     },
+     {
+      "ncc": 0.802,
+      "lon": -40.891,
+      "lat": -5.419
+     }
+    ],
+    "sizeErrPct": 0.0,
+    "squareErrPct": 0.0,
+    "sizeCheckOk": true,
+    "worldSquareKm": [
+     65.6,
+     65.6
+    ],
+    "nccPeak": 0.83,
+    "landFracMap": 0.6108,
+    "landFracDem": 1.0,
+    "landFracRatio": 1.637,
+    "solvedBeforeVeto": true,
+    "confidenceBeforeVeto": "low"
+   }
+  },
+  "wake_island": {
+   "confidence": "unresolved",
+   "bounds": null,
+   "method": "ocr+gazetteer+dem-match",
+   "demNcc": null,
+   "anchorResidualKm": 0.0,
+   "bboxUncertaintyKm": 1.5,
+   "heightStdM": 38.56,
+   "crosscheck": {
+    "nccPeak": 0.6097,
+    "coarseNcc": 0.5977,
+    "worldUnitM": 0.9391,
+    "worldSquareKm": [
+     7.7,
+     7.7
+    ],
+    "labelResidKm": [],
+    "anchorsUsed": 0,
+    "textureExtentKm": [
+     355.8,
+     332.2
+    ],
+    "textureVsWorldScale": 46.228,
+    "textureCenterOffsetKm": 7048.06,
+    "bboxUncertaintyKm": 1.5,
+    "sizeErrPct": 6.09,
+    "squareErrPct": 0.0,
+    "sizeCheckOk": true,
+    "landFracMap": 0.114,
+    "landFracDem": 1.0,
+    "landFracRatio": 8.77,
+    "textureSeaFrac": 0.987,
+    "textureLandIou": null,
+    "solvedBeforeVeto": true,
+    "confidenceBeforeVeto": "low"
+   }
+  },
+  "water": {
+   "confidence": "unresolved",
+   "bounds": null,
+   "method": null,
+   "demNcc": null,
+   "anchorResidualKm": null,
+   "bboxUncertaintyKm": null,
+   "heightStdM": null,
+   "crosscheck": {
+    "sizeErrPct": null,
+    "squareErrPct": null,
+    "sizeCheckOk": false
+   }
+  },
+  "zhengzhou": {
+   "confidence": "low",
+   "bounds": {
+    "minLon": 113.758247,
+    "maxLon": 114.343932,
+    "minLat": 34.421571,
+    "maxLat": 34.906696
+   },
+   "method": "ocr+gazetteer+dem-match",
+   "demNcc": 0.7836,
+   "anchorResidualKm": 4.08,
+   "bboxUncertaintyKm": 1.5,
+   "heightStdM": 118.74,
+   "crosscheck": {
+    "nccPeak": 0.7836,
+    "coarseNcc": 0.7676,
+    "worldUnitM": 0.8179,
+    "worldSquareKm": [
+     53.6,
+     53.6
+    ],
+    "labelResidKm": [
+     0.0,
+     0.0,
+     2.1,
+     3.8,
+     5.4,
+     6.0,
+     6.0
+    ],
+    "anchorsUsed": 7,
+    "textureExtentKm": [
+     124.5,
+     107.7
+    ],
+    "textureVsWorldScale": 2.321,
+    "textureCenterOffsetKm": 47.48,
+    "bboxUncertaintyKm": 1.5,
+    "sizeErrPct": 18.21,
+    "squareErrPct": 0.0,
+    "sizeCheckOk": false,
+    "landFracMap": 0.966,
+    "landFracDem": 1.0,
+    "landFracRatio": 1.035,
+    "textureSeaFrac": 0.0,
+    "textureLandIou": null,
+    "solvedBeforeVeto": true,
+    "confidenceBeforeVeto": "low"
+   }
+  }
+ }
+}

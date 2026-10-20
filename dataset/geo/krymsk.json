@@ -1,0 +1,128 @@
+{
+ "map": "krymsk",
+ "crs": "WGS84",
+ "bounds": {
+  "minLon": 37.190295,
+  "maxLon": 38.355975,
+  "minLat": 44.296747,
+  "maxLat": 45.130958
+ },
+ "corners": {
+  "nw": [
+   37.190295,
+   45.130958
+  ],
+  "ne": [
+   38.355975,
+   45.130958
+  ],
+  "sw": [
+   37.190295,
+   44.296747
+  ],
+  "se": [
+   38.355975,
+   44.296747
+  ]
+ },
+ "method": "ocr+gazetteer+dem-match",
+ "residualKm": 2.2,
+ "anchorResidualKm": 2.2,
+ "bboxUncertaintyKm": 1.0,
+ "anchors": [
+  {
+   "text": "Mingrel'skaya",
+   "lat": 45.01382,
+   "lon": 38.34051,
+   "px": 1948.0,
+   "py": 210.5,
+   "score": 100.0,
+   "gazetteer": "mingrelskaya",
+   "offsetKm": 5.34
+  },
+  {
+   "text": "Vityazevskiy Liman",
+   "lat": 45.03775,
+   "lon": 37.22875,
+   "px": 106.5,
+   "py": 227.5,
+   "score": 100.0,
+   "gazetteer": "vityazevskiyliman",
+   "offsetKm": 0.0
+  },
+  {
+   "text": "Varnavinskoe",
+   "lat": 44.99397,
+   "lon": 38.19791,
+   "px": 1722.0,
+   "py": 255.0,
+   "score": 96.0,
+   "gazetteer": "varnavinskoye",
+   "offsetKm": 5.43
+  },
+  {
+   "text": "Anapa",
+   "lat": 44.89497,
+   "lon": 37.31623,
+   "px": 273.5,
+   "py": 602.5,
+   "score": 100.0,
+   "gazetteer": "anapa",
+   "offsetKm": 2.04
+  },
+  {
+   "text": "Gelendzhik",
+   "lat": 44.58014,
+   "lon": 38.06646,
+   "px": 1432.0,
+   "py": 1328.0,
+   "score": 100.0,
+   "gazetteer": "gelendzhik",
+   "offsetKm": 0.0
+  }
+ ],
+ "crosscheck": {
+  "nccPeak": 0.6749,
+  "coarseNcc": 0.5785,
+  "worldUnitM": 1.4064,
+  "worldSquareKm": [
+   92.2,
+   92.2
+  ],
+  "labelResidKm": [
+   0.0,
+   0.0,
+   2.0,
+   5.3,
+   5.4
+  ],
+  "anchorsUsed": 5,
+  "textureExtentKm": [
+   98.9,
+   89.3
+  ],
+  "textureVsWorldScale": 1.073,
+  "textureCenterOffsetKm": 1.24,
+  "bboxUncertaintyKm": 1.0,
+  "sizeErrPct": 40.64,
+  "squareErrPct": 0.0,
+  "sizeCheckOk": false,
+  "landFracMap": 0.5643,
+  "landFracDem": 0.5623,
+  "landFracRatio": 1.004,
+  "textureSeaFrac": 0.401,
+  "textureLandIou": 0.913,
+  "textureWaterIou": 0.913,
+  "solvedBeforeVeto": true,
+  "confidenceBeforeVeto": "low"
+ },
+ "confidence": "low",
+ "note": "label hypothesis affine; fitted world unit = 1.406 real m; 17/17 labels resolved",
+ "textureBounds": {
+  "minLon": 37.160563,
+  "maxLon": 38.410974,
+  "minLat": 44.303289,
+  "maxLat": 45.111089
+ },
+ "demNcc": 0.6749
+}

@@ -1,0 +1,105 @@
+{
+ "map": "air_denmark",
+ "crs": "WGS84",
+ "bounds": {
+  "minLon": 10.022551,
+  "maxLon": 12.125734,
+  "minLat": 55.166732,
+  "maxLat": 56.358383
+ },
+ "corners": {
+  "nw": [
+   10.022551,
+   56.358383
+  ],
+  "ne": [
+   12.125734,
+   56.358383
+  ],
+  "sw": [
+   10.022551,
+   55.166732
+  ],
+  "se": [
+   12.125734,
+   55.166732
+  ]
+ },
+ "method": "ocr+gazetteer+dem-match",
+ "residualKm": 0.8,
+ "anchorResidualKm": 0.8,
+ "bboxUncertaintyKm": 1.0,
+ "anchors": [
+  {
+   "text": "Aarhus",
+   "lat": 56.1661,
+   "lon": 10.1514,
+   "px": 185.0,
+   "py": 345.5,
+   "score": 100.0,
+   "gazetteer": "aarhus",
+   "offsetKm": 0.0
+  },
+  {
+   "text": "Kalundborg",
+   "lat": 55.67954,
+   "lon": 11.08864,
+   "px": 1016.5,
+   "py": 1154.0,
+   "score": 100.0,
+   "gazetteer": "kalundborg",
+   "offsetKm": 2.16
+  },
+  {
+   "text": "Nyborg",
+   "lat": 55.31274,
+   "lon": 10.78964,
+   "px": 735.0,
+   "py": 1798.0,
+   "score": 100.0,
+   "gazetteer": "nyborg",
+   "offsetKm": 0.0
+  }
+ ],
+ "crosscheck": {
+  "nccPeak": 0.9108,
+  "coarseNcc": 0.9098,
+  "worldUnitM": 1.0042,
+  "worldSquareKm": [
+   131.7,
+   131.7
+  ],
+  "labelResidKm": [
+   0.0,
+   0.0,
+   2.2
+  ],
+  "anchorsUsed": 3,
+  "textureExtentKm": [
+   145.2,
+   133.1
+  ],
+  "textureVsWorldScale": 1.102,
+  "textureCenterOffsetKm": 1.93,
+  "bboxUncertaintyKm": 1.0,
+  "sizeErrPct": 0.42,
+  "squareErrPct": 0.0,
+  "sizeCheckOk": true,
+  "landFracMap": 0.4519,
+  "landFracDem": 0.4814,
+  "landFracRatio": 1.065,
+  "textureSeaFrac": 0.0,
+  "textureLandIou": null,
+  "solvedBeforeVeto": true,
+  "confidenceBeforeVeto": "high"
+ },
+ "confidence": "high",
+ "note": "label hypothesis affine; fitted world unit = 1.004 real m; 3/4 labels resolved",
+ "textureBounds": {
+  "minLon": 9.946018,
+  "maxLon": 12.263835,
+  "minLat": 55.161442,
+  "maxLat": 56.365889
+ },
+ "demNcc": 0.9108
+}

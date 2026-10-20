@@ -1,0 +1,101 @@
+{
+ "map": "arcade_mediterranean",
+ "crs": "WGS84",
+ "bounds": {
+  "minLon": 32.084984,
+  "maxLon": 32.426734,
+  "minLat": 30.338261,
+  "maxLat": 30.634841
+ },
+ "corners": {
+  "nw": [
+   32.084984,
+   30.634841
+  ],
+  "ne": [
+   32.426734,
+   30.634841
+  ],
+  "sw": [
+   32.084984,
+   30.338261
+  ],
+  "se": [
+   32.426734,
+   30.338261
+  ]
+ },
+ "method": "dem-coarse-only",
+ "residualKm": null,
+ "anchorResidualKm": null,
+ "bboxUncertaintyKm": 8.0,
+ "anchors": [],
+ "crosscheck": {
+  "demNcc": 0.75,
+  "bboxUncertaintyKm": 8.0,
+  "heightStdM": 472.0,
+  "prescreenMargin": 0.0077,
+  "refineAttempts": [
+   {
+    "seedNcc": 0.75,
+    "refinedNcc": 0.614,
+    "lon": 32.265,
+    "lat": 30.508,
+    "driftDeg": 0.023
+   },
+   {
+    "seedNcc": 0.742,
+    "refinedNcc": 0.607,
+    "lon": -55.47,
+    "lat": -32.142,
+    "driftDeg": 0.01
+   }
+  ],
+  "refine": "failed (weak correlation)",
+  "prescreenCandidates": [
+   {
+    "ncc": 0.75,
+    "lon": 32.256,
+    "lat": 30.487
+   },
+   {
+    "ncc": 0.742,
+    "lon": -55.459,
+    "lat": -32.138
+   },
+   {
+    "ncc": 0.739,
+    "lon": -93.076,
+    "lat": 36.598
+   },
+   {
+    "ncc": 0.737,
+    "lon": -95.273,
+    "lat": 35.568
+   },
+   {
+    "ncc": 0.735,
+    "lon": -110.874,
+    "lat": 63.509
+   }
+  ],
+  "sizeErrPct": 0.0,
+  "squareErrPct": 0.0,
+  "sizeCheckOk": true,
+  "worldSquareKm": [
+   32.8,
+   32.8
+  ],
+  "nccPeak": 0.75,
+  "landFracMap": 0.9543,
+  "landFracDem": 0.9331,
+  "landFracRatio": 1.023,
+  "textureSeaFrac": 0.0,
+  "textureLandIou": null,
+  "solvedBeforeVeto": true,
+  "confidenceBeforeVeto": "low"
+ },
+ "confidence": "low",
+ "note": "coarse-only: z5 global prescreen peak 0.75 at 32.26,30.49; z10 refine failed (weak correlation); position good to ~5-10 km; terrain only, no OCR labels used",
+ "demNcc": 0.75
+}

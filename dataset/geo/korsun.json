@@ -1,0 +1,127 @@
+{
+ "map": "korsun",
+ "crs": "WGS84",
+ "bounds": {
+  "minLon": 31.107132,
+  "maxLon": 32.015732,
+  "minLat": 49.114316,
+  "maxLat": 49.709636
+ },
+ "corners": {
+  "nw": [
+   31.107132,
+   49.709636
+  ],
+  "ne": [
+   32.015732,
+   49.709636
+  ],
+  "sw": [
+   31.107132,
+   49.114316
+  ],
+  "se": [
+   32.015732,
+   49.114316
+  ]
+ },
+ "method": "ocr+gazetteer+dem-match",
+ "residualKm": 1.97,
+ "anchorResidualKm": 1.97,
+ "bboxUncertaintyKm": 0.5,
+ "anchors": [
+  {
+   "text": "Zolotonosha",
+   "lat": 49.66926,
+   "lon": 32.03637,
+   "px": 1967.5,
+   "py": 108.5,
+   "score": 100.0,
+   "gazetteer": "zolotonosha",
+   "offsetKm": 4.23
+  },
+  {
+   "text": "Moshny",
+   "lat": 49.52754,
+   "lon": 31.73708,
+   "px": 1411.0,
+   "py": 662.5,
+   "score": 100.0,
+   "gazetteer": "moshny",
+   "offsetKm": 1.03
+  },
+  {
+   "text": "Korsun'-ShevchenkiwsKyi",
+   "lat": 49.41822,
+   "lon": 31.25174,
+   "px": 395.0,
+   "py": 991.0,
+   "score": 95.2,
+   "gazetteer": "korsunshevchenkivskyi",
+   "offsetKm": 0.0
+  },
+  {
+   "text": "Dubiyevka",
+   "lat": 49.3504,
+   "lon": 31.87134,
+   "px": 1716.0,
+   "py": 1209.5,
+   "score": 100.0,
+   "gazetteer": "dubiyevka",
+   "offsetKm": 0.0
+  },
+  {
+   "text": "Rotmistrovka",
+   "lat": 49.14828,
+   "lon": 31.71277,
+   "px": 1456.0,
+   "py": 1945.5,
+   "score": 91.7,
+   "gazetteer": "rotmistrivka",
+   "offsetKm": 3.95
+  }
+ ],
+ "crosscheck": {
+  "nccPeak": 0.8363,
+  "coarseNcc": 0.8019,
+  "worldUnitM": 1.0036,
+  "worldSquareKm": [
+   65.8,
+   65.8
+  ],
+  "labelResidKm": [
+   0.0,
+   0.0,
+   1.0,
+   3.9,
+   4.2
+  ],
+  "anchorsUsed": 5,
+  "textureExtentKm": [
+   72.2,
+   65.0
+  ],
+  "textureVsWorldScale": 1.096,
+  "textureCenterOffsetKm": 1.25,
+  "bboxUncertaintyKm": 0.5,
+  "sizeErrPct": 0.36,
+  "squareErrPct": 0.0,
+  "sizeCheckOk": true,
+  "landFracMap": 0.9465,
+  "landFracDem": 1.0,
+  "landFracRatio": 1.057,
+  "textureSeaFrac": 0.01,
+  "textureLandIou": null,
+  "solvedBeforeVeto": true,
+  "confidenceBeforeVeto": "medium"
+ },
+ "confidence": "medium",
+ "note": "label hypothesis label:stepanky; fitted world unit = 1.004 real m; 15/16 labels resolved",
+ "textureBounds": {
+  "minLon": 31.046144,
+  "maxLon": 32.042376,
+  "minLat": 49.1171,
+  "maxLat": 49.705067
+ },
+ "demNcc": 0.8363
+}

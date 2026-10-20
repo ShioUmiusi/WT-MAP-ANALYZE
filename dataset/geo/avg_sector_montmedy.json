@@ -1,0 +1,391 @@
+{
+ "map": "avg_sector_montmedy",
+ "crs": "WGS84",
+ "bounds": {
+  "minLon": 4.968245,
+  "maxLon": 5.024745,
+  "minLat": 49.659223,
+  "maxLat": 49.696041
+ },
+ "corners": {
+  "nw": [
+   4.968245,
+   49.696041
+  ],
+  "ne": [
+   5.024745,
+   49.696041
+  ],
+  "sw": [
+   4.968245,
+   49.659223
+  ],
+  "se": [
+   5.024745,
+   49.659223
+  ]
+ },
+ "method": "ocr+gazetteer+dem-match",
+ "residualKm": 0.95,
+ "anchorResidualKm": 0.95,
+ "bboxUncertaintyKm": 2.0,
+ "anchors": [
+  {
+   "text": "Houdramont",
+   "lat": 49.94155,
+   "lon": 4.94463,
+   "px": 912.0,
+   "py": 104.5,
+   "score": 90.0,
+   "gazetteer": "houdremont",
+   "offsetKm": 0.72
+  },
+  {
+   "text": "Bievre",
+   "lat": 49.94085,
+   "lon": 5.01591,
+   "px": 1062.0,
+   "py": 104.0,
+   "score": 100.0,
+   "gazetteer": "bievre",
+   "offsetKm": 0.67
+  },
+  {
+   "text": "Revin",
+   "lat": 49.94039,
+   "lon": 4.63503,
+   "px": 222.0,
+   "py": 117.5,
+   "score": 100.0,
+   "gazetteer": "revin",
+   "offsetKm": 0.35
+  },
+  {
+   "text": "Ochamps",
+   "lat": 49.92453,
+   "lon": 5.27679,
+   "px": 1643.5,
+   "py": 159.0,
+   "score": 100.0,
+   "gazetteer": "ochamps",
+   "offsetKm": 0.78
+  },
+  {
+   "text": "Libramont,Chevigny",
+   "lat": 49.94658,
+   "lon": 5.41847,
+   "px": 1871.5,
+   "py": 182.0,
+   "score": 100.0,
+   "gazetteer": "libramontchevigny",
+   "offsetKm": 3.43
+  },
+  {
+   "text": "Paliseul",
+   "lat": 49.90395,
+   "lon": 5.13537,
+   "px": 1328.0,
+   "py": 231.0,
+   "score": 100.0,
+   "gazetteer": "paliseul",
+   "offsetKm": 0.66
+  },
+  {
+   "text": "Neuvillers",
+   "lat": 49.90128,
+   "lon": 5.35598,
+   "px": 1822.0,
+   "py": 240.0,
+   "score": 100.0,
+   "gazetteer": "neuvillers",
+   "offsetKm": 0.81
+  },
+  {
+   "text": "Neufchateay",
+   "lat": 49.84074,
+   "lon": 5.43535,
+   "px": 1984.0,
+   "py": 443.0,
+   "score": 90.9,
+   "gazetteer": "neufchateau",
+   "offsetKm": 0.67
+  },
+  {
+   "text": "Gribomont",
+   "lat": 49.82166,
+   "lon": 5.3243,
+   "px": 1746.5,
+   "py": 519.5,
+   "score": 100.0,
+   "gazetteer": "gribomont",
+   "offsetKm": 0.47
+  },
+  {
+   "text": "Charleville-Mezieres",
+   "lat": 49.7685,
+   "lon": 4.72487,
+   "px": 337.5,
+   "py": 681.5,
+   "score": 100.0,
+   "gazetteer": "charlevillemezieres",
+   "offsetKm": 2.59
+  },
+  {
+   "text": "Neuville-les-This",
+   "lat": 49.74284,
+   "lon": 4.59941,
+   "px": 147.0,
+   "py": 791.0,
+   "score": 100.0,
+   "gazetteer": "neuvillelesthis",
+   "offsetKm": 0.4
+  },
+  {
+   "text": "Vrigne-aux-Bo",
+   "lat": 49.73716,
+   "lon": 4.85567,
+   "px": 732.5,
+   "py": 812.0,
+   "score": 91.7,
+   "gazetteer": "vrigneauxbois",
+   "offsetKm": 1.04
+  },
+  {
+   "text": "Pouru-Saint-Remy",
+   "lat": 49.68333,
+   "lon": 5.08333,
+   "px": 1208.5,
+   "py": 1001.5,
+   "score": 100.0,
+   "gazetteer": "pourusaintremy",
+   "offsetKm": 0.23
+  },
+  {
+   "text": "Messincourt",
+   "lat": 49.6808,
+   "lon": 5.1544,
+   "px": 1369.5,
+   "py": 1012.0,
+   "score": 100.0,
+   "gazetteer": "messincourt",
+   "offsetKm": 0.38
+  },
+  {
+   "text": "Touligny",
+   "lat": 49.67002,
+   "lon": 4.61486,
+   "px": 168.0,
+   "py": 1037.0,
+   "score": 100.0,
+   "gazetteer": "touligny",
+   "offsetKm": 0.18
+  },
+  {
+   "text": "Douzy",
+   "lat": 49.6708,
+   "lon": 5.04156,
+   "px": 1113.0,
+   "py": 1039.5,
+   "score": 100.0,
+   "gazetteer": "douzy",
+   "offsetKm": 0.07
+  },
+  {
+   "text": "Abbaye d'orval",
+   "lat": 49.63961,
+   "lon": 5.34979,
+   "px": 1758.0,
+   "py": 1167.5,
+   "score": 100.0,
+   "gazetteer": "abbayedorval",
+   "offsetKm": 1.28
+  },
+  {
+   "text": "Mouzon",
+   "lat": 49.60706,
+   "lon": 5.07569,
+   "px": 1203.5,
+   "py": 1252.0,
+   "score": 100.0,
+   "gazetteer": "mouzon",
+   "offsetKm": 0.58
+  },
+  {
+   "text": "Chemery-sur-Bar",
+   "lat": 49.6,
+   "lon": 4.86667,
+   "px": 722.5,
+   "py": 1281.5,
+   "score": 100.0,
+   "gazetteer": "chemerysurbar",
+   "offsetKm": 0.09
+  },
+  {
+   "text": "Bouvellemont",
+   "lat": 49.58375,
+   "lon": 4.66193,
+   "px": 272.5,
+   "py": 1337.0,
+   "score": 100.0,
+   "gazetteer": "bouvellemont",
+   "offsetKm": 0.06
+  },
+  {
+   "text": "La Ferte-sur-Chiers",
+   "lat": 49.5756,
+   "lon": 5.2428,
+   "px": 1573.0,
+   "py": 1369.5,
+   "score": 100.0,
+   "gazetteer": "lafertesurchiers",
+   "offsetKm": 0.63
+  },
+  {
+   "text": "La Sabotterie",
+   "lat": 49.54608,
+   "lon": 4.67031,
+   "px": 282.5,
+   "py": 1460.5,
+   "score": 100.0,
+   "gazetteer": "lasabotterie",
+   "offsetKm": 0.32
+  },
+  {
+   "text": "Lametz",
+   "lat": 49.53012,
+   "lon": 4.68945,
+   "px": 324.5,
+   "py": 1525.5,
+   "score": 100.0,
+   "gazetteer": "lametz",
+   "offsetKm": 0.41
+  },
+  {
+   "text": "Montnedy",
+   "lat": 49.52096,
+   "lon": 5.36835,
+   "px": 1837.5,
+   "py": 1548.0,
+   "score": 87.5,
+   "gazetteer": "montmedy",
+   "offsetKm": 0.19
+  },
+  {
+   "text": "Le Chesne",
+   "lat": 49.51337,
+   "lon": 4.76424,
+   "px": 504.5,
+   "py": 1572.5,
+   "score": 100.0,
+   "gazetteer": "lechesne",
+   "offsetKm": 0.18
+  },
+  {
+   "text": "Charbogne",
+   "lat": 49.50175,
+   "lon": 4.58969,
+   "px": 128.5,
+   "py": 1612.5,
+   "score": 100.0,
+   "gazetteer": "charbogne",
+   "offsetKm": 0.47
+  },
+  {
+   "text": "Saint-Pierremont",
+   "lat": 49.48544,
+   "lon": 4.93714,
+   "px": 880.5,
+   "py": 1669.0,
+   "score": 100.0,
+   "gazetteer": "saintpierremont",
+   "offsetKm": 0.0
+  },
+  {
+   "text": "Buzancy",
+   "lat": 49.42635,
+   "lon": 4.95585,
+   "px": 935.0,
+   "py": 1876.0,
+   "score": 100.0,
+   "gazetteer": "buzancy",
+   "offsetKm": 0.48
+  },
+  {
+   "text": "Longwe",
+   "lat": 49.38997,
+   "lon": 4.78901,
+   "px": 542.0,
+   "py": 2006.0,
+   "score": 100.0,
+   "gazetteer": "longwe",
+   "offsetKm": 0.57
+  }
+ ],
+ "crosscheck": {
+  "nccPeak": 0.8391,
+  "coarseNcc": 0.827,
+  "worldUnitM": 0.9936,
+  "worldSquareKm": [
+   4.1,
+   4.1
+  ],
+  "labelResidKm": [
+   0.0,
+   0.1,
+   0.1,
+   0.1,
+   0.2,
+   0.2,
+   0.2,
+   0.2,
+   0.3,
+   0.3,
+   0.4,
+   0.4,
+   0.4,
+   0.5,
+   0.5,
+   0.5,
+   0.6,
+   0.6,
+   0.6,
+   0.7,
+   0.7,
+   0.7,
+   0.7,
+   0.8,
+   0.8,
+   1.0,
+   1.3,
+   2.6,
+   3.4
+  ],
+  "anchorsUsed": 29,
+  "textureExtentKm": [
+   66.8,
+   66.2
+  ],
+  "textureVsWorldScale": 16.422,
+  "textureCenterOffsetKm": 0.48,
+  "bboxUncertaintyKm": 2.0,
+  "sizeErrPct": 0.64,
+  "squareErrPct": 0.0,
+  "sizeCheckOk": true,
+  "landFracMap": 0.9278,
+  "landFracDem": 1.0,
+  "landFracRatio": 1.078,
+  "textureSeaFrac": 0.0,
+  "textureLandIou": null,
+  "solvedBeforeVeto": true,
+  "confidenceBeforeVeto": "medium"
+ },
+ "confidence": "medium",
+ "note": "label hypothesis label:houdemont; fitted world unit = 0.994 real m; 34/36 labels resolved",
+ "textureBounds": {
+  "minLon": 4.538121,
+  "maxLon": 5.46594,
+  "minLat": 49.375687,
+  "maxLat": 49.974896
+ },
+ "demNcc": 0.8391
+}

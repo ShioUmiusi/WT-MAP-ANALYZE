@@ -1,0 +1,65 @@
+{
+ "map": "arcade_tabletop_mountain",
+ "crs": "WGS84",
+ "bounds": null,
+ "corners": null,
+ "method": "dem-only",
+ "residualKm": null,
+ "anchorResidualKm": null,
+ "bboxUncertaintyKm": 1.5,
+ "anchors": [],
+ "crosscheck": {
+  "demNcc": 0.7888,
+  "prescreenTopNcc": 0.8563,
+  "prescreenMargin": 0.0291,
+  "worldUnitM": 0.8595,
+  "heightStdM": 1057.5,
+  "bboxUncertaintyKm": 1.5,
+  "demSource": "terrarium z10",
+  "prescreenCandidates": [
+   {
+    "ncc": 0.856,
+    "lon": -164.048,
+    "lat": 61.355
+   },
+   {
+    "ncc": 0.827,
+    "lon": -170.442,
+    "lat": 63.539
+   },
+   {
+    "ncc": 0.775,
+    "lon": -122.432,
+    "lat": 64.83
+   },
+   {
+    "ncc": 0.769,
+    "lon": 153.193,
+    "lat": 68.073
+   },
+   {
+    "ncc": 0.769,
+    "lon": 176.814,
+    "lat": 71.601
+   }
+  ],
+  "sizeErrPct": 14.05,
+  "squareErrPct": 0.0,
+  "sizeCheckOk": false,
+  "worldSquareKm": [
+   56.4,
+   56.4
+  ],
+  "landFracMap": 0.0787,
+  "landFracDem": 1.0,
+  "landFracRatio": 12.703,
+  "textureSeaFrac": 0.0,
+  "textureLandIou": null,
+  "solvedBeforeVeto": true,
+  "confidenceBeforeVeto": "low"
+ },
+ "confidence": "unresolved",
+ "note": "terrain-only match (no OCR labels); z5 prescreen peak 0.86 at -164.05,61.35, z10 refined NCC 0.789, margin 0.029 REJECTED: land/sea mismatch (map 0.08 vs dem 1.00, ratio 12.7x)",
+ "demNcc": 0.7888,
+ "rejected": "land/sea mismatch (map 0.08 vs dem 1.00, ratio 12.7x)"
+}

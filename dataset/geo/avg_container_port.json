@@ -1,0 +1,19 @@
+{
+ "map": "avg_container_port",
+ "crs": "WGS84",
+ "bounds": null,
+ "corners": null,
+ "method": null,
+ "residualKm": null,
+ "anchorResidualKm": null,
+ "bboxUncertaintyKm": null,
+ "anchors": [],
+ "crosscheck": {
+  "heightStdM": 7.7,
+  "sizeErrPct": null,
+  "squareErrPct": null,
+  "sizeCheckOk": false
+ },
+ "confidence": "unresolved",
+ "note": "flat terrain: heightmap std only 7.7 m, no DEM signal to match against"
+}

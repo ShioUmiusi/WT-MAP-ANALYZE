@@ -1,0 +1,87 @@
+{
+ "map": "avn_south_africa",
+ "crs": "WGS84",
+ "bounds": {
+  "minLon": -63.658253,
+  "maxLon": -63.131122,
+  "minLat": 1.705299,
+  "maxLat": 2.235836
+ },
+ "corners": {
+  "nw": [
+   -63.658253,
+   2.235836
+  ],
+  "ne": [
+   -63.131122,
+   2.235836
+  ],
+  "sw": [
+   -63.658253,
+   1.705299
+  ],
+  "se": [
+   -63.131122,
+   1.705299
+  ]
+ },
+ "method": "dem-only",
+ "residualKm": null,
+ "anchorResidualKm": null,
+ "bboxUncertaintyKm": 1.5,
+ "anchors": [],
+ "crosscheck": {
+  "demNcc": 0.9072,
+  "prescreenTopNcc": 0.9535,
+  "prescreenMargin": 0.0115,
+  "worldUnitM": 0.8944,
+  "heightStdM": 316.0,
+  "bboxUncertaintyKm": 1.5,
+  "demSource": "terrarium z10",
+  "prescreenCandidates": [
+   {
+    "ncc": 0.954,
+    "lon": -63.391,
+    "lat": 1.955
+   },
+   {
+    "ncc": 0.942,
+    "lon": 29.883,
+    "lat": 25.284
+   },
+   {
+    "ncc": 0.942,
+    "lon": 3.779,
+    "lat": 27.722
+   },
+   {
+    "ncc": 0.94,
+    "lon": -71.763,
+    "lat": 11.652
+   },
+   {
+    "ncc": 0.93,
+    "lon": 75.74,
+    "lat": 22.289
+   }
+  ],
+  "sizeErrPct": 10.56,
+  "squareErrPct": 0.0,
+  "sizeCheckOk": false,
+  "worldSquareKm": [
+   58.6,
+   58.6
+  ],
+  "landFracMap": 0.3757,
+  "landFracDem": 1.0,
+  "landFracRatio": 2.662,
+  "textureSeaFrac": 0.0,
+  "textureLandIou": null,
+  "solvedBeforeVeto": true,
+  "confidenceBeforeVeto": "low",
+  "nccPeak": 0.9072
+ },
+ "confidence": "low",
+ "note": "terrain-only match (no OCR labels); z5 prescreen peak 0.95 at -63.39,1.96, z10 refined NCC 0.907, margin 0.011 [demoted: bbox size error 10.56% vs world square]",
+ "demNcc": 0.9072
+}

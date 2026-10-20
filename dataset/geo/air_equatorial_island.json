@@ -1,0 +1,65 @@
+{
+ "map": "air_equatorial_island",
+ "crs": "WGS84",
+ "bounds": null,
+ "corners": null,
+ "method": "dem-only",
+ "residualKm": null,
+ "anchorResidualKm": null,
+ "bboxUncertaintyKm": 2.0,
+ "anchors": [],
+ "crosscheck": {
+  "demNcc": 0.7856,
+  "prescreenTopNcc": 0.8366,
+  "prescreenMargin": 0.0766,
+  "worldUnitM": 0.9555,
+  "heightStdM": 265.7,
+  "bboxUncertaintyKm": 2.0,
+  "demSource": "terrarium z10",
+  "prescreenCandidates": [
+   {
+    "ncc": 0.837,
+    "lon": 126.541,
+    "lat": 33.376
+   },
+   {
+    "ncc": 0.76,
+    "lon": 54.558,
+    "lat": 39.656
+   },
+   {
+    "ncc": 0.758,
+    "lon": -164.817,
+    "lat": 60.684
+   },
+   {
+    "ncc": 0.736,
+    "lon": -170.442,
+    "lat": 63.578
+   },
+   {
+    "ncc": 0.722,
+    "lon": -120.806,
+    "lat": 65.422
+   }
+  ],
+  "sizeErrPct": 4.45,
+  "squareErrPct": 0.0,
+  "sizeCheckOk": true,
+  "worldSquareKm": [
+   125.3,
+   125.3
+  ],
+  "landFracMap": 0.0742,
+  "landFracDem": 0.1189,
+  "landFracRatio": 1.602,
+  "textureSeaFrac": 0.275,
+  "textureWaterIou": 0.253,
+  "solvedBeforeVeto": true,
+  "confidenceBeforeVeto": "low"
+ },
+ "confidence": "unresolved",
+ "note": "terrain-only match (no OCR labels); z5 prescreen peak 0.84 at 126.54,33.38, z10 refined NCC 0.786, margin 0.077 REJECTED: texture water mask IoU 0.25 < 0.35",
+ "demNcc": 0.7856,
+ "rejected": "texture water mask IoU 0.25 < 0.35"
+}

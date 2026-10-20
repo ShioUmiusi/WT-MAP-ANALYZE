@@ -1,0 +1,19 @@
+{
+ "map": "avn_northwestern_islands",
+ "crs": "WGS84",
+ "bounds": null,
+ "corners": null,
+ "method": null,
+ "residualKm": null,
+ "anchorResidualKm": null,
+ "bboxUncertaintyKm": null,
+ "anchors": [],
+ "crosscheck": {
+  "heightStdM": 21.2,
+  "sizeErrPct": null,
+  "squareErrPct": null,
+  "sizeCheckOk": false
+ },
+ "confidence": "unresolved",
+ "note": "4 OCR labels, none resolved in the gazetteer; no dem peak: world square too small for the ~5 km global DEM prescreen"
+}

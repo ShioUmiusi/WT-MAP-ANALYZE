@@ -1,0 +1,590 @@
+{
+ "map": "sicily",
+ "crs": "WGS84",
+ "bounds": {
+  "minLon": 14.583399,
+  "maxLon": 15.299936,
+  "minLat": 37.04862,
+  "maxLat": 37.622358
+ },
+ "corners": {
+  "nw": [
+   14.583399,
+   37.622358
+  ],
+  "ne": [
+   15.299936,
+   37.622358
+  ],
+  "sw": [
+   14.583399,
+   37.04862
+  ],
+  "se": [
+   15.299936,
+   37.04862
+  ]
+ },
+ "method": "ocr+gazetteer+dem-match",
+ "residualKm": 2.03,
+ "anchorResidualKm": 2.03,
+ "bboxUncertaintyKm": 1.5,
+ "anchors": [
+  {
+   "text": "Centuripe",
+   "lat": 37.62336,
+   "lon": 14.74049,
+   "px": 503.5,
+   "py": 21.0,
+   "score": 100.0,
+   "gazetteer": "centuripe",
+   "offsetKm": 1.47
+  },
+  {
+   "text": "Piano Vite",
+   "lat": 37.61405,
+   "lon": 14.92967,
+   "px": 1037.0,
+   "py": 24.5,
+   "score": 100.0,
+   "gazetteer": "pianovite",
+   "offsetKm": 0.47
+  },
+  {
+   "text": "Acireale",
+   "lat": 37.60886,
+   "lon": 15.16577,
+   "px": 1694.5,
+   "py": 22.0,
+   "score": 100.0,
+   "gazetteer": "acireale",
+   "offsetKm": 0.79
+  },
+  {
+   "text": "Pedara",
+   "lat": 37.62386,
+   "lon": 15.05672,
+   "px": 1395.0,
+   "py": 37.0,
+   "score": 100.0,
+   "gazetteer": "pedara",
+   "offsetKm": 1.54
+  },
+  {
+   "text": "Viagrande",
+   "lat": 37.61032,
+   "lon": 15.09794,
+   "px": 1514.0,
+   "py": 35.5,
+   "score": 100.0,
+   "gazetteer": "viagrande",
+   "offsetKm": 0.0
+  },
+  {
+   "text": "Vitelleria",
+   "lat": 37.60475,
+   "lon": 14.93912,
+   "px": 1051.5,
+   "py": 50.0,
+   "score": 100.0,
+   "gazetteer": "vitelleria",
+   "offsetKm": 0.19
+  },
+  {
+   "text": "Nicolosi",
+   "lat": 37.62148,
+   "lon": 15.02785,
+   "px": 1300.0,
+   "py": 54.5,
+   "score": 100.0,
+   "gazetteer": "nicolosi",
+   "offsetKm": 1.83
+  },
+  {
+   "text": "Belpasso",
+   "lat": 37.59192,
+   "lon": 14.97985,
+   "px": 1190.5,
+   "py": 84.0,
+   "score": 100.0,
+   "gazetteer": "belpasso",
+   "offsetKm": 0.87
+  },
+  {
+   "text": "Aci Catena",
+   "lat": 37.60614,
+   "lon": 15.14165,
+   "px": 1643.0,
+   "py": 82.0,
+   "score": 100.0,
+   "gazetteer": "acicatena",
+   "offsetKm": 0.96
+  },
+  {
+   "text": "Tremestieri",
+   "lat": 37.56494,
+   "lon": 15.07863,
+   "px": 1387.5,
+   "py": 128.0,
+   "score": 81.5,
+   "gazetteer": "tremestierietneo",
+   "offsetKm": 3.05
+  },
+  {
+   "text": "Mascalucia",
+   "lat": 37.57465,
+   "lon": 15.04964,
+   "px": 1255.5,
+   "py": 178.5,
+   "score": 100.0,
+   "gazetteer": "mascalucia",
+   "offsetKm": 3.56
+  },
+  {
+   "text": "Vignali",
+   "lat": 37.60876,
+   "lon": 14.75064,
+   "px": 505.5,
+   "py": 202.5,
+   "score": 100.0,
+   "gazetteer": "vignali",
+   "offsetKm": 4.92
+  },
+  {
+   "text": "Palazzolo",
+   "lat": 37.56224,
+   "lon": 14.92987,
+   "px": 1028.0,
+   "py": 194.0,
+   "score": 100.0,
+   "gazetteer": "palazzolo",
+   "offsetKm": 0.51
+  },
+  {
+   "text": "Catenanuova",
+   "lat": 37.56876,
+   "lon": 14.69076,
+   "px": 390.0,
+   "py": 210.5,
+   "score": 100.0,
+   "gazetteer": "catenanuova",
+   "offsetKm": 2.17
+  },
+  {
+   "text": "Giaconia",
+   "lat": 37.55735,
+   "lon": 14.91888,
+   "px": 907.0,
+   "py": 253.0,
+   "score": 100.0,
+   "gazetteer": "giaconia",
+   "offsetKm": 2.62
+  },
+  {
+   "text": "Cerza",
+   "lat": 37.54297,
+   "lon": 15.1051,
+   "px": 1452.5,
+   "py": 304.0,
+   "score": 100.0,
+   "gazetteer": "cerza",
+   "offsetKm": 2.59
+  },
+  {
+   "text": "Misterbianco",
+   "lat": 37.51803,
+   "lon": 15.00913,
+   "px": 1274.0,
+   "py": 394.0,
+   "score": 100.0,
+   "gazetteer": "misterbianco",
+   "offsetKm": 0.94
+  },
+  {
+   "text": "Cavalera",
+   "lat": 37.49951,
+   "lon": 14.62585,
+   "px": 86.5,
+   "py": 425.0,
+   "score": 100.0,
+   "gazetteer": "cavalera",
+   "offsetKm": 1.43
+  },
+  {
+   "text": "Catania",
+   "lat": 37.49223,
+   "lon": 15.07041,
+   "px": 1490.5,
+   "py": 455.0,
+   "score": 100.0,
+   "gazetteer": "catania",
+   "offsetKm": 1.74
+  },
+  {
+   "text": "Giumama",
+   "lat": 37.47652,
+   "lon": 14.64949,
+   "px": 148.5,
+   "py": 503.5,
+   "score": 80.0,
+   "gazetteer": "giumarra",
+   "offsetKm": 1.68
+  },
+  {
+   "text": "Gerbint",
+   "lat": 37.46667,
+   "lon": 14.83333,
+   "px": 694.0,
+   "py": 517.0,
+   "score": 85.7,
+   "gazetteer": "gerbini",
+   "offsetKm": 1.83
+  },
+  {
+   "text": "Cinquegrana",
+   "lat": 37.47323,
+   "lon": 14.67068,
+   "px": 320.5,
+   "py": 551.0,
+   "score": 100.0,
+   "gazetteer": "cinquegrana",
+   "offsetKm": 1.81
+  },
+  {
+   "text": "Primosole",
+   "lat": 37.38925,
+   "lon": 15.08769,
+   "px": 1397.5,
+   "py": 739.5,
+   "score": 85.7,
+   "gazetteer": "primosoleest",
+   "offsetKm": 3.96
+  },
+  {
+   "text": "Ramacca",
+   "lat": 37.38616,
+   "lon": 14.69241,
+   "px": 370.0,
+   "py": 870.0,
+   "score": 100.0,
+   "gazetteer": "ramacca",
+   "offsetKm": 1.46
+  },
+  {
+   "text": "La Callura",
+   "lat": 37.36667,
+   "lon": 14.81667,
+   "px": 715.0,
+   "py": 907.5,
+   "score": 100.0,
+   "gazetteer": "lacallura",
+   "offsetKm": 0.81
+  },
+  {
+   "text": "Serravalle",
+   "lat": 37.35,
+   "lon": 14.8,
+   "px": 757.0,
+   "py": 986.5,
+   "score": 100.0,
+   "gazetteer": "serravalle",
+   "offsetKm": 3.48
+  },
+  {
+   "text": "Castellana",
+   "lat": 37.35,
+   "lon": 14.88333,
+   "px": 893.5,
+   "py": 1029.0,
+   "score": 100.0,
+   "gazetteer": "castellana",
+   "offsetKm": 1.53
+  },
+  {
+   "text": "Palagonia",
+   "lat": 37.32955,
+   "lon": 14.74474,
+   "px": 519.5,
+   "py": 1069.0,
+   "score": 100.0,
+   "gazetteer": "palagonia",
+   "offsetKm": 1.28
+  },
+  {
+   "text": "Agnore",
+   "lat": 37.33019,
+   "lon": 15.09149,
+   "px": 1473.5,
+   "py": 1063.5,
+   "score": 83.3,
+   "gazetteer": "agnone",
+   "offsetKm": 0.75
+  },
+  {
+   "text": "di Lentini",
+   "lat": 37.28556,
+   "lon": 14.99737,
+   "px": 1137.0,
+   "py": 1132.5,
+   "score": 100.0,
+   "gazetteer": "lentini",
+   "offsetKm": 3.51
+  },
+  {
+   "text": "Carlentini",
+   "lat": 37.28071,
+   "lon": 15.0102,
+   "px": 1228.0,
+   "py": 1132.5,
+   "score": 100.0,
+   "gazetteer": "carlentini",
+   "offsetKm": 3.12
+  },
+  {
+   "text": "Scordia",
+   "lat": 37.29548,
+   "lon": 14.84058,
+   "px": 779.0,
+   "py": 1175.5,
+   "score": 100.0,
+   "gazetteer": "scordia",
+   "offsetKm": 0.55
+  },
+  {
+   "text": "Militello in Val",
+   "lat": 37.27594,
+   "lon": 14.79342,
+   "px": 539.5,
+   "py": 1195.0,
+   "score": 75.7,
+   "gazetteer": "militelloinvaldicatania",
+   "offsetKm": 2.99
+  },
+  {
+   "text": "Brucoli",
+   "lat": 37.28191,
+   "lon": 15.18836,
+   "px": 1748.0,
+   "py": 1226.5,
+   "score": 100.0,
+   "gazetteer": "brucoli",
+   "offsetKm": 0.93
+  },
+  {
+   "text": "Carlentini",
+   "lat": 37.28071,
+   "lon": 15.0102,
+   "px": 1281.5,
+   "py": 1266.5,
+   "score": 100.0,
+   "gazetteer": "carlentini",
+   "offsetKm": 1.32
+  },
+  {
+   "text": "Mineo",
+   "lat": 37.26494,
+   "lon": 14.69381,
+   "px": 347.0,
+   "py": 1291.5,
+   "score": 100.0,
+   "gazetteer": "mineo",
+   "offsetKm": 0.49
+  },
+  {
+   "text": "Francofonte",
+   "lat": 37.22477,
+   "lon": 14.87488,
+   "px": 913.0,
+   "py": 1429.0,
+   "score": 100.0,
+   "gazetteer": "francofonte",
+   "offsetKm": 1.58
+  },
+  {
+   "text": "Grammichele",
+   "lat": 37.21326,
+   "lon": 14.63311,
+   "px": 228.5,
+   "py": 1476.0,
+   "score": 100.0,
+   "gazetteer": "grammichele",
+   "offsetKm": 2.27
+  },
+  {
+   "text": "Vizzini",
+   "lat": 37.16188,
+   "lon": 14.75712,
+   "px": 388.5,
+   "py": 1538.0,
+   "score": 100.0,
+   "gazetteer": "vizzini",
+   "offsetKm": 5.41
+  },
+  {
+   "text": "Melilli",
+   "lat": 37.17821,
+   "lon": 15.1302,
+   "px": 1571.0,
+   "py": 1557.0,
+   "score": 100.0,
+   "gazetteer": "melilli",
+   "offsetKm": 1.79
+  },
+  {
+   "text": "Vizzini",
+   "lat": 37.16188,
+   "lon": 14.75712,
+   "px": 516.5,
+   "py": 1661.5,
+   "score": 100.0,
+   "gazetteer": "vizzini",
+   "offsetKm": 0.0
+  },
+  {
+   "text": "Sortino",
+   "lat": 37.15881,
+   "lon": 15.02998,
+   "px": 1300.5,
+   "py": 1677.0,
+   "score": 100.0,
+   "gazetteer": "sortino",
+   "offsetKm": 0.46
+  },
+  {
+   "text": "Buccheri",
+   "lat": 37.12494,
+   "lon": 14.85222,
+   "px": 810.5,
+   "py": 1788.0,
+   "score": 100.0,
+   "gazetteer": "buccheri",
+   "offsetKm": 0.53
+  },
+  {
+   "text": "Cassaro",
+   "lat": 37.10571,
+   "lon": 14.94697,
+   "px": 1078.0,
+   "py": 1858.0,
+   "score": 100.0,
+   "gazetteer": "cassaro",
+   "offsetKm": 0.28
+  },
+  {
+   "text": "Solarino",
+   "lat": 37.10136,
+   "lon": 15.11988,
+   "px": 1566.5,
+   "py": 1869.0,
+   "score": 100.0,
+   "gazetteer": "solarino",
+   "offsetKm": 0.51
+  },
+  {
+   "text": "Buscem",
+   "lat": 37.08604,
+   "lon": 14.88499,
+   "px": 896.5,
+   "py": 1930.5,
+   "score": 92.3,
+   "gazetteer": "buscemi",
+   "offsetKm": 0.25
+  },
+  {
+   "text": "Giarratana",
+   "lat": 37.04741,
+   "lon": 14.79454,
+   "px": 536.0,
+   "py": 2028.5,
+   "score": 100.0,
+   "gazetteer": "giarratana",
+   "offsetKm": 3.1
+  }
+ ],
+ "crosscheck": {
+  "nccPeak": 0.8664,
+  "coarseNcc": 0.8548,
+  "worldUnitM": 0.9673,
+  "worldSquareKm": [
+   63.4,
+   63.4
+  ],
+  "labelResidKm": [
+   0.0,
+   0.0,
+   0.2,
+   0.3,
+   0.3,
+   0.5,
+   0.5,
+   0.5,
+   0.5,
+   0.5,
+   0.5,
+   0.6,
+   0.8,
+   0.8,
+   0.8,
+   0.9,
+   0.9,
+   0.9,
+   1.0,
+   1.3,
+   1.3,
+   1.4,
+   1.5,
+   1.5,
+   1.5,
+   1.5,
+   1.6,
+   1.7,
+   1.7,
+   1.8,
+   1.8,
+   1.8,
+   1.8,
+   2.2,
+   2.3,
+   2.6,
+   2.6,
+   3.0,
+   3.0,
+   3.1,
+   3.1,
+   3.5,
+   3.5,
+   3.6,
+   4.0,
+   4.9,
+   5.4
+  ],
+  "anchorsUsed": 47,
+  "textureExtentKm": [
+   63.1,
+   63.8
+  ],
+  "textureVsWorldScale": 1.006,
+  "textureCenterOffsetKm": 0.69,
+  "bboxUncertaintyKm": 1.5,
+  "sizeErrPct": 3.27,
+  "squareErrPct": 0.0,
+  "sizeCheckOk": true,
+  "landFracMap": 0.7997,
+  "landFracDem": 0.8164,
+  "landFracRatio": 1.021,
+  "textureSeaFrac": 0.182,
+  "textureLandIou": 0.959,
+  "textureWaterIou": 0.959,
+  "solvedBeforeVeto": true,
+  "confidenceBeforeVeto": "medium"
+ },
+ "confidence": "medium",
+ "note": "label hypothesis affine; fitted world unit = 0.967 real m; 150/152 labels resolved",
+ "textureBounds": {
+  "minLon": 14.577199,
+  "maxLon": 15.290525,
+  "minLat": 37.046634,
+  "maxLat": 37.624096
+ },
+ "demNcc": 0.8664
+}

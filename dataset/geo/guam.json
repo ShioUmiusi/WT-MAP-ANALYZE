@@ -1,0 +1,147 @@
+{
+ "map": "guam",
+ "crs": "WGS84",
+ "bounds": {
+  "minLon": 144.536987,
+  "maxLon": 145.094582,
+  "minLat": 13.147535,
+  "maxLat": 13.725318
+ },
+ "corners": {
+  "nw": [
+   144.536987,
+   13.725318
+  ],
+  "ne": [
+   145.094582,
+   13.725318
+  ],
+  "sw": [
+   144.536987,
+   13.147535
+  ],
+  "se": [
+   145.094582,
+   13.147535
+  ]
+ },
+ "method": "ocr+gazetteer+lsq",
+ "residualKm": 1.77,
+ "anchorResidualKm": null,
+ "bboxUncertaintyKm": null,
+ "anchors": [
+  {
+   "text": "Ritidian",
+   "lat": 13.65418,
+   "lon": 144.86227,
+   "px": 1165.0,
+   "py": 249.5,
+   "score": 76.2,
+   "gazetteer": "ritidianbeach",
+   "offsetKm": 0.0
+  },
+  {
+   "text": "Tumon",
+   "lat": 13.50694,
+   "lon": 144.80139,
+   "px": 957.5,
+   "py": 756.0,
+   "score": 100.0,
+   "gazetteer": "tumon",
+   "offsetKm": 0.71
+  },
+  {
+   "text": "Tamuning",
+   "lat": 13.48754,
+   "lon": 144.78143,
+   "px": 960.5,
+   "py": 855.5,
+   "score": 100.0,
+   "gazetteer": "tamuning",
+   "offsetKm": 2.98
+  },
+  {
+   "text": "Asan",
+   "lat": 13.47174,
+   "lon": 144.71581,
+   "px": 625.0,
+   "py": 903.5,
+   "score": 92.0,
+   "gazetteer": "asan",
+   "offsetKm": 0.62
+  },
+  {
+   "text": "Apra Harbor",
+   "lat": 13.45098,
+   "lon": 144.66006,
+   "px": 442.0,
+   "py": 997.0,
+   "score": 100.0,
+   "gazetteer": "apraharbor",
+   "offsetKm": 1.65
+  },
+  {
+   "text": "Guam island",
+   "lat": 13.43103,
+   "lon": 144.75311,
+   "px": 864.5,
+   "py": 1028.5,
+   "score": 100.0,
+   "gazetteer": "guamisland",
+   "offsetKm": 3.22
+  },
+  {
+   "text": "Ylig River",
+   "lat": 13.39332,
+   "lon": 144.77145,
+   "px": 763.0,
+   "py": 1175.5,
+   "score": 100.0,
+   "gazetteer": "yligriver",
+   "offsetKm": 1.72
+  },
+  {
+   "text": "Maanot Pass",
+   "lat": 13.38653,
+   "lon": 144.68517,
+   "px": 635.0,
+   "py": 1211.5,
+   "score": 100.0,
+   "gazetteer": "maanotpass",
+   "offsetKm": 4.08
+  },
+  {
+   "text": "Talofofo River",
+   "lat": 13.33869,
+   "lon": 144.76207,
+   "px": 786.0,
+   "py": 1354.5,
+   "score": 100.0,
+   "gazetteer": "talofoforiver",
+   "offsetKm": 0.0
+  }
+ ],
+ "crosscheck": {
+  "worldSquareKm": [
+   60.4,
+   63.9
+  ],
+  "anchorsUsed": 9,
+  "aspectErrPct": 5.47,
+  "bestCoarseNcc": 0.3161,
+  "sizeErrPct": 7.92,
+  "squareErrPct": 5.47,
+  "sizeCheckOk": true,
+  "landFracMap": 0.1387,
+  "landFracDem": 0.1489,
+  "landFracRatio": 1.074,
+  "textureSeaFrac": 0.813,
+  "textureLandIou": 0.943,
+  "textureWaterIou": 0.943,
+  "solvedBeforeVeto": true,
+  "confidenceBeforeVeto": "medium"
+ },
+ "confidence": "medium",
+ "note": "no DEM refinement; bbox from 9 label anchors, km-scale accuracy",
+ "demNcc": null
+}

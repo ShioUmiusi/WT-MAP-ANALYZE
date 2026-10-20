@@ -1,0 +1,36 @@
+{
+ "map": "avg_egypt_sinai",
+ "crs": "WGS84",
+ "bounds": null,
+ "corners": null,
+ "method": "ocr+gazetteer+dem-match",
+ "residualKm": null,
+ "anchorResidualKm": null,
+ "bboxUncertaintyKm": 2.0,
+ "anchors": [],
+ "crosscheck": {
+  "nccPeak": 0.861,
+  "coarseNcc": 0.8737,
+  "worldUnitM": 1.0313,
+  "worldSquareKm": [
+   4.2,
+   4.2
+  ],
+  "labelResidKm": [],
+  "anchorsUsed": 0,
+  "bboxUncertaintyKm": 2.0,
+  "sizeErrPct": 3.13,
+  "squareErrPct": 0.0,
+  "sizeCheckOk": true,
+  "landFracMap": 1.0,
+  "landFracDem": 0.0,
+  "textureSeaFrac": 0.0,
+  "textureLandIou": null,
+  "solvedBeforeVeto": true,
+  "confidenceBeforeVeto": "medium"
+ },
+ "confidence": "unresolved",
+ "note": "label hypothesis label:bitter; fitted world unit = 1.031 real m; 4/4 labels resolved REJECTED: land/water swapped (map 1.00 vs dem 0.00)",
+ "demNcc": 0.861,
+ "rejected": "land/water swapped (map 1.00 vs dem 0.00)"
+}

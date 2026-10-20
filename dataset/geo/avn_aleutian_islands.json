@@ -1,0 +1,65 @@
+{
+ "map": "avn_aleutian_islands",
+ "crs": "WGS84",
+ "bounds": null,
+ "corners": null,
+ "method": "dem-only",
+ "residualKm": null,
+ "anchorResidualKm": null,
+ "bboxUncertaintyKm": 1.0,
+ "anchors": [],
+ "crosscheck": {
+  "demNcc": 0.7983,
+  "prescreenTopNcc": 0.9296,
+  "prescreenMargin": 0.0066,
+  "worldUnitM": 1.0334,
+  "heightStdM": 199.5,
+  "bboxUncertaintyKm": 1.0,
+  "demSource": "terrarium z10",
+  "prescreenCandidates": [
+   {
+    "ncc": 0.93,
+    "lon": 98.372,
+    "lat": 1.867
+   },
+   {
+    "ncc": 0.923,
+    "lon": -95.142,
+    "lat": 18.062
+   },
+   {
+    "ncc": 0.92,
+    "lon": 34.475,
+    "lat": 8.255
+   },
+   {
+    "ncc": 0.92,
+    "lon": 18.237,
+    "lat": 19.56
+   },
+   {
+    "ncc": 0.919,
+    "lon": -91.978,
+    "lat": 14.477
+   }
+  ],
+  "sizeErrPct": 3.34,
+  "squareErrPct": 0.0,
+  "sizeCheckOk": true,
+  "worldSquareKm": [
+   67.8,
+   67.8
+  ],
+  "landFracMap": 0.1624,
+  "landFracDem": 1.0,
+  "landFracRatio": 6.159,
+  "textureSeaFrac": 0.0,
+  "textureLandIou": null,
+  "solvedBeforeVeto": true,
+  "confidenceBeforeVeto": "low"
+ },
+ "confidence": "unresolved",
+ "note": "terrain-only match (no OCR labels); z5 prescreen peak 0.93 at 98.37,1.87, z10 refined NCC 0.798, margin 0.007 REJECTED: land/sea mismatch (map 0.16 vs dem 1.00, ratio 6.2x)",
+ "demNcc": 0.7983,
+ "rejected": "land/sea mismatch (map 0.16 vs dem 1.00, ratio 6.2x)"
+}

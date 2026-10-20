@@ -1,0 +1,101 @@
+{
+ "map": "air_grand_canyon",
+ "crs": "WGS84",
+ "bounds": {
+  "minLon": -41.807757,
+  "maxLon": -38.744001,
+  "minLat": 66.806173,
+  "maxLat": 67.991916
+ },
+ "corners": {
+  "nw": [
+   -41.807757,
+   67.991916
+  ],
+  "ne": [
+   -38.744001,
+   67.991916
+  ],
+  "sw": [
+   -41.807757,
+   66.806173
+  ],
+  "se": [
+   -38.744001,
+   66.806173
+  ]
+ },
+ "method": "dem-coarse-only",
+ "residualKm": null,
+ "anchorResidualKm": null,
+ "bboxUncertaintyKm": 8.0,
+ "anchors": [],
+ "crosscheck": {
+  "demNcc": 0.692,
+  "bboxUncertaintyKm": 8.0,
+  "heightStdM": 983.2,
+  "prescreenMargin": 0.0226,
+  "refineAttempts": [
+   {
+    "seedNcc": 0.692,
+    "refinedNcc": 0.689,
+    "lon": -40.279,
+    "lat": 67.408,
+    "driftDeg": 0.009
+   },
+   {
+    "seedNcc": 0.669,
+    "refinedNcc": 0.672,
+    "lon": -107.658,
+    "lat": 44.632,
+    "driftDeg": 0.042
+   }
+  ],
+  "refine": "failed (weak correlation)",
+  "prescreenCandidates": [
+   {
+    "ncc": 0.692,
+    "lon": -40.276,
+    "lat": 67.399
+   },
+   {
+    "ncc": 0.669,
+    "lon": -107.666,
+    "lat": 44.59
+   },
+   {
+    "ncc": 0.666,
+    "lon": 56.536,
+    "lat": 23.544
+   },
+   {
+    "ncc": 0.664,
+    "lon": 95.867,
+    "lat": 46.483
+   },
+   {
+    "ncc": 0.654,
+    "lon": 103.777,
+    "lat": 22.086
+   }
+  ],
+  "sizeErrPct": 0.0,
+  "squareErrPct": 0.0,
+  "sizeCheckOk": true,
+  "worldSquareKm": [
+   131.1,
+   131.1
+  ],
+  "nccPeak": 0.692,
+  "landFracMap": 0.998,
+  "landFracDem": 0.99,
+  "landFracRatio": 1.008,
+  "textureSeaFrac": 0.0,
+  "textureLandIou": null,
+  "solvedBeforeVeto": true,
+  "confidenceBeforeVeto": "low"
+ },
+ "confidence": "low",
+ "note": "coarse-only: z5 global prescreen peak 0.69 at -40.28,67.40; z10 refine failed (weak correlation); position good to ~5-10 km; terrain only, no OCR labels used",
+ "demNcc": 0.692
+}

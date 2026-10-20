@@ -1,0 +1,204 @@
+{
+ "map": "mozdok_winter",
+ "crs": "WGS84",
+ "bounds": {
+  "minLon": 44.661468,
+  "maxLon": 45.691072,
+  "minLat": 42.843902,
+  "maxLat": 43.599478
+ },
+ "corners": {
+  "nw": [
+   44.661468,
+   43.599478
+  ],
+  "ne": [
+   45.691072,
+   43.599478
+  ],
+  "sw": [
+   44.661468,
+   42.843902
+  ],
+  "se": [
+   45.691072,
+   42.843902
+  ]
+ },
+ "method": "ocr+gazetteer+dem-match",
+ "residualKm": 3.56,
+ "anchorResidualKm": 3.56,
+ "bboxUncertaintyKm": 1.5,
+ "anchors": [
+  {
+   "text": "Mozdok",
+   "lat": 43.73976,
+   "lon": 44.65157,
+   "px": 301.5,
+   "py": 243.5,
+   "score": 100.0,
+   "gazetteer": "mozdok",
+   "offsetKm": 0.0
+  },
+  {
+   "text": "Novoterskoe",
+   "lat": 43.60222,
+   "lon": 45.59444,
+   "px": 885.5,
+   "py": 359.0,
+   "score": 95.7,
+   "gazetteer": "novoterskoye",
+   "offsetKm": 5.46
+  },
+  {
+   "text": "Kalinovskaya",
+   "lat": 43.57383,
+   "lon": 45.5209,
+   "px": 826.5,
+   "py": 388.5,
+   "score": 100.0,
+   "gazetteer": "kalinovskaya",
+   "offsetKm": 3.62
+  },
+  {
+   "text": "Pravoberejnoe",
+   "lat": 43.52507,
+   "lon": 45.70325,
+   "px": 931.5,
+   "py": 443.0,
+   "score": 85.7,
+   "gazetteer": "pravoberezhnoye",
+   "offsetKm": 5.1
+  },
+  {
+   "text": "Malgobek",
+   "lat": 43.51121,
+   "lon": 44.59051,
+   "px": 266.5,
+   "py": 458.0,
+   "score": 100.0,
+   "gazetteer": "malgobek",
+   "offsetKm": 4.67
+  },
+  {
+   "text": "Grozny",
+   "lat": 43.31195,
+   "lon": 45.68895,
+   "px": 877.5,
+   "py": 582.0,
+   "score": 100.0,
+   "gazetteer": "grozny",
+   "offsetKm": 3.37
+  },
+  {
+   "text": "Nesterovskaya",
+   "lat": 43.23861,
+   "lon": 45.05028,
+   "px": 562.5,
+   "py": 661.5,
+   "score": 100.0,
+   "gazetteer": "nesterovskaya",
+   "offsetKm": 5.17
+  },
+  {
+   "text": "Beslan",
+   "lat": 43.20006,
+   "lon": 44.49856,
+   "px": 187.0,
+   "py": 682.5,
+   "score": 100.0,
+   "gazetteer": "beslan",
+   "offsetKm": 3.99
+  },
+  {
+   "text": "Achkhoi-Martan",
+   "lat": 43.19219,
+   "lon": 45.28345,
+   "px": 641.5,
+   "py": 698.5,
+   "score": 92.3,
+   "gazetteer": "achkhoymartan",
+   "offsetKm": 4.65
+  },
+  {
+   "text": "Katyr-Yurt",
+   "lat": 43.17164,
+   "lon": 45.36991,
+   "px": 717.0,
+   "py": 693.5,
+   "score": 100.0,
+   "gazetteer": "katyryurt",
+   "offsetKm": 0.0
+  },
+  {
+   "text": "Urus-Martan",
+   "lat": 43.13053,
+   "lon": 45.53791,
+   "px": 788.5,
+   "py": 743.5,
+   "score": 100.0,
+   "gazetteer": "urusmartan",
+   "offsetKm": 4.35
+  },
+  {
+   "text": "Chiri-Urt",
+   "lat": 43.08869,
+   "lon": 45.74323,
+   "px": 910.5,
+   "py": 759.0,
+   "score": 94.1,
+   "gazetteer": "chiriyurt",
+   "offsetKm": 3.15
+  }
+ ],
+ "crosscheck": {
+  "nccPeak": 0.8897,
+  "coarseNcc": 0.8679,
+  "worldUnitM": 1.2738,
+  "worldSquareKm": [
+   83.5,
+   83.5
+  ],
+  "labelResidKm": [
+   0.0,
+   0.0,
+   3.2,
+   3.4,
+   3.6,
+   4.0,
+   4.4,
+   4.6,
+   4.7,
+   5.1,
+   5.2,
+   5.5
+  ],
+  "anchorsUsed": 12,
+  "textureExtentKm": [
+   140.7,
+   143.2
+  ],
+  "textureVsWorldScale": 1.715,
+  "textureCenterOffsetKm": 24.99,
+  "bboxUncertaintyKm": 1.5,
+  "sizeErrPct": 27.38,
+  "squareErrPct": 0.0,
+  "sizeCheckOk": false,
+  "landFracMap": 0.9917,
+  "landFracDem": 1.0,
+  "landFracRatio": 1.008,
+  "textureSeaFrac": 0.0,
+  "textureLandIou": null,
+  "solvedBeforeVeto": true,
+  "confidenceBeforeVeto": "low"
+ },
+ "confidence": "low",
+ "note": "label hypothesis affine; fitted world unit = 1.274 real m; 24/24 labels resolved [demoted: bbox size error 27.38% vs world square]",
+ "textureBounds": {
+  "minLon": 44.151479,
+  "maxLon": 45.891244,
+  "minLat": 42.769207,
+  "maxLat": 44.064985
+ },
+ "demNcc": 0.8897
+}

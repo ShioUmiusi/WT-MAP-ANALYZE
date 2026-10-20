@@ -1,0 +1,326 @@
+{
+ "map": "air_israel",
+ "crs": "WGS84",
+ "bounds": {
+  "minLon": -9.318192,
+  "maxLon": -7.70816,
+  "minLat": 40.407861,
+  "maxLat": 41.631179
+ },
+ "corners": {
+  "nw": [
+   -9.318192,
+   41.631179
+  ],
+  "ne": [
+   -7.70816,
+   41.631179
+  ],
+  "sw": [
+   -9.318192,
+   40.407861
+  ],
+  "se": [
+   -7.70816,
+   40.407861
+  ]
+ },
+ "method": "ocr+gazetteer+dem-match",
+ "residualKm": 1.59,
+ "anchorResidualKm": 1.59,
+ "bboxUncertaintyKm": 2.0,
+ "anchors": [
+  {
+   "text": "Antelias",
+   "lat": 33.917,
+   "lon": 35.589,
+   "px": 1319.0,
+   "py": 31.5,
+   "score": 100.0,
+   "gazetteer": "antelias",
+   "offsetKm": 1.96
+  },
+  {
+   "text": "Beyrut",
+   "lat": 33.88333,
+   "lon": 35.5,
+   "px": 1151.5,
+   "py": 50.5,
+   "score": 85.7,
+   "gazetteer": "beyrouth",
+   "offsetKm": 1.3
+  },
+  {
+   "text": "Zahle",
+   "lat": 33.84675,
+   "lon": 35.90203,
+   "px": 1796.5,
+   "py": 144.5,
+   "score": 100.0,
+   "gazetteer": "zahle",
+   "offsetKm": 0.0
+  },
+  {
+   "text": "Baabda",
+   "lat": 33.8341,
+   "lon": 35.54373,
+   "px": 1228.0,
+   "py": 170.5,
+   "score": 100.0,
+   "gazetteer": "baabda",
+   "offsetKm": 0.39
+  },
+  {
+   "text": "Hammana",
+   "lat": 33.82583,
+   "lon": 35.73472,
+   "px": 1526.0,
+   "py": 188.0,
+   "score": 100.0,
+   "gazetteer": "hammana",
+   "offsetKm": 0.2
+  },
+  {
+   "text": "Ed-Damour",
+   "lat": 33.73012,
+   "lon": 35.45604,
+   "px": 1091.5,
+   "py": 365.0,
+   "score": 100.0,
+   "gazetteer": "eddamour",
+   "offsetKm": 0.72
+  },
+  {
+   "text": "JoubbJannine",
+   "lat": 33.62694,
+   "lon": 35.78417,
+   "px": 1614.0,
+   "py": 573.5,
+   "score": 100.0,
+   "gazetteer": "joubbjannine",
+   "offsetKm": 0.4
+  },
+  {
+   "text": "Baaloul",
+   "lat": 33.58944,
+   "lon": 35.75028,
+   "px": 1560.0,
+   "py": 636.5,
+   "score": 100.0,
+   "gazetteer": "baaloul",
+   "offsetKm": 0.61
+  },
+  {
+   "text": "Rachaiya",
+   "lat": 33.52333,
+   "lon": 35.79222,
+   "px": 1710.0,
+   "py": 808.0,
+   "score": 84.2,
+   "gazetteer": "rachaiyaras",
+   "offsetKm": 5.56
+  },
+  {
+   "text": "Sarafand",
+   "lat": 33.44948,
+   "lon": 35.29948,
+   "px": 820.5,
+   "py": 907.0,
+   "score": 100.0,
+   "gazetteer": "sarafand",
+   "offsetKm": 0.74
+  },
+  {
+   "text": "Hasbayeh",
+   "lat": 33.39778,
+   "lon": 35.685,
+   "px": 1470.0,
+   "py": 1012.0,
+   "score": 80.0,
+   "gazetteer": "hasbaya",
+   "offsetKm": 1.3
+  },
+  {
+   "text": "Nabatiyeh",
+   "lat": 33.37717,
+   "lon": 35.48383,
+   "px": 1130.5,
+   "py": 1054.0,
+   "score": 94.1,
+   "gazetteer": "nabatieh",
+   "offsetKm": 0.35
+  },
+  {
+   "text": "Aabbassiye",
+   "lat": 33.29798,
+   "lon": 35.28253,
+   "px": 808.5,
+   "py": 1195.0,
+   "score": 100.0,
+   "gazetteer": "aabbassiye",
+   "offsetKm": 0.97
+  },
+  {
+   "text": "Metula",
+   "lat": 33.27929,
+   "lon": 35.5787,
+   "px": 1281.5,
+   "py": 1261.5,
+   "score": 100.0,
+   "gazetteer": "metula",
+   "offsetKm": 0.85
+  },
+  {
+   "text": "Majdarshams",
+   "lat": 33.27029,
+   "lon": 35.7716,
+   "px": 1575.0,
+   "py": 1280.0,
+   "score": 90.9,
+   "gazetteer": "majdalshams",
+   "offsetKm": 1.12
+  },
+  {
+   "text": "Dayr Makir",
+   "lat": 33.23289,
+   "lon": 36.02751,
+   "px": 1974.0,
+   "py": 1335.5,
+   "score": 100.0,
+   "gazetteer": "dayrmakir",
+   "offsetKm": 1.39
+  },
+  {
+   "text": "Odem",
+   "lat": 33.19522,
+   "lon": 35.7483,
+   "px": 1561.5,
+   "py": 1412.5,
+   "score": 92.0,
+   "gazetteer": "odem",
+   "offsetKm": 0.69
+  },
+  {
+   "text": "Ein Zivan",
+   "lat": 33.09653,
+   "lon": 35.79636,
+   "px": 1646.0,
+   "py": 1616.0,
+   "score": 100.0,
+   "gazetteer": "einzivan",
+   "offsetKm": 1.36
+  },
+  {
+   "text": "Shlomi",
+   "lat": 33.07186,
+   "lon": 35.14527,
+   "px": 593.0,
+   "py": 1695.5,
+   "score": 100.0,
+   "gazetteer": "shlomi",
+   "offsetKm": 2.66
+  },
+  {
+   "text": "Nahariyya",
+   "lat": 33.00892,
+   "lon": 35.09814,
+   "px": 502.0,
+   "py": 1804.5,
+   "score": 100.0,
+   "gazetteer": "nahariyya",
+   "offsetKm": 1.84
+  },
+  {
+   "text": "Safed",
+   "lat": 32.96465,
+   "lon": 35.496,
+   "px": 1168.5,
+   "py": 1862.0,
+   "score": 100.0,
+   "gazetteer": "safed",
+   "offsetKm": 1.4
+  },
+  {
+   "text": "Karmiel",
+   "lat": 32.90951,
+   "lon": 35.29768,
+   "px": 844.0,
+   "py": 1926.0,
+   "score": 100.0,
+   "gazetteer": "karmiel",
+   "offsetKm": 2.48
+  },
+  {
+   "text": "Maghar",
+   "lat": 32.88888,
+   "lon": 35.40831,
+   "px": 1031.5,
+   "py": 2004.5,
+   "score": 100.0,
+   "gazetteer": "maghar",
+   "offsetKm": 1.6
+  }
+ ],
+ "crosscheck": {
+  "nccPeak": 0.7831,
+  "coarseNcc": 0.7801,
+  "worldUnitM": 1.0309,
+  "worldSquareKm": [
+   135.2,
+   135.2
+  ],
+  "labelResidKm": [
+   0.0,
+   0.2,
+   0.3,
+   0.4,
+   0.4,
+   0.6,
+   0.7,
+   0.7,
+   0.7,
+   0.9,
+   1.0,
+   1.1,
+   1.3,
+   1.3,
+   1.4,
+   1.4,
+   1.4,
+   1.6,
+   1.8,
+   2.0,
+   2.5,
+   2.7,
+   5.6
+  ],
+  "anchorsUsed": 23,
+  "textureExtentKm": [
+   118.1,
+   116.1
+  ],
+  "textureVsWorldScale": 0.873,
+  "textureCenterOffsetKm": 3784.51,
+  "bboxUncertaintyKm": 2.0,
+  "sizeErrPct": 3.09,
+  "squareErrPct": 0.0,
+  "sizeCheckOk": true,
+  "landFracMap": 0.6149,
+  "landFracDem": 0.6348,
+  "landFracRatio": 1.032,
+  "textureSeaFrac": 0.388,
+  "textureLandIou": 0.744,
+  "textureWaterIou": 0.744,
+  "solvedBeforeVeto": true,
+  "confidenceBeforeVeto": "medium"
+ },
+ "confidence": "medium",
+ "note": "label hypothesis label:antelas; fitted world unit = 1.031 real m; 55/56 labels resolved",
+ "textureBounds": {
+  "minLon": 34.779564,
+  "maxLon": 36.050095,
+  "minLat": 32.87062,
+  "maxLat": 33.921161
+ },
+ "demNcc": 0.7831
+}

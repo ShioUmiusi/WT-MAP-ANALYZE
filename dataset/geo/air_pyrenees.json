@@ -1,0 +1,87 @@
+{
+ "map": "air_pyrenees",
+ "crs": "WGS84",
+ "bounds": {
+  "minLon": 0.795437,
+  "maxLon": 2.330458,
+  "minLat": 41.943979,
+  "maxLat": 43.083451
+ },
+ "corners": {
+  "nw": [
+   0.795437,
+   43.083451
+  ],
+  "ne": [
+   2.330458,
+   43.083451
+  ],
+  "sw": [
+   0.795437,
+   41.943979
+  ],
+  "se": [
+   2.330458,
+   41.943979
+  ]
+ },
+ "method": "dem-only",
+ "residualKm": null,
+ "anchorResidualKm": null,
+ "bboxUncertaintyKm": 1.0,
+ "anchors": [],
+ "crosscheck": {
+  "demNcc": 0.955,
+  "prescreenTopNcc": 0.957,
+  "prescreenMargin": 0.1095,
+  "worldUnitM": 0.961,
+  "heightStdM": 965.3,
+  "bboxUncertaintyKm": 1.0,
+  "demSource": "terrarium z10",
+  "prescreenCandidates": [
+   {
+    "ncc": 0.957,
+    "lon": 1.56,
+    "lat": 42.505
+   },
+   {
+    "ncc": 0.847,
+    "lon": 122.234,
+    "lat": 0.769
+   },
+   {
+    "ncc": 0.838,
+    "lon": 48.054,
+    "lat": 8.037
+   },
+   {
+    "ncc": 0.835,
+    "lon": 120.916,
+    "lat": -8.603
+   },
+   {
+    "ncc": 0.827,
+    "lon": -66.555,
+    "lat": 18.208
+   }
+  ],
+  "sizeErrPct": 3.9,
+  "squareErrPct": 0.0,
+  "sizeCheckOk": true,
+  "worldSquareKm": [
+   126.0,
+   126.0
+  ],
+  "nccPeak": 0.955,
+  "landFracMap": 1.0,
+  "landFracDem": 1.0,
+  "landFracRatio": 1.0,
+  "textureSeaFrac": 0.0,
+  "textureLandIou": null,
+  "solvedBeforeVeto": true,
+  "confidenceBeforeVeto": "high"
+ },
+ "confidence": "high",
+ "note": "terrain-only match (no OCR labels); z5 prescreen peak 0.96 at 1.56,42.50, z10 refined NCC 0.955, margin 0.110",
+ "demNcc": 0.955
+}

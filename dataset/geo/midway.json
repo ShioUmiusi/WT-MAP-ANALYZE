@@ -1,0 +1,59 @@
+{
+ "map": "midway",
+ "crs": "WGS84",
+ "bounds": {
+  "minLon": -7.696575,
+  "maxLon": -7.52245,
+  "minLat": 58.233346,
+  "maxLat": 58.325543
+ },
+ "corners": {
+  "nw": [
+   -7.696575,
+   58.325543
+  ],
+  "ne": [
+   -7.52245,
+   58.325543
+  ],
+  "sw": [
+   -7.696575,
+   58.233346
+  ],
+  "se": [
+   -7.52245,
+   58.233346
+  ]
+ },
+ "method": "ocr+gazetteer+dem-match",
+ "residualKm": null,
+ "anchorResidualKm": null,
+ "bboxUncertaintyKm": 1.0,
+ "anchors": [],
+ "crosscheck": {
+  "nccPeak": 0.866,
+  "coarseNcc": 0.789,
+  "worldUnitM": 0.6217,
+  "worldSquareKm": [
+   10.2,
+   10.2
+  ],
+  "labelResidKm": [],
+  "anchorsUsed": 0,
+  "bboxUncertaintyKm": 1.0,
+  "sizeErrPct": 37.83,
+  "squareErrPct": 0.0,
+  "sizeCheckOk": false,
+  "landFracMap": 0.0243,
+  "landFracDem": 0.0298,
+  "landFracRatio": 1.224,
+  "textureSeaFrac": 0.979,
+  "textureLandIou": 0.955,
+  "textureWaterIou": 0.955,
+  "solvedBeforeVeto": true,
+  "confidenceBeforeVeto": "low"
+ },
+ "confidence": "low",
+ "note": "label hypothesis label:reef; fitted world unit = 0.622 real m; 9/9 labels resolved [demoted: bbox size error 37.83% vs world square]",
+ "demNcc": 0.866
+}

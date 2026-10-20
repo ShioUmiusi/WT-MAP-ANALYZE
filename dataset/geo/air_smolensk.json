@@ -1,0 +1,138 @@
+{
+ "map": "air_smolensk",
+ "crs": "WGS84",
+ "bounds": {
+  "minLon": 31.031968,
+  "maxLon": 33.108874,
+  "minLat": 54.19257,
+  "maxLat": 55.398349
+ },
+ "corners": {
+  "nw": [
+   31.031968,
+   55.398349
+  ],
+  "ne": [
+   33.108874,
+   55.398349
+  ],
+  "sw": [
+   31.031968,
+   54.19257
+  ],
+  "se": [
+   33.108874,
+   54.19257
+  ]
+ },
+ "method": "ocr+gazetteer+dem-match",
+ "residualKm": 2.84,
+ "anchorResidualKm": 2.84,
+ "bboxUncertaintyKm": 1.0,
+ "anchors": [
+  {
+   "text": "Golynki",
+   "lat": 54.86964,
+   "lon": 31.38609,
+   "px": 395.0,
+   "py": 881.5,
+   "score": 100.0,
+   "gazetteer": "golynki",
+   "offsetKm": 3.7
+  },
+  {
+   "text": "Kardimovo",
+   "lat": 54.89011,
+   "lon": 32.43184,
+   "px": 1428.5,
+   "py": 901.5,
+   "score": 88.9,
+   "gazetteer": "kardymovo",
+   "offsetKm": 4.08
+  },
+  {
+   "text": "Smolensk",
+   "lat": 54.79369,
+   "lon": 32.07599,
+   "px": 1024.5,
+   "py": 946.5,
+   "score": 100.0,
+   "gazetteer": "smolensk",
+   "offsetKm": 4.64
+  },
+  {
+   "text": "Katyn",
+   "lat": 54.77455,
+   "lon": 31.69041,
+   "px": 642.75,
+   "py": 1048.0,
+   "score": 100.0,
+   "gazetteer": "katyn",
+   "offsetKm": 0.0
+  },
+  {
+   "text": "Prigorskoe",
+   "lat": 54.68141,
+   "lon": 32.14683,
+   "px": 1075.5,
+   "py": 1198.5,
+   "score": 95.2,
+   "gazetteer": "prigorskoye",
+   "offsetKm": 1.61
+  },
+  {
+   "text": "Shatalovo",
+   "lat": 54.334,
+   "lon": 32.4465,
+   "px": 1400.5,
+   "py": 1781.0,
+   "score": 100.0,
+   "gazetteer": "shatalovo",
+   "offsetKm": 0.0
+  }
+ ],
+ "crosscheck": {
+  "nccPeak": 0.8858,
+  "coarseNcc": 0.8482,
+  "worldUnitM": 1.0162,
+  "worldSquareKm": [
+   133.3,
+   133.3
+  ],
+  "labelResidKm": [
+   0.0,
+   0.0,
+   1.6,
+   3.7,
+   4.1,
+   4.6
+  ],
+  "anchorsUsed": 6,
+  "textureExtentKm": [
+   134.0,
+   135.1
+  ],
+  "textureVsWorldScale": 1.014,
+  "textureCenterOffsetKm": 1.36,
+  "bboxUncertaintyKm": 1.0,
+  "sizeErrPct": 1.62,
+  "squareErrPct": 0.0,
+  "sizeCheckOk": true,
+  "landFracMap": 0.9876,
+  "landFracDem": 1.0,
+  "landFracRatio": 1.013,
+  "textureSeaFrac": 0.0,
+  "textureLandIou": null,
+  "solvedBeforeVeto": true,
+  "confidenceBeforeVeto": "medium"
+ },
+ "confidence": "medium",
+ "note": "label hypothesis affine; fitted world unit = 1.016 real m; 14/15 labels resolved",
+ "textureBounds": {
+  "minLon": 31.016255,
+  "maxLon": 33.10317,
+  "minLat": 54.173598,
+  "maxLat": 55.396183
+ },
+ "demNcc": 0.8858
+}

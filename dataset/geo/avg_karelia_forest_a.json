@@ -1,0 +1,48 @@
+{
+ "map": "avg_karelia_forest_a",
+ "crs": "WGS84",
+ "bounds": null,
+ "corners": null,
+ "method": "ocr+gazetteer+dem-match",
+ "residualKm": 0.0,
+ "anchorResidualKm": 0.0,
+ "bboxUncertaintyKm": 2.0,
+ "anchors": [],
+ "crosscheck": {
+  "nccPeak": 0.8232,
+  "coarseNcc": 0.8382,
+  "worldUnitM": 0.6,
+  "worldSquareKm": [
+   1.2,
+   1.2
+  ],
+  "labelResidKm": [],
+  "anchorsUsed": 0,
+  "textureExtentKm": [
+   43.2,
+   83.8
+  ],
+  "textureVsWorldScale": 68.167,
+  "textureCenterOffsetKm": 76.47,
+  "bboxUncertaintyKm": 2.0,
+  "sizeErrPct": 40.0,
+  "squareErrPct": 0.0,
+  "sizeCheckOk": false,
+  "landFracMap": 0.9914,
+  "landFracDem": 1.0,
+  "landFracRatio": 1.009,
+  "textureSeaFrac": 0.304,
+  "textureLandIou": null,
+  "solvedBeforeVeto": true,
+  "confidenceBeforeVeto": "medium"
+ },
+ "confidence": "unresolved",
+ "note": "label hypothesis label:shonguy; fitted world unit = 0.600 real m; 16/16 labels resolved [demoted: bbox size error 40.0% vs world square] REJECTED: texture shows water (30%) but the DEM window is dry land",
+ "textureBounds": {
+  "minLon": 32.814793,
+  "maxLon": 33.859324,
+  "minLat": 67.806874,
+  "maxLat": 68.564643
+ },
+ "rejected": "texture shows water (30%) but the DEM window is dry land"
+}

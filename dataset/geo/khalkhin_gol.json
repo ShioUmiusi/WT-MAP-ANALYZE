@@ -1,0 +1,70 @@
+{
+ "map": "khalkhin_gol",
+ "crs": "WGS84",
+ "bounds": {
+  "minLon": -77.285636,
+  "maxLon": -76.578881,
+  "minLat": 45.398683,
+  "maxLat": 45.896241
+ },
+ "corners": {
+  "nw": [
+   -77.285636,
+   45.896241
+  ],
+  "ne": [
+   -76.578881,
+   45.896241
+  ],
+  "sw": [
+   -77.285636,
+   45.398683
+  ],
+  "se": [
+   -76.578881,
+   45.398683
+  ]
+ },
+ "method": "ocr+gazetteer+dem-match",
+ "residualKm": 0.0,
+ "anchorResidualKm": 0.0,
+ "bboxUncertaintyKm": 2.0,
+ "anchors": [],
+ "crosscheck": {
+  "nccPeak": 0.579,
+  "coarseNcc": 0.5039,
+  "worldUnitM": 0.8388,
+  "worldSquareKm": [
+   55.0,
+   55.0
+  ],
+  "labelResidKm": [],
+  "anchorsUsed": 0,
+  "textureExtentKm": [
+   342.0,
+   252.8
+  ],
+  "textureVsWorldScale": 6.217,
+  "textureCenterOffsetKm": 58.86,
+  "bboxUncertaintyKm": 2.0,
+  "sizeErrPct": 16.12,
+  "squareErrPct": 0.0,
+  "sizeCheckOk": false,
+  "landFracMap": 0.9898,
+  "landFracDem": 0.9995,
+  "landFracRatio": 1.01,
+  "textureSeaFrac": 0.0,
+  "textureLandIou": null,
+  "solvedBeforeVeto": true,
+  "confidenceBeforeVeto": "low"
+ },
+ "confidence": "low",
+ "note": "label hypothesis label:lake; fitted world unit = 0.839 real m; 32/71 labels resolved",
+ "textureBounds": {
+  "minLon": -78.561721,
+  "maxLon": -74.195707,
+  "minLat": 44.141198,
+  "maxLat": 46.428097
+ },
+ "demNcc": 0.579
+}

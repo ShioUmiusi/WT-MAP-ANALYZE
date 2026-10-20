@@ -1,0 +1,36 @@
+{
+ "map": "port_moresby",
+ "crs": "WGS84",
+ "bounds": null,
+ "corners": null,
+ "method": "ocr+gazetteer+dem-match",
+ "residualKm": null,
+ "anchorResidualKm": null,
+ "bboxUncertaintyKm": 1.5,
+ "anchors": [],
+ "crosscheck": {
+  "nccPeak": 0.7675,
+  "coarseNcc": 0.76,
+  "worldUnitM": 0.9196,
+  "worldSquareKm": [
+   60.3,
+   60.3
+  ],
+  "labelResidKm": [],
+  "anchorsUsed": 0,
+  "bboxUncertaintyKm": 1.5,
+  "sizeErrPct": 8.04,
+  "squareErrPct": 0.0,
+  "sizeCheckOk": true,
+  "landFracMap": 0.674,
+  "landFracDem": 1.0,
+  "landFracRatio": 1.484,
+  "textureSeaFrac": 0.299,
+  "textureLandIou": null,
+  "solvedBeforeVeto": true,
+  "confidenceBeforeVeto": "medium"
+ },
+ "confidence": "unresolved",
+ "note": "label hypothesis label:fairfax; fitted world unit = 0.920 real m; 13/17 labels resolved REJECTED: texture shows water (30%) but the DEM window is dry land",
+ "rejected": "texture shows water (30%) but the DEM window is dry land"
+}

@@ -1,0 +1,99 @@
+{
+ "map": "tunisia",
+ "crs": "WGS84",
+ "bounds": {
+  "minLon": 31.729169,
+  "maxLon": 32.387042,
+  "minLat": -26.747483,
+  "maxLat": -26.154322
+ },
+ "corners": {
+  "nw": [
+   31.729169,
+   -26.154322
+  ],
+  "ne": [
+   32.387042,
+   -26.154322
+  ],
+  "sw": [
+   31.729169,
+   -26.747483
+  ],
+  "se": [
+   32.387042,
+   -26.747483
+  ]
+ },
+ "method": "dem-coarse-only",
+ "residualKm": null,
+ "anchorResidualKm": null,
+ "bboxUncertaintyKm": 8.0,
+ "anchors": [],
+ "crosscheck": {
+  "demNcc": 0.83,
+  "bboxUncertaintyKm": 8.0,
+  "heightStdM": 92.5,
+  "prescreenMargin": 0.012,
+  "refineAttempts": [
+   {
+    "seedNcc": 0.83,
+    "refinedNcc": 0.777,
+    "lon": 32.089,
+    "lat": -26.459,
+    "driftDeg": 0.028
+   },
+   {
+    "seedNcc": 0.818,
+    "refinedNcc": 0.747,
+    "lon": 149.387,
+    "lat": -22.338,
+    "driftDeg": 0.02
+   }
+  ],
+  "refine": "failed (weak correlation)",
+  "prescreenCandidates": [
+   {
+    "ncc": 0.83,
+    "lon": 32.058,
+    "lat": -26.451
+   },
+   {
+    "ncc": 0.818,
+    "lon": 149.37,
+    "lat": -22.35
+   },
+   {
+    "ncc": 0.814,
+    "lon": 29.048,
+    "lat": -4.916
+   },
+   {
+    "ncc": 0.804,
+    "lon": 141.702,
+    "lat": -26.883
+   },
+   {
+    "ncc": 0.802,
+    "lon": -40.891,
+    "lat": -5.419
+   }
+  ],
+  "sizeErrPct": 0.0,
+  "squareErrPct": 0.0,
+  "sizeCheckOk": true,
+  "worldSquareKm": [
+   65.6,
+   65.6
+  ],
+  "nccPeak": 0.83,
+  "landFracMap": 0.6108,
+  "landFracDem": 1.0,
+  "landFracRatio": 1.637,
+  "solvedBeforeVeto": true,
+  "confidenceBeforeVeto": "low"
+ },
+ "confidence": "low",
+ "note": "coarse-only: z5 global prescreen peak 0.83 at 32.06,-26.45; z10 refine failed (weak correlation); position good to ~5-10 km; terrain only, no OCR labels used",
+ "demNcc": 0.83
+}

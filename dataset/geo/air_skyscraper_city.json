@@ -1,0 +1,65 @@
+{
+ "map": "air_skyscraper_city",
+ "crs": "WGS84",
+ "bounds": null,
+ "corners": null,
+ "method": "dem-only",
+ "residualKm": null,
+ "anchorResidualKm": null,
+ "bboxUncertaintyKm": 2.0,
+ "anchors": [],
+ "crosscheck": {
+  "demNcc": 0.8167,
+  "prescreenTopNcc": 0.8756,
+  "prescreenMargin": 0.0002,
+  "worldUnitM": 0.9348,
+  "heightStdM": 901.9,
+  "bboxUncertaintyKm": 2.0,
+  "demSource": "terrarium z10",
+  "prescreenCandidates": [
+   {
+    "ncc": 0.876,
+    "lon": -41.155,
+    "lat": -4.018
+   },
+   {
+    "ncc": 0.875,
+    "lon": -79.014,
+    "lat": 17.099
+   },
+   {
+    "ncc": 0.875,
+    "lon": 32.058,
+    "lat": 27.742
+   },
+   {
+    "ncc": 0.874,
+    "lon": -60.908,
+    "lat": -14.179
+   },
+   {
+    "ncc": 0.873,
+    "lon": -67.896,
+    "lat": -23.161
+   }
+  ],
+  "sizeErrPct": 6.52,
+  "squareErrPct": 0.0,
+  "sizeCheckOk": true,
+  "worldSquareKm": [
+   61.3,
+   61.3
+  ],
+  "landFracMap": 0.7737,
+  "landFracDem": 1.0,
+  "landFracRatio": 1.292,
+  "textureSeaFrac": 0.22,
+  "textureLandIou": null,
+  "solvedBeforeVeto": true,
+  "confidenceBeforeVeto": "low"
+ },
+ "confidence": "unresolved",
+ "note": "terrain-only match (no OCR labels); z5 prescreen peak 0.88 at -41.15,-4.02, z10 refined NCC 0.817, margin 0.000 REJECTED: texture shows water (22%) but the DEM window is dry land",
+ "demNcc": 0.8167,
+ "rejected": "texture shows water (22%) but the DEM window is dry land"
+}

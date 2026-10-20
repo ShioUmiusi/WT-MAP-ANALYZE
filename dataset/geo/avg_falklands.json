@@ -1,0 +1,47 @@
+{
+ "map": "avg_falklands",
+ "crs": "WGS84",
+ "bounds": null,
+ "corners": null,
+ "method": "ocr+gazetteer+dem-match",
+ "residualKm": 0.0,
+ "anchorResidualKm": 0.0,
+ "bboxUncertaintyKm": 1.0,
+ "anchors": [],
+ "crosscheck": {
+  "nccPeak": 0.6497,
+  "coarseNcc": 0.6572,
+  "worldUnitM": 0.8091,
+  "worldSquareKm": [
+   3.3,
+   3.3
+  ],
+  "labelResidKm": [],
+  "anchorsUsed": 0,
+  "textureExtentKm": [
+   180.6,
+   157.3
+  ],
+  "textureVsWorldScale": 54.485,
+  "textureCenterOffsetKm": 86.2,
+  "bboxUncertaintyKm": 1.0,
+  "sizeErrPct": 19.09,
+  "squareErrPct": 0.0,
+  "sizeCheckOk": false,
+  "landFracMap": 0.5158,
+  "landFracDem": 0.0,
+  "textureSeaFrac": 0.631,
+  "textureWaterIou": 0.631,
+  "solvedBeforeVeto": true,
+  "confidenceBeforeVeto": "low"
+ },
+ "confidence": "unresolved",
+ "note": "label hypothesis affine; fitted world unit = 0.809 real m; 53/54 labels resolved REJECTED: land/water swapped (map 0.52 vs dem 0.00)",
+ "textureBounds": {
+  "minLon": -60.964522,
+  "maxLon": -58.351363,
+  "minLat": -52.341024,
+  "maxLat": -50.917575
+ },
+ "rejected": "land/water swapped (map 0.52 vs dem 0.00)"
+}

@@ -1,0 +1,83 @@
+{
+ "map": "guadalcanal",
+ "crs": "WGS84",
+ "bounds": null,
+ "corners": null,
+ "method": "ocr+gazetteer+dem-match",
+ "residualKm": 2.57,
+ "anchorResidualKm": 2.57,
+ "bboxUncertaintyKm": 1.5,
+ "anchors": [
+  {
+   "text": "Tulagi",
+   "lat": -9.10306,
+   "lon": 160.15056,
+   "px": 1367.5,
+   "py": 658.0,
+   "score": 100.0,
+   "gazetteer": "tulagi",
+   "offsetKm": 0.0
+  },
+  {
+   "text": "Savo",
+   "lat": -9.16667,
+   "lon": 159.83299,
+   "px": 696.0,
+   "py": 709.0,
+   "score": 92.0,
+   "gazetteer": "savo",
+   "offsetKm": 5.79
+  },
+  {
+   "text": "Verahue",
+   "lat": -9.34661,
+   "lon": 159.59894,
+   "px": 66.0,
+   "py": 1203.0,
+   "score": 100.0,
+   "gazetteer": "verahue",
+   "offsetKm": 0.0
+  }
+ ],
+ "crosscheck": {
+  "nccPeak": 0.7958,
+  "coarseNcc": 0.7392,
+  "worldUnitM": 0.6181,
+  "worldSquareKm": [
+   40.5,
+   40.5
+  ],
+  "labelResidKm": [
+   0.0,
+   0.0,
+   5.8
+  ],
+  "anchorsUsed": 3,
+  "textureExtentKm": [
+   95.5,
+   93.6
+  ],
+  "textureVsWorldScale": 2.356,
+  "textureCenterOffsetKm": 2091.58,
+  "bboxUncertaintyKm": 1.5,
+  "sizeErrPct": 38.19,
+  "squareErrPct": 0.0,
+  "sizeCheckOk": false,
+  "landFracMap": 0.3828,
+  "landFracDem": 1.0,
+  "landFracRatio": 2.613,
+  "textureSeaFrac": 0.564,
+  "textureLandIou": null,
+  "solvedBeforeVeto": true,
+  "confidenceBeforeVeto": "medium"
+ },
+ "confidence": "unresolved",
+ "note": "label hypothesis label:tulagi; fitted world unit = 0.618 real m; 18/19 labels resolved [demoted: bbox size error 38.19% vs world square] REJECTED: texture shows water (56%) but the DEM window is dry land",
+ "textureBounds": {
+  "minLon": 159.559596,
+  "maxLon": 160.428711,
+  "minLat": -9.698206,
+  "maxLat": -8.851112
+ },
+ "rejected": "texture shows water (56%) but the DEM window is dry land"
+}

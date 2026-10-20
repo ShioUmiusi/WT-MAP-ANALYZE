@@ -1,0 +1,148 @@
+{
+ "map": "avg_finland",
+ "crs": "WGS84",
+ "bounds": null,
+ "corners": null,
+ "method": "ocr+gazetteer+dem-match",
+ "residualKm": 2.05,
+ "anchorResidualKm": 2.05,
+ "bboxUncertaintyKm": 2.0,
+ "anchors": [
+  {
+   "text": "Ruokolahti",
+   "lat": 61.28333,
+   "lon": 28.83333,
+   "px": 794.5,
+   "py": 350.0,
+   "score": 100.0,
+   "gazetteer": "ruokolahti",
+   "offsetKm": 0.0
+  },
+  {
+   "text": "Imatra",
+   "lat": 61.19591,
+   "lon": 28.77661,
+   "px": 681.0,
+   "py": 760.5,
+   "score": 100.0,
+   "gazetteer": "imatra",
+   "offsetKm": 3.66
+  },
+  {
+   "text": "Joutseno",
+   "lat": 61.1203,
+   "lon": 28.4894,
+   "px": 200.5,
+   "py": 906.5,
+   "score": 100.0,
+   "gazetteer": "joutseno",
+   "offsetKm": 0.0
+  },
+  {
+   "text": "Svetogorsk",
+   "lat": 61.11213,
+   "lon": 28.86321,
+   "px": 849.5,
+   "py": 921.5,
+   "score": 100.0,
+   "gazetteer": "svetogorsk",
+   "offsetKm": 0.43
+  },
+  {
+   "text": "Lesogorskiy",
+   "lat": 61.04549,
+   "lon": 28.92938,
+   "px": 897.5,
+   "py": 1027.5,
+   "score": 100.0,
+   "gazetteer": "lesogorskiy",
+   "offsetKm": 4.77
+  },
+  {
+   "text": "Losevo",
+   "lat": 61.08133,
+   "lon": 28.98133,
+   "px": 1031.0,
+   "py": 1059.0,
+   "score": 100.0,
+   "gazetteer": "losevo",
+   "offsetKm": 0.87
+  },
+  {
+   "text": "Nuijamaa",
+   "lat": 60.9619,
+   "lon": 28.54021,
+   "px": 278.5,
+   "py": 1476.0,
+   "score": 100.0,
+   "gazetteer": "nuijamaa",
+   "offsetKm": 0.98
+  },
+  {
+   "text": "Kamennogorsk",
+   "lat": 60.95451,
+   "lon": 29.13391,
+   "px": 1301.5,
+   "py": 1506.0,
+   "score": 100.0,
+   "gazetteer": "kamennogorsk",
+   "offsetKm": 1.15
+  },
+  {
+   "text": "Kutuzovo",
+   "lat": 60.84838,
+   "lon": 28.41957,
+   "px": 101.0,
+   "py": 1822.5,
+   "score": 100.0,
+   "gazetteer": "kutuzovo",
+   "offsetKm": 0.77
+  }
+ ],
+ "crosscheck": {
+  "nccPeak": 0.8969,
+  "coarseNcc": 0.8429,
+  "worldUnitM": 1.0672,
+  "worldSquareKm": [
+   2.2,
+   2.2
+  ],
+  "labelResidKm": [
+   0.0,
+   0.0,
+   0.4,
+   0.8,
+   0.9,
+   1.0,
+   1.2,
+   3.7,
+   4.8
+  ],
+  "anchorsUsed": 9,
+  "textureExtentKm": [
+   65.5,
+   66.8
+  ],
+  "textureVsWorldScale": 30.553,
+  "textureCenterOffsetKm": 94.25,
+  "bboxUncertaintyKm": 2.0,
+  "sizeErrPct": 6.72,
+  "squareErrPct": 0.0,
+  "sizeCheckOk": true,
+  "landFracMap": 0.7496,
+  "landFracDem": 0.0,
+  "textureSeaFrac": 0.111,
+  "textureLandIou": null,
+  "solvedBeforeVeto": true,
+  "confidenceBeforeVeto": "medium"
+ },
+ "confidence": "unresolved",
+ "note": "label hypothesis affine; fitted world unit = 1.067 real m; 14/14 labels resolved REJECTED: land/water swapped (map 0.75 vs dem 0.00)",
+ "textureBounds": {
+  "minLon": 28.368839,
+  "maxLon": 29.586423,
+  "minLat": 60.785086,
+  "maxLat": 61.38919
+ },
+ "rejected": "land/water swapped (map 0.75 vs dem 0.00)"
+}

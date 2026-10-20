@@ -1,0 +1,97 @@
+{
+ "map": "peleliu",
+ "crs": "WGS84",
+ "bounds": {
+  "minLon": 133.7158,
+  "maxLon": 134.787633,
+  "minLat": 6.47709,
+  "maxLat": 7.6558
+ },
+ "corners": {
+  "nw": [
+   133.7158,
+   7.6558
+  ],
+  "ne": [
+   134.787633,
+   7.6558
+  ],
+  "sw": [
+   133.7158,
+   6.47709
+  ],
+  "se": [
+   134.787633,
+   6.47709
+  ]
+ },
+ "method": "ocr+gazetteer+lsq",
+ "residualKm": 1.86,
+ "anchorResidualKm": null,
+ "bboxUncertaintyKm": null,
+ "anchors": [
+  {
+   "text": "Koror",
+   "lat": 7.33978,
+   "lon": 134.47327,
+   "px": 1477.5,
+   "py": 529.0,
+   "score": 100.0,
+   "gazetteer": "koror",
+   "offsetKm": 4.26
+  },
+  {
+   "text": "Korortown",
+   "lat": 7.34257,
+   "lon": 134.47888,
+   "px": 1431.5,
+   "py": 561.5,
+   "score": 100.0,
+   "gazetteer": "korortown",
+   "offsetKm": 0.0
+  },
+  {
+   "text": "Peleliu",
+   "lat": 6.993,
+   "lon": 134.23199,
+   "px": 963.5,
+   "py": 1171.0,
+   "score": 100.0,
+   "gazetteer": "peleliu",
+   "offsetKm": 2.57
+  },
+  {
+   "text": "Angaur",
+   "lat": 6.89,
+   "lon": 134.12601,
+   "px": 803.0,
+   "py": 1314.0,
+   "score": 100.0,
+   "gazetteer": "angaur",
+   "offsetKm": 0.0
+  }
+ ],
+ "crosscheck": {
+  "worldSquareKm": [
+   118.4,
+   130.3
+  ],
+  "anchorsUsed": 4,
+  "aspectErrPct": 9.12,
+  "bestCoarseNcc": 0.391,
+  "sizeErrPct": 98.72,
+  "squareErrPct": 9.12,
+  "sizeCheckOk": false,
+  "landFracMap": 0.0324,
+  "landFracDem": 0.0513,
+  "landFracRatio": 1.583,
+  "textureSeaFrac": 0.981,
+  "textureLandIou": 0.948,
+  "textureWaterIou": 0.948,
+  "solvedBeforeVeto": true,
+  "confidenceBeforeVeto": "low"
+ },
+ "confidence": "low",
+ "note": "no DEM refinement; bbox from 4 label anchors, km-scale accuracy [demoted: bbox size error 98.72% vs world square]",
+ "demNcc": null
+}

@@ -1,0 +1,79 @@
+{
+ "map": "arcade_norway_fjords",
+ "crs": "WGS84",
+ "bounds": null,
+ "corners": null,
+ "method": "dem-coarse-only",
+ "residualKm": null,
+ "anchorResidualKm": null,
+ "bboxUncertaintyKm": 8.0,
+ "anchors": [],
+ "crosscheck": {
+  "demNcc": 0.8498,
+  "bboxUncertaintyKm": 8.0,
+  "heightStdM": 501.6,
+  "prescreenMargin": 0.0096,
+  "refineAttempts": [
+   {
+    "seedNcc": 0.85,
+    "refinedNcc": 0.687,
+    "lon": 123.858,
+    "lat": -31.177,
+    "driftDeg": 0.02
+   },
+   {
+    "seedNcc": 0.84,
+    "refinedNcc": 0.677,
+    "lon": 37.344,
+    "lat": 37.702,
+    "driftDeg": 0.045
+   }
+  ],
+  "refine": "failed (weak correlation)",
+  "prescreenCandidates": [
+   {
+    "ncc": 0.85,
+    "lon": 123.838,
+    "lat": -31.166
+   },
+   {
+    "ncc": 0.84,
+    "lon": 37.288,
+    "lat": 37.701
+   },
+   {
+    "ncc": 0.84,
+    "lon": -59.238,
+    "lat": -26.077
+   },
+   {
+    "ncc": 0.836,
+    "lon": 18.501,
+    "lat": -25.364
+   },
+   {
+    "ncc": 0.835,
+    "lon": -97.339,
+    "lat": 28.613
+   }
+  ],
+  "sizeErrPct": 0.0,
+  "squareErrPct": 0.0,
+  "sizeCheckOk": true,
+  "worldSquareKm": [
+   32.8,
+   32.8
+  ],
+  "landFracMap": 0.6066,
+  "landFracDem": 1.0,
+  "landFracRatio": 1.648,
+  "textureSeaFrac": 0.299,
+  "textureLandIou": null,
+  "solvedBeforeVeto": true,
+  "confidenceBeforeVeto": "low"
+ },
+ "confidence": "unresolved",
+ "note": "coarse-only: z5 global prescreen peak 0.85 at 123.84,-31.17; z10 refine failed (weak correlation); position good to ~5-10 km; terrain only, no OCR labels used REJECTED: texture shows water (30%) but the DEM window is dry land",
+ "demNcc": 0.8498,
+ "rejected": "texture shows water (30%) but the DEM window is dry land"
+}

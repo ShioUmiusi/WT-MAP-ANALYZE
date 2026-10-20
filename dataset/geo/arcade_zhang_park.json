@@ -1,0 +1,79 @@
+{
+ "map": "arcade_zhang_park",
+ "crs": "WGS84",
+ "bounds": null,
+ "corners": null,
+ "method": "dem-coarse-only",
+ "residualKm": null,
+ "anchorResidualKm": null,
+ "bboxUncertaintyKm": 8.0,
+ "anchors": [],
+ "crosscheck": {
+  "demNcc": 0.659,
+  "bboxUncertaintyKm": 8.0,
+  "heightStdM": 456.0,
+  "prescreenMargin": 0.0051,
+  "refineAttempts": [
+   {
+    "seedNcc": 0.659,
+    "refinedNcc": 0.604,
+    "lon": -2.988,
+    "lat": 45.869,
+    "driftDeg": 0.029
+   },
+   {
+    "seedNcc": 0.654,
+    "refinedNcc": 0.524,
+    "lon": 85.082,
+    "lat": 34.266,
+    "driftDeg": 0.032
+   }
+  ],
+  "refine": "failed (weak correlation)",
+  "prescreenCandidates": [
+   {
+    "ncc": 0.659,
+    "lon": -2.966,
+    "lat": 45.844
+   },
+   {
+    "ncc": 0.654,
+    "lon": 85.078,
+    "lat": 34.235
+   },
+   {
+    "ncc": 0.642,
+    "lon": -62.512,
+    "lat": -43.213
+   },
+   {
+    "ncc": 0.627,
+    "lon": 105.601,
+    "lat": 36.28
+   },
+   {
+    "ncc": 0.627,
+    "lon": 22.72,
+    "lat": -29.917
+   }
+  ],
+  "sizeErrPct": 0.0,
+  "squareErrPct": 0.0,
+  "sizeCheckOk": true,
+  "worldSquareKm": [
+   32.8,
+   32.8
+  ],
+  "nccPeak": 0.659,
+  "landFracMap": 0.9908,
+  "landFracDem": 0.0,
+  "textureSeaFrac": 0.0,
+  "textureLandIou": null,
+  "solvedBeforeVeto": true,
+  "confidenceBeforeVeto": "low"
+ },
+ "confidence": "unresolved",
+ "note": "coarse-only: z5 global prescreen peak 0.66 at -2.97,45.84; z10 refine failed (weak correlation); position good to ~5-10 km; terrain only, no OCR labels used REJECTED: land/water swapped (map 0.99 vs dem 0.00)",
+ "demNcc": 0.659,
+ "rejected": "land/water swapped (map 0.99 vs dem 0.00)"
+}

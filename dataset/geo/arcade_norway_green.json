@@ -1,0 +1,101 @@
+{
+ "map": "arcade_norway_green",
+ "crs": "WGS84",
+ "bounds": {
+  "minLon": 102.580035,
+  "maxLon": 102.908246,
+  "minLat": 26.046586,
+  "maxLat": 26.343167
+ },
+ "corners": {
+  "nw": [
+   102.580035,
+   26.343167
+  ],
+  "ne": [
+   102.908246,
+   26.343167
+  ],
+  "sw": [
+   102.580035,
+   26.046586
+  ],
+  "se": [
+   102.908246,
+   26.046586
+  ]
+ },
+ "method": "dem-coarse-only",
+ "residualKm": null,
+ "anchorResidualKm": null,
+ "bboxUncertaintyKm": 8.0,
+ "anchors": [],
+ "crosscheck": {
+  "demNcc": 0.8792,
+  "bboxUncertaintyKm": 8.0,
+  "heightStdM": 856.5,
+  "prescreenMargin": 0.0004,
+  "refineAttempts": [
+   {
+    "seedNcc": 0.879,
+    "refinedNcc": 0.687,
+    "lon": 102.761,
+    "lat": 26.218,
+    "driftDeg": 0.028
+   },
+   {
+    "seedNcc": 0.879,
+    "refinedNcc": 0.765,
+    "lon": 26.468,
+    "lat": 39.735,
+    "driftDeg": 0.03
+   }
+  ],
+  "refine": "failed (weak correlation)",
+  "prescreenCandidates": [
+   {
+    "ncc": 0.879,
+    "lon": 102.744,
+    "lat": 26.195
+   },
+   {
+    "ncc": 0.879,
+    "lon": 26.455,
+    "lat": 39.707
+   },
+   {
+    "ncc": 0.876,
+    "lon": 2.856,
+    "lat": 46.438
+   },
+   {
+    "ncc": 0.872,
+    "lon": 81.914,
+    "lat": 31.653
+   },
+   {
+    "ncc": 0.868,
+    "lon": -118.74,
+    "lat": 45.583
+   }
+  ],
+  "sizeErrPct": 0.0,
+  "squareErrPct": 0.0,
+  "sizeCheckOk": true,
+  "worldSquareKm": [
+   32.8,
+   32.8
+  ],
+  "nccPeak": 0.8792,
+  "landFracMap": 0.9664,
+  "landFracDem": 1.0,
+  "landFracRatio": 1.035,
+  "textureSeaFrac": 0.001,
+  "textureLandIou": null,
+  "solvedBeforeVeto": true,
+  "confidenceBeforeVeto": "low"
+ },
+ "confidence": "low",
+ "note": "coarse-only: z5 global prescreen peak 0.88 at 102.74,26.19; z10 refine failed (weak correlation); position good to ~5-10 km; terrain only, no OCR labels used",
+ "demNcc": 0.8792
+}

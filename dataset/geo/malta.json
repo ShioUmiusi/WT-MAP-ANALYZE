@@ -1,0 +1,270 @@
+{
+ "map": "malta",
+ "crs": "WGS84",
+ "bounds": null,
+ "corners": null,
+ "method": "ocr+gazetteer+dem-match",
+ "residualKm": 1.77,
+ "anchorResidualKm": 1.77,
+ "bboxUncertaintyKm": 1.5,
+ "anchors": [
+  {
+   "text": "Gozo",
+   "lat": 36.04944,
+   "lon": 14.25,
+   "px": 721.0,
+   "py": 532.5,
+   "score": 92.0,
+   "gazetteer": "gozo",
+   "offsetKm": 3.72
+  },
+  {
+   "text": "Gharb",
+   "lat": 36.05966,
+   "lon": 14.20917,
+   "px": 573.0,
+   "py": 606.0,
+   "score": 100.0,
+   "gazetteer": "gharb",
+   "offsetKm": 0.0
+  },
+  {
+   "text": "Xaghro",
+   "lat": 36.05003,
+   "lon": 14.26421,
+   "px": 731.5,
+   "py": 641.0,
+   "score": 83.3,
+   "gazetteer": "xaghra",
+   "offsetKm": 0.29
+  },
+  {
+   "text": "Sannat",
+   "lat": 36.02451,
+   "lon": 14.24283,
+   "px": 619.0,
+   "py": 727.5,
+   "score": 100.0,
+   "gazetteer": "sannat",
+   "offsetKm": 1.51
+  },
+  {
+   "text": "Xewkija",
+   "lat": 36.03413,
+   "lon": 14.25591,
+   "px": 694.5,
+   "py": 719.0,
+   "score": 100.0,
+   "gazetteer": "xewkija",
+   "offsetKm": 0.86
+  },
+  {
+   "text": "Mellieha",
+   "lat": 35.95663,
+   "lon": 14.36259,
+   "px": 1003.0,
+   "py": 950.0,
+   "score": 100.0,
+   "gazetteer": "mellieha",
+   "offsetKm": 0.46
+  },
+  {
+   "text": "il-Bahar",
+   "lat": 35.89444,
+   "lon": 14.34861,
+   "px": 1076.0,
+   "py": 1035.0,
+   "score": 75.0,
+   "gazetteer": "ilbahrija",
+   "offsetKm": 5.96
+  },
+  {
+   "text": "Mgarr",
+   "lat": 35.90417,
+   "lon": 14.34556,
+   "px": 963.0,
+   "py": 1084.0,
+   "score": 100.0,
+   "gazetteer": "mgarr",
+   "offsetKm": 1.79
+  },
+  {
+   "text": "Naxxar.",
+   "lat": 35.91368,
+   "lon": 14.44382,
+   "px": 1178.0,
+   "py": 1099.5,
+   "score": 100.0,
+   "gazetteer": "naxxar",
+   "offsetKm": 1.15
+  },
+  {
+   "text": "Mosta",
+   "lat": 35.90942,
+   "lon": 14.42566,
+   "px": 1129.0,
+   "py": 1131.0,
+   "score": 100.0,
+   "gazetteer": "mosta",
+   "offsetKm": 1.2
+  },
+  {
+   "text": "Birkitkara",
+   "lat": 35.89706,
+   "lon": 14.46115,
+   "px": 1271.0,
+   "py": 1168.0,
+   "score": 90.0,
+   "gazetteer": "birkirkara",
+   "offsetKm": 0.45
+  },
+  {
+   "text": "Hamrun",
+   "lat": 35.88452,
+   "lon": 14.48498,
+   "px": 1313.0,
+   "py": 1206.5,
+   "score": 100.0,
+   "gazetteer": "hamrun",
+   "offsetKm": 0.4
+  },
+  {
+   "text": "Qotmi",
+   "lat": 35.87601,
+   "lon": 14.472,
+   "px": 1251.5,
+   "py": 1226.0,
+   "score": 80.0,
+   "gazetteer": "qormi",
+   "offsetKm": 1.26
+  },
+  {
+   "text": "Zabbar",
+   "lat": 35.87687,
+   "lon": 14.53592,
+   "px": 1467.5,
+   "py": 1225.0,
+   "score": 100.0,
+   "gazetteer": "zabbar",
+   "offsetKm": 0.19
+  },
+  {
+   "text": "Tarxien",
+   "lat": 35.8656,
+   "lon": 14.51506,
+   "px": 1406.5,
+   "py": 1267.5,
+   "score": 100.0,
+   "gazetteer": "tarxien",
+   "offsetKm": 0.0
+  },
+  {
+   "text": "Marsaskala",
+   "lat": 35.8622,
+   "lon": 14.56701,
+   "px": 1483.5,
+   "py": 1276.0,
+   "score": 100.0,
+   "gazetteer": "marsaskala",
+   "offsetKm": 2.14
+  },
+  {
+   "text": ".Zejtun",
+   "lat": 35.85547,
+   "lon": 14.53341,
+   "px": 1462.5,
+   "py": 1300.5,
+   "score": 100.0,
+   "gazetteer": "zejtun",
+   "offsetKm": 0.2
+  },
+  {
+   "text": "Mqabba",
+   "lat": 35.84763,
+   "lon": 14.46824,
+   "px": 1284.5,
+   "py": 1348.5,
+   "score": 100.0,
+   "gazetteer": "mqabba",
+   "offsetKm": 0.67
+  },
+  {
+   "text": "Marsaxlekk",
+   "lat": 35.84214,
+   "lon": 14.54296,
+   "px": 1499.5,
+   "py": 1342.5,
+   "score": 90.0,
+   "gazetteer": "marsaxlokk",
+   "offsetKm": 0.58
+  },
+  {
+   "text": "Zurrieq",
+   "lat": 35.8296,
+   "lon": 14.47588,
+   "px": 1252.5,
+   "py": 1397.5,
+   "score": 100.0,
+   "gazetteer": "zurrieq",
+   "offsetKm": 1.58
+  }
+ ],
+ "crosscheck": {
+  "nccPeak": 0.648,
+  "coarseNcc": 0.4829,
+  "worldUnitM": 0.6347,
+  "worldSquareKm": [
+   26.0,
+   26.0
+  ],
+  "labelResidKm": [
+   0.0,
+   0.0,
+   0.2,
+   0.2,
+   0.3,
+   0.4,
+   0.5,
+   0.5,
+   0.6,
+   0.7,
+   0.9,
+   1.1,
+   1.2,
+   1.3,
+   1.5,
+   1.6,
+   1.8,
+   2.1,
+   3.7,
+   6.0
+  ],
+  "anchorsUsed": 20,
+  "textureExtentKm": [
+   68.8,
+   63.8
+  ],
+  "textureVsWorldScale": 2.647,
+  "textureCenterOffsetKm": 3971.96,
+  "bboxUncertaintyKm": 1.5,
+  "sizeErrPct": 36.53,
+  "squareErrPct": 0.0,
+  "sizeCheckOk": false,
+  "landFracMap": 0.1897,
+  "landFracDem": 1.0,
+  "landFracRatio": 5.27,
+  "textureSeaFrac": 0.908,
+  "textureLandIou": null,
+  "solvedBeforeVeto": true,
+  "confidenceBeforeVeto": "low"
+ },
+ "confidence": "unresolved",
+ "note": "label hypothesis label:gozo; fitted world unit = 0.635 real m; 40/45 labels resolved REJECTED: land/sea mismatch (map 0.19 vs dem 1.00, ratio 5.3x); texture shows water (91%) but the DEM window is dry land",
+ "textureBounds": {
+  "minLon": 13.992993,
+  "maxLon": 14.756656,
+  "minLat": 35.644615,
+  "maxLat": 36.221333
+ },
+ "rejected": "land/sea mismatch (map 0.19 vs dem 1.00, ratio 5.3x); texture shows water (91%) but the DEM window is dry land"
+}

@@ -1,0 +1,79 @@
+{
+ "map": "avn_volcanic_island",
+ "crs": "WGS84",
+ "bounds": null,
+ "corners": null,
+ "method": "dem-coarse-only",
+ "residualKm": null,
+ "anchorResidualKm": null,
+ "bboxUncertaintyKm": 8.0,
+ "anchors": [],
+ "crosscheck": {
+  "demNcc": 0.7622,
+  "bboxUncertaintyKm": 8.0,
+  "heightStdM": 22.2,
+  "prescreenMargin": 0.0021,
+  "refineAttempts": [
+   {
+    "seedNcc": 0.762,
+    "refinedNcc": 0.368,
+    "lon": 126.918,
+    "lat": 65.287,
+    "driftDeg": 0.034
+   },
+   {
+    "seedNcc": 0.76,
+    "refinedNcc": 0.388,
+    "lon": 25.456,
+    "lat": 63.452,
+    "driftDeg": 0.006
+   }
+  ],
+  "refine": "failed (weak correlation)",
+  "prescreenCandidates": [
+   {
+    "ncc": 0.762,
+    "lon": 126.958,
+    "lat": 65.257
+   },
+   {
+    "ncc": 0.76,
+    "lon": 25.444,
+    "lat": 63.451
+   },
+   {
+    "ncc": 0.759,
+    "lon": 118.169,
+    "lat": 63.724
+   },
+   {
+    "ncc": 0.742,
+    "lon": 162.532,
+    "lat": 68.31
+   },
+   {
+    "ncc": 0.734,
+    "lon": -155.588,
+    "lat": 66.399
+   }
+  ],
+  "sizeErrPct": 0.0,
+  "squareErrPct": 0.0,
+  "sizeCheckOk": true,
+  "worldSquareKm": [
+   16.4,
+   16.4
+  ],
+  "landFracMap": 0.1116,
+  "landFracDem": 1.0,
+  "landFracRatio": 8.961,
+  "textureSeaFrac": 0.0,
+  "textureLandIou": null,
+  "solvedBeforeVeto": true,
+  "confidenceBeforeVeto": "low"
+ },
+ "confidence": "unresolved",
+ "note": "coarse-only: z5 global prescreen peak 0.76 at 126.96,65.26; z10 refine failed (weak correlation); position good to ~5-10 km; terrain only, no OCR labels used REJECTED: land/sea mismatch (map 0.11 vs dem 1.00, ratio 9.0x)",
+ "demNcc": 0.7622,
+ "rejected": "land/sea mismatch (map 0.11 vs dem 1.00, ratio 9.0x)"
+}

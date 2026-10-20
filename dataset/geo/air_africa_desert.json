@@ -1,0 +1,87 @@
+{
+ "map": "air_africa_desert",
+ "crs": "WGS84",
+ "bounds": {
+  "minLon": 28.129811,
+  "maxLon": 28.816773,
+  "minLat": 30.090599,
+  "maxLat": 30.687361
+ },
+ "corners": {
+  "nw": [
+   28.129811,
+   30.687361
+  ],
+  "ne": [
+   28.816773,
+   30.687361
+  ],
+  "sw": [
+   28.129811,
+   30.090599
+  ],
+  "se": [
+   28.816773,
+   30.090599
+  ]
+ },
+ "method": "dem-only",
+ "residualKm": null,
+ "anchorResidualKm": null,
+ "bboxUncertaintyKm": 2.0,
+ "anchors": [],
+ "crosscheck": {
+  "demNcc": 0.951,
+  "prescreenTopNcc": 0.9552,
+  "prescreenMargin": 0.0438,
+  "worldUnitM": 1.0066,
+  "heightStdM": 94.6,
+  "bboxUncertaintyKm": 2.0,
+  "demSource": "terrarium z10",
+  "prescreenCandidates": [
+   {
+    "ncc": 0.955,
+    "lon": 28.433,
+    "lat": 30.373
+   },
+   {
+    "ncc": 0.911,
+    "lon": 62.82,
+    "lat": 26.096
+   },
+   {
+    "ncc": 0.893,
+    "lon": -68.84,
+    "lat": -6.424
+   },
+   {
+    "ncc": 0.892,
+    "lon": -63.369,
+    "lat": -41.179
+   },
+   {
+    "ncc": 0.886,
+    "lon": -119.729,
+    "lat": 61.929
+   }
+  ],
+  "sizeErrPct": 0.66,
+  "squareErrPct": 0.0,
+  "sizeCheckOk": true,
+  "worldSquareKm": [
+   66.0,
+   66.0
+  ],
+  "nccPeak": 0.951,
+  "landFracMap": 1.0,
+  "landFracDem": 0.6873,
+  "landFracRatio": 1.455,
+  "textureSeaFrac": 0.0,
+  "textureLandIou": null,
+  "solvedBeforeVeto": true,
+  "confidenceBeforeVeto": "high"
+ },
+ "confidence": "high",
+ "note": "terrain-only match (no OCR labels); z5 prescreen peak 0.96 at 28.43,30.37, z10 refined NCC 0.951, margin 0.044",
+ "demNcc": 0.951
+}

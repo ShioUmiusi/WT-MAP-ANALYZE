@@ -1,0 +1,79 @@
+{
+ "map": "caribbean_islands",
+ "crs": "WGS84",
+ "bounds": null,
+ "corners": null,
+ "method": "dem-coarse-only",
+ "residualKm": null,
+ "anchorResidualKm": null,
+ "bboxUncertaintyKm": 8.0,
+ "anchors": [],
+ "crosscheck": {
+  "demNcc": 0.7295,
+  "bboxUncertaintyKm": 8.0,
+  "heightStdM": 20.7,
+  "prescreenMargin": 0.028,
+  "refineAttempts": [
+   {
+    "seedNcc": 0.73,
+    "refinedNcc": 0.405,
+    "lon": 112.679,
+    "lat": -5.77,
+    "driftDeg": 0.023
+   },
+   {
+    "seedNcc": 0.701,
+    "refinedNcc": 0.37,
+    "lon": 70.301,
+    "lat": 23.906,
+    "driftDeg": 0.023
+   }
+  ],
+  "refine": "failed (weak correlation)",
+  "prescreenCandidates": [
+   {
+    "ncc": 0.73,
+    "lon": 112.676,
+    "lat": -5.747
+   },
+   {
+    "ncc": 0.701,
+    "lon": 70.312,
+    "lat": 23.886
+   },
+   {
+    "ncc": 0.697,
+    "lon": 59.941,
+    "lat": 45.675
+   },
+   {
+    "ncc": 0.696,
+    "lon": -12.48,
+    "lat": 22.675
+   },
+   {
+    "ncc": 0.687,
+    "lon": 106.04,
+    "lat": -6.228
+   }
+  ],
+  "sizeErrPct": 0.0,
+  "squareErrPct": 0.0,
+  "sizeCheckOk": true,
+  "worldSquareKm": [
+   65.6,
+   65.6
+  ],
+  "landFracMap": 0.012,
+  "landFracDem": 0.0547,
+  "landFracRatio": 4.558,
+  "textureSeaFrac": 0.978,
+  "textureWaterIou": 0.948,
+  "solvedBeforeVeto": true,
+  "confidenceBeforeVeto": "low"
+ },
+ "confidence": "unresolved",
+ "note": "coarse-only: z5 global prescreen peak 0.73 at 112.68,-5.75; z10 refine failed (weak correlation); position good to ~5-10 km; terrain only, no OCR labels used REJECTED: land/sea mismatch (map 0.01 vs dem 0.05, ratio 4.6x)",
+ "demNcc": 0.7295,
+ "rejected": "land/sea mismatch (map 0.01 vs dem 0.05, ratio 4.6x)"
+}

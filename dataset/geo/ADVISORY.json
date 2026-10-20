@@ -1,0 +1,84 @@
+{
+ "hintOnly": {
+  "air_grand_canyon": {
+   "bboxUncertaintyKm": 8.0,
+   "confidence": "low",
+   "method": "dem-coarse-only",
+   "reason": "the level's terrain is not a faithful copy of the real Grand Canyon (local NCC 0.55 vs 0.69 for a false global peak); bbox points at east Greenland and is wrong"
+  },
+  "air_kamchatka": {
+   "bboxUncertaintyKm": 8.0,
+   "confidence": "low",
+   "method": "dem-coarse-only",
+   "reason": "matched only at global z5 DEM (~4.9 km/px), no independent label evidence"
+  },
+  "air_vietnam": {
+   "bboxUncertaintyKm": 8.0,
+   "confidence": "low",
+   "method": "dem-coarse-only",
+   "reason": "matched only at global z5 DEM (~4.9 km/px), no independent label evidence"
+  },
+  "arcade_africa_canyon": {
+   "bboxUncertaintyKm": 8.0,
+   "confidence": "low",
+   "method": "dem-coarse-only",
+   "reason": "matched only at global z5 DEM (~4.9 km/px), no independent label evidence"
+  },
+  "arcade_alps": {
+   "bboxUncertaintyKm": 8.0,
+   "confidence": "low",
+   "method": "dem-coarse-only",
+   "reason": "matched only at global z5 DEM (~4.9 km/px), no independent label evidence"
+  },
+  "arcade_mediterranean": {
+   "bboxUncertaintyKm": 8.0,
+   "confidence": "low",
+   "method": "dem-coarse-only",
+   "reason": "matched only at global z5 DEM (~4.9 km/px), no independent label evidence"
+  },
+  "arcade_norway_green": {
+   "bboxUncertaintyKm": 8.0,
+   "confidence": "low",
+   "method": "dem-coarse-only",
+   "reason": "matched only at global z5 DEM (~4.9 km/px), no independent label evidence"
+  },
+  "arcade_phiphi_crater_rocks": {
+   "bboxUncertaintyKm": 8.0,
+   "confidence": "low",
+   "method": "dem-coarse-only",
+   "reason": "matched only at global z5 DEM (~4.9 km/px), no independent label evidence"
+  },
+  "arcade_rice_terraces": {
+   "bboxUncertaintyKm": 8.0,
+   "confidence": "low",
+   "method": "dem-coarse-only",
+   "reason": "matched only at global z5 DEM (~4.9 km/px), no independent label evidence"
+  },
+  "arcade_snow_rocks": {
+   "bboxUncertaintyKm": 8.0,
+   "confidence": "low",
+   "method": "dem-coarse-only",
+   "reason": "matched only at global z5 DEM (~4.9 km/px), no independent label evidence"
+  },
+  "avn_san_francisco": {
+   "bboxUncertaintyKm": 8.0,
+   "confidence": "low",
+   "method": "dem-coarse-only",
+   "reason": "matched only at global z5 DEM (~4.9 km/px), no independent label evidence"
+  },
+  "sector_montmedy": {
+   "bboxUncertaintyKm": 8.0,
+   "confidence": "low",
+   "method": "dem-coarse-only",
+   "reason": "matched only at global z5 DEM (~4.9 km/px), no independent label evidence"
+  },
+  "tunisia": {
+   "bboxUncertaintyKm": 8.0,
+   "confidence": "low",
+   "method": "dem-coarse-only",
+   "reason": "matched only at global z5 DEM (~4.9 km/px), no independent label evidence"
+  }
+ },
+ "note": "These levels have a bbox in out/geo/<map>.json but it must NOT be used as a coordinate. Use it only as a hint for 'which real region is this'. Anything not listed here and with confidence high/medium can be used as a coordinate, respecting bboxUncertaintyKm.",
+ "schema": "wt-geo-advisory/1"
+}

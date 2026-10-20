@@ -1,0 +1,355 @@
+{
+ "map": "kursk",
+ "crs": "WGS84",
+ "bounds": {
+  "minLon": 35.94354,
+  "maxLon": 36.790426,
+  "minLat": 50.639672,
+  "maxLat": 51.232187
+ },
+ "corners": {
+  "nw": [
+   35.94354,
+   51.232187
+  ],
+  "ne": [
+   36.790426,
+   51.232187
+  ],
+  "sw": [
+   35.94354,
+   50.639672
+  ],
+  "se": [
+   36.790426,
+   50.639672
+  ]
+ },
+ "method": "ocr+gazetteer+lsq",
+ "residualKm": 2.65,
+ "anchorResidualKm": null,
+ "bboxUncertaintyKm": null,
+ "anchors": [
+  {
+   "text": "Rybinskie Budy",
+   "lat": 51.2071,
+   "lon": 35.9541,
+   "px": 130.0,
+   "py": 67.0,
+   "score": 96.3,
+   "gazetteer": "rybinskiyebudy",
+   "offsetKm": 5.42
+  },
+  {
+   "text": "OBOYAN'",
+   "lat": 51.21224,
+   "lon": 36.27859,
+   "px": 787.5,
+   "py": 70.0,
+   "score": 100.0,
+   "gazetteer": "oboyan",
+   "offsetKm": 0.83
+  },
+  {
+   "text": "Bobryshevo",
+   "lat": 51.20962,
+   "lon": 36.4335,
+   "px": 1155.5,
+   "py": 109.5,
+   "score": 100.0,
+   "gazetteer": "bobryshevo",
+   "offsetKm": 0.53
+  },
+  {
+   "text": "Anakhino",
+   "lat": 51.18574,
+   "lon": 36.1805,
+   "px": 552.0,
+   "py": 169.5,
+   "score": 100.0,
+   "gazetteer": "anakhino",
+   "offsetKm": 0.94
+  },
+  {
+   "text": "Ostren'kiy",
+   "lat": 51.11389,
+   "lon": 36.64972,
+   "px": 1813.0,
+   "py": 263.5,
+   "score": 84.2,
+   "gazetteer": "ostrenkoye",
+   "offsetKm": 5.68
+  },
+  {
+   "text": "Shipy",
+   "lat": 51.12685,
+   "lon": 36.41458,
+   "px": 1101.0,
+   "py": 327.25,
+   "score": 100.0,
+   "gazetteer": "shipy",
+   "offsetKm": 1.76
+  },
+  {
+   "text": "Korytnoy",
+   "lat": 51.095,
+   "lon": 36.64539,
+   "px": 1654.0,
+   "py": 403.5,
+   "score": 94.1,
+   "gazetteer": "korytnoye",
+   "offsetKm": 3.17
+  },
+  {
+   "text": "Peresyp'",
+   "lat": 51.0888,
+   "lon": 36.47301,
+   "px": 1288.5,
+   "py": 490.0,
+   "score": 100.0,
+   "gazetteer": "peresyp",
+   "offsetKm": 0.64
+  },
+  {
+   "text": "Ivnya",
+   "lat": 51.05758,
+   "lon": 36.14802,
+   "px": 432.5,
+   "py": 595.0,
+   "score": 100.0,
+   "gazetteer": "ivnya",
+   "offsetKm": 0.47
+  },
+  {
+   "text": "Kurasovka",
+   "lat": 51.06503,
+   "lon": 36.21093,
+   "px": 615.0,
+   "py": 604.5,
+   "score": 100.0,
+   "gazetteer": "kurasovka",
+   "offsetKm": 0.81
+  },
+  {
+   "text": "Prelestnoe",
+   "lat": 51.03681,
+   "lon": 36.61825,
+   "px": 1647.5,
+   "py": 678.5,
+   "score": 95.2,
+   "gazetteer": "prelestnoye",
+   "offsetKm": 0.0
+  },
+  {
+   "text": "Nizhnie Peny",
+   "lat": 51.0012,
+   "lon": 35.9552,
+   "px": 89.5,
+   "py": 787.0,
+   "score": 95.7,
+   "gazetteer": "nizhniyepeny",
+   "offsetKm": 4.1
+  },
+  {
+   "text": "Noven'koe",
+   "lat": 50.97611,
+   "lon": 36.14757,
+   "px": 435.0,
+   "py": 881.5,
+   "score": 94.1,
+   "gazetteer": "novenkoye",
+   "offsetKm": 0.0
+  },
+  {
+   "text": "Pravorot'",
+   "lat": 50.97923,
+   "lon": 36.73903,
+   "px": 1914.5,
+   "py": 872.0,
+   "score": 100.0,
+   "gazetteer": "pravorot",
+   "offsetKm": 1.2
+  },
+  {
+   "text": "Vyshnie Peny",
+   "lat": 50.95784,
+   "lon": 36.00677,
+   "px": 146.5,
+   "py": 948.5,
+   "score": 95.7,
+   "gazetteer": "vyshniyepeny",
+   "offsetKm": 2.03
+  },
+  {
+   "text": "Belenikhino",
+   "lat": 50.93865,
+   "lon": 36.62449,
+   "px": 1662.0,
+   "py": 1037.5,
+   "score": 100.0,
+   "gazetteer": "belenikhino",
+   "offsetKm": 1.02
+  },
+  {
+   "text": "Zhimolostnoe",
+   "lat": 50.94649,
+   "lon": 36.72445,
+   "px": 1962.0,
+   "py": 1062.0,
+   "score": 96.0,
+   "gazetteer": "zhimolostnoye",
+   "offsetKm": 2.91
+  },
+  {
+   "text": "Yablochki",
+   "lat": 50.92056,
+   "lon": 36.47278,
+   "px": 1264.5,
+   "py": 1086.5,
+   "score": 100.0,
+   "gazetteer": "yablochki",
+   "offsetKm": 0.67
+  },
+  {
+   "text": "Melovoe",
+   "lat": 50.91298,
+   "lon": 36.0666,
+   "px": 333.0,
+   "py": 1110.5,
+   "score": 93.3,
+   "gazetteer": "melovoye",
+   "offsetKm": 2.96
+  },
+  {
+   "text": "Ozerovsky",
+   "lat": 50.92657,
+   "lon": 36.57125,
+   "px": 1547.0,
+   "py": 1226.0,
+   "score": 94.7,
+   "gazetteer": "ozerovskiy",
+   "offsetKm": 5.94
+  },
+  {
+   "text": "Malo-Yablonovo",
+   "lat": 50.9245,
+   "lon": 36.7148,
+   "px": 1933.0,
+   "py": 1228.0,
+   "score": 100.0,
+   "gazetteer": "maloyablonovo",
+   "offsetKm": 5.84
+  },
+  {
+   "text": "Teterevino",
+   "lat": 50.87163,
+   "lon": 36.61652,
+   "px": 1605.5,
+   "py": 1355.0,
+   "score": 100.0,
+   "gazetteer": "teterevino",
+   "offsetKm": 4.23
+  },
+  {
+   "text": "Gostischevo",
+   "lat": 50.77431,
+   "lon": 36.65585,
+   "px": 1737.5,
+   "py": 1547.0,
+   "score": 95.7,
+   "gazetteer": "gostishchevo",
+   "offsetKm": 0.36
+  },
+  {
+   "text": "Sabynino",
+   "lat": 50.7637,
+   "lon": 36.73641,
+   "px": 1909.0,
+   "py": 1585.5,
+   "score": 100.0,
+   "gazetteer": "sabynino",
+   "offsetKm": 1.19
+  },
+  {
+   "text": "Dragunskoe",
+   "lat": 50.74416,
+   "lon": 36.29506,
+   "px": 858.0,
+   "py": 1694.0,
+   "score": 95.2,
+   "gazetteer": "dragunskoye",
+   "offsetKm": 1.69
+  },
+  {
+   "text": "Shopino",
+   "lat": 50.70927,
+   "lon": 36.59759,
+   "px": 1531.0,
+   "py": 1731.5,
+   "score": 100.0,
+   "gazetteer": "shopino",
+   "offsetKm": 2.23
+  },
+  {
+   "text": "Pushkarnoe",
+   "lat": 50.7138,
+   "lon": 36.2862,
+   "px": 871.5,
+   "py": 1804.5,
+   "score": 95.2,
+   "gazetteer": "pushkarnoye",
+   "offsetKm": 2.65
+  },
+  {
+   "text": "Tomarovka",
+   "lat": 50.68337,
+   "lon": 36.23443,
+   "px": 716.0,
+   "py": 1892.0,
+   "score": 100.0,
+   "gazetteer": "tomarovka",
+   "offsetKm": 1.88
+  },
+  {
+   "text": "Belomestnaya",
+   "lat": 50.67738,
+   "lon": 36.63623,
+   "px": 1584.5,
+   "py": 1905.0,
+   "score": 83.3,
+   "gazetteer": "belomestnoye",
+   "offsetKm": 3.1
+  },
+  {
+   "text": "BELGOROD",
+   "lat": 50.60343,
+   "lon": 36.58091,
+   "px": 1456.0,
+   "py": 1992.0,
+   "score": 100.0,
+   "gazetteer": "belgorod",
+   "offsetKm": 5.19
+  }
+ ],
+ "crosscheck": {
+  "worldSquareKm": [
+   59.4,
+   65.5
+  ],
+  "anchorsUsed": 30,
+  "aspectErrPct": 9.29,
+  "sizeErrPct": 9.41,
+  "squareErrPct": 9.29,
+  "sizeCheckOk": true,
+  "landFracMap": 0.9741,
+  "landFracDem": 1.0,
+  "landFracRatio": 1.027,
+  "textureSeaFrac": 0.0,
+  "textureLandIou": null,
+  "solvedBeforeVeto": true,
+  "confidenceBeforeVeto": "medium"
+ },
+ "confidence": "medium",
+ "note": "no DEM refinement; bbox from 30 label anchors, km-scale accuracy",
+ "demNcc": null
+}

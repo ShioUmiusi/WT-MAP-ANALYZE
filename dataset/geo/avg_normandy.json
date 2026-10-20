@@ -1,0 +1,138 @@
+{
+ "map": "avg_normandy",
+ "crs": "WGS84",
+ "bounds": {
+  "minLon": -90.394481,
+  "maxLon": -90.352513,
+  "minLat": 14.814303,
+  "maxLat": 14.855158
+ },
+ "corners": {
+  "nw": [
+   -90.394481,
+   14.855158
+  ],
+  "ne": [
+   -90.352513,
+   14.855158
+  ],
+  "sw": [
+   -90.394481,
+   14.814303
+  ],
+  "se": [
+   -90.352513,
+   14.814303
+  ]
+ },
+ "method": "ocr+gazetteer+dem-match",
+ "residualKm": 3.29,
+ "anchorResidualKm": 3.29,
+ "bboxUncertaintyKm": 2.0,
+ "anchors": [
+  {
+   "text": "Courseulles-sur-Mer",
+   "lat": 49.33027,
+   "lon": -0.45612,
+   "px": 1775.0,
+   "py": 833.0,
+   "score": 100.0,
+   "gazetteer": "courseullessurmer",
+   "offsetKm": 4.28
+  },
+  {
+   "text": "Arromanches-les-Bains",
+   "lat": 49.33823,
+   "lon": -0.62479,
+   "px": 1559.5,
+   "py": 889.5,
+   "score": 100.0,
+   "gazetteer": "arromancheslesbains",
+   "offsetKm": 0.0
+  },
+  {
+   "text": "Port-on-Bessin",
+   "lat": 49.34635,
+   "lon": -0.75589,
+   "px": 1362.5,
+   "py": 921.0,
+   "score": 91.7,
+   "gazetteer": "portenbessin",
+   "offsetKm": 2.35
+  },
+  {
+   "text": "BAYEUX",
+   "lat": 49.27732,
+   "lon": -0.7039,
+   "px": 1482.5,
+   "py": 1103.5,
+   "score": 100.0,
+   "gazetteer": "bayeux",
+   "offsetKm": 3.84
+  },
+  {
+   "text": "CARENTAN",
+   "lat": 49.30312,
+   "lon": -1.24806,
+   "px": 327.0,
+   "py": 1344.0,
+   "score": 100.0,
+   "gazetteer": "carentan",
+   "offsetKm": 5.54
+  },
+  {
+   "text": "Periers",
+   "lat": 49.18667,
+   "lon": -1.40762,
+   "px": 106.0,
+   "py": 1777.0,
+   "score": 100.0,
+   "gazetteer": "periers",
+   "offsetKm": 0.0
+  }
+ ],
+ "crosscheck": {
+  "nccPeak": 0.7029,
+  "coarseNcc": 0.7717,
+  "worldUnitM": 1.1026,
+  "worldSquareKm": [
+   4.5,
+   4.5
+  ],
+  "labelResidKm": [
+   0.0,
+   0.0,
+   2.3,
+   3.8,
+   4.3,
+   5.5
+  ],
+  "anchorsUsed": 6,
+  "textureExtentKm": [
+   79.0,
+   34.5
+  ],
+  "textureVsWorldScale": 17.499,
+  "textureCenterOffsetKm": 10354.42,
+  "bboxUncertaintyKm": 2.0,
+  "sizeErrPct": 10.26,
+  "squareErrPct": 0.0,
+  "sizeCheckOk": false,
+  "landFracMap": 0.9374,
+  "landFracDem": 1.0,
+  "landFracRatio": 1.067,
+  "textureSeaFrac": 0.0,
+  "textureLandIou": null,
+  "solvedBeforeVeto": true,
+  "confidenceBeforeVeto": "low"
+ },
+ "confidence": "low",
+ "note": "label hypothesis label:chanan; fitted world unit = 1.103 real m; 22/26 labels resolved",
+ "textureBounds": {
+  "minLon": -1.452102,
+  "maxLon": -0.363067,
+  "minLat": 49.159237,
+  "maxLat": 49.471552
+ },
+ "demNcc": 0.7029
+}

@@ -1,0 +1,688 @@
+{
+ "map": "britain",
+ "crs": "WGS84",
+ "bounds": {
+  "minLon": 0.52393,
+  "maxLon": 1.458622,
+  "minLat": 50.837894,
+  "maxLat": 51.428563
+ },
+ "corners": {
+  "nw": [
+   0.52393,
+   51.428563
+  ],
+  "ne": [
+   1.458622,
+   51.428563
+  ],
+  "sw": [
+   0.52393,
+   50.837894
+  ],
+  "se": [
+   1.458622,
+   50.837894
+  ]
+ },
+ "method": "ocr+gazetteer+dem-match",
+ "residualKm": 1.58,
+ "anchorResidualKm": 1.58,
+ "bboxUncertaintyKm": 1.5,
+ "anchors": [
+  {
+   "text": "Queenborough",
+   "lat": 51.4176,
+   "lon": 0.74441,
+   "px": 113.5,
+   "py": 28.5,
+   "score": 100.0,
+   "gazetteer": "queenborough",
+   "offsetKm": 3.72
+  },
+  {
+   "text": "Leysdown-on-sea",
+   "lat": 51.3973,
+   "lon": 0.92156,
+   "px": 502.0,
+   "py": 95.0,
+   "score": 100.0,
+   "gazetteer": "leysdownonsea",
+   "offsetKm": 3.09
+  },
+  {
+   "text": "Elmley",
+   "lat": 51.36667,
+   "lon": 0.76667,
+   "px": 132.5,
+   "py": 120.0,
+   "score": 100.0,
+   "gazetteer": "elmley",
+   "offsetKm": 4.14
+  },
+  {
+   "text": "Margate",
+   "lat": 51.38132,
+   "lon": 1.38617,
+   "px": 1400.0,
+   "py": 113.5,
+   "score": 100.0,
+   "gazetteer": "margate",
+   "offsetKm": 2.87
+  },
+  {
+   "text": "Herne Bay",
+   "lat": 51.373,
+   "lon": 1.12857,
+   "px": 920.5,
+   "py": 185.5,
+   "score": 100.0,
+   "gazetteer": "hernebay",
+   "offsetKm": 1.25
+  },
+  {
+   "text": "Broadstairs",
+   "lat": 51.35845,
+   "lon": 1.44185,
+   "px": 1510.0,
+   "py": 200.0,
+   "score": 100.0,
+   "gazetteer": "broadstairs",
+   "offsetKm": 3.2
+  },
+  {
+   "text": "Whitstable",
+   "lat": 51.3607,
+   "lon": 1.0257,
+   "px": 698.5,
+   "py": 235.5,
+   "score": 100.0,
+   "gazetteer": "whitstable",
+   "offsetKm": 1.7
+  },
+  {
+   "text": "Uplees",
+   "lat": 51.34334,
+   "lon": 0.86937,
+   "px": 337.5,
+   "py": 281.5,
+   "score": 100.0,
+   "gazetteer": "uplees",
+   "offsetKm": 1.79
+  },
+  {
+   "text": "Ramsgate",
+   "lat": 51.33568,
+   "lon": 1.41797,
+   "px": 1466.0,
+   "py": 288.5,
+   "score": 100.0,
+   "gazetteer": "ramsgate",
+   "offsetKm": 2.74
+  },
+  {
+   "text": "Teynham",
+   "lat": 51.33045,
+   "lon": 0.80526,
+   "px": 207.0,
+   "py": 311.0,
+   "score": 100.0,
+   "gazetteer": "teynham",
+   "offsetKm": 2.45
+  },
+  {
+   "text": "Faversham",
+   "lat": 51.3148,
+   "lon": 0.88856,
+   "px": 411.0,
+   "py": 353.0,
+   "score": 100.0,
+   "gazetteer": "faversham",
+   "offsetKm": 2.9
+  },
+  {
+   "text": "Stourmouth",
+   "lat": 51.32022,
+   "lon": 1.23818,
+   "px": 1162.5,
+   "py": 358.0,
+   "score": 100.0,
+   "gazetteer": "stourmouth",
+   "offsetKm": 1.0
+  },
+  {
+   "text": "Sturry",
+   "lat": 51.30132,
+   "lon": 1.12155,
+   "px": 896.0,
+   "py": 400.0,
+   "score": 100.0,
+   "gazetteer": "sturry",
+   "offsetKm": 1.57
+  },
+  {
+   "text": "Blean",
+   "lat": 51.30679,
+   "lon": 1.04301,
+   "px": 722.5,
+   "py": 412.5,
+   "score": 100.0,
+   "gazetteer": "blean",
+   "offsetKm": 1.24
+  },
+  {
+   "text": "Dunkirk",
+   "lat": 51.29169,
+   "lon": 0.97929,
+   "px": 517.5,
+   "py": 434.0,
+   "score": 100.0,
+   "gazetteer": "dunkirk",
+   "offsetKm": 1.29
+  },
+  {
+   "text": "Fordwich",
+   "lat": 51.29526,
+   "lon": 1.1261,
+   "px": 908.0,
+   "py": 456.5,
+   "score": 100.0,
+   "gazetteer": "fordwich",
+   "offsetKm": 1.02
+  },
+  {
+   "text": "Sandwich",
+   "lat": 51.27223,
+   "lon": 1.33776,
+   "px": 1381.5,
+   "py": 491.5,
+   "score": 100.0,
+   "gazetteer": "sandwich",
+   "offsetKm": 1.55
+  },
+  {
+   "text": "Wingham",
+   "lat": 51.27168,
+   "lon": 1.21463,
+   "px": 1108.0,
+   "py": 527.5,
+   "score": 100.0,
+   "gazetteer": "wingham",
+   "offsetKm": 0.93
+  },
+  {
+   "text": "Staple",
+   "lat": 51.26299,
+   "lon": 1.25476,
+   "px": 1181.5,
+   "py": 540.0,
+   "score": 100.0,
+   "gazetteer": "staple",
+   "offsetKm": 0.95
+  },
+  {
+   "text": "Woodnesborough",
+   "lat": 51.26525,
+   "lon": 1.29295,
+   "px": 1337.5,
+   "py": 551.5,
+   "score": 100.0,
+   "gazetteer": "woodnesborough",
+   "offsetKm": 2.33
+  },
+  {
+   "text": "Chartham",
+   "lat": 51.2562,
+   "lon": 1.01836,
+   "px": 689.0,
+   "py": 596.5,
+   "score": 100.0,
+   "gazetteer": "chartham",
+   "offsetKm": 1.94
+  },
+  {
+   "text": "Leaveland",
+   "lat": 51.24951,
+   "lon": 0.87659,
+   "px": 364.5,
+   "py": 609.5,
+   "score": 100.0,
+   "gazetteer": "leaveland",
+   "offsetKm": 2.05
+  },
+  {
+   "text": "Eastry",
+   "lat": 51.24639,
+   "lon": 1.30776,
+   "px": 1301.0,
+   "py": 621.5,
+   "score": 100.0,
+   "gazetteer": "eastry",
+   "offsetKm": 0.2
+  },
+  {
+   "text": "Otterden",
+   "lat": 51.24241,
+   "lon": 0.78861,
+   "px": 170.0,
+   "py": 632.5,
+   "score": 100.0,
+   "gazetteer": "otterden",
+   "offsetKm": 2.33
+  },
+  {
+   "text": "Hacklinge",
+   "lat": 51.24198,
+   "lon": 1.35417,
+   "px": 1410.0,
+   "py": 655.5,
+   "score": 100.0,
+   "gazetteer": "hacklinge",
+   "offsetKm": 0.58
+  },
+  {
+   "text": "Deal",
+   "lat": 51.22316,
+   "lon": 1.4028,
+   "px": 1502.5,
+   "py": 707.5,
+   "score": 92.0,
+   "gazetteer": "deal",
+   "offsetKm": 0.4
+  },
+  {
+   "text": "Barham",
+   "lat": 51.2057,
+   "lon": 1.15734,
+   "px": 974.0,
+   "py": 730.0,
+   "score": 100.0,
+   "gazetteer": "barham",
+   "offsetKm": 1.33
+  },
+  {
+   "text": "Charing",
+   "lat": 51.21073,
+   "lon": 0.79466,
+   "px": 186.5,
+   "py": 747.0,
+   "score": 100.0,
+   "gazetteer": "charing",
+   "offsetKm": 2.4
+  },
+  {
+   "text": "AnvifGteen",
+   "lat": 51.20671,
+   "lon": 1.01507,
+   "px": 674.0,
+   "py": 757.0,
+   "score": 80.0,
+   "gazetteer": "anvilgreen",
+   "offsetKm": 1.71
+  },
+  {
+   "text": "Eythorne",
+   "lat": 51.1971,
+   "lon": 1.2662,
+   "px": 1222.5,
+   "py": 773.5,
+   "score": 100.0,
+   "gazetteer": "eythorne",
+   "offsetKm": 0.92
+  },
+  {
+   "text": "Wingmore",
+   "lat": 51.17634,
+   "lon": 1.12846,
+   "px": 917.0,
+   "py": 864.5,
+   "score": 100.0,
+   "gazetteer": "wingmore",
+   "offsetKm": 1.13
+  },
+  {
+   "text": "Kennington",
+   "lat": 51.1674,
+   "lon": 0.88491,
+   "px": 411.0,
+   "py": 891.5,
+   "score": 100.0,
+   "gazetteer": "kennington",
+   "offsetKm": 2.87
+  },
+  {
+   "text": "Elham",
+   "lat": 51.15197,
+   "lon": 1.1105,
+   "px": 866.5,
+   "py": 950.0,
+   "score": 100.0,
+   "gazetteer": "elham",
+   "offsetKm": 0.88
+  },
+  {
+   "text": "Lyminge",
+   "lat": 51.12951,
+   "lon": 1.08896,
+   "px": 752.0,
+   "py": 1010.5,
+   "score": 100.0,
+   "gazetteer": "lyminge",
+   "offsetKm": 1.14
+  },
+  {
+   "text": "Bethersden",
+   "lat": 51.12869,
+   "lon": 0.75276,
+   "px": 104.0,
+   "py": 1031.0,
+   "score": 100.0,
+   "gazetteer": "bethersden",
+   "offsetKm": 2.85
+  },
+  {
+   "text": "Hawkinge",
+   "lat": 51.11276,
+   "lon": 1.16176,
+   "px": 998.0,
+   "py": 1043.0,
+   "score": 100.0,
+   "gazetteer": "hawkinge",
+   "offsetKm": 1.67
+  },
+  {
+   "text": "Newbarn",
+   "lat": 51.11746,
+   "lon": 1.08254,
+   "px": 747.5,
+   "py": 1045.5,
+   "score": 100.0,
+   "gazetteer": "newbarn",
+   "offsetKm": 0.94
+  },
+  {
+   "text": "Kingsnorth",
+   "lat": 51.11861,
+   "lon": 0.85848,
+   "px": 336.0,
+   "py": 1067.5,
+   "score": 100.0,
+   "gazetteer": "kingsnorth",
+   "offsetKm": 2.48
+  },
+  {
+   "text": "Smeeth",
+   "lat": 51.11861,
+   "lon": 0.95933,
+   "px": 543.0,
+   "py": 1065.5,
+   "score": 100.0,
+   "gazetteer": "smeeth",
+   "offsetKm": 1.68
+  },
+  {
+   "text": "Sellindge",
+   "lat": 51.10297,
+   "lon": 1.00546,
+   "px": 646.0,
+   "py": 1093.5,
+   "score": 100.0,
+   "gazetteer": "sellindge",
+   "offsetKm": 1.64
+  },
+  {
+   "text": "Frogholt",
+   "lat": 51.09568,
+   "lon": 1.10722,
+   "px": 865.5,
+   "py": 1122.5,
+   "score": 100.0,
+   "gazetteer": "frogholt",
+   "offsetKm": 1.14
+  },
+  {
+   "text": "Capel-le-ferne",
+   "lat": 51.11156,
+   "lon": 1.21833,
+   "px": 1119.0,
+   "py": 1127.5,
+   "score": 100.0,
+   "gazetteer": "capelleferne",
+   "offsetKm": 1.77
+  },
+  {
+   "text": "Aldington",
+   "lat": 51.09164,
+   "lon": 0.94461,
+   "px": 454.0,
+   "py": 1149.0,
+   "score": 100.0,
+   "gazetteer": "aldington",
+   "offsetKm": 0.0
+  },
+  {
+   "text": "Shirkoak",
+   "lat": 51.09027,
+   "lon": 0.77378,
+   "px": 137.0,
+   "py": 1163.5,
+   "score": 100.0,
+   "gazetteer": "shirkoak",
+   "offsetKm": 2.39
+  },
+  {
+   "text": "Bonniogton",
+   "lat": 51.07163,
+   "lon": 0.93718,
+   "px": 492.0,
+   "py": 1190.5,
+   "score": 90.0,
+   "gazetteer": "bonnington",
+   "offsetKm": 1.88
+  },
+  {
+   "text": "Lympne",
+   "lat": 51.07773,
+   "lon": 1.02808,
+   "px": 690.5,
+   "py": 1210.0,
+   "score": 100.0,
+   "gazetteer": "lympne",
+   "offsetKm": 1.38
+  },
+  {
+   "text": "Folkestone",
+   "lat": 51.08169,
+   "lon": 1.16734,
+   "px": 1027.5,
+   "py": 1206.5,
+   "score": 100.0,
+   "gazetteer": "folkestone",
+   "offsetKm": 1.91
+  },
+  {
+   "text": "Hamstreet",
+   "lat": 51.06535,
+   "lon": 0.85462,
+   "px": 327.0,
+   "py": 1250.0,
+   "score": 100.0,
+   "gazetteer": "hamstreet",
+   "offsetKm": 2.49
+  },
+  {
+   "text": "West Hythe",
+   "lat": 51.0715,
+   "lon": 1.08421,
+   "px": 693.5,
+   "py": 1252.5,
+   "score": 100.0,
+   "gazetteer": "hythe",
+   "offsetKm": 2.78
+  },
+  {
+   "text": "Dymchurch",
+   "lat": 51.02544,
+   "lon": 0.99392,
+   "px": 643.0,
+   "py": 1392.5,
+   "score": 100.0,
+   "gazetteer": "dymchurch",
+   "offsetKm": 2.35
+  },
+  {
+   "text": "Dymchurch",
+   "lat": 51.02544,
+   "lon": 0.99392,
+   "px": 418.5,
+   "py": 1466.5,
+   "score": 100.0,
+   "gazetteer": "dymchurch",
+   "offsetKm": 5.45
+  },
+  {
+   "text": "Romney",
+   "lat": 50.99277,
+   "lon": 0.89665,
+   "px": 429.5,
+   "py": 1512.0,
+   "score": 100.0,
+   "gazetteer": "romney",
+   "offsetKm": 2.77
+  },
+  {
+   "text": "Romney",
+   "lat": 50.99277,
+   "lon": 0.89665,
+   "px": 488.5,
+   "py": 1549.5,
+   "score": 100.0,
+   "gazetteer": "romney",
+   "offsetKm": 4.89
+  },
+  {
+   "text": "Lydd",
+   "lat": 50.95132,
+   "lon": 0.90654,
+   "px": 419.5,
+   "py": 1646.0,
+   "score": 92.0,
+   "gazetteer": "lydd",
+   "offsetKm": 1.76
+  },
+  {
+   "text": "Lydd-on-Sea",
+   "lat": 50.94396,
+   "lon": 0.96551,
+   "px": 570.0,
+   "py": 1655.0,
+   "score": 100.0,
+   "gazetteer": "lyddonsea",
+   "offsetKm": 2.05
+  },
+  {
+   "text": "Tardinghen",
+   "lat": 50.86651,
+   "lon": 1.63139,
+   "px": 2017.0,
+   "py": 1953.0,
+   "score": 100.0,
+   "gazetteer": "tardinghen",
+   "offsetKm": 1.55
+  }
+ ],
+ "crosscheck": {
+  "nccPeak": 0.9653,
+  "coarseNcc": 0.9641,
+  "worldUnitM": 0.9958,
+  "worldSquareKm": [
+   65.3,
+   65.3
+  ],
+  "labelResidKm": [
+   0.0,
+   0.2,
+   0.4,
+   0.6,
+   0.9,
+   0.9,
+   0.9,
+   0.9,
+   0.9,
+   1.0,
+   1.0,
+   1.1,
+   1.1,
+   1.1,
+   1.2,
+   1.3,
+   1.3,
+   1.3,
+   1.4,
+   1.6,
+   1.6,
+   1.6,
+   1.6,
+   1.7,
+   1.7,
+   1.7,
+   1.7,
+   1.8,
+   1.8,
+   1.8,
+   1.9,
+   1.9,
+   1.9,
+   2.1,
+   2.1,
+   2.3,
+   2.3,
+   2.3,
+   2.4,
+   2.4,
+   2.4,
+   2.5,
+   2.5,
+   2.7,
+   2.8,
+   2.8,
+   2.9,
+   2.9,
+   2.9,
+   2.9,
+   3.1,
+   3.2,
+   3.7,
+   4.1,
+   4.9,
+   5.4
+  ],
+  "anchorsUsed": 56,
+  "textureExtentKm": [
+   66.1,
+   63.8
+  ],
+  "textureVsWorldScale": 1.013,
+  "textureCenterOffsetKm": 13.42,
+  "bboxUncertaintyKm": 1.5,
+  "sizeErrPct": 0.42,
+  "squareErrPct": 0.0,
+  "sizeCheckOk": true,
+  "landFracMap": 0.635,
+  "landFracDem": 0.6558,
+  "landFracRatio": 1.033,
+  "textureSeaFrac": 0.546,
+  "textureWaterIou": 0.556,
+  "solvedBeforeVeto": true,
+  "confidenceBeforeVeto": "medium"
+ },
+ "confidence": "medium",
+ "note": "label hypothesis affine; fitted world unit = 0.996 real m; 103/112 labels resolved [low texture water IoU 0.56]",
+ "textureBounds": {
+  "minLon": 0.71013,
+  "maxLon": 1.656654,
+  "minLat": 50.841474,
+  "maxLat": 51.418608
+ },
+ "demNcc": 0.9653
+}

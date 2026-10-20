@@ -1,0 +1,101 @@
+{
+ "map": "arcade_rice_terraces",
+ "crs": "WGS84",
+ "bounds": {
+  "minLon": 67.673298,
+  "maxLon": 68.029827,
+  "minLat": 34.158854,
+  "maxLat": 34.455434
+ },
+ "corners": {
+  "nw": [
+   67.673298,
+   34.455434
+  ],
+  "ne": [
+   68.029827,
+   34.455434
+  ],
+  "sw": [
+   67.673298,
+   34.158854
+  ],
+  "se": [
+   68.029827,
+   34.158854
+  ]
+ },
+ "method": "dem-coarse-only",
+ "residualKm": null,
+ "anchorResidualKm": null,
+ "bboxUncertaintyKm": 8.0,
+ "anchors": [],
+ "crosscheck": {
+  "demNcc": 0.9014,
+  "bboxUncertaintyKm": 8.0,
+  "heightStdM": 549.4,
+  "prescreenMargin": 0.0006,
+  "refineAttempts": [
+   {
+    "seedNcc": 0.901,
+    "refinedNcc": 0.669,
+    "lon": 67.867,
+    "lat": 34.317,
+    "driftDeg": 0.016
+   },
+   {
+    "seedNcc": 0.901,
+    "refinedNcc": 0.768,
+    "lon": 55.26,
+    "lat": 39.483,
+    "driftDeg": 0.021
+   }
+  ],
+  "refine": "failed (weak correlation)",
+  "prescreenCandidates": [
+   {
+    "ncc": 0.901,
+    "lon": 67.852,
+    "lat": 34.307
+   },
+   {
+    "ncc": 0.901,
+    "lon": 55.239,
+    "lat": 39.47
+   },
+   {
+    "ncc": 0.882,
+    "lon": 149.194,
+    "lat": -31.203
+   },
+   {
+    "ncc": 0.882,
+    "lon": -61.04,
+    "lat": -37.614
+   },
+   {
+    "ncc": 0.881,
+    "lon": 81.738,
+    "lat": 35.532
+   }
+  ],
+  "sizeErrPct": 0.0,
+  "squareErrPct": 0.0,
+  "sizeCheckOk": true,
+  "worldSquareKm": [
+   32.8,
+   32.8
+  ],
+  "nccPeak": 0.9014,
+  "landFracMap": 0.8506,
+  "landFracDem": 1.0,
+  "landFracRatio": 1.176,
+  "textureSeaFrac": 0.0,
+  "textureLandIou": null,
+  "solvedBeforeVeto": true,
+  "confidenceBeforeVeto": "low"
+ },
+ "confidence": "low",
+ "note": "coarse-only: z5 global prescreen peak 0.90 at 67.85,34.31; z10 refine failed (weak correlation); position good to ~5-10 km; terrain only, no OCR labels used",
+ "demNcc": 0.9014
+}

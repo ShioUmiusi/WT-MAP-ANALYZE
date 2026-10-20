@@ -1,0 +1,99 @@
+{
+ "map": "sector_montmedy",
+ "crs": "WGS84",
+ "bounds": {
+  "minLon": 143.426391,
+  "maxLon": 144.019898,
+  "minLat": -7.244892,
+  "maxLat": -6.651586
+ },
+ "corners": {
+  "nw": [
+   143.426391,
+   -6.651586
+  ],
+  "ne": [
+   144.019898,
+   -6.651586
+  ],
+  "sw": [
+   143.426391,
+   -7.244892
+  ],
+  "se": [
+   144.019898,
+   -7.244892
+  ]
+ },
+ "method": "dem-coarse-only",
+ "residualKm": null,
+ "anchorResidualKm": null,
+ "bboxUncertaintyKm": 8.0,
+ "anchors": [],
+ "crosscheck": {
+  "demNcc": 0.7106,
+  "bboxUncertaintyKm": 8.0,
+  "heightStdM": 64.6,
+  "prescreenMargin": 0.0182,
+  "refineAttempts": [
+   {
+    "seedNcc": 0.711,
+    "refinedNcc": 0.516,
+    "lon": 143.774,
+    "lat": -7.001,
+    "driftDeg": 0.073
+   },
+   {
+    "seedNcc": 0.692,
+    "refinedNcc": 0.704,
+    "lon": 4.997,
+    "lat": 49.679,
+    "driftDeg": 0.023
+   }
+  ],
+  "refine": "failed (weak correlation)",
+  "prescreenCandidates": [
+   {
+    "ncc": 0.711,
+    "lon": 143.723,
+    "lat": -6.948
+   },
+   {
+    "ncc": 0.692,
+    "lon": 4.966,
+    "lat": 49.668
+   },
+   {
+    "ncc": 0.672,
+    "lon": -82.947,
+    "lat": 8.472
+   },
+   {
+    "ncc": 0.671,
+    "lon": 98.679,
+    "lat": 6.992
+   },
+   {
+    "ncc": 0.669,
+    "lon": 146.953,
+    "lat": -9.059
+   }
+  ],
+  "sizeErrPct": 0.0,
+  "squareErrPct": 0.0,
+  "sizeCheckOk": true,
+  "worldSquareKm": [
+   65.6,
+   65.6
+  ],
+  "nccPeak": 0.7106,
+  "landFracMap": 0.9655,
+  "landFracDem": 1.0,
+  "landFracRatio": 1.036,
+  "solvedBeforeVeto": true,
+  "confidenceBeforeVeto": "low"
+ },
+ "confidence": "low",
+ "note": "coarse-only: z5 global prescreen peak 0.71 at 143.72,-6.95; z10 refine failed (weak correlation); position good to ~5-10 km; terrain only, no OCR labels used",
+ "demNcc": 0.7106
+}

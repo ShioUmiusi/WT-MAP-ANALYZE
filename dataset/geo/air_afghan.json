@@ -1,0 +1,138 @@
+{
+ "map": "air_afghan",
+ "crs": "WGS84",
+ "bounds": {
+  "minLon": 68.545161,
+  "maxLon": 70.088667,
+  "minLat": 34.208128,
+  "maxLat": 35.483808
+ },
+ "corners": {
+  "nw": [
+   68.545161,
+   35.483808
+  ],
+  "ne": [
+   70.088667,
+   35.483808
+  ],
+  "sw": [
+   68.545161,
+   34.208128
+  ],
+  "se": [
+   70.088667,
+   34.208128
+  ]
+ },
+ "method": "ocr+gazetteer+dem-match",
+ "residualKm": 2.51,
+ "anchorResidualKm": 2.51,
+ "bboxUncertaintyKm": 1.0,
+ "anchors": [
+  {
+   "text": "Golbahal",
+   "lat": 35.1336,
+   "lon": 69.3015,
+   "px": 1083.0,
+   "py": 539.5,
+   "score": 87.5,
+   "gazetteer": "golbahar",
+   "offsetKm": 3.16
+  },
+  {
+   "text": "Charikar",
+   "lat": 35.01361,
+   "lon": 69.17139,
+   "px": 884.5,
+   "py": 736.5,
+   "score": 100.0,
+   "gazetteer": "charikar",
+   "offsetKm": 1.71
+  },
+  {
+   "text": "Bagram",
+   "lat": 34.92395,
+   "lon": 69.33069,
+   "px": 1088.5,
+   "py": 895.5,
+   "score": 100.0,
+   "gazetteer": "bagram",
+   "offsetKm": 0.0
+  },
+  {
+   "text": "Tagab",
+   "lat": 34.85501,
+   "lon": 69.64917,
+   "px": 1539.5,
+   "py": 1036.0,
+   "score": 100.0,
+   "gazetteer": "tagab",
+   "offsetKm": 2.56
+  },
+  {
+   "text": "Kalakan",
+   "lat": 34.78371,
+   "lon": 69.15001,
+   "px": 758.0,
+   "py": 1131.0,
+   "score": 100.0,
+   "gazetteer": "kalakan",
+   "offsetKm": 5.64
+  },
+  {
+   "text": "Surobi",
+   "lat": 34.60542,
+   "lon": 69.72777,
+   "px": 1633.5,
+   "py": 1390.0,
+   "score": 100.0,
+   "gazetteer": "surobi",
+   "offsetKm": 0.0
+  }
+ ],
+ "crosscheck": {
+  "nccPeak": 0.9642,
+  "coarseNcc": 0.8682,
+  "worldUnitM": 1.0758,
+  "worldSquareKm": [
+   141.0,
+   141.0
+  ],
+  "labelResidKm": [
+   0.0,
+   0.0,
+   1.7,
+   2.6,
+   3.2,
+   5.6
+  ],
+  "anchorsUsed": 6,
+  "textureExtentKm": [
+   129.3,
+   138.4
+  ],
+  "textureVsWorldScale": 0.982,
+  "textureCenterOffsetKm": 2.35,
+  "bboxUncertaintyKm": 1.0,
+  "sizeErrPct": 7.58,
+  "squareErrPct": 0.0,
+  "sizeCheckOk": true,
+  "landFracMap": 1.0,
+  "landFracDem": 1.0,
+  "landFracRatio": 1.0,
+  "textureSeaFrac": 0.0,
+  "textureLandIou": null,
+  "solvedBeforeVeto": true,
+  "confidenceBeforeVeto": "high"
+ },
+ "confidence": "high",
+ "note": "label hypothesis affine; fitted world unit = 1.076 real m; 9/10 labels resolved",
+ "textureBounds": {
+  "minLon": 68.583774,
+  "maxLon": 69.998901,
+  "minLat": 34.217384,
+  "maxLat": 35.469693
+ },
+ "demNcc": 0.9642
+}

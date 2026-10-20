@@ -1,0 +1,48 @@
+{
+ "map": "wake_island",
+ "crs": "WGS84",
+ "bounds": null,
+ "corners": null,
+ "method": "ocr+gazetteer+dem-match",
+ "residualKm": 0.0,
+ "anchorResidualKm": 0.0,
+ "bboxUncertaintyKm": 1.5,
+ "anchors": [],
+ "crosscheck": {
+  "nccPeak": 0.6097,
+  "coarseNcc": 0.5977,
+  "worldUnitM": 0.9391,
+  "worldSquareKm": [
+   7.7,
+   7.7
+  ],
+  "labelResidKm": [],
+  "anchorsUsed": 0,
+  "textureExtentKm": [
+   355.8,
+   332.2
+  ],
+  "textureVsWorldScale": 46.228,
+  "textureCenterOffsetKm": 7048.06,
+  "bboxUncertaintyKm": 1.5,
+  "sizeErrPct": 6.09,
+  "squareErrPct": 0.0,
+  "sizeCheckOk": true,
+  "landFracMap": 0.114,
+  "landFracDem": 1.0,
+  "landFracRatio": 8.77,
+  "textureSeaFrac": 0.987,
+  "textureLandIou": null,
+  "solvedBeforeVeto": true,
+  "confidenceBeforeVeto": "low"
+ },
+ "confidence": "unresolved",
+ "note": "label hypothesis label:pealake; fitted world unit = 0.939 real m; 8/8 labels resolved REJECTED: land/sea mismatch (map 0.11 vs dem 1.00, ratio 8.8x); texture shows water (99%) but the DEM window is dry land",
+ "textureBounds": {
+  "minLon": 1.757789,
+  "maxLon": 6.477426,
+  "minLat": 45.869702,
+  "maxLat": 48.875079
+ },
+ "rejected": "land/sea mismatch (map 0.11 vs dem 1.00, ratio 8.8x); texture shows water (99%) but the DEM window is dry land"
+}

@@ -1,0 +1,102 @@
+{
+ "map": "avn_san_francisco",
+ "crs": "WGS84",
+ "bounds": {
+  "minLon": -122.892361,
+  "maxLon": -122.146701,
+  "minLat": 37.526222,
+  "maxLat": 38.119383
+ },
+ "corners": {
+  "nw": [
+   -122.892361,
+   38.119383
+  ],
+  "ne": [
+   -122.146701,
+   38.119383
+  ],
+  "sw": [
+   -122.892361,
+   37.526222
+  ],
+  "se": [
+   -122.146701,
+   37.526222
+  ]
+ },
+ "method": "dem-coarse-only",
+ "residualKm": null,
+ "anchorResidualKm": null,
+ "bboxUncertaintyKm": 8.0,
+ "anchors": [],
+ "crosscheck": {
+  "demNcc": 0.8763,
+  "bboxUncertaintyKm": 8.0,
+  "heightStdM": 215.4,
+  "prescreenMargin": 0.0807,
+  "refineAttempts": [
+   {
+    "seedNcc": 0.876,
+    "refinedNcc": 0.769,
+    "lon": -122.519,
+    "lat": 37.814,
+    "driftDeg": 0.009
+   },
+   {
+    "seedNcc": 0.796,
+    "refinedNcc": 0.725,
+    "lon": 121.697,
+    "lat": -4.038,
+    "driftDeg": 0.04
+   }
+  ],
+  "refine": "failed (weak correlation)",
+  "prescreenCandidates": [
+   {
+    "ncc": 0.876,
+    "lon": -122.52,
+    "lat": 37.823
+   },
+   {
+    "ncc": 0.796,
+    "lon": 121.663,
+    "lat": -4.018
+   },
+   {
+    "ncc": 0.784,
+    "lon": 45.923,
+    "lat": -19.353
+   },
+   {
+    "ncc": 0.769,
+    "lon": 121.179,
+    "lat": -2.482
+   },
+   {
+    "ncc": 0.76,
+    "lon": -52.207,
+    "lat": -17.56
+   }
+  ],
+  "sizeErrPct": 0.0,
+  "squareErrPct": 0.0,
+  "sizeCheckOk": true,
+  "worldSquareKm": [
+   65.6,
+   65.6
+  ],
+  "nccPeak": 0.8763,
+  "landFracMap": 0.4201,
+  "landFracDem": 0.4583,
+  "landFracRatio": 1.091,
+  "textureSeaFrac": 0.543,
+  "textureLandIou": 0.73,
+  "textureWaterIou": 0.73,
+  "solvedBeforeVeto": true,
+  "confidenceBeforeVeto": "low"
+ },
+ "confidence": "low",
+ "note": "coarse-only: z5 global prescreen peak 0.88 at -122.52,37.82; z10 refine failed (weak correlation); position good to ~5-10 km; terrain only, no OCR labels used",
+ "demNcc": 0.8763
+}

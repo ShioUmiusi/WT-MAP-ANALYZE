@@ -1,0 +1,85 @@
+{
+ "map": "avn_new_zeland_cape",
+ "crs": "WGS84",
+ "bounds": {
+  "minLon": 101.575566,
+  "maxLon": 102.160175,
+  "minLat": 13.778761,
+  "maxLat": 14.349847
+ },
+ "corners": {
+  "nw": [
+   101.575566,
+   14.349847
+  ],
+  "ne": [
+   102.160175,
+   14.349847
+  ],
+  "sw": [
+   101.575566,
+   13.778761
+  ],
+  "se": [
+   102.160175,
+   13.778761
+  ]
+ },
+ "method": "dem-only",
+ "residualKm": null,
+ "anchorResidualKm": null,
+ "bboxUncertaintyKm": 1.5,
+ "anchors": [],
+ "crosscheck": {
+  "demNcc": 0.8379,
+  "prescreenTopNcc": 0.9226,
+  "prescreenMargin": 0.0107,
+  "worldUnitM": 0.9628,
+  "heightStdM": 522.1,
+  "bboxUncertaintyKm": 1.5,
+  "demSource": "terrarium z10",
+  "prescreenCandidates": [
+   {
+    "ncc": 0.923,
+    "lon": 101.865,
+    "lat": 14.051
+   },
+   {
+    "ncc": 0.912,
+    "lon": -81.606,
+    "lat": 22.675
+   },
+   {
+    "ncc": 0.908,
+    "lon": -55.481,
+    "lat": -1.955
+   },
+   {
+    "ncc": 0.905,
+    "lon": 137.329,
+    "lat": -18.813
+   },
+   {
+    "ncc": 0.899,
+    "lon": -68.401,
+    "lat": -3.009
+   }
+  ],
+  "sizeErrPct": 3.72,
+  "squareErrPct": 0.0,
+  "sizeCheckOk": true,
+  "worldSquareKm": [
+   63.1,
+   63.1
+  ],
+  "landFracMap": 0.3541,
+  "landFracDem": 1.0,
+  "landFracRatio": 2.824,
+  "solvedBeforeVeto": true,
+  "confidenceBeforeVeto": "low",
+  "nccPeak": 0.8379
+ },
+ "confidence": "low",
+ "note": "terrain-only match (no OCR labels); z5 prescreen peak 0.92 at 101.87,14.05, z10 refined NCC 0.838, margin 0.011",
+ "demNcc": 0.8379
+}

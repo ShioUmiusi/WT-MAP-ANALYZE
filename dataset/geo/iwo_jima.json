@@ -1,0 +1,105 @@
+{
+ "map": "iwo_jima",
+ "crs": "WGS84",
+ "bounds": null,
+ "corners": null,
+ "method": "ocr+gazetteer+dem-match",
+ "residualKm": 0.76,
+ "anchorResidualKm": 0.76,
+ "bboxUncertaintyKm": 2.0,
+ "anchors": [
+  {
+   "text": ". Motoyama",
+   "lat": 24.78808,
+   "lon": 141.33345,
+   "px": 1091.0,
+   "py": 953.0,
+   "score": 100.0,
+   "gazetteer": "motoyama",
+   "offsetKm": 0.91
+  },
+  {
+   "text": "Iwo Jima",
+   "lat": 24.7858,
+   "lon": 141.31627,
+   "px": 1038.0,
+   "py": 966.5,
+   "score": 100.0,
+   "gazetteer": "iwojima",
+   "offsetKm": 0.0
+  },
+  {
+   "text": "Motoyama",
+   "lat": 24.78808,
+   "lon": 141.33345,
+   "px": 1025.0,
+   "py": 998.5,
+   "score": 100.0,
+   "gazetteer": "motoyama",
+   "offsetKm": 2.11
+  },
+  {
+   "text": "- Higashi",
+   "lat": 24.78243,
+   "lon": 141.3391,
+   "px": 1133.5,
+   "py": 993.5,
+   "score": 100.0,
+   "gazetteer": "higashi",
+   "offsetKm": 0.83
+  },
+  {
+   "text": "Minami",
+   "lat": 24.77955,
+   "lon": 141.32359,
+   "px": 1085.5,
+   "py": 1004.0,
+   "score": 100.0,
+   "gazetteer": "minami",
+   "offsetKm": 0.0
+  }
+ ],
+ "crosscheck": {
+  "nccPeak": 0.7052,
+  "coarseNcc": 0.6289,
+  "worldUnitM": 0.6638,
+  "worldSquareKm": [
+   21.8,
+   21.8
+  ],
+  "labelResidKm": [
+   0.0,
+   0.0,
+   0.8,
+   0.9,
+   2.1
+  ],
+  "anchorsUsed": 5,
+  "textureExtentKm": [
+   23.1,
+   23.0
+  ],
+  "textureVsWorldScale": 1.061,
+  "textureCenterOffsetKm": 1464.76,
+  "bboxUncertaintyKm": 2.0,
+  "sizeErrPct": 33.62,
+  "squareErrPct": 0.0,
+  "sizeCheckOk": false,
+  "landFracMap": 0.1015,
+  "landFracDem": 0.3223,
+  "landFracRatio": 3.176,
+  "textureSeaFrac": 0.992,
+  "textureWaterIou": 0.683,
+  "solvedBeforeVeto": true,
+  "confidenceBeforeVeto": "low"
+ },
+ "confidence": "unresolved",
+ "note": "label hypothesis label:kitano; fitted world unit = 0.664 real m; 24/25 labels resolved REJECTED: land/sea mismatch (map 0.10 vs dem 0.32, ratio 3.2x)",
+ "textureBounds": {
+  "minLon": 141.209325,
+  "maxLon": 141.437732,
+  "minLat": 24.67677,
+  "maxLat": 24.88451
+ },
+ "rejected": "land/sea mismatch (map 0.10 vs dem 0.32, ratio 3.2x)"
+}

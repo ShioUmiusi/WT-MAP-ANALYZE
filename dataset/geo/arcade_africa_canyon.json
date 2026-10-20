@@ -1,0 +1,101 @@
+{
+ "map": "arcade_africa_canyon",
+ "crs": "WGS84",
+ "bounds": {
+  "minLon": 47.814169,
+  "maxLon": 48.162393,
+  "minLat": 32.101684,
+  "maxLat": 32.398265
+ },
+ "corners": {
+  "nw": [
+   47.814169,
+   32.398265
+  ],
+  "ne": [
+   48.162393,
+   32.398265
+  ],
+  "sw": [
+   47.814169,
+   32.101684
+  ],
+  "se": [
+   48.162393,
+   32.101684
+  ]
+ },
+ "method": "dem-coarse-only",
+ "residualKm": null,
+ "anchorResidualKm": null,
+ "bboxUncertaintyKm": 8.0,
+ "anchors": [],
+ "crosscheck": {
+  "demNcc": 0.8792,
+  "bboxUncertaintyKm": 8.0,
+  "heightStdM": 626.6,
+  "prescreenMargin": 0.0141,
+  "refineAttempts": [
+   {
+    "seedNcc": 0.879,
+    "refinedNcc": 0.748,
+    "lon": 47.985,
+    "lat": 32.266,
+    "driftDeg": 0.017
+   },
+   {
+    "seedNcc": 0.865,
+    "refinedNcc": 0.687,
+    "lon": 80.704,
+    "lat": 27.784,
+    "driftDeg": 0.028
+   }
+  ],
+  "refine": "failed (weak correlation)",
+  "prescreenCandidates": [
+   {
+    "ncc": 0.879,
+    "lon": 47.988,
+    "lat": 32.25
+   },
+   {
+    "ncc": 0.865,
+    "lon": 80.684,
+    "lat": 27.761
+   },
+   {
+    "ncc": 0.861,
+    "lon": 133.066,
+    "lat": 33.285
+   },
+   {
+    "ncc": 0.858,
+    "lon": 78.091,
+    "lat": 28.459
+   },
+   {
+    "ncc": 0.858,
+    "lon": 15.029,
+    "lat": 36.774
+   }
+  ],
+  "sizeErrPct": 0.0,
+  "squareErrPct": 0.0,
+  "sizeCheckOk": true,
+  "worldSquareKm": [
+   32.8,
+   32.8
+  ],
+  "nccPeak": 0.8792,
+  "landFracMap": 0.8794,
+  "landFracDem": 1.0,
+  "landFracRatio": 1.137,
+  "textureSeaFrac": 0.0,
+  "textureLandIou": null,
+  "solvedBeforeVeto": true,
+  "confidenceBeforeVeto": "low"
+ },
+ "confidence": "low",
+ "note": "coarse-only: z5 global prescreen peak 0.88 at 47.99,32.25; z10 refine failed (weak correlation); position good to ~5-10 km; terrain only, no OCR labels used",
+ "demNcc": 0.8792
+}

@@ -1,0 +1,87 @@
+{
+ "map": "avn_bering_sea",
+ "crs": "WGS84",
+ "bounds": {
+  "minLon": 145.103259,
+  "maxLon": 145.709212,
+  "minLat": -22.483651,
+  "maxLat": -21.918663
+ },
+ "corners": {
+  "nw": [
+   145.103259,
+   -21.918663
+  ],
+  "ne": [
+   145.709212,
+   -21.918663
+  ],
+  "sw": [
+   145.103259,
+   -22.483651
+  ],
+  "se": [
+   145.709212,
+   -22.483651
+  ]
+ },
+ "method": "dem-only",
+ "residualKm": null,
+ "anchorResidualKm": null,
+ "bboxUncertaintyKm": 2.0,
+ "anchors": [],
+ "crosscheck": {
+  "demNcc": 0.8956,
+  "prescreenTopNcc": 0.9269,
+  "prescreenMargin": 0.0002,
+  "worldUnitM": 0.9525,
+  "heightStdM": 374.6,
+  "bboxUncertaintyKm": 2.0,
+  "demSource": "terrarium z10",
+  "prescreenCandidates": [
+   {
+    "ncc": 0.927,
+    "lon": 145.415,
+    "lat": -22.187
+   },
+   {
+    "ncc": 0.927,
+    "lon": 33.003,
+    "lat": 23.201
+   },
+   {
+    "ncc": 0.927,
+    "lon": -82.683,
+    "lat": 28.44
+   },
+   {
+    "ncc": 0.924,
+    "lon": 9.822,
+    "lat": 5.55
+   },
+   {
+    "ncc": 0.924,
+    "lon": 34.761,
+    "lat": -12.94
+   }
+  ],
+  "sizeErrPct": 4.75,
+  "squareErrPct": 0.0,
+  "sizeCheckOk": true,
+  "worldSquareKm": [
+   62.5,
+   62.5
+  ],
+  "landFracMap": 0.4578,
+  "landFracDem": 1.0,
+  "landFracRatio": 2.184,
+  "textureSeaFrac": 0.0,
+  "textureLandIou": null,
+  "solvedBeforeVeto": true,
+  "confidenceBeforeVeto": "low",
+  "nccPeak": 0.8956
+ },
+ "confidence": "low",
+ "note": "terrain-only match (no OCR labels); z5 prescreen peak 0.93 at 145.42,-22.19, z10 refined NCC 0.896, margin 0.000",
+ "demNcc": 0.8956
+}
