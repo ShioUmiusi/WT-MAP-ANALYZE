@@ -179,11 +179,12 @@ vromfs 容器以 `VRFx` 开头，名字表是共享 BBF。payload 的前 16 与�
 - 网格用高度图分辨率，行 0 对应世界 `maxY`（北），像素中心与底图贴图对齐：
   `worldX = minX + (px + 0.5) * (maxX - minX) / width`，
   `worldY = maxY - (py + 0.5) * (maxY - minY) / height`；
+- 行序与高度图相反：JSON 是北向上（`row 0 = maxY`），`out/*_heightmap.npz` 是南向上（`row 0 = minY`）；生成时翻转一次，消费方按 `maxY - py` 采样；
 - 水线：`h <= waterLevel` 是水，等于水线的像素算水；`waterLevel` 为 `null` 表示整张图没有低于水线的高度，整图按陆地处；
 - 只按地形高度判断，高于海平面的河流、湖泊算陆地；
 - 栅格产品 `<map>_land.png`（255 = 陆地）由 `make_landmask.py` 生成，网格与贴图一致，需要先导出贴图。
 
-`validate_landmask.py` 做三道校验：RLE 陆比与 `h > waterLevel` 一致（容差 1%）、每个环闭合且落在 `bounds` 内、把环按 even-odd 栅格化后与位图一致（≥ 97%）。
+`validate_landmask.py` 做四道校验：RLE 陆比与 `h > waterLevel` 一致（容差 1%）、行序（位图 = 北向上的同一栅格，≥ 99.5%）、每个环闭合且落在 `bounds` 内、把环按 even-odd 栅格化后与位图一致（≥ 97%）。
 
 ## 8. 真实地理参考
 

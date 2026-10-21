@@ -68,6 +68,7 @@ python wt_geo.py all                        # 经纬度（需要联网下 DEM �
 | `validate_index.py` | 校验全部 JSON 并写 `out/index.json` |
 | `fix_bounds.py`、`fix_contour_artifacts.py`、`drop_subwater_contours.py`、`check_contour_jumps.py` | 数据集修整与自检 |
 | `make_landmask.py`、`make_landmask_json.py`、`validate_landmask.py` | 陆水掩膜（栅格 / JSON）与一致性校验 |
+| `check_mask_orientation.py`、`check_mask_dihedral.py`、`check_mask_vs_coastline.py` | 掩膜方向与海岸线一致性校验 |
 | `wt_textures.py`、`export_textures.py`、`validate_textures.py` | DxP2 贴图包读取、导出、对齐校验 |
 | `wt_airfields.py` | vromfs / 任务 DataBlock → 机场、跑道、重生点 |
 | `wt_geo.py`、`make_geo_advisory.py` | 地名 OCR + DEM 配准 → 经纬度参考 |

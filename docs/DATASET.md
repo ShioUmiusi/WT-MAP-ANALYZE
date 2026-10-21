@@ -185,7 +185,7 @@ const px = Math.floor((x - bounds.minX) / (bounds.maxX - bounds.minX) * width);
 const py = Math.floor((bounds.maxY - y) / (bounds.maxY - bounds.minY) * height);
 ```
 
-- 网格是高度图按整数倍降采样（最大 2048）；行 0 对应 `bounds.maxY`，与 `rowZero` 一致；
+- 网格是高度图按整数倍降采样（最大 2048）；行 0 对应 `bounds.maxY`，与 `rowZero` 一致；与高度图 `npz`（行 0 = `minY`，南向上）相反，生成时翻转一次；
 - 水线规则：`h <= waterLevel` 是水，等于水线的像素算水；
 - **掩膜只按地形高度判断，不以底图为准。** 它和 `contours` 用同一份地形数据，两者永远自洽；
   但和贴图（`out/textures/`）上画出来的海岸线不一定一致——底图是美术渲染。
