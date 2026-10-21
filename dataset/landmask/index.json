@@ -13,7 +13,7 @@
    "waterLevel": null
   },
   "air_africa_desert": {
-   "bytes": 1935,
+   "bytes": 1968,
    "file": "air_africa_desert.json",
    "grid": [
     2048,
@@ -24,7 +24,7 @@
    "waterLevel": 0.0
   },
   "air_archipelago": {
-   "bytes": 52270,
+   "bytes": 53485,
    "file": "air_archipelago.json",
    "grid": [
     2048,
@@ -35,7 +35,7 @@
    "waterLevel": 0.0
   },
   "air_denmark": {
-   "bytes": 130627,
+   "bytes": 132152,
    "file": "air_denmark.json",
    "grid": [
     1024,
@@ -46,7 +46,7 @@
    "waterLevel": 0.0
   },
   "air_equatorial_island": {
-   "bytes": 10306,
+   "bytes": 10363,
    "file": "air_equatorial_island.json",
    "grid": [
     1024,
@@ -57,7 +57,7 @@
    "waterLevel": 0.0
   },
   "air_falklands": {
-   "bytes": 283322,
+   "bytes": 286040,
    "file": "air_falklands.json",
    "grid": [
     2048,
@@ -68,7 +68,7 @@
    "waterLevel": 0.0
   },
   "air_grand_canyon": {
-   "bytes": 42659,
+   "bytes": 42966,
    "file": "air_grand_canyon.json",
    "grid": [
     2048,
@@ -79,7 +79,7 @@
    "waterLevel": 0.0
   },
   "air_israel": {
-   "bytes": 13532,
+   "bytes": 13590,
    "file": "air_israel.json",
    "grid": [
     1024,
@@ -90,7 +90,7 @@
    "waterLevel": 0.0
   },
   "air_kamchatka": {
-   "bytes": 58779,
+   "bytes": 57767,
    "file": "air_kamchatka.json",
    "grid": [
     1024,
@@ -123,7 +123,7 @@
    "waterLevel": null
   },
   "air_normandy": {
-   "bytes": 40570,
+   "bytes": 41600,
    "file": "air_normandy.json",
    "grid": [
     1024,
@@ -145,7 +145,7 @@
    "waterLevel": null
   },
   "air_race_phiphi_islands": {
-   "bytes": 100772,
+   "bytes": 100795,
    "file": "air_race_phiphi_islands.json",
    "grid": [
     1023,
@@ -156,7 +156,7 @@
    "waterLevel": 0.0
   },
   "air_skyscraper_city": {
-   "bytes": 21338,
+   "bytes": 21125,
    "file": "air_skyscraper_city.json",
    "grid": [
     1024,
@@ -167,7 +167,7 @@
    "waterLevel": 0.0
   },
   "air_smolensk": {
-   "bytes": 159353,
+   "bytes": 159553,
    "file": "air_smolensk.json",
    "grid": [
     1024,
@@ -178,7 +178,7 @@
    "waterLevel": 0.0
   },
   "air_south_eastern_city": {
-   "bytes": 213797,
+   "bytes": 209390,
    "file": "air_south_eastern_city.json",
    "grid": [
     2048,
@@ -189,7 +189,7 @@
    "waterLevel": 0.0
   },
   "air_southeastern_cliffs": {
-   "bytes": 55013,
+   "bytes": 54866,
    "file": "air_southeastern_cliffs.json",
    "grid": [
     1024,
@@ -200,7 +200,7 @@
    "waterLevel": 0.0
   },
   "air_vietnam": {
-   "bytes": 73066,
+   "bytes": 72608,
    "file": "air_vietnam.json",
    "grid": [
     1024,
@@ -211,7 +211,7 @@
    "waterLevel": 0.0
   },
   "arcade_africa_canyon": {
-   "bytes": 58713,
+   "bytes": 58677,
    "file": "arcade_africa_canyon.json",
    "grid": [
     1024,
@@ -222,7 +222,7 @@
    "waterLevel": 0.0
   },
   "arcade_africa_seashore": {
-   "bytes": 129046,
+   "bytes": 129295,
    "file": "arcade_africa_seashore.json",
    "grid": [
     1024,
@@ -233,7 +233,7 @@
    "waterLevel": 0.0
   },
   "arcade_alps": {
-   "bytes": 16091,
+   "bytes": 16460,
    "file": "arcade_alps.json",
    "grid": [
     1024,
@@ -244,7 +244,7 @@
    "waterLevel": 0.0
   },
   "arcade_asia_4roads": {
-   "bytes": 9645,
+   "bytes": 9499,
    "file": "arcade_asia_4roads.json",
    "grid": [
     1024,
@@ -255,7 +255,7 @@
    "waterLevel": 0.0
   },
   "arcade_canyon_snow": {
-   "bytes": 21489,
+   "bytes": 21340,
    "file": "arcade_canyon_snow.json",
    "grid": [
     1024,
@@ -266,7 +266,7 @@
    "waterLevel": 0.0
   },
   "arcade_ireland": {
-   "bytes": 76520,
+   "bytes": 76803,
    "file": "arcade_ireland.json",
    "grid": [
     1024,
@@ -277,7 +277,7 @@
    "waterLevel": 0.0
   },
   "arcade_mediterranean": {
-   "bytes": 39650,
+   "bytes": 39156,
    "file": "arcade_mediterranean.json",
    "grid": [
     1024,
@@ -288,7 +288,7 @@
    "waterLevel": 0.0
   },
   "arcade_norway_fjords": {
-   "bytes": 92493,
+   "bytes": 93164,
    "file": "arcade_norway_fjords.json",
    "grid": [
     1024,
@@ -299,7 +299,7 @@
    "waterLevel": 0.0
   },
   "arcade_norway_green": {
-   "bytes": 14715,
+   "bytes": 14377,
    "file": "arcade_norway_green.json",
    "grid": [
     1024,
@@ -310,7 +310,7 @@
    "waterLevel": 0.0
   },
   "arcade_norway_plain": {
-   "bytes": 16002,
+   "bytes": 15789,
    "file": "arcade_norway_plain.json",
    "grid": [
     1024,
@@ -321,7 +321,7 @@
    "waterLevel": 0.0
   },
   "arcade_phiphi_crater": {
-   "bytes": 133658,
+   "bytes": 133989,
    "file": "arcade_phiphi_crater.json",
    "grid": [
     1024,
@@ -332,7 +332,7 @@
    "waterLevel": 0.0
   },
   "arcade_phiphi_crater_rocks": {
-   "bytes": 108299,
+   "bytes": 107351,
    "file": "arcade_phiphi_crater_rocks.json",
    "grid": [
     1024,
@@ -343,7 +343,7 @@
    "waterLevel": 0.0
   },
   "arcade_rice_terraces": {
-   "bytes": 38369,
+   "bytes": 37269,
    "file": "arcade_rice_terraces.json",
    "grid": [
     1024,
@@ -354,7 +354,7 @@
    "waterLevel": 0.0
   },
   "arcade_snow_rocks": {
-   "bytes": 11000,
+   "bytes": 10854,
    "file": "arcade_snow_rocks.json",
    "grid": [
     1024,
@@ -365,7 +365,7 @@
    "waterLevel": 0.0
   },
   "arcade_tabletop_mountain": {
-   "bytes": 20363,
+   "bytes": 20265,
    "file": "arcade_tabletop_mountain.json",
    "grid": [
     1024,
@@ -376,7 +376,7 @@
    "waterLevel": 0.0
   },
   "arcade_zhang_park": {
-   "bytes": 5738,
+   "bytes": 5567,
    "file": "arcade_zhang_park.json",
    "grid": [
     1024,
@@ -387,7 +387,7 @@
    "waterLevel": 0.0
   },
   "avg_abandoned_factory": {
-   "bytes": 26143,
+   "bytes": 26080,
    "file": "avg_abandoned_factory.json",
    "grid": [
     2048,
@@ -409,7 +409,7 @@
    "waterLevel": null
   },
   "avg_africa_desert": {
-   "bytes": 972,
+   "bytes": 932,
    "file": "avg_africa_desert.json",
    "grid": [
     2048,
@@ -420,7 +420,7 @@
    "waterLevel": 0.0
   },
   "avg_alaska_town": {
-   "bytes": 93479,
+   "bytes": 94123,
    "file": "avg_alaska_town.json",
    "grid": [
     2048,
@@ -431,7 +431,7 @@
    "waterLevel": 0.0
   },
   "avg_american_valley": {
-   "bytes": 8227,
+   "bytes": 8045,
    "file": "avg_american_valley.json",
    "grid": [
     2048,
@@ -442,7 +442,7 @@
    "waterLevel": 0.0
   },
   "avg_aral_sea": {
-   "bytes": 1065,
+   "bytes": 1121,
    "file": "avg_aral_sea.json",
    "grid": [
     2048,
@@ -453,7 +453,7 @@
    "waterLevel": 0.0
   },
   "avg_arctic": {
-   "bytes": 198398,
+   "bytes": 199275,
    "file": "avg_arctic.json",
    "grid": [
     2048,
@@ -497,7 +497,7 @@
    "waterLevel": null
   },
   "avg_breslau": {
-   "bytes": 87814,
+   "bytes": 87089,
    "file": "avg_breslau.json",
    "grid": [
     2048,
@@ -508,7 +508,7 @@
    "waterLevel": 0.0
   },
   "avg_container_port": {
-   "bytes": 42340,
+   "bytes": 42304,
    "file": "avg_container_port.json",
    "grid": [
     2048,
@@ -519,7 +519,7 @@
    "waterLevel": 0.0
   },
   "avg_eastern_europe": {
-   "bytes": 42556,
+   "bytes": 42307,
    "file": "avg_eastern_europe.json",
    "grid": [
     2048,
@@ -541,7 +541,7 @@
    "waterLevel": null
   },
   "avg_european_fortress": {
-   "bytes": 48996,
+   "bytes": 48667,
    "file": "avg_european_fortress.json",
    "grid": [
     2048,
@@ -552,7 +552,7 @@
    "waterLevel": 0.0
   },
   "avg_falklands": {
-   "bytes": 88006,
+   "bytes": 87445,
    "file": "avg_falklands.json",
    "grid": [
     2048,
@@ -563,7 +563,7 @@
    "waterLevel": 0.0
   },
   "avg_finland": {
-   "bytes": 35194,
+   "bytes": 35121,
    "file": "avg_finland.json",
    "grid": [
     2048,
@@ -596,7 +596,7 @@
    "waterLevel": null
   },
   "avg_greece": {
-   "bytes": 28653,
+   "bytes": 28674,
    "file": "avg_greece.json",
    "grid": [
     2048,
@@ -607,7 +607,7 @@
    "waterLevel": 0.0
   },
   "avg_guadalcanal": {
-   "bytes": 45819,
+   "bytes": 47018,
    "file": "avg_guadalcanal.json",
    "grid": [
     2048,
@@ -618,7 +618,7 @@
    "waterLevel": 0.0
   },
   "avg_hurtgen": {
-   "bytes": 64674,
+   "bytes": 64448,
    "file": "avg_hurtgen.json",
    "grid": [
     2048,
@@ -640,7 +640,7 @@
    "waterLevel": null
   },
   "avg_ireland": {
-   "bytes": 14135,
+   "bytes": 14939,
    "file": "avg_ireland.json",
    "grid": [
     2048,
@@ -651,7 +651,7 @@
    "waterLevel": 0.0
   },
   "avg_israel": {
-   "bytes": 28861,
+   "bytes": 29001,
    "file": "avg_israel.json",
    "grid": [
     2048,
@@ -673,7 +673,7 @@
    "waterLevel": null
   },
   "avg_karantan": {
-   "bytes": 39527,
+   "bytes": 40219,
    "file": "avg_karantan.json",
    "grid": [
     2048,
@@ -684,7 +684,7 @@
    "waterLevel": 0.0
   },
   "avg_karelia_forest_a": {
-   "bytes": 3763,
+   "bytes": 3795,
    "file": "avg_karelia_forest_a.json",
    "grid": [
     1024,
@@ -728,7 +728,7 @@
    "waterLevel": null
   },
   "avg_kursk_villages": {
-   "bytes": 34445,
+   "bytes": 34511,
    "file": "avg_kursk_villages.json",
    "grid": [
     2048,
@@ -739,7 +739,7 @@
    "waterLevel": 0.0
   },
   "avg_lazzaro_italy_new_city": {
-   "bytes": 28244,
+   "bytes": 28964,
    "file": "avg_lazzaro_italy_new_city.json",
    "grid": [
     2048,
@@ -750,7 +750,7 @@
    "waterLevel": 0.0
   },
   "avg_maginot_rework": {
-   "bytes": 167156,
+   "bytes": 164872,
    "file": "avg_maginot_rework.json",
    "grid": [
     2048,
@@ -761,7 +761,7 @@
    "waterLevel": 0.0
   },
   "avg_mozdok": {
-   "bytes": 45074,
+   "bytes": 46233,
    "file": "avg_mozdok.json",
    "grid": [
     2048,
@@ -772,7 +772,7 @@
    "waterLevel": 0.0
   },
   "avg_netherlands": {
-   "bytes": 40926,
+   "bytes": 40863,
    "file": "avg_netherlands.json",
    "grid": [
     2048,
@@ -783,7 +783,7 @@
    "waterLevel": 0.0
   },
   "avg_normandy": {
-   "bytes": 11722,
+   "bytes": 12068,
    "file": "avg_normandy.json",
    "grid": [
     2048,
@@ -805,7 +805,7 @@
    "waterLevel": null
   },
   "avg_northern_valley": {
-   "bytes": 164935,
+   "bytes": 164979,
    "file": "avg_northern_valley.json",
    "grid": [
     2048,
@@ -816,7 +816,7 @@
    "waterLevel": 0.0
   },
   "avg_nuclear_incident": {
-   "bytes": 93484,
+   "bytes": 94128,
    "file": "avg_nuclear_incident.json",
    "grid": [
     2048,
@@ -827,7 +827,7 @@
    "waterLevel": 0.0
   },
   "avg_poland": {
-   "bytes": 9298,
+   "bytes": 9382,
    "file": "avg_poland.json",
    "grid": [
     2048,
@@ -838,7 +838,7 @@
    "waterLevel": 0.0
   },
   "avg_poland_snow": {
-   "bytes": 9625,
+   "bytes": 9499,
    "file": "avg_poland_snow.json",
    "grid": [
     2048,
@@ -849,7 +849,7 @@
    "waterLevel": 0.0
   },
   "avg_port_novorossiysk": {
-   "bytes": 48000,
+   "bytes": 46872,
    "file": "avg_port_novorossiysk.json",
    "grid": [
     2048,
@@ -882,7 +882,7 @@
    "waterLevel": null
   },
   "avg_sector_montmedy": {
-   "bytes": 35906,
+   "bytes": 35521,
    "file": "avg_sector_montmedy.json",
    "grid": [
     2048,
@@ -893,7 +893,7 @@
    "waterLevel": 0.0
   },
   "avg_sector_montmedy_snow": {
-   "bytes": 35803,
+   "bytes": 35404,
    "file": "avg_sector_montmedy_snow.json",
    "grid": [
     2048,
@@ -915,7 +915,7 @@
    "waterLevel": null
   },
   "avg_soviet_range": {
-   "bytes": 1531,
+   "bytes": 1545,
    "file": "avg_soviet_range.json",
    "grid": [
     2048,
@@ -926,7 +926,7 @@
    "waterLevel": 0.0
   },
   "avg_soviet_suburban": {
-   "bytes": 30266,
+   "bytes": 30220,
    "file": "avg_soviet_suburban.json",
    "grid": [
     2048,
@@ -937,7 +937,7 @@
    "waterLevel": 0.0
   },
   "avg_soviet_suburban_snow": {
-   "bytes": 31257,
+   "bytes": 31015,
    "file": "avg_soviet_suburban_snow.json",
    "grid": [
     2048,
@@ -948,7 +948,7 @@
    "waterLevel": 0.0
   },
   "avg_stalingrad_factory": {
-   "bytes": 42279,
+   "bytes": 42375,
    "file": "avg_stalingrad_factory.json",
    "grid": [
     2048,
@@ -959,7 +959,7 @@
    "waterLevel": 0.0
   },
   "avg_sweden": {
-   "bytes": 70684,
+   "bytes": 69848,
    "file": "avg_sweden.json",
    "grid": [
     2048,
@@ -992,7 +992,7 @@
    "waterLevel": null
   },
   "avg_tunisia_desert": {
-   "bytes": 51767,
+   "bytes": 51403,
    "file": "avg_tunisia_desert.json",
    "grid": [
     2048,
@@ -1003,7 +1003,7 @@
    "waterLevel": 0.0
   },
   "avg_vietnam_hills": {
-   "bytes": 116834,
+   "bytes": 120891,
    "file": "avg_vietnam_hills.json",
    "grid": [
     2048,
@@ -1014,7 +1014,7 @@
    "waterLevel": 0.0
   },
   "avg_vlaanderen": {
-   "bytes": 212852,
+   "bytes": 211800,
    "file": "avg_vlaanderen.json",
    "grid": [
     2048,
@@ -1036,7 +1036,7 @@
    "waterLevel": null
   },
   "avg_western_europe": {
-   "bytes": 78982,
+   "bytes": 79479,
    "file": "avg_western_europe.json",
    "grid": [
     2048,
@@ -1047,7 +1047,7 @@
    "waterLevel": 0.0
   },
   "avn_africa_gulf": {
-   "bytes": 16402,
+   "bytes": 15744,
    "file": "avn_africa_gulf.json",
    "grid": [
     1024,
@@ -1058,7 +1058,7 @@
    "waterLevel": 0.0
   },
   "avn_aleutian_islands": {
-   "bytes": 48577,
+   "bytes": 48011,
    "file": "avn_aleutian_islands.json",
    "grid": [
     1024,
@@ -1069,7 +1069,7 @@
    "waterLevel": 0.0
   },
   "avn_alps_fjord": {
-   "bytes": 110392,
+   "bytes": 111145,
    "file": "avn_alps_fjord.json",
    "grid": [
     2048,
@@ -1080,7 +1080,7 @@
    "waterLevel": 0.0
   },
   "avn_arabian_north_coast": {
-   "bytes": 91899,
+   "bytes": 90606,
    "file": "avn_arabian_north_coast.json",
    "grid": [
     2048,
@@ -1091,7 +1091,7 @@
    "waterLevel": 0.0
   },
   "avn_bering_sea": {
-   "bytes": 26152,
+   "bytes": 26070,
    "file": "avn_bering_sea.json",
    "grid": [
     1024,
@@ -1102,7 +1102,7 @@
    "waterLevel": 0.0
   },
   "avn_blacksea_port": {
-   "bytes": 71934,
+   "bytes": 71965,
    "file": "avn_blacksea_port.json",
    "grid": [
     2048,
@@ -1113,7 +1113,7 @@
    "waterLevel": 0.0
   },
   "avn_coral_islands": {
-   "bytes": 87923,
+   "bytes": 87994,
    "file": "avn_coral_islands.json",
    "grid": [
     2048,
@@ -1124,7 +1124,7 @@
    "waterLevel": 0.0
   },
   "avn_england_shore": {
-   "bytes": 145581,
+   "bytes": 145357,
    "file": "avn_england_shore.json",
    "grid": [
     2048,
@@ -1135,7 +1135,7 @@
    "waterLevel": 0.0
   },
   "avn_fiji": {
-   "bytes": 66429,
+   "bytes": 65822,
    "file": "avn_fiji.json",
    "grid": [
     2048,
@@ -1146,7 +1146,7 @@
    "waterLevel": 0.0
   },
   "avn_finland_islands": {
-   "bytes": 99113,
+   "bytes": 96013,
    "file": "avn_finland_islands.json",
    "grid": [
     1024,
@@ -1157,7 +1157,7 @@
    "waterLevel": 0.0
   },
   "avn_franz_josef_land": {
-   "bytes": 57803,
+   "bytes": 57525,
    "file": "avn_franz_josef_land.json",
    "grid": [
     1024,
@@ -1168,7 +1168,7 @@
    "waterLevel": 0.0
   },
   "avn_fuego_islands": {
-   "bytes": 112630,
+   "bytes": 112799,
    "file": "avn_fuego_islands.json",
    "grid": [
     2048,
@@ -1179,7 +1179,7 @@
    "waterLevel": 0.0
   },
   "avn_ice_port": {
-   "bytes": 72771,
+   "bytes": 73185,
    "file": "avn_ice_port.json",
    "grid": [
     2048,
@@ -1190,7 +1190,7 @@
    "waterLevel": 0.0
   },
   "avn_ireland_bay": {
-   "bytes": 143287,
+   "bytes": 142811,
    "file": "avn_ireland_bay.json",
    "grid": [
     2048,
@@ -1201,7 +1201,7 @@
    "waterLevel": 0.0
   },
   "avn_japan": {
-   "bytes": 36611,
+   "bytes": 36610,
    "file": "avn_japan.json",
    "grid": [
     1024,
@@ -1212,7 +1212,7 @@
    "waterLevel": 0.0
   },
   "avn_mediterranean_port": {
-   "bytes": 82719,
+   "bytes": 83078,
    "file": "avn_mediterranean_port.json",
    "grid": [
     2048,
@@ -1223,7 +1223,7 @@
    "waterLevel": 0.0
   },
   "avn_new_zeland_cape": {
-   "bytes": 28875,
+   "bytes": 28203,
    "file": "avn_new_zeland_cape.json",
    "grid": [
     1024,
@@ -1234,7 +1234,7 @@
    "waterLevel": 0.0
   },
   "avn_north_sea": {
-   "bytes": 78165,
+   "bytes": 79375,
    "file": "avn_north_sea.json",
    "grid": [
     2048,
@@ -1245,7 +1245,7 @@
    "waterLevel": 0.0
   },
   "avn_northwestern_islands": {
-   "bytes": 99728,
+   "bytes": 99453,
    "file": "avn_northwestern_islands.json",
    "grid": [
     2048,
@@ -1256,7 +1256,7 @@
    "waterLevel": 0.0
   },
   "avn_norway_islands": {
-   "bytes": 127420,
+   "bytes": 127092,
    "file": "avn_norway_islands.json",
    "grid": [
     2048,
@@ -1267,7 +1267,7 @@
    "waterLevel": 0.0
   },
   "avn_peleliu": {
-   "bytes": 47419,
+   "bytes": 46901,
    "file": "avn_peleliu.json",
    "grid": [
     1024,
@@ -1278,7 +1278,7 @@
    "waterLevel": 0.0
   },
   "avn_phang_nga_bay_islands": {
-   "bytes": 68894,
+   "bytes": 69613,
    "file": "avn_phang_nga_bay_islands.json",
    "grid": [
     2048,
@@ -1289,7 +1289,7 @@
    "waterLevel": 0.0
   },
   "avn_san_francisco": {
-   "bytes": 38849,
+   "bytes": 38283,
    "file": "avn_san_francisco.json",
    "grid": [
     1024,
@@ -1300,7 +1300,7 @@
    "waterLevel": 0.0
   },
   "avn_south_africa": {
-   "bytes": 25729,
+   "bytes": 25190,
    "file": "avn_south_africa.json",
    "grid": [
     1024,
@@ -1311,7 +1311,7 @@
    "waterLevel": 0.0
   },
   "avn_sunken_city": {
-   "bytes": 71990,
+   "bytes": 72389,
    "file": "avn_sunken_city.json",
    "grid": [
     1024,
@@ -1322,7 +1322,7 @@
    "waterLevel": 0.0
   },
   "avn_volcanic_island": {
-   "bytes": 61310,
+   "bytes": 61432,
    "file": "avn_volcanic_island.json",
    "grid": [
     1024,
@@ -1333,7 +1333,7 @@
    "waterLevel": 0.0
   },
   "berlin": {
-   "bytes": 824,
+   "bytes": 817,
    "file": "berlin.json",
    "grid": [
     1024,
@@ -1344,7 +1344,7 @@
    "waterLevel": 0.0
   },
   "britain": {
-   "bytes": 45852,
+   "bytes": 44563,
    "file": "britain.json",
    "grid": [
     1024,
@@ -1355,7 +1355,7 @@
    "waterLevel": 0.0
   },
   "bulge": {
-   "bytes": 983,
+   "bytes": 953,
    "file": "bulge.json",
    "grid": [
     1024,
@@ -1366,7 +1366,7 @@
    "waterLevel": 0.0
   },
   "caribbean_islands": {
-   "bytes": 16420,
+   "bytes": 16636,
    "file": "caribbean_islands.json",
    "grid": [
     1024,
@@ -1377,7 +1377,7 @@
    "waterLevel": 0.0
   },
   "dover_strait": {
-   "bytes": 32382,
+   "bytes": 32159,
    "file": "dover_strait.json",
    "grid": [
     1024,
@@ -1399,7 +1399,7 @@
    "waterLevel": null
   },
   "guadalcanal": {
-   "bytes": 58140,
+   "bytes": 58332,
    "file": "guadalcanal.json",
    "grid": [
     1024,
@@ -1410,7 +1410,7 @@
    "waterLevel": 0.0
   },
   "guam": {
-   "bytes": 26201,
+   "bytes": 26295,
    "file": "guam.json",
    "grid": [
     1024,
@@ -1421,7 +1421,7 @@
    "waterLevel": 0.0
   },
   "hangar_field": {
-   "bytes": 9253,
+   "bytes": 9015,
    "file": "hangar_field.json",
    "grid": [
     2048,
@@ -1432,7 +1432,7 @@
    "waterLevel": 0.0
   },
   "hangar_field_halloween": {
-   "bytes": 9144,
+   "bytes": 8958,
    "file": "hangar_field_halloween.json",
    "grid": [
     2048,
@@ -1443,7 +1443,7 @@
    "waterLevel": 0.0
   },
   "hangar_field_premium": {
-   "bytes": 8364,
+   "bytes": 8113,
    "file": "hangar_field_premium.json",
    "grid": [
     2048,
@@ -1454,7 +1454,7 @@
    "waterLevel": 0.0
   },
   "hangar_field_winter": {
-   "bytes": 9873,
+   "bytes": 9780,
    "file": "hangar_field_winter.json",
    "grid": [
     2048,
@@ -1465,7 +1465,7 @@
    "waterLevel": 0.0
   },
   "honolulu": {
-   "bytes": 29656,
+   "bytes": 30021,
    "file": "honolulu.json",
    "grid": [
     1024,
@@ -1476,7 +1476,7 @@
    "waterLevel": 0.0
   },
   "hurtgen": {
-   "bytes": 90193,
+   "bytes": 90869,
    "file": "hurtgen.json",
    "grid": [
     1024,
@@ -1487,7 +1487,7 @@
    "waterLevel": 0.0
   },
   "hvg_africa_large": {
-   "bytes": 22629,
+   "bytes": 21691,
    "file": "hvg_africa_large.json",
    "grid": [
     2048,
@@ -1498,7 +1498,7 @@
    "waterLevel": 0.0
   },
   "hvg_al_massa": {
-   "bytes": 46031,
+   "bytes": 46075,
    "file": "hvg_al_massa.json",
    "grid": [
     2048,
@@ -1509,7 +1509,7 @@
    "waterLevel": 0.0
   },
   "hvg_granitograd": {
-   "bytes": 23883,
+   "bytes": 22553,
    "file": "hvg_granitograd.json",
    "grid": [
     2048,
@@ -1531,7 +1531,7 @@
    "waterLevel": null
   },
   "iwo_jima": {
-   "bytes": 11285,
+   "bytes": 11196,
    "file": "iwo_jima.json",
    "grid": [
     1024,
@@ -1542,7 +1542,7 @@
    "waterLevel": 0.0
   },
   "khalkhin_gol": {
-   "bytes": 53085,
+   "bytes": 52774,
    "file": "khalkhin_gol.json",
    "grid": [
     1024,
@@ -1553,7 +1553,7 @@
    "waterLevel": 0.0
   },
   "korea": {
-   "bytes": 94079,
+   "bytes": 95528,
    "file": "korea.json",
    "grid": [
     1024,
@@ -1564,7 +1564,7 @@
    "waterLevel": 0.0
   },
   "korsun": {
-   "bytes": 145439,
+   "bytes": 147811,
    "file": "korsun.json",
    "grid": [
     1024,
@@ -1575,7 +1575,7 @@
    "waterLevel": 0.0
   },
   "krymsk": {
-   "bytes": 23629,
+   "bytes": 23762,
    "file": "krymsk.json",
    "grid": [
     1024,
@@ -1586,7 +1586,7 @@
    "waterLevel": 0.0
   },
   "kursk": {
-   "bytes": 125084,
+   "bytes": 124641,
    "file": "kursk.json",
    "grid": [
     1024,
@@ -1597,7 +1597,7 @@
    "waterLevel": 0.0
   },
   "malta": {
-   "bytes": 28007,
+   "bytes": 28439,
    "file": "malta.json",
    "grid": [
     1024,
@@ -1608,7 +1608,7 @@
    "waterLevel": 0.0
   },
   "midway": {
-   "bytes": 7008,
+   "bytes": 7176,
    "file": "midway.json",
    "grid": [
     1024,
@@ -1619,7 +1619,7 @@
    "waterLevel": 0.0
   },
   "moscow": {
-   "bytes": 102634,
+   "bytes": 100897,
    "file": "moscow.json",
    "grid": [
     1024,
@@ -1630,7 +1630,7 @@
    "waterLevel": 0.0
   },
   "mozdok": {
-   "bytes": 19535,
+   "bytes": 18870,
    "file": "mozdok.json",
    "grid": [
     1024,
@@ -1641,7 +1641,7 @@
    "waterLevel": 0.0
   },
   "mozdok_winter": {
-   "bytes": 19686,
+   "bytes": 18919,
    "file": "mozdok_winter.json",
    "grid": [
     1024,
@@ -1652,7 +1652,7 @@
    "waterLevel": 0.0
   },
   "norway": {
-   "bytes": 183462,
+   "bytes": 183186,
    "file": "norway.json",
    "grid": [
     1024,
@@ -1663,7 +1663,7 @@
    "waterLevel": 0.0
   },
   "peleliu": {
-   "bytes": 58247,
+   "bytes": 56106,
    "file": "peleliu.json",
    "grid": [
     1024,
@@ -1674,7 +1674,7 @@
    "waterLevel": 0.0
   },
   "port_moresby": {
-   "bytes": 23941,
+   "bytes": 24607,
    "file": "port_moresby.json",
    "grid": [
     1024,
@@ -1685,7 +1685,7 @@
    "waterLevel": 0.0
   },
   "ruhr": {
-   "bytes": 74683,
+   "bytes": 75922,
    "file": "ruhr.json",
    "grid": [
     1024,
@@ -1696,7 +1696,7 @@
    "waterLevel": 0.0
   },
   "saipan": {
-   "bytes": 17096,
+   "bytes": 16852,
    "file": "saipan.json",
    "grid": [
     1024,
@@ -1707,7 +1707,7 @@
    "waterLevel": 0.0
   },
   "sector_montmedy": {
-   "bytes": 121430,
+   "bytes": 119505,
    "file": "sector_montmedy.json",
    "grid": [
     1024,
@@ -1718,7 +1718,7 @@
    "waterLevel": 0.0
   },
   "sicily": {
-   "bytes": 56972,
+   "bytes": 55187,
    "file": "sicily.json",
    "grid": [
     1024,
@@ -1729,7 +1729,7 @@
    "waterLevel": 0.0
   },
   "spain": {
-   "bytes": 77402,
+   "bytes": 76300,
    "file": "spain.json",
    "grid": [
     1024,
@@ -1740,7 +1740,7 @@
    "waterLevel": 0.0
   },
   "stalingrad": {
-   "bytes": 84607,
+   "bytes": 84807,
    "file": "stalingrad.json",
    "grid": [
     1024,
@@ -1751,7 +1751,7 @@
    "waterLevel": 0.0
   },
   "stalingrad_w": {
-   "bytes": 80030,
+   "bytes": 80560,
    "file": "stalingrad_w.json",
    "grid": [
     1024,
@@ -1762,7 +1762,7 @@
    "waterLevel": 0.0
   },
   "tunisia": {
-   "bytes": 28248,
+   "bytes": 28144,
    "file": "tunisia.json",
    "grid": [
     1024,
@@ -1773,7 +1773,7 @@
    "waterLevel": 0.0
   },
   "wake_island": {
-   "bytes": 23053,
+   "bytes": 23374,
    "file": "wake_island.json",
    "grid": [
     1023,
@@ -1784,7 +1784,7 @@
    "waterLevel": 0.0
   },
   "zhengzhou": {
-   "bytes": 121491,
+   "bytes": 120413,
    "file": "zhengzhou.json",
    "grid": [
     1024,

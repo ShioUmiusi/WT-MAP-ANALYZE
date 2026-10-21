@@ -105,6 +105,11 @@ def build(stem, max_dim=2048, write=True):
 
     land_full = np.ones_like(h, bool) if wl is None else (h > wl)
     land, factor = downsample_bool(land_full, max_dim)
+    # The heightmap's row 0 is the SOUTH edge (world minY - the convention the contour
+    # generator uses), but a raster mask that is composited onto the base-map texture has
+    # to be in texture order (row 0 = world maxY). Flip once, here, so that the declared
+    # `rowZero: maxY` is true for both the RLE and the rings.
+    land = np.ascontiguousarray(land[::-1, :])
     hh, ww = land.shape
     cellx = (b["maxX"] - b["minX"]) / ww
     celly = (b["maxY"] - b["minY"]) / hh
