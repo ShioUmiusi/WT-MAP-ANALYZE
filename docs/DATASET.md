@@ -91,7 +91,9 @@ dataset/
     { "elev": 200.0, "lines": [[x0,y0, x1,y1, ...], ...] }
   ],
   "water":      [[x0,y0, ...]],      // 可选：水面多边形
-  "coastlines": [[x0,y0, ...]]       // 可选：与 water 相同，便于按名读取
+  "coastlines": [[x0,y0, ...]],      // 可选：与 water 相同，便于按名读取
+  "airfields":  [ { ... } ],         // 跑道（底图范围内的），字段同第 7 节，去掉 level/mission
+  "respawns":   [ { ... } ]          // 重生点，字段同第 7 节，去掉 level/mission
 }
 ```
 
@@ -101,6 +103,9 @@ dataset/
 - 折线是扁平数组，保留 1 位小数；
 - `water` / `coastlines` 只在图里有高程 ≤ `waterLevel` 的区域时出现（163 张里 138 张有）；
 - 水面由 `height <= waterLevel` 得到，`waterLevel` 为 `null` 时整图按陆地处；等于水线的像素算水；
+- `airfields` / `respawns` 是第 7 节那份数据的**精简副本**，让「只读单图 JSON」的消费侧也能拿到跑道；
+  没有数据时是空数组，`meta.airfields.count` 给出条数。权威记录仍在 `airfields/<map>.json`
+  （那里还有 `missions`、`frame`、以及底图外的跑道 `airfieldsOutsideBaseMap`）；
 - 高度图本身不入库（体积大），需要时用 `make_contours.py` 在本机生成 `*_heightmap.npz`。
 
 ## 5. 怎么用
