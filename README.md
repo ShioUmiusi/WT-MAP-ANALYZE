@@ -10,10 +10,11 @@
 |---|---|---|
 | 高度图解码（HM2 / LandMesh） | `out/<map>_heightmap.npz` | `wt_hmap.py`、`wt_landmesh.py`、`wt_maps.py` |
 | 等高线 | `out/<map>_contours.json` + 预览 PNG | `make_contours.py`、`extract_all.py` |
+| 陆水掩膜（海岸线 / 水体） | `out/landmask/<map>.json` | `make_landmask_json.py`、`validate_landmask.py` |
 | 地图贴图 | `out/textures/*.png` | `export_textures.py`、`wt_textures.py` |
 | 机场 / 跑道 / 重生点 | `out/airfields/*.json` | `wt_airfields.py` |
 | 真实经纬度参考 | `out/geo/*.json` | `wt_geo.py` |
-| 已发布数据集 | `dataset/contours`、`dataset/geo`、`dataset/airfields` | [数据集说明](docs/DATASET.md) |
+| 已发布数据集 | `dataset/contours`、`dataset/landmask`、`dataset/geo`、`dataset/airfields` | [数据集说明](docs/DATASET.md) |
 
 坐标统一为 `replay-world-meters`：`x` 向东、`y` 向北、单位米，与回放/8111 工具的世界坐标一致。
 
@@ -24,6 +25,7 @@ warthunder-maps/
   wt_*.py  datalm.py  make_contours.py  extract_all.py  …   解码与提取脚本
   docs/                                                     格式、数据集、方法与验证
   dataset/contours/                                         163 张等高线 + index.json
+  dataset/landmask/                                         163 张陆水掩膜 + index.json
   dataset/geo/                                              经纬度参考
   dataset/airfields/                                        机场 / 跑道 / 重生点
   out/                                                      本机生成的工作目录（不提交）
@@ -65,6 +67,7 @@ python wt_geo.py all                        # 经纬度（需要联网下 DEM �
 | `extract_all.py` | 批量生成 |
 | `validate_index.py` | 校验全部 JSON 并写 `out/index.json` |
 | `fix_bounds.py`、`fix_contour_artifacts.py`、`drop_subwater_contours.py`、`check_contour_jumps.py` | 数据集修整与自检 |
+| `make_landmask.py`、`make_landmask_json.py`、`validate_landmask.py` | 陆水掩膜（栅格 / JSON）与一致性校验 |
 | `wt_textures.py`、`export_textures.py`、`validate_textures.py` | DxP2 贴图包读取、导出、对齐校验 |
 | `wt_airfields.py` | vromfs / 任务 DataBlock → 机场、跑道、重生点 |
 | `wt_geo.py`、`make_geo_advisory.py` | 地名 OCR + DEM 配准 → 经纬度参考 |
@@ -72,7 +75,7 @@ python wt_geo.py all                        # 经纬度（需要联网下 DEM �
 
 ## 数据覆盖
 
-164 个关卡中 163 个有地形：90 个直接来自 HM2，73 个旧格式关卡由 LandMesh 重建。重建精度用 90 张同时含两种来源的图交叉验证，中位绝对误差 0.14 m。细节与限制见[方法与验证](docs/METHOD-VALIDATION.md)。
+164 个关卡中 163 个有地形：90 个直接来自 HM2，73 个旧格式关卡由 LandMesh 重建。重建精度用 90 张同时含两种来源的图交叉验证，中位绝对误差 0.14 m。163 张图另有陆水掩膜，按高度图的 `waterLevel` 划出陆地与水面，供前端做海岸线着色。细节与限制见[方法与验证](docs/METHOD-VALIDATION.md)。
 
 ## 许可与来源
 
@@ -90,6 +93,7 @@ Offline extraction of War Thunder level terrain. It decodes the `DBLD` level con
 - Coordinates: `replay-world-meters`, x east / y north, metres.
 - Coverage: 164 levels, 163 with terrain (90 from HM2, 73 rebuilt from LandMesh; median error 0.14 m over 90 cross-checked levels).
 - The `dataset/` directory ships the computed contour JSON (163 maps), georeference and airfield data so downstream tools can load them without the game.
+- Land/water masks are exported per level as RLE bitmaps plus closed rings (even-odd fill), so a map view can shade land and keep water transparent without the full terrain mesh.
 - Requirements: Windows, Python 3.10+, `pip install -r requirements.txt`, plus the Oodle kernel DLL (`daKernel-dev.dll`, not redistributed).
 - Set `WT_GAME_DIR` to the War Thunder install folder and `WT_OODLE_DLL` to the DLL, then run `python make_contours.py avg_berlin` or `python extract_all.py`.
 

@@ -1,12 +1,13 @@
 # 数据集
 
-仓库里的 `dataset/` 是已经算好的离线数据，可以直接被地图工具、回放播放器或仪表页读取；重新生成只需要本机安装的战雷客户端，步骤见第 6 节。
+仓库里的 `dataset/` 是已经算好的离线数据，可以直接被地图工具、回放播放器或仪表页读取；重新生成只需要本机安装的战雷客户端，步骤见第 10 节。
 
 ## 1. 目录
 
 ```
 dataset/
   contours/                 163 张地图的等高线 + index.json        ~93 MB
+  landmask/                 163 张地图的陆水掩膜 + index.json      ~8 MB
   geo/                      164 张地图的经纬度参考 + index.json    ~0.5 MB
   airfields/                164 张地图的机场/跑道/重生点 + index.json ~12 MB
 ```
@@ -27,6 +28,8 @@ dataset/
 | 跑道 | 底图内 1,964 条 + 底图外 393 条 |
 | 重生点 | 37,255 + 604 |
 | 经纬度参考 | 59 关解出（high 6 / medium 14 / low 39），105 关标记 `unresolved` |
+| 陆水掩膜 | 163 张（25 张整图陆地，`waterLevel = null`） |
+| 掩膜网格 | 高度图分辨率，按整数倍降采样到最大 2048×2048 |
 
 ## 3. 等高线索引 `contours/index.json`
 
@@ -70,11 +73,19 @@ dataset/
     "cellSizeM": 64.03,
     "heightMin": -59.82, "heightMax": 5145.25,
     "contourIntervalM": 200.0,
-    "sampleStep": 2,                 // 出线时对高度图的降采样步长
-    "simplifyTolM": 1.4,             // Douglas-Peucker 容差（米）
+    "sampleStep": 1,                 // 出线时对高度图的降采样步长
+    "simplifyTolM": 22.41,           // Douglas-Peucker 容差（米）
     "originX": -32768.0, "originY": -32768.0,
     "yFlipped": false,
-    "waterLevel": null               // 无真实水位，水由 h <= 0 近似
+    "waterLevel": 0.0,               // null = 该图没有低于 0 的高度，整图按陆地处
+    "artifactFilter": {              // 栅格空边过滤参数与实际丢弃数
+      "flatWindow": 5, "dropFlatFraction": 0.55,
+      "polylinesBefore": 459, "polylinesAfter": 459,
+      "droppedFlat": 0, "cutAtBridge": 0,
+      "droppedSubWaterLevels": 1, "waterLevelUsed": 0.0,
+      "polylinesAfterSubWater": 453
+    },
+    "note": "..."                    // 人读的来源与误差说明
   },
   "contours": [
     { "elev": 200.0, "lines": [[x0,y0, x1,y1, ...], ...] }
@@ -88,8 +99,8 @@ dataset/
 
 - 坐标单位米，`x` 向东、`y` 向北，`crs = replay-world-meters`；
 - 折线是扁平数组，保留 1 位小数；
-- `water` / `coastlines` 只在图里有高程 ≤ 0 的区域时出现（163 张里 138 张有）；
-- 水面是 `height <= 0` 的近似，不是关卡里的真实水体对象；
+- `water` / `coastlines` 只在图里有高程 ≤ `waterLevel` 的区域时出现（163 张里 138 张有）；
+- 水面由 `height <= waterLevel` 得到，`waterLevel` 为 `null` 时整图按陆地处；等于水线的像素算水；
 - 高度图本身不入库（体积大），需要时用 `make_contours.py` 在本机生成 `*_heightmap.npz`。
 
 ## 5. 怎么用
@@ -133,7 +144,54 @@ worldY = bounds.maxY - (py + 0.5) * mppY
 
 `dataset/geo/<map>.json` 的 `bounds` 是 WGS84 经纬度框。**先读 `confidence`**：只有 `high` / `medium` 可以当坐标用，`low` 只能当提示，`unresolved` 没有位置。`air_grand_canyon` 已确认是错误匹配，`ADVISORY.json` 里单独列出。
 
-## 6. 机场 / 跑道 / 重生点 `airfields/<map>.json`
+## 6. 陆水掩膜 `landmask/<map>.json`
+
+给前端做"陆地着色、水面透明"用的二值区域，按高度图网格生成，和等高线同一套 world 坐标。
+
+```jsonc
+{
+  "schema": "wt-landmask/1",
+  "map": "air_skyscraper_city",
+  "crs": "replay-world-meters",
+  "bounds": { "minX": -32768.0, "maxX": 32800.03,
+              "minY": -32768.0, "maxY": 32800.03 },
+  "waterLevel": 0.0,                 // null = 没有低于 0 的高度，整图陆地
+  "landFraction": 0.773744,
+  "land": {
+    "encoding": "rle-rows",
+    "width": 1024, "height": 1024,
+    "rowZero": "maxY",               // 行 0 = 世界最大 Y（北）
+    "startsWith": 0,                 // 第一个游程的值（1 = 陆地，0 = 水）
+    "runs": [ ... ]                  // 行主序游程长度，1/0 交替
+  },
+  "landRings": {
+    "fillRule": "evenodd",
+    "rings": [ [x0,y0, x1,y1, ...] ], // 闭合环，世界米
+    "pointCount": 12345
+  },
+  "gridNote": "...",
+  "waterLevelNote": "..."
+}
+```
+
+解码规则：
+
+- `land.rle`：按行主序、从 `(0,0)` 开始，从 `startsWith` 起 1/0 交替展开，`runs` 加起来必须等于 `width * height`；
+- `landRings`：用 **even-odd** 填充，洞就是额外的环，不需要判断外环/内环；
+- 采样一个世界坐标 `(x, y)`：
+
+```js
+const px = Math.floor((x - bounds.minX) / (bounds.maxX - bounds.minX) * width);
+const py = Math.floor((bounds.maxY - y) / (bounds.maxY - bounds.minY) * height);
+```
+
+- 网格是高度图按整数倍降采样（最大 2048），像素中心与贴图对齐；
+- 水线规则：`h <= waterLevel` 是水，等于水线的像素算水；
+- 掩膜只按地形高度判断，高于海平面的河流/湖泊算陆地。
+
+索引 `landmask/index.json` 汇总每张图的 `grid`、`landFraction`、`waterLevel`、`rings`、`bytes`。另有栅格产品（`<map>_land.png`，255 = 陆地）由 `make_landmask.py` 生成，需要先导出贴图以取得网格尺寸。
+
+## 7. 机场 / 跑道 / 重生点 `airfields/<map>.json`
 
 ```jsonc
 {
@@ -188,7 +246,7 @@ worldY = bounds.maxY - (py + 0.5) * mppY
 
 索引 `airfields/index.json` 汇总：`levels`、`levelsWithAirfields`、`airfields`、`airfieldsOutsideBaseMap`、`respawns`、`respawnsOutsideBaseMap`、`runwaysTotal`、`maps`、`noAirfieldData`（17 关，含机库与纯海图）、`unattributableMissions`（22 个任务无法归属到任何地图，原因逐条记录，没有猜）。
 
-## 7. 经纬度参考 `geo/<map>.json`
+## 8. 经纬度参考 `geo/<map>.json`
 
 ```jsonc
 {
@@ -218,7 +276,7 @@ worldY = bounds.maxY - (py + 0.5) * mppY
 
 **只有 `high` / `medium` 可以当坐标**；`low` 当提示；`unresolved` 没有位置。`geo/ADVISORY.json` 单独列出已知不可用的结果（例如 `air_grand_canyon`）。
 
-## 8. 未随仓库发布的贴图与高度图
+## 9. 未随仓库发布的贴图与高度图
 
 贴图（`out/textures/`，约 1 GB）与高度图（`out/*_heightmap.npz`，约 1.1 GB）体积大，而且属于游戏素材，因此不入库。它们可以随时在本机重新生成：
 
@@ -251,7 +309,7 @@ python make_contours.py <map>  # -> out/<map>_heightmap.npz + 等高线 + 预览
 
 覆盖：160 个关卡有贴图，其中 147 个有可用作底图的 `map` 影像（144 张 2048²、3 张 4096²），13 个只有 `tankmap`；另有 87 张 `tankmap`、1 张 `planemap`、1 张 `airmap`，主图合计 241 张，全部 ≥ 2048²。4 个 `hangar_field*` 没有贴图。
 
-## 9. 重新生成
+## 10. 重新生成
 
 ```powershell
 $env:WT_GAME_DIR  = "D:\Games\War Thunder"          # 含 levels/ 的目录
@@ -264,6 +322,8 @@ python drop_subwater_contours.py      # 整图位于水面以下的关卡不再�
 python check_contour_jumps.py         # 折线跳变自检
 
 python export_textures.py             # 贴图 -> out/textures/
+python make_landmask_json.py --all    # 陆水掩膜 -> out/landmask/*.json + index.json
+python validate_landmask.py           # 校验掩膜（RLE/环/一致性），写 proof
 python wt_airfields.py --all          # 机场 -> out/airfields/
 python wt_geo.py all                  # 经纬度 -> out/geo/（需要联网下 DEM）
 python make_geo_advisory.py           # 写 out/geo/ADVISORY.json
@@ -274,13 +334,14 @@ python make_geo_advisory.py           # 写 out/geo/ADVISORY.json
 ```powershell
 Copy-Item out\*_contours.json dataset\contours\ -Force
 Copy-Item out\index.json      dataset\contours\index.json -Force
+Copy-Item out\landmask\*      dataset\landmask\ -Force
 Copy-Item out\geo\*           dataset\geo\ -Force
 Copy-Item out\airfields\*     dataset\airfields\ -Force
 ```
 
 `dataset/` 只是快照，不参与生成；下游仓库按发布标签取它，而不是直接跟分支。
 
-## 10. 来源与许可
+## 11. 来源与许可
 
 - 数据由本仓库的代码从**本机安装的战雷客户端**解析得到，仓库不再分发游戏原始资源（贴图、高度图、关卡文件均不入库）；
 - 原始素材版权归 Gaijin Entertainment；派生数据仅用于互操作与研究；

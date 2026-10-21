@@ -1,0 +1,1800 @@
+{
+ "crs": "replay-world-meters",
+ "maps": {
+  "air_afghan": {
+   "bytes": 749,
+   "file": "air_afghan.json",
+   "grid": [
+    2048,
+    2048
+   ],
+   "landFraction": 1.0,
+   "rings": 1,
+   "waterLevel": null
+  },
+  "air_africa_desert": {
+   "bytes": 1935,
+   "file": "air_africa_desert.json",
+   "grid": [
+    2048,
+    2048
+   ],
+   "landFraction": 0.999956,
+   "rings": 6,
+   "waterLevel": 0.0
+  },
+  "air_archipelago": {
+   "bytes": 52270,
+   "file": "air_archipelago.json",
+   "grid": [
+    2048,
+    2048
+   ],
+   "landFraction": 0.755441,
+   "rings": 20,
+   "waterLevel": 0.0
+  },
+  "air_denmark": {
+   "bytes": 130627,
+   "file": "air_denmark.json",
+   "grid": [
+    1024,
+    1024
+   ],
+   "landFraction": 0.451946,
+   "rings": 267,
+   "waterLevel": 0.0
+  },
+  "air_equatorial_island": {
+   "bytes": 10306,
+   "file": "air_equatorial_island.json",
+   "grid": [
+    1024,
+    1024
+   ],
+   "landFraction": 0.074225,
+   "rings": 1,
+   "waterLevel": 0.0
+  },
+  "air_falklands": {
+   "bytes": 283322,
+   "file": "air_falklands.json",
+   "grid": [
+    2048,
+    2048
+   ],
+   "landFraction": 0.193425,
+   "rings": 267,
+   "waterLevel": 0.0
+  },
+  "air_grand_canyon": {
+   "bytes": 42659,
+   "file": "air_grand_canyon.json",
+   "grid": [
+    2048,
+    2048
+   ],
+   "landFraction": 0.99823,
+   "rings": 2,
+   "waterLevel": 0.0
+  },
+  "air_israel": {
+   "bytes": 13532,
+   "file": "air_israel.json",
+   "grid": [
+    1024,
+    1024
+   ],
+   "landFraction": 0.614911,
+   "rings": 1,
+   "waterLevel": 0.0
+  },
+  "air_kamchatka": {
+   "bytes": 58779,
+   "file": "air_kamchatka.json",
+   "grid": [
+    1024,
+    1024
+   ],
+   "landFraction": 0.987906,
+   "rings": 66,
+   "waterLevel": 0.0
+  },
+  "air_ladoga": {
+   "bytes": 716,
+   "file": "air_ladoga.json",
+   "grid": [
+    1024,
+    1024
+   ],
+   "landFraction": 1.0,
+   "rings": 1,
+   "waterLevel": null
+  },
+  "air_mysterious_valley": {
+   "bytes": 729,
+   "file": "air_mysterious_valley.json",
+   "grid": [
+    1024,
+    1024
+   ],
+   "landFraction": 1.0,
+   "rings": 1,
+   "waterLevel": null
+  },
+  "air_normandy": {
+   "bytes": 40570,
+   "file": "air_normandy.json",
+   "grid": [
+    1024,
+    1024
+   ],
+   "landFraction": 0.565148,
+   "rings": 19,
+   "waterLevel": 0.0
+  },
+  "air_pyrenees": {
+   "bytes": 751,
+   "file": "air_pyrenees.json",
+   "grid": [
+    2048,
+    2048
+   ],
+   "landFraction": 1.0,
+   "rings": 1,
+   "waterLevel": null
+  },
+  "air_race_phiphi_islands": {
+   "bytes": 100772,
+   "file": "air_race_phiphi_islands.json",
+   "grid": [
+    1023,
+    1023
+   ],
+   "landFraction": 0.52681,
+   "rings": 112,
+   "waterLevel": 0.0
+  },
+  "air_skyscraper_city": {
+   "bytes": 21338,
+   "file": "air_skyscraper_city.json",
+   "grid": [
+    1024,
+    1024
+   ],
+   "landFraction": 0.773744,
+   "rings": 4,
+   "waterLevel": 0.0
+  },
+  "air_smolensk": {
+   "bytes": 159353,
+   "file": "air_smolensk.json",
+   "grid": [
+    1024,
+    1024
+   ],
+   "landFraction": 0.987627,
+   "rings": 430,
+   "waterLevel": 0.0
+  },
+  "air_south_eastern_city": {
+   "bytes": 213797,
+   "file": "air_south_eastern_city.json",
+   "grid": [
+    2048,
+    2048
+   ],
+   "landFraction": 0.308701,
+   "rings": 210,
+   "waterLevel": 0.0
+  },
+  "air_southeastern_cliffs": {
+   "bytes": 55013,
+   "file": "air_southeastern_cliffs.json",
+   "grid": [
+    1024,
+    1024
+   ],
+   "landFraction": 0.834114,
+   "rings": 19,
+   "waterLevel": 0.0
+  },
+  "air_vietnam": {
+   "bytes": 73066,
+   "file": "air_vietnam.json",
+   "grid": [
+    1024,
+    1024
+   ],
+   "landFraction": 0.981417,
+   "rings": 9,
+   "waterLevel": 0.0
+  },
+  "arcade_africa_canyon": {
+   "bytes": 58713,
+   "file": "arcade_africa_canyon.json",
+   "grid": [
+    1024,
+    1024
+   ],
+   "landFraction": 0.879436,
+   "rings": 14,
+   "waterLevel": 0.0
+  },
+  "arcade_africa_seashore": {
+   "bytes": 129046,
+   "file": "arcade_africa_seashore.json",
+   "grid": [
+    1024,
+    1024
+   ],
+   "landFraction": 0.660606,
+   "rings": 57,
+   "waterLevel": 0.0
+  },
+  "arcade_alps": {
+   "bytes": 16091,
+   "file": "arcade_alps.json",
+   "grid": [
+    1024,
+    1024
+   ],
+   "landFraction": 0.967852,
+   "rings": 5,
+   "waterLevel": 0.0
+  },
+  "arcade_asia_4roads": {
+   "bytes": 9645,
+   "file": "arcade_asia_4roads.json",
+   "grid": [
+    1024,
+    1024
+   ],
+   "landFraction": 0.989947,
+   "rings": 1,
+   "waterLevel": 0.0
+  },
+  "arcade_canyon_snow": {
+   "bytes": 21489,
+   "file": "arcade_canyon_snow.json",
+   "grid": [
+    1024,
+    1024
+   ],
+   "landFraction": 0.985899,
+   "rings": 3,
+   "waterLevel": 0.0
+  },
+  "arcade_ireland": {
+   "bytes": 76520,
+   "file": "arcade_ireland.json",
+   "grid": [
+    1024,
+    1024
+   ],
+   "landFraction": 0.765594,
+   "rings": 60,
+   "waterLevel": 0.0
+  },
+  "arcade_mediterranean": {
+   "bytes": 39650,
+   "file": "arcade_mediterranean.json",
+   "grid": [
+    1024,
+    1024
+   ],
+   "landFraction": 0.954331,
+   "rings": 9,
+   "waterLevel": 0.0
+  },
+  "arcade_norway_fjords": {
+   "bytes": 92493,
+   "file": "arcade_norway_fjords.json",
+   "grid": [
+    1024,
+    1024
+   ],
+   "landFraction": 0.606621,
+   "rings": 42,
+   "waterLevel": 0.0
+  },
+  "arcade_norway_green": {
+   "bytes": 14715,
+   "file": "arcade_norway_green.json",
+   "grid": [
+    1024,
+    1024
+   ],
+   "landFraction": 0.966438,
+   "rings": 2,
+   "waterLevel": 0.0
+  },
+  "arcade_norway_plain": {
+   "bytes": 16002,
+   "file": "arcade_norway_plain.json",
+   "grid": [
+    1024,
+    1024
+   ],
+   "landFraction": 0.959743,
+   "rings": 2,
+   "waterLevel": 0.0
+  },
+  "arcade_phiphi_crater": {
+   "bytes": 133658,
+   "file": "arcade_phiphi_crater.json",
+   "grid": [
+    1024,
+    1024
+   ],
+   "landFraction": 0.23886,
+   "rings": 137,
+   "waterLevel": 0.0
+  },
+  "arcade_phiphi_crater_rocks": {
+   "bytes": 108299,
+   "file": "arcade_phiphi_crater_rocks.json",
+   "grid": [
+    1024,
+    1024
+   ],
+   "landFraction": 0.26731,
+   "rings": 81,
+   "waterLevel": 0.0
+  },
+  "arcade_rice_terraces": {
+   "bytes": 38369,
+   "file": "arcade_rice_terraces.json",
+   "grid": [
+    1024,
+    1024
+   ],
+   "landFraction": 0.850643,
+   "rings": 5,
+   "waterLevel": 0.0
+  },
+  "arcade_snow_rocks": {
+   "bytes": 11000,
+   "file": "arcade_snow_rocks.json",
+   "grid": [
+    1024,
+    1024
+   ],
+   "landFraction": 0.961266,
+   "rings": 4,
+   "waterLevel": 0.0
+  },
+  "arcade_tabletop_mountain": {
+   "bytes": 20363,
+   "file": "arcade_tabletop_mountain.json",
+   "grid": [
+    1024,
+    1024
+   ],
+   "landFraction": 0.078723,
+   "rings": 10,
+   "waterLevel": 0.0
+  },
+  "arcade_zhang_park": {
+   "bytes": 5738,
+   "file": "arcade_zhang_park.json",
+   "grid": [
+    1024,
+    1024
+   ],
+   "landFraction": 0.990751,
+   "rings": 2,
+   "waterLevel": 0.0
+  },
+  "avg_abandoned_factory": {
+   "bytes": 26143,
+   "file": "avg_abandoned_factory.json",
+   "grid": [
+    2048,
+    2048
+   ],
+   "landFraction": 0.671067,
+   "rings": 1,
+   "waterLevel": 0.0
+  },
+  "avg_abandoned_town": {
+   "bytes": 708,
+   "file": "avg_abandoned_town.json",
+   "grid": [
+    2048,
+    2048
+   ],
+   "landFraction": 1.0,
+   "rings": 1,
+   "waterLevel": null
+  },
+  "avg_africa_desert": {
+   "bytes": 972,
+   "file": "avg_africa_desert.json",
+   "grid": [
+    2048,
+    2048
+   ],
+   "landFraction": 0.999976,
+   "rings": 2,
+   "waterLevel": 0.0
+  },
+  "avg_alaska_town": {
+   "bytes": 93479,
+   "file": "avg_alaska_town.json",
+   "grid": [
+    2048,
+    2048
+   ],
+   "landFraction": 0.499579,
+   "rings": 28,
+   "waterLevel": 0.0
+  },
+  "avg_american_valley": {
+   "bytes": 8227,
+   "file": "avg_american_valley.json",
+   "grid": [
+    2048,
+    2048
+   ],
+   "landFraction": 0.970416,
+   "rings": 2,
+   "waterLevel": 0.0
+  },
+  "avg_aral_sea": {
+   "bytes": 1065,
+   "file": "avg_aral_sea.json",
+   "grid": [
+    2048,
+    2048
+   ],
+   "landFraction": 0.999986,
+   "rings": 4,
+   "waterLevel": 0.0
+  },
+  "avg_arctic": {
+   "bytes": 198398,
+   "file": "avg_arctic.json",
+   "grid": [
+    2048,
+    2048
+   ],
+   "landFraction": 0.69348,
+   "rings": 71,
+   "waterLevel": 0.0
+  },
+  "avg_ardennes": {
+   "bytes": 674,
+   "file": "avg_ardennes.json",
+   "grid": [
+    2048,
+    2048
+   ],
+   "landFraction": 1.0,
+   "rings": 1,
+   "waterLevel": null
+  },
+  "avg_ardennes_snow": {
+   "bytes": 679,
+   "file": "avg_ardennes_snow.json",
+   "grid": [
+    2048,
+    2048
+   ],
+   "landFraction": 1.0,
+   "rings": 1,
+   "waterLevel": null
+  },
+  "avg_berlin": {
+   "bytes": 672,
+   "file": "avg_berlin.json",
+   "grid": [
+    2048,
+    2048
+   ],
+   "landFraction": 1.0,
+   "rings": 1,
+   "waterLevel": null
+  },
+  "avg_breslau": {
+   "bytes": 87814,
+   "file": "avg_breslau.json",
+   "grid": [
+    2048,
+    2048
+   ],
+   "landFraction": 0.940302,
+   "rings": 37,
+   "waterLevel": 0.0
+  },
+  "avg_container_port": {
+   "bytes": 42340,
+   "file": "avg_container_port.json",
+   "grid": [
+    2048,
+    2048
+   ],
+   "landFraction": 0.852503,
+   "rings": 6,
+   "waterLevel": 0.0
+  },
+  "avg_eastern_europe": {
+   "bytes": 42556,
+   "file": "avg_eastern_europe.json",
+   "grid": [
+    2048,
+    2048
+   ],
+   "landFraction": 0.970876,
+   "rings": 27,
+   "waterLevel": 0.0
+  },
+  "avg_egypt_sinai": {
+   "bytes": 677,
+   "file": "avg_egypt_sinai.json",
+   "grid": [
+    2048,
+    2048
+   ],
+   "landFraction": 1.0,
+   "rings": 1,
+   "waterLevel": null
+  },
+  "avg_european_fortress": {
+   "bytes": 48996,
+   "file": "avg_european_fortress.json",
+   "grid": [
+    2048,
+    2048
+   ],
+   "landFraction": 0.910344,
+   "rings": 6,
+   "waterLevel": 0.0
+  },
+  "avg_falklands": {
+   "bytes": 88006,
+   "file": "avg_falklands.json",
+   "grid": [
+    2048,
+    2048
+   ],
+   "landFraction": 0.51584,
+   "rings": 26,
+   "waterLevel": 0.0
+  },
+  "avg_finland": {
+   "bytes": 35194,
+   "file": "avg_finland.json",
+   "grid": [
+    2048,
+    2048
+   ],
+   "landFraction": 0.749601,
+   "rings": 2,
+   "waterLevel": 0.0
+  },
+  "avg_football_field": {
+   "bytes": 708,
+   "file": "avg_football_field.json",
+   "grid": [
+    2048,
+    2048
+   ],
+   "landFraction": 1.0,
+   "rings": 1,
+   "waterLevel": null
+  },
+  "avg_fulda": {
+   "bytes": 671,
+   "file": "avg_fulda.json",
+   "grid": [
+    2048,
+    2048
+   ],
+   "landFraction": 1.0,
+   "rings": 1,
+   "waterLevel": null
+  },
+  "avg_greece": {
+   "bytes": 28653,
+   "file": "avg_greece.json",
+   "grid": [
+    2048,
+    2048
+   ],
+   "landFraction": 0.680486,
+   "rings": 2,
+   "waterLevel": 0.0
+  },
+  "avg_guadalcanal": {
+   "bytes": 45819,
+   "file": "avg_guadalcanal.json",
+   "grid": [
+    2048,
+    2048
+   ],
+   "landFraction": 0.698657,
+   "rings": 10,
+   "waterLevel": 0.0
+  },
+  "avg_hurtgen": {
+   "bytes": 64674,
+   "file": "avg_hurtgen.json",
+   "grid": [
+    2048,
+    2048
+   ],
+   "landFraction": 0.960077,
+   "rings": 4,
+   "waterLevel": 0.0
+  },
+  "avg_iberian_castle": {
+   "bytes": 680,
+   "file": "avg_iberian_castle.json",
+   "grid": [
+    2048,
+    2048
+   ],
+   "landFraction": 1.0,
+   "rings": 1,
+   "waterLevel": null
+  },
+  "avg_ireland": {
+   "bytes": 14135,
+   "file": "avg_ireland.json",
+   "grid": [
+    2048,
+    2048
+   ],
+   "landFraction": 0.942548,
+   "rings": 5,
+   "waterLevel": 0.0
+  },
+  "avg_israel": {
+   "bytes": 28861,
+   "file": "avg_israel.json",
+   "grid": [
+    2048,
+    2048
+   ],
+   "landFraction": 0.631975,
+   "rings": 2,
+   "waterLevel": 0.0
+  },
+  "avg_japan": {
+   "bytes": 671,
+   "file": "avg_japan.json",
+   "grid": [
+    2048,
+    2048
+   ],
+   "landFraction": 1.0,
+   "rings": 1,
+   "waterLevel": null
+  },
+  "avg_karantan": {
+   "bytes": 39527,
+   "file": "avg_karantan.json",
+   "grid": [
+    2048,
+    2048
+   ],
+   "landFraction": 0.99217,
+   "rings": 4,
+   "waterLevel": 0.0
+  },
+  "avg_karelia_forest_a": {
+   "bytes": 3763,
+   "file": "avg_karelia_forest_a.json",
+   "grid": [
+    1024,
+    1024
+   ],
+   "landFraction": 0.991408,
+   "rings": 1,
+   "waterLevel": 0.0
+  },
+  "avg_karpaty_passage": {
+   "bytes": 681,
+   "file": "avg_karpaty_passage.json",
+   "grid": [
+    2048,
+    2048
+   ],
+   "landFraction": 1.0,
+   "rings": 1,
+   "waterLevel": null
+  },
+  "avg_korea_lake": {
+   "bytes": 676,
+   "file": "avg_korea_lake.json",
+   "grid": [
+    2048,
+    2048
+   ],
+   "landFraction": 1.0,
+   "rings": 1,
+   "waterLevel": null
+  },
+  "avg_krymsk": {
+   "bytes": 672,
+   "file": "avg_krymsk.json",
+   "grid": [
+    2048,
+    2048
+   ],
+   "landFraction": 1.0,
+   "rings": 1,
+   "waterLevel": null
+  },
+  "avg_kursk_villages": {
+   "bytes": 34445,
+   "file": "avg_kursk_villages.json",
+   "grid": [
+    2048,
+    2048
+   ],
+   "landFraction": 0.935746,
+   "rings": 5,
+   "waterLevel": 0.0
+  },
+  "avg_lazzaro_italy_new_city": {
+   "bytes": 28244,
+   "file": "avg_lazzaro_italy_new_city.json",
+   "grid": [
+    2048,
+    2048
+   ],
+   "landFraction": 0.95263,
+   "rings": 9,
+   "waterLevel": 0.0
+  },
+  "avg_maginot_rework": {
+   "bytes": 167156,
+   "file": "avg_maginot_rework.json",
+   "grid": [
+    2048,
+    2048
+   ],
+   "landFraction": 0.767512,
+   "rings": 98,
+   "waterLevel": 0.0
+  },
+  "avg_mozdok": {
+   "bytes": 45074,
+   "file": "avg_mozdok.json",
+   "grid": [
+    2048,
+    2048
+   ],
+   "landFraction": 0.948235,
+   "rings": 9,
+   "waterLevel": 0.0
+  },
+  "avg_netherlands": {
+   "bytes": 40926,
+   "file": "avg_netherlands.json",
+   "grid": [
+    2048,
+    2048
+   ],
+   "landFraction": 0.966486,
+   "rings": 2,
+   "waterLevel": 0.0
+  },
+  "avg_normandy": {
+   "bytes": 11722,
+   "file": "avg_normandy.json",
+   "grid": [
+    2048,
+    2048
+   ],
+   "landFraction": 0.937447,
+   "rings": 9,
+   "waterLevel": 0.0
+  },
+  "avg_northern_india": {
+   "bytes": 690,
+   "file": "avg_northern_india.json",
+   "grid": [
+    2048,
+    2048
+   ],
+   "landFraction": 1.0,
+   "rings": 1,
+   "waterLevel": null
+  },
+  "avg_northern_valley": {
+   "bytes": 164935,
+   "file": "avg_northern_valley.json",
+   "grid": [
+    2048,
+    2048
+   ],
+   "landFraction": 0.802241,
+   "rings": 90,
+   "waterLevel": 0.0
+  },
+  "avg_nuclear_incident": {
+   "bytes": 93484,
+   "file": "avg_nuclear_incident.json",
+   "grid": [
+    2048,
+    2048
+   ],
+   "landFraction": 0.499579,
+   "rings": 28,
+   "waterLevel": 0.0
+  },
+  "avg_poland": {
+   "bytes": 9298,
+   "file": "avg_poland.json",
+   "grid": [
+    2048,
+    2048
+   ],
+   "landFraction": 0.979734,
+   "rings": 3,
+   "waterLevel": 0.0
+  },
+  "avg_poland_snow": {
+   "bytes": 9625,
+   "file": "avg_poland_snow.json",
+   "grid": [
+    2048,
+    2048
+   ],
+   "landFraction": 0.979717,
+   "rings": 3,
+   "waterLevel": 0.0
+  },
+  "avg_port_novorossiysk": {
+   "bytes": 48000,
+   "file": "avg_port_novorossiysk.json",
+   "grid": [
+    2048,
+    2048
+   ],
+   "landFraction": 0.666523,
+   "rings": 2,
+   "waterLevel": 0.0
+  },
+  "avg_red_desert": {
+   "bytes": 676,
+   "file": "avg_red_desert.json",
+   "grid": [
+    2048,
+    2048
+   ],
+   "landFraction": 1.0,
+   "rings": 1,
+   "waterLevel": null
+  },
+  "avg_rheinland": {
+   "bytes": 675,
+   "file": "avg_rheinland.json",
+   "grid": [
+    2048,
+    2048
+   ],
+   "landFraction": 1.0,
+   "rings": 1,
+   "waterLevel": null
+  },
+  "avg_sector_montmedy": {
+   "bytes": 35906,
+   "file": "avg_sector_montmedy.json",
+   "grid": [
+    2048,
+    2048
+   ],
+   "landFraction": 0.92783,
+   "rings": 4,
+   "waterLevel": 0.0
+  },
+  "avg_sector_montmedy_snow": {
+   "bytes": 35803,
+   "file": "avg_sector_montmedy_snow.json",
+   "grid": [
+    2048,
+    2048
+   ],
+   "landFraction": 0.927822,
+   "rings": 4,
+   "waterLevel": 0.0
+  },
+  "avg_snow_alps": {
+   "bytes": 675,
+   "file": "avg_snow_alps.json",
+   "grid": [
+    2048,
+    2048
+   ],
+   "landFraction": 1.0,
+   "rings": 1,
+   "waterLevel": null
+  },
+  "avg_soviet_range": {
+   "bytes": 1531,
+   "file": "avg_soviet_range.json",
+   "grid": [
+    2048,
+    2048
+   ],
+   "landFraction": 0.999756,
+   "rings": 3,
+   "waterLevel": 0.0
+  },
+  "avg_soviet_suburban": {
+   "bytes": 30266,
+   "file": "avg_soviet_suburban.json",
+   "grid": [
+    2048,
+    2048
+   ],
+   "landFraction": 0.973232,
+   "rings": 3,
+   "waterLevel": 0.0
+  },
+  "avg_soviet_suburban_snow": {
+   "bytes": 31257,
+   "file": "avg_soviet_suburban_snow.json",
+   "grid": [
+    2048,
+    2048
+   ],
+   "landFraction": 0.974072,
+   "rings": 5,
+   "waterLevel": 0.0
+  },
+  "avg_stalingrad_factory": {
+   "bytes": 42279,
+   "file": "avg_stalingrad_factory.json",
+   "grid": [
+    2048,
+    2048
+   ],
+   "landFraction": 0.531783,
+   "rings": 14,
+   "waterLevel": 0.0
+  },
+  "avg_sweden": {
+   "bytes": 70684,
+   "file": "avg_sweden.json",
+   "grid": [
+    2048,
+    2048
+   ],
+   "landFraction": 0.689305,
+   "rings": 8,
+   "waterLevel": 0.0
+  },
+  "avg_syria": {
+   "bytes": 699,
+   "file": "avg_syria.json",
+   "grid": [
+    2048,
+    2048
+   ],
+   "landFraction": 1.0,
+   "rings": 1,
+   "waterLevel": null
+  },
+  "avg_training_ground": {
+   "bytes": 681,
+   "file": "avg_training_ground.json",
+   "grid": [
+    2048,
+    2048
+   ],
+   "landFraction": 1.0,
+   "rings": 1,
+   "waterLevel": null
+  },
+  "avg_tunisia_desert": {
+   "bytes": 51767,
+   "file": "avg_tunisia_desert.json",
+   "grid": [
+    2048,
+    2048
+   ],
+   "landFraction": 0.875562,
+   "rings": 9,
+   "waterLevel": 0.0
+  },
+  "avg_vietnam_hills": {
+   "bytes": 116834,
+   "file": "avg_vietnam_hills.json",
+   "grid": [
+    2048,
+    2048
+   ],
+   "landFraction": 0.73255,
+   "rings": 86,
+   "waterLevel": 0.0
+  },
+  "avg_vlaanderen": {
+   "bytes": 212852,
+   "file": "avg_vlaanderen.json",
+   "grid": [
+    2048,
+    2048
+   ],
+   "landFraction": 0.687859,
+   "rings": 107,
+   "waterLevel": 0.0
+  },
+  "avg_volokolamsk": {
+   "bytes": 705,
+   "file": "avg_volokolamsk.json",
+   "grid": [
+    2048,
+    2048
+   ],
+   "landFraction": 1.0,
+   "rings": 1,
+   "waterLevel": null
+  },
+  "avg_western_europe": {
+   "bytes": 78982,
+   "file": "avg_western_europe.json",
+   "grid": [
+    2048,
+    2048
+   ],
+   "landFraction": 0.932605,
+   "rings": 92,
+   "waterLevel": 0.0
+  },
+  "avn_africa_gulf": {
+   "bytes": 16402,
+   "file": "avn_africa_gulf.json",
+   "grid": [
+    1024,
+    1024
+   ],
+   "landFraction": 0.03127,
+   "rings": 35,
+   "waterLevel": 0.0
+  },
+  "avn_aleutian_islands": {
+   "bytes": 48577,
+   "file": "avn_aleutian_islands.json",
+   "grid": [
+    1024,
+    1024
+   ],
+   "landFraction": 0.162354,
+   "rings": 60,
+   "waterLevel": 0.0
+  },
+  "avn_alps_fjord": {
+   "bytes": 110392,
+   "file": "avn_alps_fjord.json",
+   "grid": [
+    2048,
+    2048
+   ],
+   "landFraction": 0.121222,
+   "rings": 48,
+   "waterLevel": 0.0
+  },
+  "avn_arabian_north_coast": {
+   "bytes": 91899,
+   "file": "avn_arabian_north_coast.json",
+   "grid": [
+    2048,
+    2048
+   ],
+   "landFraction": 0.169378,
+   "rings": 30,
+   "waterLevel": 0.0
+  },
+  "avn_bering_sea": {
+   "bytes": 26152,
+   "file": "avn_bering_sea.json",
+   "grid": [
+    1024,
+    1024
+   ],
+   "landFraction": 0.457795,
+   "rings": 37,
+   "waterLevel": 0.0
+  },
+  "avn_blacksea_port": {
+   "bytes": 71934,
+   "file": "avn_blacksea_port.json",
+   "grid": [
+    2048,
+    2048
+   ],
+   "landFraction": 0.263274,
+   "rings": 33,
+   "waterLevel": 0.0
+  },
+  "avn_coral_islands": {
+   "bytes": 87923,
+   "file": "avn_coral_islands.json",
+   "grid": [
+    2048,
+    2048
+   ],
+   "landFraction": 0.077784,
+   "rings": 51,
+   "waterLevel": 0.0
+  },
+  "avn_england_shore": {
+   "bytes": 145581,
+   "file": "avn_england_shore.json",
+   "grid": [
+    2048,
+    2048
+   ],
+   "landFraction": 0.340694,
+   "rings": 33,
+   "waterLevel": 0.0
+  },
+  "avn_fiji": {
+   "bytes": 66429,
+   "file": "avn_fiji.json",
+   "grid": [
+    2048,
+    2048
+   ],
+   "landFraction": 0.068988,
+   "rings": 33,
+   "waterLevel": 0.0
+  },
+  "avn_finland_islands": {
+   "bytes": 99113,
+   "file": "avn_finland_islands.json",
+   "grid": [
+    1024,
+    1024
+   ],
+   "landFraction": 0.323714,
+   "rings": 153,
+   "waterLevel": 0.0
+  },
+  "avn_franz_josef_land": {
+   "bytes": 57803,
+   "file": "avn_franz_josef_land.json",
+   "grid": [
+    1024,
+    1024
+   ],
+   "landFraction": 0.497005,
+   "rings": 70,
+   "waterLevel": 0.0
+  },
+  "avn_fuego_islands": {
+   "bytes": 112630,
+   "file": "avn_fuego_islands.json",
+   "grid": [
+    2048,
+    2048
+   ],
+   "landFraction": 0.334362,
+   "rings": 36,
+   "waterLevel": 0.0
+  },
+  "avn_ice_port": {
+   "bytes": 72771,
+   "file": "avn_ice_port.json",
+   "grid": [
+    2048,
+    2048
+   ],
+   "landFraction": 0.105691,
+   "rings": 36,
+   "waterLevel": 0.0
+  },
+  "avn_ireland_bay": {
+   "bytes": 143287,
+   "file": "avn_ireland_bay.json",
+   "grid": [
+    2048,
+    2048
+   ],
+   "landFraction": 0.271611,
+   "rings": 72,
+   "waterLevel": 0.0
+  },
+  "avn_japan": {
+   "bytes": 36611,
+   "file": "avn_japan.json",
+   "grid": [
+    1024,
+    1024
+   ],
+   "landFraction": 0.26754,
+   "rings": 20,
+   "waterLevel": 0.0
+  },
+  "avn_mediterranean_port": {
+   "bytes": 82719,
+   "file": "avn_mediterranean_port.json",
+   "grid": [
+    2048,
+    2048
+   ],
+   "landFraction": 0.258259,
+   "rings": 37,
+   "waterLevel": 0.0
+  },
+  "avn_new_zeland_cape": {
+   "bytes": 28875,
+   "file": "avn_new_zeland_cape.json",
+   "grid": [
+    1024,
+    1024
+   ],
+   "landFraction": 0.35413,
+   "rings": 23,
+   "waterLevel": 0.0
+  },
+  "avn_north_sea": {
+   "bytes": 78165,
+   "file": "avn_north_sea.json",
+   "grid": [
+    2048,
+    2048
+   ],
+   "landFraction": 0.302746,
+   "rings": 14,
+   "waterLevel": 0.0
+  },
+  "avn_northwestern_islands": {
+   "bytes": 99728,
+   "file": "avn_northwestern_islands.json",
+   "grid": [
+    2048,
+    2048
+   ],
+   "landFraction": 0.15405,
+   "rings": 43,
+   "waterLevel": 0.0
+  },
+  "avn_norway_islands": {
+   "bytes": 127420,
+   "file": "avn_norway_islands.json",
+   "grid": [
+    2048,
+    2048
+   ],
+   "landFraction": 0.337739,
+   "rings": 51,
+   "waterLevel": 0.0
+  },
+  "avn_peleliu": {
+   "bytes": 47419,
+   "file": "avn_peleliu.json",
+   "grid": [
+    1024,
+    1024
+   ],
+   "landFraction": 0.071818,
+   "rings": 27,
+   "waterLevel": 0.0
+  },
+  "avn_phang_nga_bay_islands": {
+   "bytes": 68894,
+   "file": "avn_phang_nga_bay_islands.json",
+   "grid": [
+    2048,
+    2048
+   ],
+   "landFraction": 0.213135,
+   "rings": 14,
+   "waterLevel": 0.0
+  },
+  "avn_san_francisco": {
+   "bytes": 38849,
+   "file": "avn_san_francisco.json",
+   "grid": [
+    1024,
+    1024
+   ],
+   "landFraction": 0.420119,
+   "rings": 12,
+   "waterLevel": 0.0
+  },
+  "avn_south_africa": {
+   "bytes": 25729,
+   "file": "avn_south_africa.json",
+   "grid": [
+    1024,
+    1024
+   ],
+   "landFraction": 0.375651,
+   "rings": 31,
+   "waterLevel": 0.0
+  },
+  "avn_sunken_city": {
+   "bytes": 71990,
+   "file": "avn_sunken_city.json",
+   "grid": [
+    1024,
+    1024
+   ],
+   "landFraction": 0.516829,
+   "rings": 78,
+   "waterLevel": 0.0
+  },
+  "avn_volcanic_island": {
+   "bytes": 61310,
+   "file": "avn_volcanic_island.json",
+   "grid": [
+    1024,
+    1024
+   ],
+   "landFraction": 0.111592,
+   "rings": 68,
+   "waterLevel": 0.0
+  },
+  "berlin": {
+   "bytes": 824,
+   "file": "berlin.json",
+   "grid": [
+    1024,
+    1024
+   ],
+   "landFraction": 0.999994,
+   "rings": 2,
+   "waterLevel": 0.0
+  },
+  "britain": {
+   "bytes": 45852,
+   "file": "britain.json",
+   "grid": [
+    1024,
+    1024
+   ],
+   "landFraction": 0.634972,
+   "rings": 36,
+   "waterLevel": 0.0
+  },
+  "bulge": {
+   "bytes": 983,
+   "file": "bulge.json",
+   "grid": [
+    1024,
+    1024
+   ],
+   "landFraction": 0.999965,
+   "rings": 2,
+   "waterLevel": 0.0
+  },
+  "caribbean_islands": {
+   "bytes": 16420,
+   "file": "caribbean_islands.json",
+   "grid": [
+    1024,
+    1024
+   ],
+   "landFraction": 0.011999,
+   "rings": 43,
+   "waterLevel": 0.0
+  },
+  "dover_strait": {
+   "bytes": 32382,
+   "file": "dover_strait.json",
+   "grid": [
+    1024,
+    1024
+   ],
+   "landFraction": 0.342978,
+   "rings": 31,
+   "waterLevel": 0.0
+  },
+  "firing_range": {
+   "bytes": 674,
+   "file": "firing_range.json",
+   "grid": [
+    2048,
+    2048
+   ],
+   "landFraction": 1.0,
+   "rings": 1,
+   "waterLevel": null
+  },
+  "guadalcanal": {
+   "bytes": 58140,
+   "file": "guadalcanal.json",
+   "grid": [
+    1024,
+    1024
+   ],
+   "landFraction": 0.382774,
+   "rings": 40,
+   "waterLevel": 0.0
+  },
+  "guam": {
+   "bytes": 26201,
+   "file": "guam.json",
+   "grid": [
+    1024,
+    1024
+   ],
+   "landFraction": 0.138728,
+   "rings": 4,
+   "waterLevel": 0.0
+  },
+  "hangar_field": {
+   "bytes": 9253,
+   "file": "hangar_field.json",
+   "grid": [
+    2048,
+    2048
+   ],
+   "landFraction": 0.968522,
+   "rings": 1,
+   "waterLevel": 0.0
+  },
+  "hangar_field_halloween": {
+   "bytes": 9144,
+   "file": "hangar_field_halloween.json",
+   "grid": [
+    2048,
+    2048
+   ],
+   "landFraction": 0.970461,
+   "rings": 3,
+   "waterLevel": 0.0
+  },
+  "hangar_field_premium": {
+   "bytes": 8364,
+   "file": "hangar_field_premium.json",
+   "grid": [
+    2048,
+    2048
+   ],
+   "landFraction": 0.967642,
+   "rings": 1,
+   "waterLevel": 0.0
+  },
+  "hangar_field_winter": {
+   "bytes": 9873,
+   "file": "hangar_field_winter.json",
+   "grid": [
+    2048,
+    2048
+   ],
+   "landFraction": 0.967743,
+   "rings": 3,
+   "waterLevel": 0.0
+  },
+  "honolulu": {
+   "bytes": 29656,
+   "file": "honolulu.json",
+   "grid": [
+    1024,
+    1024
+   ],
+   "landFraction": 0.328609,
+   "rings": 18,
+   "waterLevel": 0.0
+  },
+  "hurtgen": {
+   "bytes": 90193,
+   "file": "hurtgen.json",
+   "grid": [
+    1024,
+    1024
+   ],
+   "landFraction": 0.984453,
+   "rings": 118,
+   "waterLevel": 0.0
+  },
+  "hvg_africa_large": {
+   "bytes": 22629,
+   "file": "hvg_africa_large.json",
+   "grid": [
+    2048,
+    2048
+   ],
+   "landFraction": 0.909249,
+   "rings": 7,
+   "waterLevel": 0.0
+  },
+  "hvg_al_massa": {
+   "bytes": 46031,
+   "file": "hvg_al_massa.json",
+   "grid": [
+    2048,
+    2048
+   ],
+   "landFraction": 0.92742,
+   "rings": 2,
+   "waterLevel": 0.0
+  },
+  "hvg_granitograd": {
+   "bytes": 23883,
+   "file": "hvg_granitograd.json",
+   "grid": [
+    2048,
+    2048
+   ],
+   "landFraction": 0.991191,
+   "rings": 22,
+   "waterLevel": 0.0
+  },
+  "hvg_training_ground": {
+   "bytes": 730,
+   "file": "hvg_training_ground.json",
+   "grid": [
+    2048,
+    2048
+   ],
+   "landFraction": 1.0,
+   "rings": 1,
+   "waterLevel": null
+  },
+  "iwo_jima": {
+   "bytes": 11285,
+   "file": "iwo_jima.json",
+   "grid": [
+    1024,
+    1024
+   ],
+   "landFraction": 0.101462,
+   "rings": 4,
+   "waterLevel": 0.0
+  },
+  "khalkhin_gol": {
+   "bytes": 53085,
+   "file": "khalkhin_gol.json",
+   "grid": [
+    1024,
+    1024
+   ],
+   "landFraction": 0.989817,
+   "rings": 38,
+   "waterLevel": 0.0
+  },
+  "korea": {
+   "bytes": 94079,
+   "file": "korea.json",
+   "grid": [
+    1024,
+    1024
+   ],
+   "landFraction": 0.977065,
+   "rings": 45,
+   "waterLevel": 0.0
+  },
+  "korsun": {
+   "bytes": 145439,
+   "file": "korsun.json",
+   "grid": [
+    1024,
+    1024
+   ],
+   "landFraction": 0.946516,
+   "rings": 12,
+   "waterLevel": 0.0
+  },
+  "krymsk": {
+   "bytes": 23629,
+   "file": "krymsk.json",
+   "grid": [
+    1024,
+    1024
+   ],
+   "landFraction": 0.56426,
+   "rings": 6,
+   "waterLevel": 0.0
+  },
+  "kursk": {
+   "bytes": 125084,
+   "file": "kursk.json",
+   "grid": [
+    1024,
+    1024
+   ],
+   "landFraction": 0.974121,
+   "rings": 30,
+   "waterLevel": 0.0
+  },
+  "malta": {
+   "bytes": 28007,
+   "file": "malta.json",
+   "grid": [
+    1024,
+    1024
+   ],
+   "landFraction": 0.189736,
+   "rings": 10,
+   "waterLevel": 0.0
+  },
+  "midway": {
+   "bytes": 7008,
+   "file": "midway.json",
+   "grid": [
+    1024,
+    1024
+   ],
+   "landFraction": 0.024333,
+   "rings": 4,
+   "waterLevel": 0.0
+  },
+  "moscow": {
+   "bytes": 102634,
+   "file": "moscow.json",
+   "grid": [
+    1024,
+    1024
+   ],
+   "landFraction": 0.986195,
+   "rings": 124,
+   "waterLevel": 0.0
+  },
+  "mozdok": {
+   "bytes": 19535,
+   "file": "mozdok.json",
+   "grid": [
+    1024,
+    1024
+   ],
+   "landFraction": 0.991713,
+   "rings": 6,
+   "waterLevel": 0.0
+  },
+  "mozdok_winter": {
+   "bytes": 19686,
+   "file": "mozdok_winter.json",
+   "grid": [
+    1024,
+    1024
+   ],
+   "landFraction": 0.991722,
+   "rings": 6,
+   "waterLevel": 0.0
+  },
+  "norway": {
+   "bytes": 183462,
+   "file": "norway.json",
+   "grid": [
+    1024,
+    1024
+   ],
+   "landFraction": 0.837357,
+   "rings": 134,
+   "waterLevel": 0.0
+  },
+  "peleliu": {
+   "bytes": 58247,
+   "file": "peleliu.json",
+   "grid": [
+    1024,
+    1024
+   ],
+   "landFraction": 0.032381,
+   "rings": 121,
+   "waterLevel": 0.0
+  },
+  "port_moresby": {
+   "bytes": 23941,
+   "file": "port_moresby.json",
+   "grid": [
+    1024,
+    1024
+   ],
+   "landFraction": 0.674011,
+   "rings": 14,
+   "waterLevel": 0.0
+  },
+  "ruhr": {
+   "bytes": 74683,
+   "file": "ruhr.json",
+   "grid": [
+    1024,
+    1024
+   ],
+   "landFraction": 0.96809,
+   "rings": 7,
+   "waterLevel": 0.0
+  },
+  "saipan": {
+   "bytes": 17096,
+   "file": "saipan.json",
+   "grid": [
+    1024,
+    1024
+   ],
+   "landFraction": 0.056481,
+   "rings": 9,
+   "waterLevel": 0.0
+  },
+  "sector_montmedy": {
+   "bytes": 121430,
+   "file": "sector_montmedy.json",
+   "grid": [
+    1024,
+    1024
+   ],
+   "landFraction": 0.965489,
+   "rings": 13,
+   "waterLevel": 0.0
+  },
+  "sicily": {
+   "bytes": 56972,
+   "file": "sicily.json",
+   "grid": [
+    1024,
+    1024
+   ],
+   "landFraction": 0.799719,
+   "rings": 129,
+   "waterLevel": 0.0
+  },
+  "spain": {
+   "bytes": 77402,
+   "file": "spain.json",
+   "grid": [
+    1024,
+    1024
+   ],
+   "landFraction": 0.803652,
+   "rings": 20,
+   "waterLevel": 0.0
+  },
+  "stalingrad": {
+   "bytes": 84607,
+   "file": "stalingrad.json",
+   "grid": [
+    1024,
+    1024
+   ],
+   "landFraction": 0.782248,
+   "rings": 35,
+   "waterLevel": 0.0
+  },
+  "stalingrad_w": {
+   "bytes": 80030,
+   "file": "stalingrad_w.json",
+   "grid": [
+    1024,
+    1024
+   ],
+   "landFraction": 0.778956,
+   "rings": 18,
+   "waterLevel": 0.0
+  },
+  "tunisia": {
+   "bytes": 28248,
+   "file": "tunisia.json",
+   "grid": [
+    1024,
+    1024
+   ],
+   "landFraction": 0.610754,
+   "rings": 4,
+   "waterLevel": 0.0
+  },
+  "wake_island": {
+   "bytes": 23053,
+   "file": "wake_island.json",
+   "grid": [
+    1023,
+    1023
+   ],
+   "landFraction": 0.114023,
+   "rings": 3,
+   "waterLevel": 0.0
+  },
+  "zhengzhou": {
+   "bytes": 121491,
+   "file": "zhengzhou.json",
+   "grid": [
+    1024,
+    1024
+   ],
+   "landFraction": 0.965986,
+   "rings": 53,
+   "waterLevel": 0.0
+  }
+ },
+ "note": "One file per level. `land.rle` is the primary form (decode row-major, 1/0 alternating, from (0,0)); `landRings` is the same region as closed rings for even-odd fill. Both use the level's `bounds`, so they line up with the base-map texture by pixel centre.",
+ "schema": "wt-landmask/1"
+}
