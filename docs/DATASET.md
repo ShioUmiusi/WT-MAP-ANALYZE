@@ -185,11 +185,21 @@ const px = Math.floor((x - bounds.minX) / (bounds.maxX - bounds.minX) * width);
 const py = Math.floor((bounds.maxY - y) / (bounds.maxY - bounds.minY) * height);
 ```
 
-- 网格是高度图按整数倍降采样（最大 2048），像素中心与贴图对齐；
+- 网格是高度图按整数倍降采样（最大 2048）；行 0 对应 `bounds.maxY`，与 `rowZero` 一致；
 - 水线规则：`h <= waterLevel` 是水，等于水线的像素算水；
-- 掩膜只按地形高度判断，高于海平面的河流/湖泊算陆地。
+- **掩膜只按地形高度判断，不以底图为准。** 它和 `contours` 用同一份地形数据，两者永远自洽；
+  但和贴图（`out/textures/`）上画出来的海岸线不一定一致——底图是美术渲染。
+  例：`malta` 地形有 19.0% 高于 0 m，底图只把内圈岛屿画成陆地（约 7.1%），
+  地形上那圈浅滩在底图上被画成海。消费侧是等高线/地形叠加、不消费底图，按地形判据即可；
+- 高于海平面的河流/湖泊算陆地（数据里只有高程，没有真实水面高度）。
 
-索引 `landmask/index.json` 汇总每张图的 `grid`、`landFraction`、`waterLevel`、`rings`、`bytes`。另有栅格产品（`<map>_land.png`，255 = 陆地）由 `make_landmask.py` 生成，需要先导出贴图以取得网格尺寸。
+方向校验：把 `contours/<map>.json` 的 `coastlines`（同一份地形数据，世界坐标）换算到掩膜网格，
+每个顶点都必须落在陆/水跳变像素上。138 张有海岸线的图实测：0 张翻转，命中率中位 100%、最低 96.9%；
+按错误方向读只有 0–10%。脚本 `check_mask_vs_coastline.py`，回归必跑。
+
+索引 `landmask/index.json` 汇总每张图的 `grid`、`landFraction`、`waterLevel`、`rings`、`bytes`。
+另有栅格产品（`<map>_land.png`，255 = 陆地）由 `make_landmask.py` 生成——**只当预览**，
+它按贴图网格出图、需要先导出贴图；交付请用 JSON。
 
 ## 7. 机场 / 跑道 / 重生点 `airfields/<map>.json`
 
