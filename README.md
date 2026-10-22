@@ -85,6 +85,15 @@ python wt_geo.py all                        # 经纬度（需要联网下 DEM �
 - 《战争雷霆》及其素材版权归 Gaijin Entertainment，本项目与 Gaijin 无关；
 - 第三方依赖与数据来源见 [THIRD-PARTY-NOTICES.md](THIRD-PARTY-NOTICES.md)。
 
+## 免责声明
+
+本项目是非官方的个人研究项目，与 Gaijin Entertainment 没有隶属、授权或背书关系，也不用于商业目的。
+
+- 只做互操作研究：目的是让玩家查看自己持有副本中的地形与回放数据，不修改游戏、不注入、不绕过任何保护；
+- 仓库不包含游戏原始文件（关卡、贴图、高度图、模型等），只包含代码与由本机数据派生的结果；
+- 使用本项目需要你自行持有《战争雷霆》的合法副本；游戏文件与 Oodle 内核 DLL 均由用户自备，本项目不提供、不分发；
+- 如果 Gaijin Entertainment 认为本项目或数据发布不妥，请通过仓库 Issue 联系，我们会按要求调整或移除。
+
 ---
 
 ## English
@@ -101,3 +110,5 @@ Offline extraction of War Thunder level terrain. It decodes the `DBLD` level con
 `docs/FORMAT.md` documents the container layouts, `docs/DATASET.md` the data format, and `docs/METHOD-VALIDATION.md` the validation results and limitations.
 
 Code is MIT licensed. The derived data is produced from a locally installed copy of the game; no original game assets are redistributed. War Thunder and its assets are property of Gaijin Entertainment; this project is not affiliated with Gaijin.
+
+Disclaimer: this is an unofficial, non-commercial research project, not affiliated with or endorsed by Gaijin Entertainment. It is intended for interoperability research on data from a copy of the game that the user owns. No original game files are redistributed; the game installation and the Oodle DLL must be supplied by the user. If Gaijin Entertainment wants any content adjusted or removed, please open an issue and we will comply.
