@@ -6,8 +6,8 @@
 
 ```
 dataset/
-  contours/                 163 张地图的等高线 + index.json        ~93 MB
-  landmask/                 163 张地图的陆水掩膜 + index.json      ~8 MB
+  contours/                 163 张地图的等高线 + index.json        ~170 MB
+  landmask/                 163 张地图的陆水掩膜 + index.json      ~8.7 MB
   geo/                      164 张地图的经纬度参考 + index.json    ~0.5 MB
   airfields/                164 张地图的机场/跑道/重生点 + index.json ~12 MB
 ```
@@ -20,9 +20,9 @@ dataset/
 |---|---|
 | 关卡总数 | 164 |
 | 有地形的关卡 | 163（`water.bin` 是纯水面占位关卡，跳过） |
-| 地形来源 `hm2` | 90（直接解码压缩高度图，精确） |
-| 地形来源 `landmesh` | 73（旧格式关卡，由 lmap 三角网重建） |
-| 等高线点总数 | 5,420,777 |
+| 地形来源 `hm2` | 9（整关都在 HM2 里，直接解码，精确） |
+| 地形来源 `landmesh` | 154（145 个是旧格式关卡；陆战图的 HM2 只盖住战斗区，整关改由 lmap 三角网重建） |
+| 等高线点总数 | 9,562,512 |
 | 带水面边界的图 | 138 |
 | 机场数据 | 147 / 164 关有数据 |
 | 跑道 | 底图内 1,964 条 + 底图外 393 条 |
@@ -78,6 +78,9 @@ dataset/
     "originX": -32768.0, "originY": -32768.0,
     "yFlipped": false,
     "waterLevel": 0.0,               // null = 该图没有低于 0 的高度，整图按陆地处
+    "levelBounds": { ... },          // 整关范围（lmap 网格）——画地图外框用它
+    "baseMapBounds": { ... },         // 底图/战斗区范围（有 lmap 与 HM2 差异时才不同）
+    "frame": "level-lmap",           // 上述 levelBounds 的来源帧
     "artifactFilter": {              // 栅格空边过滤参数与实际丢弃数
       "flatWindow": 5, "dropFlatFraction": 0.55,
       "polylinesBefore": 459, "polylinesAfter": 459,

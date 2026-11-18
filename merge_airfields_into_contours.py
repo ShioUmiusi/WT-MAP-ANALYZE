@@ -5,6 +5,11 @@ separate `dataset/airfields/<map>.json`. Consumers that only read
 `dataset/contours/<map>_contours.json` therefore never saw them. This merges a compact copy
 into the contour file so one file per map is enough; the standalone file stays as the
 authoritative record (it also carries `missions`, `frame` and the out-of-frame lists).
+The contour file also gains `meta.levelBounds` / `meta.baseMapBounds` / `meta.frame`.
+`meta.bounds` is the raster the contours were traced on; on ground-battle levels that
+raster used to be the ~2 km HM2 battle tile only, so a consumer using it as the map frame
+drew the frame inside the battlefield and left the airfields outside. `meta.levelBounds`
+is the level's real extent and is what a map frame should use.
 
 Compact means: the per-entry `level` and `mission` strings are dropped (they are constant
 per map and are already in the standalone file), which keeps the payload small.
@@ -43,12 +48,16 @@ def process(stem, apply_changes):
     doc = json.load(open(cp, encoding="utf-8"))
     ap = os.path.join(AIRFIELDS, f"{stem}.json")
     n_af = n_rs = 0
+    level_bounds = base_bounds = frame = None
     if os.path.exists(ap):
         src = json.load(open(ap, encoding="utf-8"))
         af = compact(src.get("airfields") or [], AIRFIELD_KEYS)
         rs = compact(src.get("respawns") or [], RESPAWN_KEYS)
         out_af = compact(src.get("airfieldsOutsideBaseMap") or [], AIRFIELD_KEYS)
         out_rs = compact(src.get("respawnsOutsideBaseMap") or [], RESPAWN_KEYS)
+        level_bounds = src.get("levelBounds")
+        base_bounds = src.get("baseMapBounds")
+        frame = src.get("frame")
         n_af, n_rs = len(af), len(rs)
     else:
         af = rs = out_af = out_rs = []
@@ -58,6 +67,16 @@ def process(stem, apply_changes):
         doc["airfieldsOutsideBaseMap"] = out_af
     if out_rs:
         doc["respawnsOutsideBaseMap"] = out_rs
+    # frame of the level: consumers draw the map frame with these, not with meta.bounds
+    if not level_bounds:
+        # no mission data for this level: the contour raster is the level grid
+        # (wide levels are traced on the lmap frame, so this is the same rectangle)
+        level_bounds = dict(doc["meta"]["bounds"])
+        frame = frame or "terrain-grid"
+    doc["meta"]["levelBounds"] = level_bounds
+    doc["meta"]["frame"] = frame or "level-lmap"
+    if base_bounds:
+        doc["meta"]["baseMapBounds"] = base_bounds
     doc["meta"]["airfields"] = {
         "source": f"dataset/airfields/{stem}.json" if os.path.exists(ap) else None,
         "count": n_af, "respawnCount": n_rs,

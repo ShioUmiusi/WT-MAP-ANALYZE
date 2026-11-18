@@ -111,6 +111,16 @@ world.y =                                  q1/32767 * yscale + yofs
 
 实现：`datalm.py`（参考解码器）、`wt_landmesh.py`（生产封装，含重采样）。
 
+**陆战图（`avg_*` / `avn_*` / `hvg_*`）为什么必须走这条路**：这些关卡同时有 `HM2` 和 `lmap`，
+但 `HM2` 只盖住中间那块 ~2–4 km 的可玩地（`avg_finland`：2048 px × 1 m），而 `lmap` 的网格
+是整关（32×32 × 2048 m = 65 536 m）。机场、空出点、工事都铺在整关坐标上，所以：
+
+- 画地图外框、铺地形：`meta.levelBounds`（由 `lmap` 头推出）；
+- 只读 `HM2` 会得到“框在战斗区、机场在框外”的图（WTACRP 2026-11-18 报的就是这个）。
+
+`make_contours.py --source landmesh` 强制走 `lmap`；`regen_wide_levels.py` 按
+“`lmap` 跨度 > `HM2` 跨度 × 1.5”把这类关卡全部重算，并把陆水掩膜一起重算。
+
 ## 5. 贴图包：`*.dxp.bin`（DxP2 / GRP2）
 
 小端，64 位 ABI dump：

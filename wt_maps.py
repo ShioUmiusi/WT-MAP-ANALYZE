@@ -22,7 +22,8 @@ def level_capabilities(path):
     }
 
 
-def load_map_heightmap(path, verbose=False, allow_landmesh=True, max_dim=1024):
+def load_map_heightmap(path, verbose=False, allow_landmesh=True, max_dim=1024,
+                       prefer="auto"):
     """Return (heights float32 2-D, info). Raises HeightmapUnavailable if impossible.
 
     info.source is "hm2" (exact) or "landmesh".
@@ -30,19 +31,31 @@ def load_map_heightmap(path, verbose=False, allow_landmesh=True, max_dim=1024):
     The land-mesh fallback is validated: on 90 levels that have both an HM2 and a land
     mesh the reconstruction matches HM2 with a median absolute error of 0.075-0.62 m
     (corr up to 1.00000). It is enabled by default.
+
+    prefer="landmesh" skips the HM2 even when the level has one. Ground-battle levels
+    (avg_* / avn_* / hvg_*) carry an HM2 that covers only the ~2 km battle tile while
+    the lmap LandMesh covers the whole level; the level's real extent is the LandMesh.
     """
-    if has_heightmap(path):
+    if prefer not in ("auto", "hm2", "landmesh"):
+        raise ValueError("prefer must be auto, hm2 or landmesh: %r" % (prefer,))
+    if prefer != "landmesh" and has_heightmap(path):
         heights, info = load_heightmap(path, verbose=verbose)
         info.source = "hm2"
         return heights, info
 
-    if not allow_landmesh:
+    if prefer == "hm2":
         raise HeightmapUnavailable(
             "no_hm2",
-            "level has no HM2 heightmap block (legacy format); land-mesh fallback disabled",
+            "level has no HM2 heightmap block and hm2 was requested",
             path,
         )
 
+    if not allow_landmesh:
+        raise HeightmapUnavailable(
+            "no_hm2",
+            "no usable height source; land-mesh fallback disabled",
+            path,
+        )
     try:
         heights, info = load_heightmap_from_landmesh(path, max_dim=max_dim)
         return heights, info
