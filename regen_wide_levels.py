@@ -111,6 +111,48 @@ def check(dataset_dir):
             print("  %-28s FAIL levelBounds outside the raster" % stem)
             bad += 1
             continue
+        det = meta.get("detail")
+        if not det:
+            print("  %-28s FAIL no meta.detail (battle tile not re-traced from HM2)" % stem)
+            bad += 1
+            continue
+        db = det["bounds"]
+        if db["minX"] < b["minX"] - 1 or db["maxX"] > b["maxX"] + 1 \
+                or db["minY"] < b["minY"] - 1 or db["maxY"] > b["maxY"] + 1:
+            print("  %-28s FAIL detail bounds outside the raster" % stem)
+            bad += 1
+            continue
+        if det["cellSizeM"] >= meta["cellSizeM"]:
+            print("  %-28s FAIL detail cell %g m not finer than the coarse %g m"
+                  % (stem, det["cellSizeM"], meta["cellSizeM"]))
+            bad += 1
+            continue
+        if not doc.get("contoursDetail"):
+            print("  %-28s FAIL no contoursDetail levels at all" % stem)
+            bad += 1
+            continue
+        if len(doc["contoursDetail"]) < 3:
+            print("  %-28s note: flat tile, only %d detail level(s)"
+                  % (stem, len(doc["contoursDetail"])))
+        coarse_inside = detail_outside = 0
+        for c in doc.get("contours") or []:
+            for line in c.get("lines") or []:
+                for j in range(0, len(line) - 1, 2):
+                    if db["minX"] + 1 < line[j] < db["maxX"] - 1 \
+                            and db["minY"] + 1 < line[j + 1] < db["maxY"] - 1:
+                        coarse_inside += 1
+        for c in doc.get("contoursDetail") or []:
+            for line in c.get("lines") or []:
+                for j in range(0, len(line) - 1, 2):
+                    if line[j] < db["minX"] - 1 or line[j] > db["maxX"] + 1 \
+                            or line[j + 1] < db["minY"] - 1 or line[j + 1] > db["maxY"] + 1:
+                        detail_outside += 1
+        if coarse_inside:
+            print("  %-28s FAIL %d coarse vertices inside the battle tile" % (stem, coarse_inside))
+            bad += 1
+        if detail_outside:
+            print("  %-28s FAIL %d detail vertices outside the battle tile" % (stem, detail_outside))
+            bad += 1
         for key in ("airfields", "airfieldsOutsideBaseMap"):
             for a in doc.get(key) or []:
                 for pt in (a.get("center"),) + tuple(a.get("ends") or ()):
@@ -137,6 +179,9 @@ def main():
     ap.add_argument("--maps", nargs="*", default=None)
     ap.add_argument("--check", action="store_true",
                     help="verify dataset/ (run after syncing out/); asserts frame == level")
+    ap.add_argument("--hybrid", action="store_true",
+                    help="re-trace the battle tile from HM2 at native resolution (contoursDetail); "
+                         "keeps the fine contours inside the battle area")
     args = ap.parse_args()
 
     if args.check:
@@ -160,7 +205,8 @@ def main():
     for i, r in enumerate(todo, 1):
         stem = r["map"]
         t0 = time.time()
-        rc, out, err = run("make_contours.py", [stem, "--source", "landmesh"])
+        cont_args = [stem, "--source", "landmesh"] + (["--hybrid"] if args.hybrid else [])
+        rc, out, err = run("make_contours.py", cont_args)
         if rc != 0:
             fail += 1
             print("[%2d/%2d] %-28s FAIL contours rc=%d %s" % (i, len(todo), stem, rc, (err or [""])[-1][:90]), flush=True)

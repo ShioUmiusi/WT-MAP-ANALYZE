@@ -121,6 +121,12 @@ world.y =                                  q1/32767 * yscale + yofs
 `make_contours.py --source landmesh` 强制走 `lmap`；`regen_wide_levels.py` 按
 “`lmap` 跨度 > `HM2` 跨度 × 1.5”把这类关卡全部重算，并把陆水掩膜一起重算。
 
+**两层的做法（`--hybrid`）**：整关仍走 `lmap`（粗层，`contours`），再把 `HM2` 按原生分辨率
+（0.25–4 m/px，不降采样）重出一道只盖战斗区的细层（`contoursDetail`，范围见 `meta.detail.bounds`）。
+粗层在战斗区内的采样被置成 `NaN` 后再出线，所以粗线会在战斗区边缘停住、不会和细层叠在一起；
+接缝按粗层一格（~64 m）量化。这样不用做折线裁剪，也不会留下悬空线段（几何裁剪会把线切出毛边）。
+水位 / 海岸线始终来自整关粗层，不拆两层。
+
 ## 5. 贴图包：`*.dxp.bin`（DxP2 / GRP2）
 
 小端，64 位 ABI dump：

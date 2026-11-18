@@ -6,13 +6,12 @@
 
 ```
 dataset/
-  contours/                 163 张地图的等高线 + index.json        ~170 MB
+  contours/                 163 张地图的等高线 + index.json        ~201 MB
   landmask/                 163 张地图的陆水掩膜 + index.json      ~8.7 MB
   geo/                      164 张地图的经纬度参考 + index.json    ~0.5 MB
   airfields/                164 张地图的机场/跑道/重生点 + index.json ~12 MB
 ```
-
-`contours/` 是给前端用的静态资源：文件名固定为 `<map>_contours.json`，`<map>` 与关卡文件名（去掉 `.bin`）一致。按地图名单独取一张即可，单图中位约 300 KB，不需要一次加载全部。
+`contours/` 是给前端用的静态资源：文件名固定为 `<map>_contours.json`，`<map>` 与关卡文件名（去掉 `.bin`）一致。按地图名单独取一张即可（普通图中位 767 KB，带 `contoursDetail` 的陆战图中位 1.1 MB、最大 9.3 MB），不需要一次加载全部。
 
 ## 2. 数据覆盖
 
@@ -20,9 +19,11 @@ dataset/
 |---|---|
 | 关卡总数 | 164 |
 | 有地形的关卡 | 163（`water.bin` 是纯水面占位关卡，跳过） |
-| 地形来源 `hm2` | 9（整关都在 HM2 里，直接解码，精确） |
-| 地形来源 `landmesh` | 154（145 个是旧格式关卡；陆战图的 HM2 只盖住战斗区，整关改由 lmap 三角网重建） |
-| 等高线点总数 | 9,562,512 |
+| 地形来源 `hm2` | 7（整关都在 HM2 里，直接解码，精确） |
+| 地形来源 `landmesh` | 156（73 个是旧格式关卡、没有 HM2；83 个陆战图的 HM2 只盖住战斗区，整关改由 lmap 三角网重建，战斗区再叠 HM2 原生细层） |
+| 等高线点总数 | 11,800,951（粗层 9,785,718 + 战斗区细层 2,015,233） |
+| 混合分辨率图（`contoursDetail`） | 83（陆战图：整关走 lmap，战斗区叠加 HM2 原生分辨率） |
+| 细层采样间隔 | 0.25–4 m/px（HM2 原生，未降采样）；等高距 1–25 m |
 | 带水面边界的图 | 138 |
 | 机场数据 | 147 / 164 关有数据 |
 | 跑道 | 底图内 1,964 条 + 底图外 393 条 |
@@ -38,7 +39,7 @@ dataset/
   "schema": 1,
   "crs": "replay-world-meters",
   "count": 163,
-  "bySource": { "hm2": 90, "landmesh": 73 },
+  "bySource": { "hm2": 7, "landmesh": 156 },  // source 描述粗层（整关）；战斗区细层看每图的 meta.detail
   "maps": [
     {
       "map": "air_afghan",
@@ -81,6 +82,14 @@ dataset/
     "levelBounds": { ... },          // 整关范围（lmap 网格）——画地图外框用它
     "baseMapBounds": { ... },         // 底图/战斗区范围（有 lmap 与 HM2 差异时才不同）
     "frame": "level-lmap",           // 上述 levelBounds 的来源帧
+    "detail": {                      // 仅陆战图（83 张）：战斗区细层，缺这个键就是单分辨率图
+      "source": "hm2",
+      "bounds": { "minX": 0.0, "minY": 0.0, "maxX": 4096.0, "maxY": 4096.0 },
+      "cellSizeM": 2.0,             // HM2 原生采样间隔（不是降采样后的值）
+      "contourIntervalM": 1.0,
+      "levels": 22, "polylines": 524, "points": 20145,
+      "maskedCoarseCells": 4096     // 粗层在这块矩形里被置 NaN 的采样数
+    },
     "artifactFilter": {              // 栅格空边过滤参数与实际丢弃数
       "flatWindow": 5, "dropFlatFraction": 0.55,
       "polylinesBefore": 459, "polylinesAfter": 459,
@@ -93,6 +102,9 @@ dataset/
   "contours": [
     { "elev": 200.0, "lines": [[x0,y0, x1,y1, ...], ...] }
   ],
+  "contoursDetail": [                 // 可选：战斗区细层，同一格式；与 contours 空间上不重叠
+    { "elev": 205.0, "lines": [[x0,y0, x1,y1, ...], ...] }
+  ],
   "water":      [[x0,y0, ...]],      // 可选：水面多边形
   "coastlines": [[x0,y0, ...]],      // 可选：与 water 相同，便于按名读取
   "airfields":  [ { ... } ],         // 跑道（底图范围内的），字段同第 7 节，去掉 level/mission
@@ -104,7 +116,10 @@ dataset/
 
 - 坐标单位米，`x` 向东、`y` 向北，`crs = replay-world-meters`；
 - 折线是扁平数组，保留 1 位小数；
-- `water` / `coastlines` 只在图里有高程 ≤ `waterLevel` 的区域时出现（163 张里 138 张有）；
+- `contoursDetail` 只在陆战图（83 张）里出现：`contours` 是整关（lmap），它只盖战斗区（HM2 原生分辨率）。
+  粗层在那块矩形内的采样已被置 NaN，所以两层不会叠在同一块地上；接缝按粗层一格（~64 m）量化，
+  换来的好处是不用做几何裁剪，也不会留下悬空线段。画的时候两层直接拼起来即可，不要在客户端再裁剪。
+- `water` / `coastlines` 只在图里有高程 ≤ `waterLevel` 的区域时出现（163 张里 138 张有），始终来自整关粗层；
 - 水面由 `height <= waterLevel` 得到，`waterLevel` 为 `null` 时整图按陆地处；等于水线的像素算水；
 - `airfields` / `respawns` 是第 7 节那份数据的**精简副本**，让「只读单图 JSON」的消费侧也能拿到跑道；
   没有数据时是空数组，`meta.airfields.count` 给出条数。权威记录仍在 `airfields/<map>.json`
@@ -338,6 +353,11 @@ python validate_index.py              # 校验并写 out/index.json
 python fix_contour_artifacts.py       # 过滤栅格空边伪等高线（需要 npz）
 python drop_subwater_contours.py      # 整图位于水面以下的关卡不再出线
 python check_contour_jumps.py         # 折线跳变自检
+
+# 陆战图（lmap 跨度 > HM2 × 1.5）：整关走 lmap，战斗区再叠 HM2 原生细层
+python regen_wide_levels.py --apply --hybrid   # 83 张、约 80 min
+python regen_wide_levels.py --check            # 框=整关 / 机场在框内 / 两层不重叠
+python check_hybrid_contours.py --all          # 接缝 + 位姿（顶点重采样回自己的高度图）
 
 python export_textures.py             # 贴图 -> out/textures/
 python make_landmask_json.py --all    # 陆水掩膜 -> out/landmask/*.json + index.json

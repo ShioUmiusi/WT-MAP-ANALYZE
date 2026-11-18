@@ -84,7 +84,7 @@ def sample_grid(heights, info, max_dim, flip_y=False):
 
 
 def build_contours(heights, info, max_dim=1024, target_levels=24, flip_y=False,
-                   water_level=None):
+                   water_level=None, interval=None):
     """Trace contour lines of the height grid.
 
     Levels at or below `water_level` are skipped on purpose: the sea floor is clamped and
@@ -92,8 +92,9 @@ def build_contours(heights, info, max_dim=1024, target_levels=24, flip_y=False,
     unrelated places (and the map overlay has no use for bathymetry).
     """
     hs, xs, ys, step, cell = sample_grid(heights, info, max_dim, flip_y)
-    lo, hi = float(np.min(hs)), float(np.max(hs))
-    interval = choose_interval(hi - lo, target_levels)
+    lo, hi = float(np.nanmin(hs)), float(np.nanmax(hs))   # NaN = masked out (hybrid seam)
+    if interval is None:
+        interval = choose_interval(hi - lo, target_levels)
     tol = max(interval * 0.02, cell * 0.35)
     first = math.ceil(lo / interval) * interval
     levels = np.arange(first, hi, interval)
@@ -173,6 +174,29 @@ def render_preview(heights, info, contours, out_png, title, water_level=None, fl
     plt.close(fig)
 
 
+def tile_rect(info):
+    """World rectangle covered by a heightmap grid (outer edges of its pixel cells)."""
+    return (float(info.ofs_x), float(info.ofs_y),
+            float(info.ofs_x + info.width * info.cell_size),
+            float(info.ofs_y + info.height * info.cell_size))
+
+
+def mask_inside(heights, info, rect):
+    """Blank (NaN) every sample whose centre falls inside `rect`.
+
+    Contouring a NaN hole makes the coarse layer stop at the hole, so the fine layer can
+    take over there without geometric clipping: the seam is quantised to one coarse cell
+    and no dangling segments appear. Row order is the file's, so hybrid needs flip_y off.
+    """
+    x0, y0, x1, y1 = rect
+    xs = info.ofs_x + (np.arange(heights.shape[1]) + 0.5) * info.cell_size
+    ys = info.ofs_y + (np.arange(heights.shape[0]) + 0.5) * info.cell_size
+    inside = ((xs >= x0) & (xs <= x1))[None, :] & ((ys >= y0) & (ys <= y1))[:, None]
+    out = heights.copy()
+    out[inside] = np.nan
+    return out, int(inside.sum())
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("map", help="level name, e.g. avg_berlin.bin")
@@ -187,6 +211,9 @@ def main():
     ap.add_argument("--source", choices=("auto", "hm2", "landmesh"), default="auto",
                     help="auto = HM2 first (battle tile on ground levels); landmesh = whole "
                          "level from the lmap TIN (fixes the frame of ground-battle maps)")
+    ap.add_argument("--hybrid", action="store_true",
+                    help="draw the whole level from lmap and the battle tile from HM2 at native "
+                         "resolution; the coarse layer is masked inside the tile (contoursDetail)")
     args = ap.parse_args()
     args.levels_dir = args.levels_dir or levels_dir()
 
@@ -208,8 +235,28 @@ def main():
     water_level = args.water_level
     if water_level is None and heights.min() < 0.0 < heights.max():
         water_level = 0.0
-    contours, meta = build_contours(heights, info, args.max_dim, args.levels, args.flip_y,
-                                   water_level=water_level)
+    detail = detail_meta = detail_rect = None
+    if args.hybrid:
+        # Coarse pass = the whole level; fine pass = the HM2 battle tile at native resolution.
+        # The coarse grid is blanked inside the tile so the two layers never overdraw.
+        if args.flip_y:
+            print("hybrid needs --flip-y off (masking runs in file row order)", file=sys.stderr)
+            return 2
+        if getattr(info, "source", "") != "landmesh":
+            print(f"SKIP {base}: hybrid needs the lmap heightmap (got {info.source})", file=sys.stderr)
+            return 2
+        fine_h, fine_info = load_map_heightmap(path, verbose=False, prefer="hm2")
+        detail_rect = tile_rect(fine_info)
+        coarse_h, masked_cells = mask_inside(heights, info, detail_rect)
+        contours, meta = build_contours(coarse_h, info, args.max_dim, args.levels, args.flip_y,
+                                        water_level=water_level)
+        detail, detail_meta = build_contours(fine_h, fine_info, max(fine_h.shape), args.levels,
+                                            False, water_level=water_level)
+        print("hybrid: tile %dx%dpx cell %gm -> %d detail levels"
+              % (fine_info.width, fine_info.height, fine_info.cell_size, len(detail)))
+    else:
+        contours, meta = build_contours(heights, info, args.max_dim, args.levels, args.flip_y,
+                                        water_level=water_level)
     np.savez_compressed(os.path.join(args.out_dir, base + "_heightmap.npz"), h=heights)
 
     h, w = heights.shape
@@ -261,6 +308,26 @@ def main():
         },
         "contours": contours,
     }
+    if detail is not None:
+        doc["contoursDetail"] = detail
+        doc["meta"]["detail"] = {
+            "source": "hm2",
+            "bounds": dict(zip(("minX", "minY", "maxX", "maxY"),
+                               (round(v, 2) for v in detail_rect))),
+            "cellSizeM": detail_meta["cell"],
+            "widthPx": int(fine_info.width), "heightPx": int(fine_info.height),
+            "contourIntervalM": detail_meta["interval"],
+            "levels": len(detail),
+            "polylines": sum(len(c["lines"]) for c in detail),
+            "points": sum(len(l) // 2 for c in detail for l in c["lines"]),
+            "maskedCoarseCells": masked_cells,
+            "note": ("Battle tile re-traced from the level's own HM2 block at %g m/px; the "
+                     "lmap layer stops at the tile edge (blanked, so the seam is quantised to "
+                     "one coarse cell ~%g m)." % (fine_info.cell_size, info.cell_size)),
+        }
+        doc["meta"]["note"] += (" Inside meta.detail.bounds the contours come from HM2 at %g m "
+                                "interval (contoursDetail); outside it from the lmap TIN."
+                                % detail_meta["interval"])
     if water_level is not None:
         water = water_polygons(heights, info, water_level, args.max_dim, args.flip_y)
         doc["water"] = water
@@ -274,10 +341,16 @@ def main():
     npts = sum(len(l) // 2 for c in contours for l in c["lines"])
     print(f"contours: {len(contours)} levels, {nlines} polylines, {npts} points -> {out_json} "
           f"({os.path.getsize(out_json)/1e6:.2f} MB)")
+    if detail is not None:
+        dn = sum(len(l) // 2 for c in detail for l in c["lines"])
+        print(f"  + detail: {len(detail)} levels, "
+              f"{sum(len(c['lines']) for c in detail)} polylines, {dn} points "
+              f"(interval {detail_meta['interval']:g} m)")
 
     if not args.no_png:
         out_png = os.path.join(args.out_dir, base + "_contours.png")
-        render_preview(heights, info, contours, out_png, base, water_level, args.flip_y)
+        render_preview(heights, info, (contours + detail) if detail else contours,
+                       out_png, base, water_level, args.flip_y)
         print("preview ->", out_png)
     return 0
 

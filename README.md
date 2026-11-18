@@ -76,7 +76,7 @@ python wt_geo.py all                        # 经纬度（需要联网下 DEM �
 
 ## 数据覆盖
 
-164 个关卡中 163 个有地形：9 个整关都在 HM2 里（直接解码），154 个由 LandMesh 重建 —— 其中 145 个是旧格式关卡，另 81 个陆战图的 HM2 只盖住 ~2–4 km 战斗区，整关（机场、空出点、工事所在的范围）改由 lmap 重建。重建精度用同时含两种来源的图交叉验证，中位绝对误差 0.14 m。163 张图另有陆水掩膜，按高度图的 `waterLevel` 划出陆地与水面，供前端做海岸线着色。细节与限制见[方法与验证](docs/METHOD-VALIDATION.md)。
+164 个关卡中 163 个有地形：7 个整关都在 HM2 里（直接解码），156 个由 LandMesh 重建 —— 其中 73 个是旧格式关卡（没有 HM2），另 83 个陆战图的 HM2 只盖住 ~2–4 km 战斗区，整关（机场、空出点、工事所在的范围）由 lmap 重建，并在战斗区上再叠一层 HM2 原生分辨率的 `contoursDetail`（细层采样 0.25–4 m/px，粗层 64 m/px），所以外框是整关的、战斗区仍保留细等高线。重建精度用同时含两种来源的图交叉验证，中位绝对误差 0.14 m。163 张图另有陆水掩膜，按高度图的 `waterLevel` 划出陆地与水面，供前端做海岸线着色。细节与限制见[方法与验证](docs/METHOD-VALIDATION.md)。
 
 ## 许可与来源
 
@@ -101,7 +101,7 @@ python wt_geo.py all                        # 经纬度（需要联网下 DEM �
 Offline extraction of War Thunder level terrain. It decodes the `DBLD` level containers, `HM2` compressed heightmaps and legacy `lmap` LandMesh terrain, then produces contour JSON, minimap textures, airfield/runway geometry and a real-world georeference for every level.
 
 - Coordinates: `replay-world-meters`, x east / y north, metres.
-- Coverage: 164 levels, 163 with terrain (90 from HM2, 73 rebuilt from LandMesh; median error 0.14 m over 90 cross-checked levels).
+- Coverage: 164 levels, 163 with terrain (7 fully from HM2, 156 rebuilt from LandMesh; median error 0.14 m over 90 cross-checked levels). 83 of the rebuilt ones are ground-battle levels whose HM2 only covers the 2-4 km battle tile: the whole level comes from lmap and the tile is re-traced from HM2 at native resolution into a second layer, `contoursDetail`.
 - The `dataset/` directory ships the computed contour JSON (163 maps), georeference and airfield data so downstream tools can load them without the game.
 - Land/water masks are exported per level as RLE bitmaps plus closed rings (even-odd fill), so a map view can shade land and keep water transparent without the full terrain mesh.
 - Requirements: Windows, Python 3.10+, `pip install -r requirements.txt`, plus the Oodle kernel DLL (`daKernel-dev.dll`, not redistributed).

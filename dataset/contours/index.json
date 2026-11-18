@@ -4,8 +4,8 @@
  "note": "War Thunder level terrain extracted from levels/<map>.bin. source=hm2 means decoded from the HM2 heightmap block; source=landmesh means rebuilt from the lmap LandMesh triangle mesh (validated against HM2: median error 0.14 m over 90 cross-checked levels). x = world X (east), y = world north/Z; bounds in meters.",
  "count": 163,
  "bySource": {
-  "hm2": 9,
-  "landmesh": 154
+  "hm2": 7,
+  "landmesh": 156
  },
  "maps": [
   {
@@ -1012,7 +1012,7 @@
    ],
    "intervalM": 10.0,
    "levels": 12,
-   "points": 172371,
+   "points": 172270,
    "water": true,
    "file": "avg_abandoned_factory_contours.json"
   },
@@ -1040,7 +1040,7 @@
    ],
    "intervalM": 100.0,
    "levels": 24,
-   "points": 64311,
+   "points": 64038,
    "water": true,
    "file": "avg_abandoned_town_contours.json"
   },
@@ -1068,7 +1068,7 @@
    ],
    "intervalM": 20.0,
    "levels": 17,
-   "points": 63073,
+   "points": 62317,
    "water": true,
    "file": "avg_africa_desert_contours.json"
   },
@@ -1096,7 +1096,7 @@
    ],
    "intervalM": 100.0,
    "levels": 19,
-   "points": 80491,
+   "points": 80489,
    "water": true,
    "file": "avg_alaska_town_contours.json"
   },
@@ -1119,12 +1119,12 @@
     "maxY": 32800.03
    },
    "heightM": [
-    -30.85,
-    735.62
+    -2.8,
+    734.58
    ],
    "intervalM": 25.0,
    "levels": 29,
-   "points": 31385,
+   "points": 31101,
    "water": true,
    "file": "avg_american_valley_contours.json"
   },
@@ -1152,7 +1152,7 @@
    ],
    "intervalM": 25.0,
    "levels": 24,
-   "points": 30655,
+   "points": 30486,
    "water": true,
    "file": "avg_aral_sea_contours.json"
   },
@@ -1179,8 +1179,8 @@
     96.63
    ],
    "intervalM": 5.0,
-   "levels": 19,
-   "points": 2565,
+   "levels": 11,
+   "points": 1274,
    "water": true,
    "file": "avg_arctic_contours.json"
   },
@@ -1208,7 +1208,7 @@
    ],
    "intervalM": 20.0,
    "levels": 17,
-   "points": 48387,
+   "points": 48055,
    "water": true,
    "file": "avg_ardennes_contours.json"
   },
@@ -1236,7 +1236,7 @@
    ],
    "intervalM": 20.0,
    "levels": 17,
-   "points": 48387,
+   "points": 48055,
    "water": true,
    "file": "avg_ardennes_snow_contours.json"
   },
@@ -1259,12 +1259,12 @@
     "maxY": 20512.03
    },
    "heightM": [
-    -9.12,
+    -9.13,
     200.96
    ],
    "intervalM": 10.0,
    "levels": 20,
-   "points": 119902,
+   "points": 119293,
    "water": true,
    "file": "avg_berlin_contours.json"
   },
@@ -1292,7 +1292,7 @@
    ],
    "intervalM": 1.0,
    "levels": 17,
-   "points": 548647,
+   "points": 547008,
    "water": true,
    "file": "avg_breslau_contours.json"
   },
@@ -1320,7 +1320,7 @@
    ],
    "intervalM": 10.0,
    "levels": 19,
-   "points": 4781,
+   "points": 4771,
    "water": true,
    "file": "avg_container_port_contours.json"
   },
@@ -1348,7 +1348,7 @@
    ],
    "intervalM": 5.0,
    "levels": 25,
-   "points": 115645,
+   "points": 114977,
    "water": true,
    "file": "avg_eastern_europe_contours.json"
   },
@@ -1376,7 +1376,7 @@
    ],
    "intervalM": 50.0,
    "levels": 29,
-   "points": 64607,
+   "points": 64544,
    "water": true,
    "file": "avg_egypt_sinai_contours.json"
   },
@@ -1404,7 +1404,7 @@
    ],
    "intervalM": 25.0,
    "levels": 29,
-   "points": 23464,
+   "points": 23168,
    "water": true,
    "file": "avg_european_fortress_contours.json"
   },
@@ -1432,7 +1432,7 @@
    ],
    "intervalM": 25.0,
    "levels": 23,
-   "points": 91506,
+   "points": 91478,
    "water": true,
    "file": "avg_falklands_contours.json"
   },
@@ -1460,7 +1460,7 @@
    ],
    "intervalM": 10.0,
    "levels": 17,
-   "points": 46531,
+   "points": 46319,
    "water": true,
    "file": "avg_finland_contours.json"
   },
@@ -1488,7 +1488,7 @@
    ],
    "intervalM": 10.0,
    "levels": 25,
-   "points": 123192,
+   "points": 122800,
    "water": false,
    "file": "avg_football_field_contours.json"
   },
@@ -1516,7 +1516,7 @@
    ],
    "intervalM": 25.0,
    "levels": 25,
-   "points": 112553,
+   "points": 112253,
    "water": true,
    "file": "avg_fulda_contours.json"
   },
@@ -1544,7 +1544,7 @@
    ],
    "intervalM": 50.0,
    "levels": 26,
-   "points": 60169,
+   "points": 60046,
    "water": true,
    "file": "avg_greece_contours.json"
   },
@@ -1572,7 +1572,7 @@
    ],
    "intervalM": 100.0,
    "levels": 19,
-   "points": 26774,
+   "points": 26733,
    "water": true,
    "file": "avg_guadalcanal_contours.json"
   },
@@ -1600,7 +1600,7 @@
    ],
    "intervalM": 5.0,
    "levels": 28,
-   "points": 126611,
+   "points": 125533,
    "water": true,
    "file": "avg_hurtgen_contours.json"
   },
@@ -1628,7 +1628,7 @@
    ],
    "intervalM": 20.0,
    "levels": 17,
-   "points": 55340,
+   "points": 55125,
    "water": false,
    "file": "avg_iberian_castle_contours.json"
   },
@@ -1656,7 +1656,7 @@
    ],
    "intervalM": 100.0,
    "levels": 29,
-   "points": 33533,
+   "points": 33404,
    "water": true,
    "file": "avg_ireland_contours.json"
   },
@@ -1679,12 +1679,12 @@
     "maxY": 32800.03
    },
    "heightM": [
-    -41.39,
+    -41.62,
     1343.18
    ],
    "intervalM": 50.0,
    "levels": 26,
-   "points": 24906,
+   "points": 24888,
    "water": true,
    "file": "avg_israel_contours.json"
   },
@@ -1712,7 +1712,7 @@
    ],
    "intervalM": 100.0,
    "levels": 16,
-   "points": 48970,
+   "points": 48848,
    "water": true,
    "file": "avg_japan_contours.json"
   },
@@ -1738,9 +1738,9 @@
     0.0,
     74.84
    ],
-   "intervalM": 2.0,
-   "levels": 37,
-   "points": 17122,
+   "intervalM": 1.0,
+   "levels": 17,
+   "points": 164,
    "water": false,
    "file": "avg_karantan_contours.json"
   },
@@ -1763,12 +1763,12 @@
     "maxY": 16408.02
    },
    "heightM": [
-    -17.57,
+    -17.55,
     799.37
    ],
    "intervalM": 25.0,
    "levels": 31,
-   "points": 24714,
+   "points": 23907,
    "water": true,
    "file": "avg_karelia_forest_a_contours.json"
   },
@@ -1796,7 +1796,7 @@
    ],
    "intervalM": 25.0,
    "levels": 31,
-   "points": 54315,
+   "points": 54104,
    "water": false,
    "file": "avg_karpaty_passage_contours.json"
   },
@@ -1819,12 +1819,12 @@
     "maxY": 32800.03
    },
    "heightM": [
-    109.89,
-    1415.67
+    108.08,
+    1412.36
    ],
    "intervalM": 50.0,
    "levels": 26,
-   "points": 150989,
+   "points": 150525,
    "water": false,
    "file": "avg_korea_lake_contours.json"
   },
@@ -1852,7 +1852,7 @@
    ],
    "intervalM": 50.0,
    "levels": 23,
-   "points": 55066,
+   "points": 54807,
    "water": true,
    "file": "avg_krymsk_contours.json"
   },
@@ -1880,7 +1880,7 @@
    ],
    "intervalM": 5.0,
    "levels": 23,
-   "points": 88989,
+   "points": 88390,
    "water": true,
    "file": "avg_kursk_villages_contours.json"
   },
@@ -1908,7 +1908,7 @@
    ],
    "intervalM": 100.0,
    "levels": 16,
-   "points": 35709,
+   "points": 35577,
    "water": true,
    "file": "avg_lazzaro_italy_new_city_contours.json"
   },
@@ -1936,7 +1936,7 @@
    ],
    "intervalM": 5.0,
    "levels": 15,
-   "points": 59924,
+   "points": 59725,
    "water": true,
    "file": "avg_maginot_rework_contours.json"
   },
@@ -1964,7 +1964,7 @@
    ],
    "intervalM": 200.0,
    "levels": 21,
-   "points": 41533,
+   "points": 41535,
    "water": true,
    "file": "avg_mozdok_contours.json"
   },
@@ -1992,7 +1992,7 @@
    ],
    "intervalM": 5.0,
    "levels": 25,
-   "points": 120425,
+   "points": 119836,
    "water": true,
    "file": "avg_netherlands_contours.json"
   },
@@ -2020,7 +2020,7 @@
    ],
    "intervalM": 20.0,
    "levels": 15,
-   "points": 35710,
+   "points": 35510,
    "water": true,
    "file": "avg_normandy_contours.json"
   },
@@ -2048,7 +2048,7 @@
    ],
    "intervalM": 100.0,
    "levels": 29,
-   "points": 126173,
+   "points": 125950,
    "water": false,
    "file": "avg_northern_india_contours.json"
   },
@@ -2076,7 +2076,7 @@
    ],
    "intervalM": 200.0,
    "levels": 18,
-   "points": 40757,
+   "points": 40697,
    "water": true,
    "file": "avg_northern_valley_contours.json"
   },
@@ -2104,7 +2104,7 @@
    ],
    "intervalM": 100.0,
    "levels": 19,
-   "points": 80488,
+   "points": 80486,
    "water": true,
    "file": "avg_nuclear_incident_contours.json"
   },
@@ -2132,7 +2132,7 @@
    ],
    "intervalM": 10.0,
    "levels": 20,
-   "points": 69612,
+   "points": 69415,
    "water": true,
    "file": "avg_poland_contours.json"
   },
@@ -2160,7 +2160,7 @@
    ],
    "intervalM": 10.0,
    "levels": 20,
-   "points": 69278,
+   "points": 69063,
    "water": true,
    "file": "avg_poland_snow_contours.json"
   },
@@ -2188,7 +2188,7 @@
    ],
    "intervalM": 50.0,
    "levels": 22,
-   "points": 37683,
+   "points": 37599,
    "water": true,
    "file": "avg_port_novorossiysk_contours.json"
   },
@@ -2216,7 +2216,7 @@
    ],
    "intervalM": 50.0,
    "levels": 21,
-   "points": 59963,
+   "points": 59584,
    "water": false,
    "file": "avg_red_desert_contours.json"
   },
@@ -2244,7 +2244,7 @@
    ],
    "intervalM": 10.0,
    "levels": 28,
-   "points": 67472,
+   "points": 67181,
    "water": true,
    "file": "avg_rheinland_contours.json"
   },
@@ -2270,9 +2270,9 @@
     -41.7,
     301.07
    ],
-   "intervalM": 20.0,
-   "levels": 15,
-   "points": 93180,
+   "intervalM": 10.0,
+   "levels": 30,
+   "points": 187694,
    "water": true,
    "file": "avg_sector_montmedy_contours.json"
   },
@@ -2298,9 +2298,9 @@
     -41.7,
     301.07
    ],
-   "intervalM": 20.0,
-   "levels": 15,
-   "points": 93178,
+   "intervalM": 10.0,
+   "levels": 30,
+   "points": 187689,
    "water": true,
    "file": "avg_sector_montmedy_snow_contours.json"
   },
@@ -2328,7 +2328,7 @@
    ],
    "intervalM": 200.0,
    "levels": 17,
-   "points": 59643,
+   "points": 59616,
    "water": true,
    "file": "avg_snow_alps_contours.json"
   },
@@ -2384,7 +2384,7 @@
    ],
    "intervalM": 100.0,
    "levels": 19,
-   "points": 82448,
+   "points": 82447,
    "water": true,
    "file": "avg_soviet_suburban_contours.json"
   },
@@ -2412,7 +2412,7 @@
    ],
    "intervalM": 100.0,
    "levels": 19,
-   "points": 82467,
+   "points": 82466,
    "water": true,
    "file": "avg_soviet_suburban_snow_contours.json"
   },
@@ -2440,7 +2440,7 @@
    ],
    "intervalM": 10.0,
    "levels": 24,
-   "points": 52490,
+   "points": 52238,
    "water": true,
    "file": "avg_stalingrad_factory_contours.json"
   },
@@ -2468,7 +2468,7 @@
    ],
    "intervalM": 50.0,
    "levels": 27,
-   "points": 15861,
+   "points": 15792,
    "water": true,
    "file": "avg_sweden_contours.json"
   },
@@ -2495,8 +2495,8 @@
     679.4
    ],
    "intervalM": 25.0,
-   "levels": 24,
-   "points": 76372,
+   "levels": 23,
+   "points": 69914,
    "water": false,
    "file": "avg_syria_contours.json"
   },
@@ -2524,7 +2524,7 @@
    ],
    "intervalM": 20.0,
    "levels": 21,
-   "points": 9935,
+   "points": 7280,
    "water": false,
    "file": "avg_training_ground_contours.json"
   },
@@ -2552,7 +2552,7 @@
    ],
    "intervalM": 25.0,
    "levels": 24,
-   "points": 18954,
+   "points": 18926,
    "water": true,
    "file": "avg_tunisia_desert_contours.json"
   },
@@ -2580,7 +2580,7 @@
    ],
    "intervalM": 100.0,
    "levels": 24,
-   "points": 9804,
+   "points": 9551,
    "water": true,
    "file": "avg_vietnam_hills_contours.json"
   },
@@ -2608,7 +2608,7 @@
    ],
    "intervalM": 5.0,
    "levels": 15,
-   "points": 59679,
+   "points": 59453,
    "water": true,
    "file": "avg_vlaanderen_contours.json"
   },
@@ -2636,7 +2636,7 @@
    ],
    "intervalM": 5.0,
    "levels": 15,
-   "points": 23981,
+   "points": 21859,
    "water": false,
    "file": "avg_volokolamsk_contours.json"
   },
@@ -2748,7 +2748,7 @@
    ],
    "intervalM": 100.0,
    "levels": 24,
-   "points": 29269,
+   "points": 29266,
    "water": true,
    "file": "avn_alps_fjord_contours.json"
   },
@@ -2776,7 +2776,7 @@
    ],
    "intervalM": 200.0,
    "levels": 20,
-   "points": 18268,
+   "points": 18264,
    "water": true,
    "file": "avn_arabian_north_coast_contours.json"
   },
@@ -2832,7 +2832,7 @@
    ],
    "intervalM": 50.0,
    "levels": 15,
-   "points": 65205,
+   "points": 65160,
    "water": true,
    "file": "avn_blacksea_port_contours.json"
   },
@@ -2860,7 +2860,7 @@
    ],
    "intervalM": 20.0,
    "levels": 14,
-   "points": 6579,
+   "points": 6555,
    "water": true,
    "file": "avn_coral_islands_contours.json"
   },
@@ -2888,7 +2888,7 @@
    ],
    "intervalM": 20.0,
    "levels": 16,
-   "points": 57599,
+   "points": 57226,
    "water": true,
    "file": "avn_england_shore_contours.json"
   },
@@ -2916,7 +2916,7 @@
    ],
    "intervalM": 25.0,
    "levels": 25,
-   "points": 3432,
+   "points": 3382,
    "water": true,
    "file": "avn_fiji_contours.json"
   },
@@ -3000,7 +3000,7 @@
    ],
    "intervalM": 50.0,
    "levels": 16,
-   "points": 31240,
+   "points": 30876,
    "water": true,
    "file": "avn_fuego_islands_contours.json"
   },
@@ -3028,7 +3028,7 @@
    ],
    "intervalM": 100.0,
    "levels": 23,
-   "points": 15027,
+   "points": 15022,
    "water": true,
    "file": "avn_ice_port_contours.json"
   },
@@ -3056,7 +3056,7 @@
    ],
    "intervalM": 100.0,
    "levels": 22,
-   "points": 14531,
+   "points": 14521,
    "water": true,
    "file": "avn_ireland_bay_contours.json"
   },
@@ -3112,7 +3112,7 @@
    ],
    "intervalM": 50.0,
    "levels": 17,
-   "points": 18457,
+   "points": 18152,
    "water": true,
    "file": "avn_mediterranean_port_contours.json"
   },
@@ -3168,7 +3168,7 @@
    ],
    "intervalM": 100.0,
    "levels": 18,
-   "points": 9964,
+   "points": 9908,
    "water": true,
    "file": "avn_north_sea_contours.json"
   },
@@ -3195,8 +3195,8 @@
     56.37
    ],
    "intervalM": 5.0,
-   "levels": 11,
-   "points": 116291,
+   "levels": 4,
+   "points": 115481,
    "water": true,
    "file": "avn_northwestern_islands_contours.json"
   },
@@ -3224,7 +3224,7 @@
    ],
    "intervalM": 50.0,
    "levels": 18,
-   "points": 51526,
+   "points": 51418,
    "water": true,
    "file": "avn_norway_islands_contours.json"
   },
@@ -3280,7 +3280,7 @@
    ],
    "intervalM": 25.0,
    "levels": 23,
-   "points": 135429,
+   "points": 135327,
    "water": true,
    "file": "avn_phang_nga_bay_islands_contours.json"
   },
@@ -3560,7 +3560,7 @@
    ],
    "intervalM": 20.0,
    "levels": 25,
-   "points": 21125,
+   "points": 18498,
    "water": false,
    "file": "firing_range_contours.json"
   },
@@ -3622,57 +3622,57 @@
   },
   {
    "map": "hangar_field",
-   "source": "hm2",
+   "source": "landmesh",
    "px": [
-    2048,
-    2048
+    1023,
+    1023
    ],
-   "cellM": 1.0,
+   "cellM": 8.01174156352834,
    "spanM": [
-    2048.0,
-    2048.0
+    8196.0,
+    8196.0
    ],
    "bounds": {
-    "minX": -1024.0,
-    "maxX": 1024.0,
-    "minY": -1024.0,
-    "maxY": 1024.0
+    "minX": -4096.0,
+    "maxX": 4100.01,
+    "minY": -4096.0,
+    "maxY": 4100.01
    },
    "heightM": [
-    -10.99,
-    107.74
+    -20.08,
+    279.64
    ],
-   "intervalM": 5.0,
-   "levels": 21,
-   "points": 2550,
+   "intervalM": 10.0,
+   "levels": 27,
+   "points": 45167,
    "water": true,
    "file": "hangar_field_contours.json"
   },
   {
    "map": "hangar_field_halloween",
-   "source": "hm2",
+   "source": "landmesh",
    "px": [
-    2048,
-    2048
+    1023,
+    1023
    ],
-   "cellM": 1.0,
+   "cellM": 8.01174156352834,
    "spanM": [
-    2048.0,
-    2048.0
+    8196.0,
+    8196.0
    ],
    "bounds": {
-    "minX": -1024.0,
-    "maxX": 1024.0,
-    "minY": -1024.0,
-    "maxY": 1024.0
+    "minX": -4096.0,
+    "maxX": 4100.01,
+    "minY": -4096.0,
+    "maxY": 4100.01
    },
    "heightM": [
-    -18.04,
-    107.74
+    -20.09,
+    279.64
    ],
-   "intervalM": 5.0,
-   "levels": 21,
-   "points": 2934,
+   "intervalM": 10.0,
+   "levels": 27,
+   "points": 43799,
    "water": true,
    "file": "hangar_field_halloween_contours.json"
   },
@@ -3700,7 +3700,7 @@
    ],
    "intervalM": 10.0,
    "levels": 27,
-   "points": 44254,
+   "points": 43802,
    "water": true,
    "file": "hangar_field_premium_contours.json"
   },
@@ -3728,7 +3728,7 @@
    ],
    "intervalM": 10.0,
    "levels": 27,
-   "points": 44195,
+   "points": 43763,
    "water": true,
    "file": "hangar_field_winter_contours.json"
   },
@@ -3812,7 +3812,7 @@
    ],
    "intervalM": 50.0,
    "levels": 31,
-   "points": 51513,
+   "points": 51423,
    "water": true,
    "file": "hvg_africa_large_contours.json"
   },
@@ -3840,7 +3840,7 @@
    ],
    "intervalM": 50.0,
    "levels": 19,
-   "points": 23427,
+   "points": 23428,
    "water": true,
    "file": "hvg_al_massa_contours.json"
   },
